@@ -1,0 +1,22 @@
+name: office-rag-db   # own compose project, so app commands never touch the database
+
+services:
+  db:
+    image: pgvector/pgvector:0.8.7-pg17
+    platform: linux/arm64   # native on Apple Silicon; overrides DOCKER_DEFAULT_PLATFORM=linux/amd64 in ~/.zshrc
+    container_name: office-rag-db
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "127.0.0.1:5433:5432"   # localhost only; host 5432 is taken by the local Homebrew Postgres
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 5s
+      retries: 10
+
+volumes:
+  pgdata:

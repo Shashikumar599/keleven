@@ -1,0 +1,20 @@
+# Secrets: passwords and API keys. Never commit.
+.env
+.env.*
+
+# Python environment and generated files
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Transcript data: copyrighted, downloaded or derived locally (see claude.md and findings/phase-0.md).
+# Rebuild with ingest/clean.py and ingest/load.py.
+data/raw/
+data/processed/
+
+# Editor and OS clutter
+.DS_Store
+.vscode/
+.idea/

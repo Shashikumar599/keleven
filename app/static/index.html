@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Keleven: The Office</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<script>try { if (localStorage.getItem("office-rag-theme") === "light") document.documentElement.dataset.theme = "light"; } catch {}</script>
+<style>
+  /* Design read: a Q&A research tool for one developer and a few friends. Office-supply language: cool paper,
+     ink, one copier-toner blue accent; answers as interoffice memos, transcripts as screenplay, modes as
+     manila folder tabs. Shape rule: panels 10px, controls 8px, chips and pills fully round. */
+  /* Dark by default; the header toggle sets data-theme="light" (remembered in the browser). */
+  :root {
+    --paper: #101216; --sheet: #181b20; --ink: #e7e9ee; --ink-2: #b2b8c3; --ink-3: #848c99; --rule: #2a2f37;
+    --accent: #8aa5ff; --on-accent: #0f1630; --accent-soft: #1d2640;
+    --manila: #5b5032; --manila-ink: #f1e6c4;
+    --good: #6ccf98; --good-soft: #15291e; --bad: #f08a83; --bad-soft: #351816; --memo-amber: #e9b860; --amber-soft: #2e2412;
+    --backdrop-opacity: .2;
+    --r-panel: 10px; --r-control: 8px; --r-pill: 999px;
+    --display: "Bricolage Grotesque", "IBM Plex Sans", system-ui, sans-serif;
+    --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+    color-scheme: dark;
+  }
+  :root[data-theme="light"] {
+    --paper: #f2f4f7; --sheet: #fcfcfd; --ink: #15181d; --ink-2: #485060; --ink-3: #737d8c; --rule: #dde2e9;
+    --accent: #2b50c8; --on-accent: #f7f8ff; --accent-soft: #e5ebfa;
+    --manila: #ecdca6; --manila-ink: #4d4120;
+    --good: #1c7449; --good-soft: #e0f1e7; --bad: #b0302a; --bad-soft: #f8e3e1; --memo-amber: #8a5800; --amber-soft: #f6ead2;
+    --backdrop-opacity: .2;
+    color-scheme: light;
+  }
+
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 15px/1.55 var(--sans); isolation: isolate; }
+  /* Dwight, faint, behind everything. Panels are opaque, so he only shows in the gaps. */
+  body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+                 background: url("/static/image/dwight.png") center 25% / cover no-repeat;
+                 opacity: var(--backdrop-opacity); filter: grayscale(40%); }
+  main { max-width: 1320px; margin: 0 auto; padding-block: 24px 80px; padding-inline: 16px; display: grid; gap: 18px; }
+  .sheet { background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--r-panel); min-width: 0; }
+  button, input { font: inherit; color: inherit; }
+  button { cursor: pointer; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .ph { font-size: 1.1em; vertical-align: -0.15em; }
+
+  /* header: wordmark left, folder tabs right */
+  .folder { display: grid; }
+  .top { display: flex; align-items: end; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .brand { padding-bottom: 12px; }
+  .brand h1 { font: 700 30px/1 var(--display); letter-spacing: -0.5px; margin: 0; }
+  .brand h1 .tag { font: 500 13px var(--mono); color: var(--ink-3); letter-spacing: .3px; vertical-align: middle; margin-left: 6px; }
+  .brand p { margin: 6px 0 0; color: var(--ink-2); font-size: 14px; }
+  .top-right { display: flex; align-items: end; gap: 12px; align-self: end; }
+  .tabs { display: flex; gap: 4px; margin-bottom: -1px; position: relative; }
+  .icon-btn { width: 34px; height: 34px; margin-bottom: 6px; border-radius: var(--r-pill); border: 1px solid var(--rule);
+              background: var(--sheet); color: var(--ink-2); display: grid; place-items: center; font-size: 16px; }
+  .tab { border: 1px solid var(--rule); border-bottom: 0; border-radius: var(--r-control) var(--r-control) 0 0;
+         background: var(--paper); color: var(--ink-2); padding: 6px 18px 5px; font: 500 14px var(--sans); }
+  .tab[aria-selected="true"] { background: var(--manila); color: var(--manila-ink); border-color: var(--manila); }
+
+  /* ask bar */
+  .ask { padding: 16px; display: grid; gap: 12px; border-top-right-radius: 0; }
+  #view-ask, #view-history { display: grid; gap: 18px; }
+  .ask-row { display: flex; gap: 8px; flex-wrap: wrap; }
+  #q { flex: 1 1 320px; min-width: 0; padding: 12px 14px; border: 1px solid var(--rule); border-radius: var(--r-control);
+       background: var(--paper); font-size: 16px; }
+  #q::placeholder { color: var(--ink-3); }
+  .primary { border: 0; border-radius: var(--r-control); padding: 12px 22px; background: var(--accent); color: var(--on-accent);
+             font-weight: 600; white-space: nowrap; transition: transform .12s; }
+  .primary:active { transform: translateY(1px); }
+  .primary:disabled { opacity: .55; cursor: progress; }
+  .examples { display: flex; gap: 6px; flex-wrap: wrap; }
+  .chip-btn { border: 1px solid var(--rule); background: var(--sheet); color: var(--ink-2); border-radius: var(--r-pill);
+              padding: 4px 12px; font-size: 13px; }
+  .chip-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .settings { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; color: var(--ink-2); font-size: 13px; }
+  .settings label { display: flex; gap: 6px; align-items: center; }
+  .settings input:disabled { opacity: .6; cursor: not-allowed; }
+  .versions { display: inline-flex; gap: 6px; flex-wrap: wrap; }
+  .versions .pill { padding: 4px 12px; font-size: 13px; }
+  .versions .pill:disabled { opacity: .5; cursor: not-allowed; }
+  pre.sql { font: 12.5px var(--mono); white-space: pre-wrap; word-break: break-word; background: var(--paper);
+            border: 1px solid var(--rule); border-radius: var(--r-control); padding: 10px 12px; margin: 8px 0; }
+  .lock { display: inline-flex; align-items: center; gap: 8px; }
+  .lock input[type=password] { width: 160px; }
+  .lock .msg { color: var(--ink-3); }
+  .settings input { width: 58px; padding: 4px 6px; border: 1px solid var(--rule); border-radius: var(--r-control); background: var(--paper); }
+
+  /* states */
+  .empty { padding: 28px 22px; color: var(--ink-2); }
+  .empty h2 { font: 700 20px var(--display); color: var(--ink); margin: 0 0 6px; }
+  .empty p { margin: 0; max-width: 60ch; }
+  .loading { padding: 22px; display: grid; gap: 12px; }
+  .loading .line { height: 12px; border-radius: var(--r-pill); background: var(--rule); }
+  .loading .status { font: 500 14px var(--mono); color: var(--ink-2); }
+  .error { padding: 18px 22px; color: var(--bad); }
+
+  /* quote of the minute: idle and loading views */
+  .quote { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 14px; align-items: center; margin: 18px 0 0;
+           padding-top: 16px; border-top: 1px dashed var(--rule); }
+  .avatar { width: 56px; height: 56px; border-radius: var(--r-pill); object-fit: cover; object-position: center 22%;
+            background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; font: 600 17px var(--display); }
+  .quote blockquote { margin: 0; font-size: 15px; color: var(--ink); max-width: 70ch;
+                      display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .quote figcaption { margin-top: 3px; color: var(--ink-3); font: 12.5px var(--mono); }
+
+  /* memo (user mode answer) */
+  .memo { padding: 22px 24px; }
+  .memo-head { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 2px 14px;
+               font: 13px/1.6 var(--mono); color: var(--ink-2); padding-bottom: 14px; border-bottom: 2px solid var(--ink); }
+  .memo-head b { color: var(--ink-3); font-weight: 500; }
+  .memo-head .re { color: var(--ink); font-weight: 500; }
+  .answer { margin-top: 16px; font-size: 16px; max-width: 72ch; }
+  .answer p { margin: 0 0 10px; }
+  .answer ul { margin: 0 0 10px; padding-left: 20px; }
+  .answer li { margin-bottom: 4px; }
+
+  .cite { display: inline-block; font: 500 11.5px/1.7 var(--mono); padding: 0 7px; margin: 0 2px; border-radius: var(--r-pill);
+          background: var(--accent-soft); color: var(--accent); text-decoration: none; white-space: nowrap; vertical-align: 1px; }
+  .cite.memory { background: var(--amber-soft); color: var(--memo-amber); }
+  .cite.missing { background: var(--bad-soft); color: var(--bad); }
+
+  .row-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--rule); }
+  .row-actions .label { color: var(--ink-2); font-size: 14px; margin-right: 4px; }
+  .pill { border: 1px solid var(--rule); background: var(--sheet); border-radius: var(--r-pill); padding: 6px 14px; font-size: 14px;
+          display: inline-flex; align-items: center; gap: 6px; transition: transform .12s; }
+  .pill:active { transform: translateY(1px); }
+  .pill[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+  .pill.ghost { border-color: transparent; color: var(--accent); }
+  .saved { font-size: 13px; color: var(--good); }
+  .saved.fail { color: var(--bad); }
+  .push { margin-left: auto; }
+
+  /* dev mode: three cards */
+  .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+  .compare { margin-top: 18px; padding: 18px 20px; }
+  .compare h2 { font: 700 18px var(--display); margin: 0 0 4px; }
+  .compare .picks { display: flex; gap: 6px; flex-wrap: wrap; margin: 12px 0 14px; }
+  .compare .picks .pill { padding: 4px 12px; font-size: 13px; }
+  .compare .cards { margin-top: 4px; }
+  @media (max-width: 1040px) { .cards { grid-template-columns: 1fr; } }
+  .card { padding: 18px; display: flex; flex-direction: column; }
+  .card-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .card-head h3 { margin: 0; font: 700 18px var(--display); }
+  .card .desc { color: var(--ink-3); font-size: 12.5px; margin: 2px 0 12px; }
+  .card .answer { margin-top: 0; font-size: 15px; }
+  .card .vote { margin-top: auto; padding-top: 14px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .badge { font: 500 11.5px var(--mono); padding: 2px 9px; border-radius: var(--r-pill); white-space: nowrap; }
+  .badge.good { background: var(--good-soft); color: var(--good); }
+  .badge.warn { background: var(--amber-soft); color: var(--memo-amber); }
+  .badge.bad { background: var(--bad-soft); color: var(--bad); }
+  details.sub { margin-top: 12px; border-top: 1px solid var(--rule); padding-top: 8px; }
+  details.sub summary { cursor: pointer; color: var(--ink-2); font-size: 13px; }
+  .list { margin: 8px 0 0; padding: 0; list-style: none; display: grid; gap: 7px; font-size: 13.5px; }
+  .list li { display: grid; grid-template-columns: 18px minmax(0, 1fr); gap: 6px; }
+  .ok { color: var(--good); } .no { color: var(--bad); } .mem { color: var(--memo-amber); } .muted { color: var(--ink-3); }
+  .meta { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 4px 12px; color: var(--ink-3); font: 11.5px/1.5 var(--mono); }
+
+  .explain { padding: 14px 18px; color: var(--ink-2); font-size: 14px; }
+
+  /* header buttons, admin box */
+  .head-btn { height: 34px; margin-bottom: 6px; padding: 0 12px; border-radius: var(--r-pill); border: 1px solid var(--rule);
+              background: var(--sheet); color: var(--ink-2); display: inline-flex; align-items: center; gap: 6px; font-size: 13px; }
+  .head-btn[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+  .admin-box { padding: 12px 16px; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; font-size: 14px; color: var(--ink-2); }
+  .admin-box input { padding: 7px 10px; border: 1px solid var(--rule); border-radius: var(--r-control); background: var(--paper); width: 200px; }
+  .admin-box .msg { color: var(--bad); font-size: 13px; }
+
+  /* history: one question per item, loaded as you scroll */
+  .hist-intro { padding: 16px 18px; color: var(--ink-2); font-size: 14px; }
+  .hist-intro h2 { font: 700 20px var(--display); color: var(--ink); margin: 0 0 4px; }
+  .hist-item { padding: 18px; display: grid; gap: 14px; }
+  .hist-q { font: 700 19px var(--display); margin: 0; }
+  .hist-meta { display: flex; flex-wrap: wrap; gap: 4px 14px; color: var(--ink-3); font: 12px var(--mono); }
+  .hist-item .card { border-color: var(--rule); background: var(--paper); }
+  .fb-line { font-size: 13px; color: var(--ink-2); display: flex; gap: 14px; flex-wrap: wrap; }
+  .review { margin-top: auto; padding-top: 12px; border-top: 1px dashed var(--rule); display: grid; gap: 8px; }
+  .review .verdicts { display: flex; gap: 6px; flex-wrap: wrap; }
+  .review .pill { padding: 4px 11px; font-size: 13px; }
+  .review textarea { width: 100%; min-height: 54px; padding: 8px 10px; border: 1px solid var(--rule); border-radius: var(--r-control);
+                     background: var(--sheet); color: var(--ink); font: 13px var(--sans); resize: vertical; }
+  .review .row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .sentinel { padding: 20px; text-align: center; color: var(--ink-3); font: 13px var(--mono); }
+  .explain strong { color: var(--ink); }
+
+  /* sources: hits and passages as screenplay */
+  .sources { padding: 18px; }
+  .sources h2 { font: 700 18px var(--display); margin: 0 0 4px; }
+  .sources .sub-line { color: var(--ink-3); font: 12px var(--mono); margin-bottom: 10px; }
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; }
+  th, td { text-align: left; padding: 5px 10px 5px 0; border-bottom: 1px solid var(--rule); }
+  th { color: var(--ink-3); font-weight: 500; }
+  .passage { border: 1px solid var(--rule); border-radius: var(--r-control); margin-top: 10px; overflow: hidden; }
+  .passage > summary { cursor: pointer; padding: 10px 14px; font-weight: 600; display: flex; gap: 10px; flex-wrap: wrap; align-items: baseline; }
+  .passage > summary small { color: var(--ink-3); font: 12px var(--mono); }
+  .chunk { border-left: 3px solid transparent; padding: 4px 16px 6px 13px; }
+  .chunk.hit { border-left-color: var(--accent); background: var(--accent-soft); }
+  .chunk-label { font: 11px var(--mono); color: var(--ink-3); }
+  .scene { padding: 6px 0 4px; scroll-margin-top: 90px; border-radius: var(--r-control); }
+  .scene.flash { animation: flash 1.6s ease-out; }
+  @keyframes flash { from { background: var(--amber-soft); } to { background: transparent; } }
+  .scene-no { font: 600 11.5px var(--mono); color: var(--ink-3); letter-spacing: .6px; margin-bottom: 2px; }
+  .line { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 10px; font: 13px/1.55 var(--mono); padding: 1px 0; }
+  .who { color: var(--ink-2); font-weight: 500; font-size: 11.5px; text-transform: uppercase; letter-spacing: .5px; padding-top: 1px; overflow-wrap: anywhere; }
+  .dir { color: var(--ink-3); font-style: italic; }
+  @media (max-width: 640px) { .line { grid-template-columns: 1fr; gap: 0; } }
+
+  .sound { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 10;
+           width: 42px; height: 42px; border-radius: var(--r-pill); border: 1px solid var(--rule); background: var(--sheet);
+           color: var(--ink); display: grid; place-items: center; font-size: 19px; box-shadow: 0 2px 10px rgb(20 30 60 / .12); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .scene.flash { animation: none; outline: 2px solid var(--memo-amber); }
+    .primary, .pill { transition: none; }
+  }
+</style>
+</head>
+<body>
+<audio id="theme" src="/static/audio/office-theme.mp3" preload="auto"></audio>
+<button id="sound" class="sound" type="button" hidden aria-label="Mute music" title="Mute music"><i class="ph ph-speaker-high"></i></button>
+
+<main>
+  <div class="folder">
+  <header class="top">
+    <div class="brand">
+      <h1>Keleven <span class="tag">The Office</span></h1>
+      <p>No made-up numbers. Every answer shows the scene it came from.</p>
+    </div>
+    <div class="top-right">
+    <button class="head-btn" id="history-btn" type="button" aria-pressed="false"><i class="ph ph-clock-counter-clockwise"></i> History</button>
+    <button class="head-btn" id="admin-btn" type="button" aria-pressed="false"><i class="ph ph-lock"></i> Admin</button>
+    <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch to light mode"><i class="ph ph-sun"></i></button>
+    <div class="tabs" role="tablist" aria-label="View">
+      <button class="tab" role="tab" id="tab-user" data-mode="user" aria-selected="true">User</button>
+      <button class="tab" role="tab" id="tab-dev" data-mode="dev" aria-selected="false">Dev</button>
+    </div>
+    </div>
+  </header>
+
+  <form class="sheet ask" id="ask">
+    <div class="ask-row">
+      <input id="q" name="q" aria-label="Question" placeholder="Ask about any episode, scene or character" autocomplete="off" required>
+      <button id="go" class="primary" type="submit">Ask</button>
+    </div>
+    <div class="examples" id="examples"></div>
+    <div class="settings" id="settings" hidden>
+      <span class="versions" id="versions" role="group" aria-label="Pipeline version"></span>
+      <label for="k">Chunks <input id="k" type="number" min="1" max="20" value="8" disabled></label>
+      <label for="expand">Neighbours <input id="expand" type="number" min="0" max="3" value="1" disabled></label>
+      <span class="lock" id="lock-area"></span>
+    </div>
+  </form>
+  </div>
+
+  <div class="sheet admin-box" id="admin-box" hidden></div>
+
+  <div id="view-ask">
+    <div class="sheet explain" id="explain" hidden></div>
+    <section id="result" aria-live="polite"></section>
+    <section id="compare"></section>
+    <section id="sources-wrap"></section>
+  </div>
+
+  <div id="view-history" hidden>
+    <div class="sheet hist-intro"><h2>Questions asked so far</h2>
+      <div>Newest first, one question at a time as you scroll. Anyone can read this list.</div></div>
+    <div id="history-list" style="display:grid; gap:18px"></div>
+    <div class="sentinel" id="history-sentinel">Loading…</div>
+  </div>
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

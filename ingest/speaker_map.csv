@@ -1,0 +1,63 @@
+raw,speaker,status,note
+Micheal,Michael,ok,typo
+Michel,Michael,ok,typo
+Micahel,Michael,ok,typo
+Michae,Michael,ok,typo
+Mihael,Michael,ok,typo
+MIchael,Michael,ok,typo
+Michal,Michael,ok,typo
+Micael,Michael,ok,typo
+Miichael,Michael,ok,typo
+M ichael,Michael,ok,typo
+Daryl,Darryl,ok,typo
+Darrly,Darryl,ok,typo
+Darry,Darryl,ok,typo
+Dight,Dwight,ok,typo
+Dwight.,Dwight,ok,typo
+Dwight:,Dwight,ok,typo
+JIm,Jim,ok,typo
+Phylis,Phyllis,ok,typo
+Phyliss,Phyllis,ok,typo
+Meridith,Meredith,ok,typo
+Stanely,Stanley,ok,typo
+Anglea,Angela,ok,typo
+Angels,Angela,ok,typo
+abe,Gabe,ok,typo
+sAndy,Andy,ok,typo
+Deangelo,DeAngelo,ok,casing (DeAngelo Vickers)
+DeAgnelo,DeAngelo,ok,typo
+Denagelo,DeAngelo,ok,typo
+David Wallcve,David Wallace,ok,typo
+Dacvid Walalce,David Wallace,ok,typo
+Dacvid Wallace,David Wallace,ok,typo
+Senator Liptop,Senator Lipton,ok,typo
+Chares,Charles,ok,typo
+Carrol,Carroll,ok,typo
+Pam's mom,Pam's Mom,ok,casing
+A.J.,AJ,ok,same character
+Walt Jr.,Walter Jr,ok,same character
+Ryan Howard,Ryan,ok,full name
+Nellie Bertram,Nellie,ok,full name
+Jo Bennett,Jo,ok,full name
+Cousin Mose,Mose,ok,full name
+Carol Stills,Carol,ok,full name
+"Bob Vance, Vance Refrigeration",Bob Vance,ok,full name
+David,David Wallace,review,"382 lines; almost certainly Wallace, but David Brent also appears once as ""David Brent"""
+Robert California,Robert,review,"""Robert"" (430) is Robert California; keep Robert Dunder separate"
+Todd Packer,Packer,review,"pick one canonical: Packer (55) / Todd Packer (74) / Todd (40, check it's Packer)"
+Todd,Packer,review,check all 40 lines are Todd Packer
+Molly,Holly,review,could be a real minor character
+Holy,Holly,review,likely typo
+Joan,Jan,review,check context
+Bert,,review,unknown; check which character
+Diane Kelly,,review,not Kelly Kapoor? check context
+Rolph,Rolf,review,same character?
+Isabelle,Isabel,review,same character?
+Lonnie,Lonny,review,same character?
+Glen,Glenn,review,same character?
+(Pam's mom) Heleen,Pam's Mom,review,Helene Beesly; also consider merging Helene -> Pam's Mom
+Mee-Maw,Mema,review,same character?
+MeeMaw,Mema,review,same character?
+Sensei Ira,Ira,review,same character?
+Hank the Security Guard,Hank,review,same character?
+Phil Maguire,Phil,review,same character?
