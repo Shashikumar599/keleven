@@ -1,0 +1,55 @@
+{
+ "question_id": "q074",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Corrects the premise: anonymous sperm donor, Kevin's paternity a comic coincidence, never confirmed. Minor flaw: places Kevin's realization in Goodbye, Toby, but in S4E14 sc.62-64 Kevin says nothing about donating; that is S5E3 sc.43, and 'regularly donates' overstates it.",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 6,
+     "reader": 8
+    },
+    "calibration": "ok",
+    "premise_true": false,
+    "outcome": "corrected"
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Not confirmed; Jan used a sperm bank next to the IHOP (S4E14 sc.64), Kevin donated (S5E3 sc.43), Jan denies (sc.44); quotes exact. Slight overreach in calling it 'the same place' (Kevin only asks 'Next to the IHOP?') and no plain 'No' up front.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 9,
+     "reader": 9
+    },
+    "premise_true": false,
+    "outcome": "corrected"
+   }
+  },
+  "C": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Same correct, well-cited correction as B, with 'father never confirmed' properly labelled [memory]. Same slight overreach on 'the sperm bank next to the IHOP' as a confirmed match.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 9,
+     "reader": 9
+    },
+    "premise_true": false,
+    "outcome": "corrected"
+   }
+  }
+ }
+}

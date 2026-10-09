@@ -1,0 +1,38 @@
+{
+ "question_id": "q049",
+ "reference": "Before. Dwight says he is 'about to buy this building' in 'Whistleblower' (S6E24) and owns it from the start of Season 7 ('Nepotism', S7E1: 'Dwight bought the building' over the summer); Michael leaves Scranton later, in 'Goodbye, Michael' (S7E21).",
+ "evidence": [
+  {
+   "scene": "S6E24 sc.39",
+   "line": "Dwight: I'm about to buy this building, you know."
+  },
+  {
+   "scene": "S7E1 sc.16",
+   "line": "Jim: What happened to me this summer? Dwight bought the building, so actually, this has been the busiest summer of my life."
+  },
+  {
+   "scene": "S7E1 sc.8",
+   "line": "Dwight: ... Add to that list owner of this building."
+  },
+  {
+   "scene": "S7E21 sc.1",
+   "line": "Michael: Well, I'm moving to Colorado to start my new life with Holly."
+  }
+ ],
+ "sources": [
+  "S6E24 sc.39",
+  "S7E1 sc.8",
+  "S7E1 sc.16",
+  "S7E21"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "The purchase itself happens off-screen between seasons 6 and 7.",
+ "accepted_alternatives": [],
+ "question": "Did Dwight buy the office building before or after Michael left Scranton?",
+ "category": "order",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

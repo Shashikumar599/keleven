@@ -1,0 +1,30 @@
+{
+ "question_id": "q037",
+ "reference": "Night Out (S4E11 combined; split S4E15): Pam throws the football (Toby had offered to teach her to throw; Andy calls 'go long') and it hits Meredith in the face, while the group is locked in the office at night.",
+ "evidence": [
+  {
+   "scene": "S4E11 sc.30",
+   "line": "Toby: Hey, look what I found in the back. [shows a football to Pam] Wanna play? Teach you to throw."
+  },
+  {
+   "scene": "S4E11 sc.30",
+   "line": "Andy: Yeah, Pam! Hit me up! Go long. Woo! [Pam throws football, hits Meredith's face]"
+  },
+  {
+   "scene": "S4E11 sc.30",
+   "line": "Meredith: Owww!"
+  }
+ ],
+ "sources": [
+  "S4E11 sc.30"
+ ],
+ "premise_true": true,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "The hit is known only from a stage direction (visual moment). Toby found the ball and Andy was the intended receiver; the thrower is Pam. Only football-hits-Meredith moment in the transcripts.",
+ "question": "In which episode does Meredith get hit in the face with a football, and who threw it?",
+ "category": "which_episode",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

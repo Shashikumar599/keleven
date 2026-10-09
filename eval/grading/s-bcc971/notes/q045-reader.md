@@ -1,0 +1,4 @@
+q045 reader
+A 9: Lists the five main women (Jan, Carol, Helene, Donna, Holly) up front, then separates brief dates (Julie, Marie) and flags the "what counts as dating" ambiguity. Matches reference core fully. Clear and well organized.
+B 3: Misses Carol and Holly's S7 relationship depth, and lists Tara as one of the women Michael dates although it admits the story was a ploy (S7E11 sc.47-48: "Know who gave me this? My girlfriend Tara"; reference: Tara is an invented girlfriend, do not count). Takes a boast at face value. Hedge that list is incomplete is honest but the user gets 4 of 5 core.
+C 7: Gets all five core women plus Margaret, Marie, Julie as brief dates (Margaret: S4E10 sc.28-30 blind date, she collects rent checks so "landlady" is plausible). Correctly treats Tara as a fictional girlfriend. Slightly cluttered by memory labels but complete.

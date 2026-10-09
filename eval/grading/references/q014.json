@@ -1,0 +1,26 @@
+{
+ "question_id": "q014",
+ "reference": "$4,300: Oscar tells Michael they have a surplus of $4300 that must be spent by the end of the day or it will be deducted from next year's budget (The Surplus, S5E9).",
+ "evidence": [
+  {
+   "scene": "S5E9 sc.1",
+   "line": "Oscar: You can see clearly on this page that we have a surplus of $4300."
+  },
+  {
+   "scene": "S5E9 sc.1",
+   "line": "Oscar: We have to spend that $4300 by the end of the day or it'll be deducted from next year's budget."
+  }
+ ],
+ "sources": [
+  "S5E9 sc.1"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "$645 is Michael's 15% bonus if he returns the surplus, not the surplus itself.",
+ "question": "How much surplus money does Oscar say the office has to spend by the end of the day?",
+ "category": "detail",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

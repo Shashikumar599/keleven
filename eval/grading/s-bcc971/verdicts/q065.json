@@ -1,0 +1,79 @@
+{
+ "question_id": "q065",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Both parts right and in order: smashes Nellie's photo on the ground, then punches a hole in the wall (S8E21 sc.41).",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    },
+    "parts": [
+     {
+      "part": "photo",
+      "ok": true
+     },
+     {
+      "part": "wall",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "B": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Same as A, correctly cited to S8E21 sc.41.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    },
+    "parts": [
+     {
+      "part": "photo",
+      "ok": true
+     },
+     {
+      "part": "wall",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "C": {
+   "score": 5,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Wall punch right, but merges the acts: says he punched through the framed photo, whereas S8E21 sc.41 has him smash the photo on the ground and then punch the wall separately.",
+   "details": {
+    "lens_scores": {
+     "fact": 4,
+     "faithfulness": 2,
+     "reader": 4
+    },
+    "calibration": "overconfident",
+    "parts": [
+     {
+      "part": "photo",
+      "ok": false
+     },
+     {
+      "part": "wall",
+      "ok": true
+     }
+    ]
+   }
+  }
+ }
+}

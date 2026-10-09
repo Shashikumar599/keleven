@@ -1,0 +1,49 @@
+{
+ "question_id": "q061",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 6,
+   "verdict": "partial",
+   "grounded": "yes",
+   "failure_type": "incomplete",
+   "notes": "Michael, Dwight, Jim right; says Pam's costume isn't stated (sc.1 with the cat costume was not sent).",
+   "details": {
+    "lens_scores": {
+     "fact": 6,
+     "faithfulness": 8,
+     "reader": 6
+    }
+   }
+  },
+  "B": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "All four right; adds unsupported 'Emperor Palpatine' for Dwight.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 6,
+     "reader": 9
+    },
+    "calibration": "ok"
+   }
+  },
+  "C": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "All four right (Pam cat marked memory); small embellishments beyond sc.4 ('cloak', 'black' paper).",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 7,
+     "reader": 10
+    }
+   }
+  }
+ }
+}

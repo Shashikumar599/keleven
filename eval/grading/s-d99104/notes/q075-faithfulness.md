@@ -1,0 +1,3 @@
+A 8: memory; presents both readings (viewer fan favorite vs in-universe), counterpoint given, hedged. Claims (blackmailing Angela, thief) are true in the show (S5E10 sc.8, S2E22 sc.30); "possible murderer" is Creed jokes, loosely worded.
+B 9: quotes exact and from sent scenes (S9E23 sc.10/11, S5E25 sc.36 Phyllis giggle with Dwight, S2E21 sc.29, S8E20 sc.19 Creed, S3E2 sc.9, S9E23 sc.9). Memory claims (blackmail, knits, framed QA worker) are labelled. Tiny: "crudely gossips" for the Pete line is an editorial gloss.
+C 9: exact quotes; "faking his own death" is in S9E23 sc.9; "parking dispute" is right (S2E21 sc.29). Slight stretch: Creed "participates gamely" cited to Michael thanking him (S5E25 sc.35). "fugitive" is inference from police showing up.

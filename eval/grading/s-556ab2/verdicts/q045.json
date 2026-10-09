@@ -1,0 +1,90 @@
+{
+ "question_id": "q045",
+ "method": "single",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "All five core women (Jan, Carol, Holly, Helene, Donna) plus valid minor ones: Margaret (S4E10 set-up), Julie (Happy Hour S6E19), and Marie. Cited claims are supported, and the memory claims are marked. Small overreach: 'Pam's landlady' (sc.33 only says 'the land lady'), and Holly's marriage is not shown on screen.",
+   "details": {
+    "reference_items": [
+     "Jan",
+     "Carol",
+     "Holly",
+     "Helene",
+     "Donna"
+    ],
+    "found": [
+     "Jan",
+     "Carol",
+     "Holly",
+     "Helene",
+     "Donna",
+     "Margaret (minor)",
+     "Julie (minor)",
+     "Marie (minor)"
+    ],
+    "missed": [],
+    "invented": []
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "All five core women plus Julie and Marie, nothing invented. Slip: Donna starts in Body Language (S6E21), not Happy Hour.",
+   "details": {
+    "reference_items": [
+     "Jan",
+     "Carol",
+     "Holly",
+     "Helene",
+     "Donna"
+    ],
+    "found": [
+     "Jan",
+     "Carol",
+     "Holly",
+     "Helene",
+     "Donna",
+     "Julie (minor)",
+     "Marie (minor)"
+    ],
+    "missed": [],
+    "invented": [],
+    "calibration": "ok"
+   }
+  },
+  "C": {
+   "score": 6,
+   "verdict": "partial",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Jan, Holly, Pam's mom (Helene) and Margaret are all supported by the passages; Carol and Donna are missing because they were not in the sent scenes. It also mentions Michael's unverified 'European girlfriend' (S6E4 sc.56), but only as something he says.",
+   "details": {
+    "reference_items": [
+     "Jan",
+     "Carol",
+     "Holly",
+     "Helene",
+     "Donna"
+    ],
+    "found": [
+     "Jan",
+     "Holly",
+     "Helene",
+     "Margaret (minor)",
+     "unnamed date (minor)"
+    ],
+    "missed": [
+     "Carol",
+     "Donna"
+    ],
+    "invented": []
+   }
+  }
+ }
+}

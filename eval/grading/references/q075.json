@@ -1,0 +1,61 @@
+{
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "caveats": "Opinion question. Readings to avoid: taking Creed's wild talking heads as harmless jokes when several are confirmed in plot (Debbie Brown, Finale police); or calling Phyllis purely sweet (the blackmail arc is real). 'Likeable to viewers' (Creed as a comedic favorite) vs 'likeable as a person' are both fair readings if the answer says which it means.",
+ "question_id": "q075",
+ "reference": "Judgment, no single answer. Phyllis is the safer 'more likeable' pick: warm and motherly in most scenes (Bob Vance, knitting, kind moments) but with a petty streak (blackmailing Angela over the Dwight affair to run the Party Planning Committee, S5E10; 'Close your mouth, sweetie. You look like a trout', S5E24). Creed is funnier and a fan favorite, but on the show he is a thief, a con man and a criminal: he steals constantly, runs a fake ID business, faked his own death, framed Debbie Brown so she was fired (S3E20), and in the Finale is revealed as wanted by police for drug dealing and other crimes. Either answer is fine if argued from the show.",
+ "evidence": [
+  {
+   "scene": "S2E22 sc.30",
+   "line": "Creed: Oh, I steal things all the time. It's just something I do."
+  },
+  {
+   "scene": "S3E20 sc.75",
+   "line": "Dwight: Floor manager Debbie Brown has officially been terminated. Lets give a big hand to Creed Bratton..."
+  },
+  {
+   "scene": "S3E20 sc.53",
+   "line": "Creed: About 10 years ago, for tax reasons, I faked my own death."
+  },
+  {
+   "scene": "S9E23 sc.9",
+   "line": "Dwight: ... the police say he sold drugs and trafficked in endangered species meat and stole weapons-grade LSD from the military."
+  },
+  {
+   "scene": "S9E23 sc.112",
+   "line": "Creed: ... human beings have this miraculous gift to... (sincere farewell song and speech)"
+  },
+  {
+   "scene": "S5E10 sc.8",
+   "line": "Phyllis: Oh, I don't think it's blackmail. Angela just does what I ask her to do so I won't tell everyone that she's cheating on Andy with Dwight."
+  },
+  {
+   "scene": "S5E24 sc.7",
+   "line": "Phyllis: Close your mouth, sweetie. You look like a trout."
+  },
+  {
+   "scene": "S6E7 sc.31",
+   "line": "Phyllis: Michael. You know, when you think about it, it's not all your fault. I mean, who puts a Koi pond in a lobby?"
+  }
+ ],
+ "sources": [
+  "S2E22 sc.30",
+  "S3E17 sc.33",
+  "S3E20 sc.14",
+  "S3E20 sc.53",
+  "S3E20 sc.75",
+  "S9E23 sc.9",
+  "S9E23 sc.112",
+  "S5E10 sc.8",
+  "S5E10 sc.46",
+  "S5E3 sc.10",
+  "S5E24 sc.7",
+  "S6E7 sc.31"
+ ],
+ "confidence": "medium",
+ "question": "Who is more likeable, Creed or Phyllis?",
+ "category": "opinion",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

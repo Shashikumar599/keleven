@@ -1,0 +1,41 @@
+{
+ "question_id": "q044",
+ "reference": "Season 2 (mostly the episode 'The Dundies', S2E1): 30 spoken lines mention the Dundies (38 mentions), just ahead of Season 7 (27 lines, almost all in 'Michael's Last Dundies', S7E20). Other seasons are far behind (S4: 6, S1: 2, S6: 1).",
+ "evidence": [
+  {
+   "scene": "S2E1 sc.1",
+   "line": "Michael: Tonight is the Dundies, the annual employee awards night here at Dunder Mifflin."
+  },
+  {
+   "scene": "S2E1 sc.45",
+   "line": "Pam and Jim: Dundies! Dundies! Dundies! Dundies!"
+  },
+  {
+   "scene": "S7E20 sc.8",
+   "line": "Michael: So as you know, the Dundies are my legacy. So I'm going to need to train a replacement."
+  },
+  {
+   "scene": "S7E20 sc.25",
+   "line": "Michael: So that is how it ends. My last Dundies ever."
+  }
+ ],
+ "sources": [
+  "S2E1",
+  "S7E20"
+ ],
+ "premise_true": null,
+ "count": {
+  "truth": 2,
+  "what_counted": "season with the most lines whose dialogue matches 'dundie'/'dundy' (excludes 'Dunder Mifflin'): S2 30 lines (38 occurrences), S7 27 lines (27 occurrences), S4 6, S1 2, S6 1. The truth value is the season number (2).",
+  "sql": "SELECT season, count(*), sum((SELECT count(*) FROM regexp_matches(dialogue,'dund(ie|y)','gi'))) FROM lines WHERE dialogue ~* 'dund(ie|y)' GROUP BY 1 ORDER BY 2 DESC"
+ },
+ "list_items": null,
+ "accepted_alternatives": [],
+ "confidence": "medium",
+ "caveats": "Close race. Spoken dialogue: S2 30 lines vs S7 27. If stage directions are counted too (lines_full text or directions), S2 30 vs S7 30, a tie (S7 has 5 directions mentioning a Dundie, incl. S7E21 sc.10). Season 2 is the answer by spoken mentions; an answer of Season 7 with a stated reasoning (e.g. counting episodes/directions, or Michael's Last Dundies) should be treated as close (partial), not right. Answers that cite only the two Dundies episodes without counting are fine if they pick S2.",
+ "question": "In which season are the Dundies mentioned most?",
+ "category": "count",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": true,
+ "owner_note": "Owner (2026-10-07): should be correct; go with the transcripts (Season 2)."
+}

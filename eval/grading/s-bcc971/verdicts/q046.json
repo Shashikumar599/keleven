@@ -1,0 +1,117 @@
+{
+ "question_id": "q046",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "All core managers (Michael, Jim co-manager, DeAngelo, Dwight acting and permanent, Andy, Nellie) plus Creed, Robert California and Ed Truck, memory claims labelled; but Andy's reinstatement is not mentioned and it calls the list 'exact and comprehensive', which overclaims.",
+   "details": {
+    "reference_items": [
+     "Michael Scott",
+     "Jim Halpert (co-manager)",
+     "DeAngelo Vickers",
+     "Dwight (acting, S7)",
+     "Andy Bernard",
+     "Nellie Bertram",
+     "Dwight (permanent, S9)"
+    ],
+    "found": [
+     "Michael Scott",
+     "Jim Halpert (co-manager)",
+     "DeAngelo Vickers",
+     "Dwight (acting, S7)",
+     "Andy Bernard",
+     "Nellie Bertram",
+     "Dwight (permanent, S9)",
+     "Creed (optional)",
+     "Robert California (optional)",
+     "Ed Truck (pre-series)"
+    ],
+    "missed": [],
+    "invented": [],
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 6,
+     "reader": 6
+    }
+   }
+  },
+  "B": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "All core managers plus optional Creed, Robert, Ed Truck, Jim's day in charge; Dwight 'acting manager' in The Job is a stretch (he only assumes he is boss, S3E23 sc.18-19) and Charles Miner was a VP, not branch manager (S5E18), but both are worded loosely, not false. Overconfident 'exact', no uncertainty.",
+   "details": {
+    "reference_items": [
+     "Michael Scott",
+     "Jim Halpert (co-manager)",
+     "DeAngelo Vickers",
+     "Dwight (acting, S7)",
+     "Andy Bernard",
+     "Nellie Bertram",
+     "Dwight (permanent, S9)"
+    ],
+    "found": [
+     "Michael Scott",
+     "Jim Halpert (co-manager)",
+     "DeAngelo Vickers",
+     "Dwight (acting, S7)",
+     "Andy Bernard",
+     "Nellie Bertram",
+     "Dwight (permanent, S9)",
+     "Creed (optional)",
+     "Robert California (optional)",
+     "Charles Miner (optional)",
+     "Ed Truck (pre-series)"
+    ],
+    "missed": [],
+    "invented": [],
+    "calibration": "overconfident",
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 3,
+     "reader": 7
+    }
+   }
+  },
+  "C": {
+   "score": 3,
+   "verdict": "wrong",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Only Michael, Jim (co-manager) and Dwight (acting), 3 of 7 core; all claims are supported by its passages (Michael co-manager too, S6E2 sc.32), and it says the list may be incomplete.",
+   "details": {
+    "reference_items": [
+     "Michael Scott",
+     "Jim Halpert (co-manager)",
+     "DeAngelo Vickers",
+     "Dwight (acting, S7)",
+     "Andy Bernard",
+     "Nellie Bertram",
+     "Dwight (permanent, S9)"
+    ],
+    "found": [
+     "Michael Scott",
+     "Jim Halpert (co-manager)",
+     "Dwight (acting, S7)"
+    ],
+    "missed": [
+     "DeAngelo Vickers",
+     "Andy Bernard",
+     "Nellie Bertram",
+     "Dwight (permanent, S9)"
+    ],
+    "invented": [],
+    "lens_scores": {
+     "fact": 3,
+     "faithfulness": 9,
+     "reader": 3
+    }
+   }
+  }
+ }
+}

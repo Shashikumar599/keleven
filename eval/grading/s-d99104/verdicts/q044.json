@@ -1,0 +1,49 @@
+{
+ "question_id": "q044",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 2,
+   "verdict": "refused",
+   "grounded": "n/a",
+   "failure_type": "incomplete",
+   "notes": "Says it does not know; names S2 and S7 as candidates but picks none (also gives Michael's Last Dundies as S7E21; it is S7E20).",
+   "details": {
+    "lens_scores": {
+     "fact": 4,
+     "faithfulness": 9,
+     "reader": 4
+    },
+    "calibration": "ok"
+   }
+  },
+  "B": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "Picks Season 2 (dataset: S2 30 lines vs S7 27), hedged as close; choice rests on memory, labelled. Minor slip: S7E21 for S7E20.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 8,
+     "reader": 8
+    }
+   }
+  },
+  "C": {
+   "score": 2,
+   "verdict": "refused",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Only S2E1 scenes were sent; honest that the cross-season question cannot be settled, gives no answer.",
+   "details": {
+    "lens_scores": {
+     "fact": 3,
+     "faithfulness": 8,
+     "reader": 3
+    }
+   }
+  }
+ }
+}

@@ -9,6 +9,7 @@ Run the question set through the pipeline as one Gemini batch job.
     python -m eval.run status  --label ...                         job state
     python -m eval.run collect --label ...                         fetch answers, check citations, log, write JSONL
     python -m eval.run rerun   --label ...                         re-answer failed answers as single online calls
+    python -m eval.run online  --label ... --only qNNN             answer questions missing from a run, online
 
 A batch job runs asynchronously on Google's side, so the steps share state through files in
 eval/runs/<label>/ (retrieval.jsonl, job.json). They hold chunk ids and hashes only, never transcript text: prompts are
@@ -300,9 +301,42 @@ def rerun(args):
     print(f"updated {path}")
 
 
+def online(args):
+    """Answer questions missing from a label's run with single online calls (e.g. a question added after the
+    batch). Retrieval must already be prepared; stored memory answers are reused. Appends to <label>.jsonl."""
+    from generation.answer import answer
+    from generation.llm import get_llm
+    path = EVAL / "runs" / f"{args.label}.jsonl"
+    rows = read_jsonl(path)
+    have = {r["question_id"] for r in rows}
+    recs = {r["question_id"]: r for r in read_jsonl(run_dir(args.label) / "retrieval.jsonl")}
+    version = label_version(args.label)
+    questions = [q for q in load_questions(args.only) if q["id"] not in have]
+    llm = get_llm()
+    for q in questions:
+        if q["id"] not in recs:
+            sys.exit(f"no retrieval for {q['id']}: run prepare --only {q['id']} first")
+        r = rebuild(recs[q["id"]])
+        answers = {}
+        for s in SYSTEMS:
+            reused = stored_memory(q["question"], prompt_file("llm", version)) if s == "llm" else None
+            answers[s] = reused or answer(q["question"], s, retrieval=r, llm=llm, version=version)
+            answers[s].setdefault("error", None if answers[s].get("data") is not None else "invalid output")
+            if s != "llm" and answers[s].get("data"):
+                answers[s]["check"] = check_citations(answers[s]["data"], r)
+        run_id = log_run(r, answers, source="eval", mode="dev", question_id=q["id"], eval_label=args.label)
+        rows.append({"question_id": q["id"], "category": q.get("category"), "question": r.question, "run_id": run_id,
+                     "hits": recs[q["id"]]["hits"], "sent_chunk_ids": recs[q["id"]]["sent_chunk_ids"], "online": True,
+                     "answers": {s: {k: a.get(k) for k in ("data", "raw", "error", "check", "llm", "reused_from_run")}
+                                 for s, a in answers.items()}})
+        print(f"  {q['id']}: " + ", ".join(f"{s} {'reused' if a.get('reused_from_run') else 'ok' if a.get('data') else 'FAILED'}"
+                                          for s, a in answers.items()) + f"  (run {run_id})")
+    path.write_text("".join(json.dumps(o, ensure_ascii=False) + "\n" for o in rows))
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("step", choices=["prepare", "plan", "submit", "status", "collect", "rerun"])
+    ap.add_argument("step", choices=["prepare", "plan", "submit", "status", "collect", "rerun", "online"])
     ap.add_argument("--label", required=True, help="run name, e.g. 2026-10-04-v1-baseline")
     ap.add_argument("--only", type=lambda s: set(s.split(",")), help="question ids, e.g. q017,q023")
     ap.add_argument("--version", default=CURRENT_VERSION, choices=["v1", "v2"], help="prepare: pipeline version")
@@ -312,7 +346,7 @@ def main():
                     help="rerun: these answers even without an error, e.g. q017:llm,q019:llm")
     ap.add_argument("--force", action="store_true", help="submit again although a job exists for this label")
     args = ap.parse_args()
-    {"prepare": prepare, "plan": plan, "submit": submit, "status": status, "collect": collect, "rerun": rerun}[args.step](args)
+    {"prepare": prepare, "plan": plan, "submit": submit, "status": status, "collect": collect, "rerun": rerun, "online": online}[args.step](args)
 
 
 if __name__ == "__main__":

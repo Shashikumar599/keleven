@@ -1,0 +1,49 @@
+{
+ "question_id": "q047",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Before; correct logic (house in S5, wedding at Niagara S6). Episode number slip only.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 9,
+     "reader": 9
+    },
+    "calibration": "ok"
+   }
+  },
+  "B": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Before; S5E6 sc.18 and S5E8 quotes exact, wedding timing labelled [memory].",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 10,
+     "reader": 10
+    }
+   }
+  },
+  "C": {
+   "score": 2,
+   "verdict": "refused",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Honest: the wedding date was not in the scenes sent; gives no before/after.",
+   "details": {
+    "lens_scores": {
+     "fact": 2,
+     "faithfulness": 8,
+     "reader": 3
+    }
+   }
+  }
+ }
+}

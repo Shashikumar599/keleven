@@ -1,0 +1,57 @@
+{
+ "question_id": "q078",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 6,
+   "verdict": "partial",
+   "grounded": "yes",
+   "failure_type": "incomplete",
+   "notes": "Breakup, empty desk, Utica and Stanley poaching are right and cited, but never says she became Utica regional manager or later marriage to Dan and pregnancy.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 8,
+     "reader": 5
+    },
+    "main_cause_ok": true,
+    "wrong_claims": []
+   }
+  },
+  "B": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Full arc: breakup, Utica manager, Dan, pregnancy; episode numbers wrong (Branch Wars is S4E6 here) and visit details loose.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 8,
+     "reader": 8
+    },
+    "main_cause_ok": true,
+    "wrong_claims": [
+     "episode numbers"
+    ],
+    "calibration": "ok"
+   }
+  },
+  "C": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Breakup, left Scranton, Utica manager, Dan and pregnancy; memory labelled, cites exact.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 9,
+     "reader": 8
+    },
+    "main_cause_ok": true,
+    "wrong_claims": []
+   }
+  }
+ }
+}

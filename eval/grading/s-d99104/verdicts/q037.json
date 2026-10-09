@@ -1,0 +1,51 @@
+{
+ "question_id": "q037",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 0,
+   "verdict": "wrong",
+   "grounded": "n/a",
+   "failure_type": "premise_over_rejected",
+   "notes": "Rejects a true premise (S4E11 sc.30: Pam throws the football, hits Meredith's face) and substitutes a Phyllis/soccer-ball story.",
+   "details": {
+    "lens_scores": {
+     "fact": 0,
+     "faithfulness": 1,
+     "reader": 0
+    },
+    "calibration": "overconfident",
+    "premise_true": true,
+    "outcome": "over_rejected"
+   }
+  },
+  "B": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Night Out S4E11, Pam threw it, with Toby/Andy context, all from sc.30.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 9,
+     "reader": 10
+    }
+   }
+  },
+  "C": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Night Out S4E11, Pam, cited to sc.30.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 9,
+     "reader": 9
+    }
+   }
+  }
+ }
+}

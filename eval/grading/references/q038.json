@@ -1,0 +1,22 @@
+{
+ "question_id": "q038",
+ "reference": "Casual Friday (S5E24 here; split S5E26), cold open. Kevin's trick: 'undercook the onions' so 'everybody is going to get to know each other in the pot' (he also presses garlic, dices whole tomatoes, toasts his own ancho chilies the night before).",
+ "evidence": [
+  {
+   "scene": "S5E24 sc.1",
+   "line": "Kevin: At least once a year, I like to bring in some of my Kevin's Famous Chili. The trick is to undercook the onions. Everybody is going to get to know each other in the pot. ... I toast my own Ancho chilies. It's a recipe passed down from Malone's for generations."
+  }
+ ],
+ "sources": [
+  "S5E24 sc.1"
+ ],
+ "premise_true": true,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "Kevin spilling the pot on the carpet is visual only and not described in this transcript. Episode numbering differs by source (S5E24 combined here, S5E26 split); title 'Casual Friday' is the safe check.",
+ "question": "In which episode does Kevin bring in his famous chili, and what is his trick for making it?",
+ "category": "which_episode",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

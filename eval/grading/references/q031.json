@@ -1,0 +1,26 @@
+{
+ "question_id": "q031",
+ "reference": "Michael says it, to and about Toby, in Casino Night (S2E22), after Toby says it isn't appropriate to invite Boy Scouts (children) to a gambling/alcohol event catered by Hooters.",
+ "evidence": [
+  {
+   "scene": "S2E22 sc.11",
+   "line": "Toby: Actually, I didn't think it was appropriate to invite children since it's... You know, there's gambling and alcohol..."
+  },
+  {
+   "scene": "S2E22 sc.11",
+   "line": "Michael: Why are you the way that you are? Honestly, every time I try to do something fun or exciting, you make it not... that way. I hate so much about the things that you choose to be."
+  }
+ ],
+ "sources": [
+  "S2E22 sc.11"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "Only occurrence of the phrase in the transcripts. The line is addressed to Toby directly (not said behind his back).",
+ "question": "Who says \"Why are you the way that you are?\", and about whom?",
+ "category": "who_said",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

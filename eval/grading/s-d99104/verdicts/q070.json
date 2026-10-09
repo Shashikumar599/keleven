@@ -1,0 +1,79 @@
+{
+ "question_id": "q070",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": "claim_beyond_evidence",
+   "notes": "Hunter is a plausible short-run, high-impact pick (his CD drives Jan at the Dinner Party, S4E9 sc.8,19) with Prince Family as counterpoint, but the impact is mostly memory and the Prince-to-MSPC link is a stretch. (Rubric total 8; adjusted from 7 after the score bands were aligned.)",
+   "details": {
+    "lens_scores": {
+     "fact": 6,
+     "faithfulness": 6,
+     "reader": 5
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 1,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 8,
+    "adjusted": {
+     "from_score": 7,
+     "from_verdict": "partial",
+     "from_support": 0,
+     "why": "rubric total 8 was lowered by 1 to fit a score band mismatch (fixed in rubrics.md); restored 2026-10-06"
+    }
+   }
+  },
+  "B": {
+   "score": 6,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Whole Captain Jack case rests on a misattributed line: 'BFD. Engaged ain't married. Never, ever, ever give up' is Michael's (S2E11 sc.37), not the Captain's. Ed Truck part is right.",
+   "details": {
+    "lens_scores": {
+     "fact": 2,
+     "faithfulness": 1,
+     "reader": 7
+    },
+    "calibration": "overconfident",
+    "scores": {
+     "position": 2,
+     "support": 0,
+     "reading": 0,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 6
+   }
+  },
+  "C": {
+   "score": 6,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "claim_beyond_evidence",
+   "notes": "Picks Mose (background gag) and the pretzel vendor, neither with real impact; quotes exact; chair model is not a short appearance. Misses Charles/Brian/DeAngelo.",
+   "details": {
+    "lens_scores": {
+     "fact": 6,
+     "faithfulness": 6,
+     "reader": 4
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 0,
+     "counterpoint": 1,
+     "scope": 2
+    },
+    "total": 6
+   }
+  }
+ }
+}

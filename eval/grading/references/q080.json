@@ -1,0 +1,48 @@
+{
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "caveats": "Opinion question with no fact core. Readings to avoid: taking Michael's insults of Toby as an objective verdict (they are Michael's bias, which is itself a joke), or Jim's/Pam's self-deprecation about their jobs as calling themselves boring people. Whether Toby counts as a 'main' character is debatable (he is in the main cast from early on). An answer should take a position and give reasons from the show.",
+ "question_id": "q080",
+ "reference": "Judgment, no single answer. Best-supported: Toby, whom the show itself frames as boring: Michael says everyone will 'vomit due to boredom' at his safety talk (S3E19), 'we're gonna die of boredom' at his radon talk (S6E23), and jokes about 'the boring police' (S7E11). Other defensible picks: Stanley (deliberately disengaged), Pam (calls her own job 'the most boring job in the office', S3E22, and 'I love my boring life', S9E1), Jim as the 'straight man' (but he is the main prankster), Gabe, Oscar, Pete and Clark (S9). Note Toby and Gabe are main-cast-adjacent; if 'main' means original core cast, Stanley or Pam are the usual candidates.",
+ "evidence": [
+  {
+   "scene": "S3E19 sc.12",
+   "line": "Michael: Ok, you know what? I think that everybody is going to vomit due to boredom. [to warehouse guys] Sorry, he is very lame."
+  },
+  {
+   "scene": "S6E23 sc.3",
+   "line": "Michael: You know what? We're not gonna die of radon, we're gonna die of boredom."
+  },
+  {
+   "scene": "S7E11 sc.15",
+   "line": "Michael: Uh, because you've been on the Lam? Because the 'boring police' have been after you, and they finally caught up with you?"
+  },
+  {
+   "scene": "S3E22 sc.13",
+   "line": "Pam: I have the most boring job in the office, so... why wouldn't I have the most boring job on beach day?"
+  },
+  {
+   "scene": "S9E1 sc.44",
+   "line": "Dwight: Come on, this will be the only thrill of your boring life. / Pam: Dwight, you may find this hard to believe, but I love my boring life."
+  },
+  {
+   "scene": "S1E1 sc.6",
+   "line": "Jim: ... And... I'm boring myself just talking about this. (about his job)"
+  }
+ ],
+ "sources": [
+  "S3E19 sc.12",
+  "S6E23 sc.3",
+  "S7E11 sc.15",
+  "S3E22 sc.13",
+  "S9E1 sc.44",
+  "S1E1 sc.6"
+ ],
+ "confidence": "low",
+ "question": "Who is the most boring main character in The Office?",
+ "category": "opinion",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": true,
+ "owner_note": "Owner confirmed (2026-10-06): reference is correct; Toby is the universally accepted boring character."
+}

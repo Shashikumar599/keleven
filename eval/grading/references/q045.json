@@ -1,0 +1,117 @@
+{
+ "question_id": "q045",
+ "reference": "Main women Michael dates on screen: Jan Levinson (on and off S2-S4), Carol Stills (realtor, S2E22-S3E10), Holly Flax (S4E14/S5, then S7; engaged S7E18), Helene Beesly (Pam's mother, S6E6-S6E8), and Donna Newton (Sid & Dexter's manager, S6E21-S6E23, turns out to be married). Minor/one-off: concierge Marie (one night in Winnipeg, S5E7) and unnamed set-up dates (S4E10-11). Sex Ed (S7E4) confirms the core five: he contacts Donna, Holly, Jan, Helene and Carol as ex-lovers.",
+ "evidence": [
+  {
+   "scene": "S7E4 sc.14",
+   "line": "Michael: Hi Donna. It's Michael. ... I have a disease ... that has been sexually transmitted to me."
+  },
+  {
+   "scene": "S7E4 sc.26",
+   "line": "Dwight: Next stop is Helene."
+  },
+  {
+   "scene": "S7E4 sc.30",
+   "line": "Carroll: ... the receptionist told me a man called but he only said he was my ex-lover."
+  },
+  {
+   "scene": "S7E4 sc.35",
+   "line": "Michael: ... Today I ended up seeing a lot of women that I used to date ..."
+  },
+  {
+   "scene": "S4E8 sc.33",
+   "line": "Michael: Yes, I had sex with Jan, and yes, I did consider Jan to be my girlfriend."
+  },
+  {
+   "scene": "S3E10 sc.7",
+   "line": "Michael: This is my girlfriend - Carol."
+  },
+  {
+   "scene": "S5E5 sc.7",
+   "line": "Michael: When Corporate found out that we were dating, they decided they were going to transfer Holly back ..."
+  },
+  {
+   "scene": "S7E15 sc.3",
+   "line": "Michael: Holly and I are dating. It's been a week ..."
+  },
+  {
+   "scene": "S6E8 sc.24",
+   "line": "Helene: ... For my girlfriend Helene on your birthday."
+  },
+  {
+   "scene": "S6E23 sc.12",
+   "line": "Michael: I like Donna. Is it wrong to keep seeing her? ... if you ask her husband ..."
+  },
+  {
+   "scene": "S5E7 sc.25",
+   "line": "Michael: [standing outside hotel room... whispering] Do you want to get some breakfast or something? Concierge Marie: I am so tired."
+  }
+ ],
+ "sources": [
+  "S2E16",
+  "S3E11",
+  "S4E8",
+  "S4E9",
+  "S2E22",
+  "S3E2",
+  "S3E10",
+  "S5E5",
+  "S7E15",
+  "S7E18",
+  "S6E6",
+  "S6E8",
+  "S6E21",
+  "S6E22",
+  "S6E23",
+  "S5E7",
+  "S7E4"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": [
+  {
+   "item": "Jan Levinson (boss; hook-up S2E16, relationship S3-S4, they live together; over by Chair Model S4E10, where he is dating again)",
+   "scene": "S4E8 sc.33"
+  },
+  {
+   "item": "Carol Stills (realtor; first date Casino Night, dumps him at Christmas)",
+   "scene": "S3E10 sc.7"
+  },
+  {
+   "item": "Holly Flax (HR; dates S5 until transfer, again S7, proposes S7E18)",
+   "scene": "S7E15 sc.3"
+  },
+  {
+   "item": "Helene Beesly (Pam's mother)",
+   "scene": "S6E8 sc.24"
+  },
+  {
+   "item": "Donna Newton (manager of Sid & Dexter's; affair, she is married)",
+   "scene": "S6E23 sc.12"
+  },
+  {
+   "item": "Minor: concierge Marie (one night on the Winnipeg business trip)",
+   "scene": "S5E7 sc.25"
+  },
+  {
+   "item": "Minor: unnamed set-up dates after Jan breakup",
+   "scene": "S4E11 sc.4"
+  },
+  {
+   "item": "Julie, Pam's friend, a set-up date at the Happy Hour (Michael as 'Date Mike')",
+   "scene": "S6E19 sc.17-45",
+   "core": false
+  },
+  {
+   "item": "Margaret, a set-up blind date at the coffee shop",
+   "scene": "S4E10 sc.28-30",
+   "core": false
+  }
+ ],
+ "confidence": "high",
+ "caveats": "The five main items are certain. Minor items are a judgment call: Marie is a one-night hook-up, not dating; set-up dates are unnamed. Do not count: 'Tara' (S7E11 sc.47, a girlfriend Michael claims to make Holly jealous; Dwight doubts she exists), the 'European girlfriend' at Niagara (S6E4 sc.56, implied invention), the dead chair model (S4E10), or Julie (S2E19, a date that never happened). Benihana waitresses (S3E10) are a brief rebound outing; mentioning them is fine but not required. An answer listing the five main women is complete; the order of Jan's on/off phases is not required. Added after the pilot grading: Julie (Happy Hour) and Margaret (Chair Model) are real set-up dates, optional items; the S2E19 Julie date never happened.",
+ "question": "List the women Michael dates over the series.",
+ "category": "list",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

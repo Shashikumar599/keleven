@@ -1,0 +1,4 @@
+q071 faithfulness
+A: 9. Honest: says evidence does not confirm a hit, SQL 0 rows is as sent, quotes S4E4 sc.29 and sc.25 exact (checked in packet; "where Mose hid all the wires" is in sc.25). Hedged that manure throw "is not explicitly stated". Refusal is justified: S5E9 (the real hit) was not among the scenes sent.
+B: 2. Memory answer, knows_answer=True, flatly says "Mose does not hit anyone": overconfident and false (S5E9 sc.20: "[Mose hits Andy in the head with a deflated ball] Ow!"). Side facts are true (Pam slaps Michael in Double Date, S6E8 here sc.42; split numbering S6E9 is fine).
+C: 4. States as fact that Mose hit Dwight with manure; the transcript only has Dwight's "Ow!" after "DO NOT THROW IT!" (S4E4 sc.29), no hit shown: claim beyond evidence. The [memory] label on "not hit anyone else" is correct in form but the claim is false (S5E9 sc.20 Andy), so it is an overconfident memory claim.

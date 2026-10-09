@@ -1,0 +1,4 @@
+Facts the judgment relies on.
+A: 8. Quotes check out (S3E15 sc.38 Roy "wasn't really too involved in the planning"; S3E7 sc.20 Roy "I don't really want to work here without Pam"; S3E18 sc.46 "there were a lot of reasons"). Mild: "Roy would not have met Laura" is stated flat though it is counterfactual (supported by S9E2 sc.17 only in spirit); Jim "pursue other relationships" cited to S3E18 sc.46, which does not say that.
+B: 7. Memory facts mostly right (Roy's temper S3E17, Roy happy with Laura S9E2, Austin/Athlead finale). Loose: "broke off engagement after Casino Night (S2E22)" - she kissed/rejected Jim there; wedding called off before S3E1 (S3E1 sc.24 "I didn't go through with the wedding").
+C: 8. Cited scenes true (S2E16 sc.38, S3E15 sc.38, S3E17 sc.46, S9E2 sc.21 piano). Memory claims (Karen, Athlead, Roy gravel) are right. Small stretch: "Roy took Pam for granted" from a Valentine's line.

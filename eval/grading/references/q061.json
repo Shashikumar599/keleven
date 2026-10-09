@@ -1,0 +1,38 @@
+{
+ "question_id": "q061",
+ "reference": "Halloween (S2E5): Michael is a two-headed man (a papier-mache second head he sent away for from a catalog); Dwight is a Sith Lord (hood and lightsaber, cost $129); Jim is a 'three hole punch version of Jim' (three paper circles taped to his shirt); Pam is a cat.",
+ "evidence": [
+  {
+   "scene": "S2E5 sc.1",
+   "line": "Michael: Happy Halloween, everyone! [notices Pam, in her cat costume]"
+  },
+  {
+   "scene": "S2E5 sc.3",
+   "line": "Pam: [notices Michael's costume] Papier-mache? ... Michael: I know. I sent away for it in July from a catalog. [bobs his head around, causing the costume head to jiggle around]"
+  },
+  {
+   "scene": "S2E5 sc.4",
+   "line": "Jim: I'm a three hole punch version of Jim... Dwight: I am a Sith Lord. ... Three round pieces of paper taped to a shirt. This cost me 129 dollars."
+  },
+  {
+   "scene": "S2E5 sc.6",
+   "line": "Michael: Well, I don't really have two heads. So..."
+  }
+ ],
+ "sources": [
+  "S2E5 sc.1",
+  "S2E5 sc.3",
+  "S2E5 sc.4",
+  "S2E5 sc.6",
+  "S2E5 sc.14"
+ ],
+ "premise_true": true,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "Largely visual; the transcripts name Dwight's, Jim's and Pam's costumes explicitly. Michael's is inferred from 'I don't really have two heads', 'Papier-mache?' and him talking to 'the fake head' (sc.14): a two-headed man costume. Accept 'two-headed man / man with a fake second head'. 'Dwight as Darth Vader' is not what he says (he says Sith Lord); treat a generic 'Star Wars Sith' as correct, 'Darth Vader' as partial.",
+ "question": "What costumes do Michael, Dwight, Jim and Pam wear in the Season 2 Halloween episode?",
+ "category": "visual",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

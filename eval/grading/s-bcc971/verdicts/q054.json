@@ -1,0 +1,49 @@
+{
+ "question_id": "q054",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Colorado with Holly cited (S7E19 sc.1, S7E21 sc.1); marriage, kids, finale return as Dwight's best man and the two-phones line all true (S9E23 sc.68/76) and correctly marked [memory] since the finale was not sent. 'Bestest mensch' wording is loose.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 8,
+     "reader": 8
+    }
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Boulder with Holly, married with kids, returns as best man in the finale, two phones (S9E23 sc.76); episode numbers are split numbering. 'Two separate family plans' slightly embellishes the joke.",
+   "details": {
+    "calibration": "ok",
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 8,
+     "reader": 8
+    }
+   }
+  },
+  "C": {
+   "score": 5,
+   "verdict": "partial",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Honestly gives only the move to Colorado with Holly and says the evidence shows nothing after; the finale scenes that show his return and kids (S9E23 sc.68/76) were not sent, so the refusal of the rest is justified but the answer is thin.",
+   "details": {
+    "lens_scores": {
+     "fact": 4,
+     "faithfulness": 9,
+     "reader": 5
+    }
+   }
+  }
+ }
+}

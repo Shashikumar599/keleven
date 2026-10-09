@@ -1,0 +1,3 @@
+A: 10. Both parts: pink paper coupons, "Nate coupons" / "Nate-pons", with examples (S8E14 sc.33 Darryl: "This coupon entitles you to one free tickle monster attack"; Nate: "Yeah, they're Nate coupons. Or Nate-pons... I will bring you a stick of gum").
+B: 0. Wrong on both parts and wrong episode: says a thank-you card in Christmas Wishes (S8E10) and that Nate "does not give Darryl any physical present". The gift exchange is Special Project S8E14 sc.33, where Nate hands Darryl coupons; S8E10 has no glove lines. Its accurate side note (gloves were meant for Val, S8E14 sc.9) doesn't rescue it.
+C: 10. Both parts direct and complete, with the two example coupons [S8E14 sc.33].

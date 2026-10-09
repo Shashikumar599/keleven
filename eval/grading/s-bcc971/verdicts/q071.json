@@ -1,0 +1,49 @@
+{
+ "question_id": "q071",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 2,
+   "verdict": "refused",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Honest hedged non-answer: says evidence does not confirm a hit, notes the implied manure throw at Dwight (S4E4 sc.29). The real case (Mose hits Andy, S5E9 sc.20) was not in the scenes sent.",
+   "details": {
+    "lens_scores": {
+     "fact": 2,
+     "faithfulness": 9,
+     "reader": 4
+    }
+   }
+  },
+  "B": {
+   "score": 0,
+   "verdict": "wrong",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Flatly says Mose hits no one; false (S5E9 sc.20, Mose hits Andy). Side facts (Meredith hit by car, Pam slaps Michael S6E8 sc.42) are true but off-question; the fact member's claim that Pam does not slap Michael is contradicted by S6E8 sc.42 and was dropped.",
+   "details": {
+    "lens_scores": {
+     "fact": 0,
+     "faithfulness": 2,
+     "reader": 1
+    },
+    "calibration": "overconfident"
+   }
+  },
+  "C": {
+   "score": 3,
+   "verdict": "wrong",
+   "grounded": "partly",
+   "failure_type": "memory_error",
+   "notes": "Names Dwight (manure, S4E4 sc.29), only implied by an off-screen 'Ow!', and then asserts from memory that Mose hits no one else, which is false (Andy, S5E9 sc.20). Main answer misses the clear case.",
+   "details": {
+    "lens_scores": {
+     "fact": 3,
+     "faithfulness": 4,
+     "reader": 4
+    }
+   }
+  }
+ }
+}

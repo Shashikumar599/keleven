@@ -1,0 +1,79 @@
+{
+ "question_id": "q019",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Pink coupons, 'Nate coupons. Or Nate-pons', with examples, S8E14 sc.33.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    },
+    "parts": [
+     {
+      "part": "gift",
+      "ok": true
+     },
+     {
+      "part": "name",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "B": {
+   "score": 1,
+   "verdict": "wrong",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Invents a thank-you card in Christmas Wishes (S8E10 has no glove/Nate gift lines); the gift is Nate-pons in Special Project S8E14 sc.33. Only the Val side note is right.",
+   "details": {
+    "lens_scores": {
+     "fact": 0,
+     "faithfulness": 2,
+     "reader": 0
+    },
+    "calibration": "overconfident",
+    "parts": [
+     {
+      "part": "gift",
+      "ok": false
+     },
+     {
+      "part": "name",
+      "ok": false
+     }
+    ]
+   }
+  },
+  "C": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Coupons, 'Nate coupons'/'Nate-pons', with examples, S8E14 sc.33.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    },
+    "parts": [
+     {
+      "part": "gift",
+      "ok": true
+     },
+     {
+      "part": "name",
+      "ok": true
+     }
+    ]
+   }
+  }
+ }
+}

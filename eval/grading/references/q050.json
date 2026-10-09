@@ -1,0 +1,47 @@
+{
+ "question_id": "q050",
+ "reference": "Because he found out Angela had been cheating on him with Dwight while engaged to him. Michael tells Andy (The Duel, S5E11 sc.15), Angela admits it ('A little bit', sc.17); Andy first tries to keep her and fights Dwight for her, but during the duel learns she slept with Dwight far more than with him ('only sleep with me twice', sc.31), and he cancels the wedding cake (sc.32), ending the engagement.",
+ "evidence": [
+  {
+   "scene": "S5E10 sc.46",
+   "line": "Phyllis: Angela's having sex with Dwight. I caught them doing it after Toby's going away party."
+  },
+  {
+   "scene": "S5E11 sc.15",
+   "line": "Michael: Dwight and Angela are having an affair. They've been sleeping together for some time."
+  },
+  {
+   "scene": "S5E11 sc.17",
+   "line": "Andy: Are you sleeping with Dwight? Angela: A little bit."
+  },
+  {
+   "scene": "S5E11 sc.31",
+   "line": "Andy: How can she be sleeping with you this whole time and only sleep with me twice? ... Dwight: She said she was only sleeping with me."
+  },
+  {
+   "scene": "S5E11 sc.32",
+   "line": "Andy: ... I would like to cancel a wedding cake that I had ordered."
+  },
+  {
+   "scene": "S5E22 sc.15",
+   "line": "Andy: Believe me, I broke up with Angela, and I'm like, the happiest guy ever."
+  }
+ ],
+ "sources": [
+  "S5E10 sc.46",
+  "S5E11 sc.15",
+  "S5E11 sc.17",
+  "S5E11 sc.31",
+  "S5E11 sc.32",
+  "S5E22 sc.15"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "Main cause: her affair with Dwight during the engagement. Supporting points: the affair became known after Phyllis's reveal (S5E10) and Michael telling Andy (S5E11); the duel; Andy's discovery that she lied to both men. Wrong claims to watch for: that Andy left her for Erin, that Angela broke up with him, or that it happened over the cat/Sprinkles (that was Dwight and Angela's earlier breakup). Andy's later engagement is to no one; Angela's later engagement is to the Senator.",
+ "question": "Why did Andy break up with Angela?",
+ "category": "why",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

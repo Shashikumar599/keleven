@@ -1,0 +1,79 @@
+{
+ "question_id": "q060",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Ryan (S9E23 sc.81/82), no stated job in the finale, past jobs [memory] true (bowling alley: S5E20 sc.22), and Ravi the pediatrician (sc.66) for the alternative reading. 'Appears to be unemployed' is a labelled inference; slightly long.",
+   "details": {
+    "parts": [
+     {
+      "part": "runs off with Ryan",
+      "ok": true
+     },
+     {
+      "part": "his job",
+      "ok": true
+     }
+    ],
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 8,
+     "reader": 9
+    }
+   }
+  },
+  "B": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Ryan, no stated job, Ravi a pediatrician; finale numbering is split. States 'unemployed single father' as fact, which the show doesn't say: slight overreach.",
+   "details": {
+    "parts": [
+     {
+      "part": "runs off with Ryan",
+      "ok": true
+     },
+     {
+      "part": "his job",
+      "ok": true
+     }
+    ],
+    "calibration": "ok",
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 7,
+     "reader": 8
+    }
+   }
+  },
+  "C": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Ryan (S9E23 sc.81/82); says his job isn't stated, citing his denial of being a nanny (sc.64); Ravi the pediatrician left behind (sc.66/82). All supported.",
+   "details": {
+    "parts": [
+     {
+      "part": "runs off with Ryan",
+      "ok": true
+     },
+     {
+      "part": "his job",
+      "ok": true
+     }
+    ],
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 9,
+     "reader": 9
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,3 @@
+A 8: 6 episodes from sent scenes, quotes exact (S4E14 sc23, S5E1 sc98, S5E5 sc25, S7E4 sc16, S7E12 sc24, S7E13 sc28), hedged "may be incomplete". Not presented as a total.
+B 8: passage count 6 hedged; series total "approximately 16 or 17 [memory]" labelled and close to reference 17; memory episode list labelled and matches reference (omits Crime Aid). Citation sc.24 of S5E5 and sc16/35 of S7E4 verified.
+C 8: memory, "approximately 16 (or 17)" with stated uncertainty about two-part counting; reference 17, so calibrated. Names 15 of 17 episodes (misses Goodbye, Michael); listed ones are all correct.

@@ -1,0 +1,27 @@
+{
+ "question_id": "q064",
+ "reference": "In Halloween (S2E5), Dwight punches Jim in the chest (on 'PUNCH!', playing on Jim's three-hole-punch costume) and then cracks up laughing at his own joke.",
+ "evidence": [
+  {
+   "scene": "S2E5 sc.7",
+   "line": "Dwight: Wait, what are you again? Oh, right... Three-hole PUNCH! [punches Jim in the chest and cracks up laughing]"
+  },
+  {
+   "scene": "S2E5 sc.4",
+   "line": "Jim: I'm a three hole punch version of Jim. 'Cause you can have me either way. Plain White Jim, or Three-hole Punch."
+  }
+ ],
+ "sources": [
+  "S2E5 sc.7",
+  "S2E5 sc.4"
+ ],
+ "premise_true": true,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "Visual moment, known only from the stage direction; the scene ends there. Accept 'punches Jim in the chest' and/or 'laughs'; the punch is the key action.",
+ "question": "What does Dwight do right after shouting \"Three-hole PUNCH!\" at Jim?",
+ "category": "visual",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

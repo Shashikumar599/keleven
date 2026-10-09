@@ -1,0 +1,4 @@
+FACT lens, q078 (ref: Jim breaks up after NY interview; Karen leaves, becomes Utica manager (S4E6 Branch Wars); later married to Dan, pregnant (S5E14-15))
+A: 1/10. Says passages don't show what happened; gives no answer to any part (breakup, Utica, Dan). 
+B: 9/10. Breakup and return to Scranton, left the branch, Utica regional manager, later Dan the dermatologist and pregnant, all match the ref (S4E1 sc.4, S4E6 sc.2, S5E14 sc.22). Verified S3E23 sc.68: Karen leaves for lunch with friends, "Good luck, Halpert". Omits that Ryan, not Karen, got the job (not required).
+C: 7/10. Core arc right (breakup, Utica manager, Dan, pregnant, warm with Pam S5E15 sc.4). Errors of substance: Branch Wars given as "Season 4, Episode 10" (episodes table: S4E6; S4E10 is a different episode in any numbering); "The Job" breakup said to happen in the finale, fine, but she "left in Fun Run S4E1" is supported by S4E1 sc.4. Lecture Circuit as S5E16 is split numbering (OK).

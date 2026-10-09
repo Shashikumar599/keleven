@@ -1,0 +1,105 @@
+{
+ "question_id": "q045",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "All five core women (Jan, Carol, Helene, Donna, Holly) plus valid minor dates Julie and Marie. 'Bar manager' for Donna is fine (S6E21 sc.21/26: 'nightlife industry', 'restaurant business'); 'eventual wife' for Holly goes past the engagement the transcripts show.",
+   "details": {
+    "reference_items": [
+     "Jan Levinson",
+     "Carol Stills",
+     "Holly Flax",
+     "Helene Beesly",
+     "Donna Newton"
+    ],
+    "found": [
+     "Jan Levinson",
+     "Carol Stills",
+     "Holly Flax",
+     "Helene Beesly",
+     "Donna Newton",
+     "Julie (optional)",
+     "Concierge Marie (optional)"
+    ],
+    "missed": [],
+    "invented": [],
+    "calibration": "ok",
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 8,
+     "reader": 9
+    }
+   }
+  },
+  "B": {
+   "score": 5,
+   "verdict": "partial",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Four of five core women (Carol missing; none of her scenes were sent), all claims backed by the passages; but it lists Tara, whom its own passage shows to be a ploy (S7E11 sc.47-48), among the women he dates.",
+   "details": {
+    "reference_items": [
+     "Jan Levinson",
+     "Carol Stills",
+     "Holly Flax",
+     "Helene Beesly",
+     "Donna Newton"
+    ],
+    "found": [
+     "Jan Levinson",
+     "Holly Flax",
+     "Helene Beesly",
+     "Donna Newton"
+    ],
+    "missed": [
+     "Carol Stills"
+    ],
+    "invented": [
+     "Tara"
+    ],
+    "lens_scores": {
+     "fact": 5,
+     "faithfulness": 9,
+     "reader": 3
+    }
+   }
+  },
+  "C": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "All five core women plus valid minor dates (Margaret, Marie, Julie) and Tara correctly called invented; but two quotes are altered (S5E5 sc.25 'Holly we've...' for 'Michael we've...', S2E16 sc.25 stitched) and 'ultimately marries' goes past the engagement.",
+   "details": {
+    "reference_items": [
+     "Jan Levinson",
+     "Carol Stills",
+     "Holly Flax",
+     "Helene Beesly",
+     "Donna Newton"
+    ],
+    "found": [
+     "Jan Levinson",
+     "Carol Stills",
+     "Holly Flax",
+     "Helene Beesly",
+     "Donna Newton",
+     "Margaret (optional)",
+     "Concierge Marie (optional)",
+     "Julie (optional)"
+    ],
+    "missed": [],
+    "invented": [],
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 7,
+     "reader": 7
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "question_id": "q047",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Before: buying in S5E6 sc.18, shows Pam in S5E8, wedding at Niagara S6E4; all cited correctly.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    }
+   }
+  },
+  "B": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Before, Frame Toby in S5 vs Niagara in S6; episode numbers are split numbering, which is accepted.",
+   "details": {
+    "calibration": "ok",
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 8,
+     "reader": 8
+    }
+   }
+  },
+  "C": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Before, with the S5E6 and S5E8 quotes and the S6E4 wedding, all from its passages.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    }
+   }
+  }
+ }
+}

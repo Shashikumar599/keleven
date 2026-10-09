@@ -1,0 +1,89 @@
+{
+ "premise_true": null,
+ "count": null,
+ "list_items": [
+  {
+   "item": "Seventy (Dwight's own claim of how many cousins he has)",
+   "scene": "S7E22 sc.16",
+   "core": true
+  },
+  {
+   "item": "Mose",
+   "scene": "S2E3 sc.15",
+   "core": true
+  },
+  {
+   "item": "Zeke (Mose's brother)",
+   "scene": "S9E13 sc.24",
+   "core": false
+  },
+  {
+   "item": "Amel, in Ohio",
+   "scene": "S5E25 sc.54",
+   "core": false
+  },
+  {
+   "item": "Esther (third cousin)",
+   "scene": "S9E22 sc.61",
+   "core": false
+  },
+  {
+   "item": "unnamed cousin with goat fungus (likely a sales-call fib)",
+   "scene": "S6E16 sc.1",
+   "core": false
+  }
+ ],
+ "caveats": "Kind mismatch: the question asks 'how many' (a count) but is filed as a list. The only number in the show is Dwight's boast of seventy, said to one-up DeAngelo; treat it as Dwight's claim, not a verified count. An answer of 'one (Mose)' or 'two (Mose and Zeke)' misses the stated 70 and is at most partial. 'Other cousin Mose' in S9E5 is Dwight disguising himself, not a second Mose. The goat-fungus cousin is part of a sales pitch and may be invented.",
+ "question_id": "q072",
+ "reference": "Dwight claims he has seventy cousins (S7E22 The Inner Circle: 'Congratulations on your one cousin. I have seventy.'). Only a few are identified on screen: Mose (his farm partner, the main one), Zeke (Mose's brother, 'Dwight's my cousin', S9E13/S9E17), cousin Amel in Ohio (S5E25), and Esther, his third cousin and later girlfriend (S9E22). The show gives no exact verified count beyond Dwight's boast.",
+ "evidence": [
+  {
+   "scene": "S7E22 sc.16",
+   "line": "Dwight: Congratulations on your one cousin. I have seventy. Each one better than the last."
+  },
+  {
+   "scene": "S2E3 sc.15",
+   "line": "Dwight: ... I run it with my cousin, Mose."
+  },
+  {
+   "scene": "S9E13 sc.24",
+   "line": "Zeke: Dwight's my cousin, so I overheard him telling my brother Mose about the job opportunity in the shower."
+  },
+  {
+   "scene": "S5E25 sc.54",
+   "line": "Dwight: [sarcastically] Oh, no. I love Ohio. Next time you're there say 'Hi' to my cousin Amel and then kick him in the groin area..."
+  },
+  {
+   "scene": "S9E22 sc.61",
+   "line": "Dwight: ... A lot of them are the same people because we're third cousins, which is great for bloodlines and isn't technically incest."
+  },
+  {
+   "scene": "S6E16 sc.1",
+   "line": "Dwight: [on the phone with a client] ... My cousin, uh, came down with a case of that nasty new goat fungus."
+  },
+  {
+   "scene": "S9E5 sc.38",
+   "line": "Dwight: They're for my cousin Mose. ... and his crazy cousin Mose. Other cousin Mose. (a cover story for himself)"
+  }
+ ],
+ "sources": [
+  "S7E22 sc.16",
+  "S2E3 sc.15",
+  "S9E13 sc.24",
+  "S9E17 sc.24",
+  "S5E25 sc.54",
+  "S9E22 sc.61",
+  "S6E16 sc.1",
+  "S9E5 sc.38"
+ ],
+ "accepted_alternatives": [
+  "70, as Dwight claims (S7E22)",
+  "Mose as the cousin, plus Dwight's claim of seventy"
+ ],
+ "confidence": "medium",
+ "question": "How many cousins did Dwight have?",
+ "category": "list",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": true,
+ "owner_note": "Owner (2026-10-07): the show gives no verified count of Dwight's cousins; 'we do not know' (Dwight's boast of seventy, S7E22, is only a claim) is acceptable."
+}

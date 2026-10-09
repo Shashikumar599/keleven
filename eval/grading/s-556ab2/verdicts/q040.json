@@ -1,0 +1,76 @@
+{
+ "question_id": "q040",
+ "method": "single",
+ "answers": {
+  "A": {
+   "score": 5,
+   "verdict": "partial",
+   "grounded": "yes",
+   "failure_type": "memory_error",
+   "notes": "Passage count (6-7) correctly labelled as sample-only; series total given from memory as 34-35, far above the dataset's 24. Dwight named second [memory] with 3-4 (dataset 3), which is right.",
+   "details": {
+    "truth": 24,
+    "given": 35,
+    "exactness": "wrong",
+    "states_what_counted": true,
+    "parts": [
+     {
+      "part": "Michael count",
+      "ok": false
+     },
+     {
+      "part": "second most = Dwight",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "B": {
+   "score": 5,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Count 34-35 is well off the dataset's 24; Dwight second (~3-4, cites S2E12) is right.",
+   "details": {
+    "truth": 24,
+    "given": 35,
+    "exactness": "wrong",
+    "states_what_counted": true,
+    "calibration": "overconfident",
+    "parts": [
+     {
+      "part": "Michael count",
+      "ok": false
+     },
+     {
+      "part": "second most = Dwight",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "C": {
+   "score": 2,
+   "verdict": "wrong",
+   "grounded": "yes",
+   "failure_type": "count_from_sample",
+   "notes": "Answers 6-7 and Jim second, counted from 8 passages; a caveat is added, but the answer is still presented as the result. True: 24 and Dwight (3). The cited lines themselves are accurate.",
+   "details": {
+    "truth": 24,
+    "given": 7,
+    "exactness": "wrong",
+    "states_what_counted": true,
+    "parts": [
+     {
+      "part": "Michael count",
+      "ok": false
+     },
+     {
+      "part": "second most = Dwight",
+      "ok": false
+     }
+    ]
+   }
+  }
+ }
+}

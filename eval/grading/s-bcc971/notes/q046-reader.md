@@ -1,0 +1,4 @@
+q046 reader
+A 6: Covers Michael, Jim co-manager, DeAngelo, Dwight, Creed, Robert, Andy, Nellie, plus Ed Truck (pre-series, valid extra). Missing Andy's second stint and Dwight's S9 detail partially present. But the closing claim "This list is exact and comprehensive" is overconfident and the Nellie/Andy arc is vague.
+B 7: Complete in names (all core present, Charles Miner as "interim supervisor" is a stretch: in S5E18 David says "You're still the branch manager"; Dwight acting in S3 The Job is loose). Dense one-paragraph list with some episode slips but the most complete answer; also claims "exact".
+C 3: Only Michael, Jim, Dwight; misses DeAngelo, Andy, Nellie, Dwight permanent. Does flag it may be incomplete. Padded with S1E3 and S3E3 Dwight episodes where he is not truly a manager (Jan: "You are not a manager of anything", S1E3 sc.29), which it does explain correctly.

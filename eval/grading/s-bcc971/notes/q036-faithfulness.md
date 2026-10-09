@@ -1,0 +1,3 @@
+A: 7. Memory, both episodes right, but confidently adds unverifiable detail: phone "in the ceiling tiles" (S3E13 sc.32 has Jim only joking "Maybe it's in the ceiling"), "conference room" meltdown and "nearly the exact same spot" (S8E21 sc.41 is Nellie's office wall). Overconfident detail; knows_answer true and uncertain empty.
+B: 8. Both punches and the Darryl quote exact (S3E13 sc.34, S8E21 sc.41). S3E19 sc.2 replay correctly flagged as a flashback, not a new punch. Minor: "punches the wall again" and "Nellie has taken his office" are mild inference from sc.41 ("your stupid office"), acceptable.
+C: 9. Claims match sc.34, sc.41 and the flashback sc.2; correctly says replay is a flashback. No quote beyond evidence.

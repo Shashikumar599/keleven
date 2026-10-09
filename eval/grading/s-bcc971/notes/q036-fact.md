@@ -1,0 +1,3 @@
+A: 6. Both episodes right (The Return, Angry Andy), but wrong details for S8E21: says punch is in the conference room after Robert California refuses to reinstate him, "in nearly the exact same spot". S8E21 sc.41: Andy punches the wall of Nellie's office ("And your stupid office! [punches hole in the wall]") in the main office, after throwing a chair at Robert. Also the "same spot" claim is unsupported.
+B: 10. The Return S3E13 sc.34 and Angry Andy S8E21 sc.41 verified; Safety Training replay clearly labelled as a replay (S3E19 sc.2), not a new punch.
+C: 10. Same two episodes, replay labelled correctly.

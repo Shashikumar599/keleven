@@ -1,0 +1,31 @@
+{
+ "question_id": "q032",
+ "reference": "Stanley says it, yelling at Ryan, in Take Your Daughter to Work Day (S2E18), because Ryan was chatting with Stanley's daughter Melissa (after Kelly tipped Stanley off). Stanley's line is repeated as a flashback in Stress Relief (S5E13).",
+ "evidence": [
+  {
+   "scene": "S2E18 sc.23",
+   "line": "Stanley: Boy have you lost your mind? 'Cause I'll help you find it! Whatcha lookin' for, ain't nobody gonna help you out there! Jesus could come through that door and he's not gonna help you if you don't stop sniffing after my child!"
+  },
+  {
+   "scene": "S2E18 sc.22",
+   "line": "Kelly: I think something a little fishy is going on. [points to Ryan and Melissa]"
+  },
+  {
+   "scene": "S5E13 sc.8",
+   "line": "Stanley: [flashback] Boy, have you lost your mind? 'Cause I'll help you find it."
+  }
+ ],
+ "sources": [
+  "S2E18 sc.23",
+  "S5E13 sc.8"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "The question asks only who: Stanley. Target (Ryan) and episode are extra details; Stress Relief flashback reuses the clip, so citing either episode is acceptable for 'who'.",
+ "question": "Who says \"Boy, have you lost your mind? 'Cause I'll help you find it\"?",
+ "category": "who_said",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

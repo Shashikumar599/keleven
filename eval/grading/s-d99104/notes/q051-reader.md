@@ -1,0 +1,4 @@
+Reader lens, q051 (why Michael leaves Scranton)
+A: 4. Gives "to be with Holly" in Boulder but leaves out the why: Holly goes home because her father is ill ("My dad isn't doing so well", S7E18 sc.26). It spends half its length on the S5 Nashua trip, which isn't leaving Scranton, so the point is diluted.
+B: 9. Clear main cause: he moves to Colorado with Holly so she can be near her parents, with the proposal and decision in Garage Sale. "Aging parents" is a fair paraphrase of her father's failing health (S7E18 sc.26). Episode numbers are in split numbering, which is fine.
+C: 8. States the main cause first (move to Boulder with Holly, who is going back for her parents, plus the proposal). The extra list of earlier near-departures (The Job, Michael Scott Paper Company) is labelled as such and doesn't bury the answer, but it does pad it.

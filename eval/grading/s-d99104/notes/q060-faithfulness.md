@@ -1,0 +1,3 @@
+A: 10. Ryan cited S9E23 sc81/82; says job not stated and only that Ryan quit and moved to Ohio (S9E1 sc11). Exact and honest.
+B: 5. Memory-only. Right on Ryan and Ravi, but asserts "unemployed single father who abandons his baby son" and "Episodes 24/25": unemployment is an unverified claim stated as fact; "abandons" fits S9E23 sc82. Moderately overconfident.
+C: 8. Ryan quote verified (S9E23 sc81, sc82); "Silicon Prairie" verified in S9E1 sc12 ("They call it the Silicon Prairie"); Ravi pediatrician verified sc66; S9E1 sc8 pediatrics professor verified. Memory claims labelled. Slight issue: "[S9E23 sc.64-65, memory]" mixes labels and "pediatrician and pediatrics professor" for the fiance was not asked.

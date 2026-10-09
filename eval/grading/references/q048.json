@@ -1,0 +1,38 @@
+{
+ "question_id": "q048",
+ "reference": "Michael hitting Meredith with his car came first: 'Fun Run' (S4E1, season 4 premiere). Dwight's fire drill (the staged fire 'simulation') is in 'Stress Relief' (S5E13 here; S5E14-15 in split numbering).",
+ "evidence": [
+  {
+   "scene": "S4E1 sc.16",
+   "line": "Michael: Well, I ran down Meredith in my car."
+  },
+  {
+   "scene": "S4E1 sc.8",
+   "line": "Michael: Ladies and Gentlemen. I have some bad news. Meredith was hit by a car."
+  },
+  {
+   "scene": "S5E13 sc.1",
+   "line": "Dwight: Last week I gave a fire safety talk. And nobody paid any attention. ... experience is the best teacher. [lights a cigarette]"
+  },
+  {
+   "scene": "S5E13 sc.2",
+   "line": "Dwight: Attention everyone! ... This has been a test of our emergency preparedness. There is no fire. It was only a simulation."
+  }
+ ],
+ "sources": [
+  "S4E1 sc.8",
+  "S4E1 sc.16",
+  "S5E13 sc.1",
+  "S5E13 sc.2"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "The words 'fire drill' never appear in the transcripts; Dwight calls it a 'simulation' / 'test of our emergency preparedness'. Stress Relief is a combined two-part episode (S5E13 here, S5E14-15 split).",
+ "accepted_alternatives": [],
+ "question": "Which came first: Michael hitting Meredith with his car, or Dwight's fire drill?",
+ "category": "order",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

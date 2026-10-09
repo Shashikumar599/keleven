@@ -1,0 +1,31 @@
+{
+ "question_id": "q022",
+ "reference": "They are the Jersey State women's varsity basketball team ('Northeast Regional Champs'), strangers in line at the club Prerogative in Night Out (S4E11). Dwight recruits them because the bouncer won't let the guys in without women; Dwight calls them 'Amazons'.",
+ "evidence": [
+  {
+   "scene": "S4E11 sc.29",
+   "line": "Dwight: How did you all find each other? Tall Girl #1: Uh, we're the Jersey State Varsity Basketball team. Northeast Regional Champs. ... Dwight: Amazons."
+  },
+  {
+   "scene": "S4E11 sc.29",
+   "line": "Ryan: ...some other loser who won't let us in without chicks. ... Dwight: You two, Jersey State girls, let's go. Tall Girl #2: We're not going unless we can all go."
+  },
+  {
+   "scene": "S4E11 sc.31",
+   "line": "Bartender: It's for you. From them. [points to Jersey State girls across the bar]"
+  }
+ ],
+ "sources": [
+  "S4E11 sc.29",
+  "S4E11 sc.31"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "'Brings along' slightly overstates it: he meets them in the line outside and recruits them on the spot. Episode is S4E11 in the dataset's combined numbering (later in split numbering).",
+ "question": "In 'Night Out', who are the group of tall women Dwight brings along to try to get into the club?",
+ "category": "detail",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

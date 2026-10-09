@@ -1,0 +1,3 @@
+A 8: memory, hedged with alternatives and counterpoint; details real (Costa Rica, Scranton Strangler, Florida Stanley). "Chad Flenderson" title garbled (Flenderman) - small slip. Calibrated for an opinion.
+B 8: quotes exact (S3E22 sc.9/13/15, S8E1 sc.40). Slight leap: "S3E22 sc.9 Michael says if Toby is included it'll suck" is used as evidence of boring; it is disliking, and the answer admits it may be "Michael's personal animosity".
+C 7: labels [memory] well. "perceived by colleagues as a detached, lazy grump [S8E1 sc.40]": the cited line is Andy saying "you may think he's a lazy grump, but ... highest sales numbers" - opposite thrust, miscited as support. Toby "makes an event suck" cite is Michael's dislike, not boredom.

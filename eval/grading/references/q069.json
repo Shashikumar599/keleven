@@ -1,0 +1,58 @@
+{
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "caveats": "Opinion question. Michael->Toby is comic and partly exaggerated, but the show consistently plays it as genuine dislike (the room even objects in S6E23); Toby does not reciprocate. Dwight-Jim is a rivalry that turns into friendship, so 'hatred' there is weaker. Answers about real actors are out of scope.",
+ "question_id": "q069",
+ "reference": "Judgment, no single answer. Best-supported: Michael's hatred of Toby, the show's most explicit and lasting one-sided hatred: 'Toby is the worst human being I've ever known' (S3E18), 'if I had a gun with two bullets and I was in a room with Hitler, Bin Laden, and Toby, I would shoot Toby twice' (S6E23), framing Toby (Frame Toby, S5E8), and others acknowledge it ('Now I know why Michael hated you so much', S9E1). Other plausible answers: Dwight vs Jim (pranks, 'you married my worst enemy', 'at times, I've even hated your guts', though they end as friends); Angela vs Oscar after the senator affair (she tried to have his kneecap shattered, S9E9); Angela vs Pam/Phyllis.",
+ "evidence": [
+  {
+   "scene": "S3E18 sc.37",
+   "line": "Michael: No, Toby is terrible. Toby is the worst human being I've ever known."
+  },
+  {
+   "scene": "S6E23 sc.3",
+   "line": "Michael: ... if I had a gun with two bullets and I was in a room with Hitler, Bin Laden, and Toby, I would shoot Toby twice."
+  },
+  {
+   "scene": "S2E22 sc.11",
+   "line": "Michael: Why are you the way that you are? ... I hate so much about the things that you choose to be."
+  },
+  {
+   "scene": "S5E8 sc.12",
+   "line": "Michael: I tried to talk to Toby and be his friend but that is like trying to be friends with an evil... snail."
+  },
+  {
+   "scene": "S9E1 sc.26",
+   "line": "Andy: Now I know why Michael hated you so much."
+  },
+  {
+   "scene": "S7E8 sc.30",
+   "line": "Dwight: I do. But you married my worst enemy."
+  },
+  {
+   "scene": "S8E18 sc.17",
+   "line": "Dwight: Well, Jim, I just want to say that we haven't always got along and at times, I've even hated your guts."
+  },
+  {
+   "scene": "S9E9 sc.4",
+   "line": "Oscar: ... until she tried to have my kneecap shattered for sleeping with her husband."
+  }
+ ],
+ "sources": [
+  "S3E18 sc.37",
+  "S6E23 sc.3",
+  "S2E22 sc.11",
+  "S5E8 sc.12",
+  "S9E1 sc.26",
+  "S7E11 sc.15",
+  "S7E8 sc.30",
+  "S8E18 sc.17",
+  "S9E9 sc.4"
+ ],
+ "confidence": "medium",
+ "question": "Which character hated another character the most?",
+ "category": "opinion",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

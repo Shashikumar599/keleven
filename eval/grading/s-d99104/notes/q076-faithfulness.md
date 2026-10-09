@@ -1,0 +1,3 @@
+A 9: quotes exact (S6E1 sc.19/20/23, S8E20 sc.20, S9E18 sc.26); the reason for the fake coming-out is labelled [memory] though it is visible in S8E20 sc.20. Fine.
+B 9: all quotes check out in sent scenes. The tool flagged "S6E8 sc20" NOT FOUND for two evidence items, but the answer's own citation is S8E20 sc.20, where Jessica asks "Are you leaving me for Erin?" and Andy says "I'm gay". "Excuse to avoid admitting he was leaving her for Erin" is a fair inference from that exchange, not stated outright.
+C 8: memory, knows_answer=True; claims correct (Gossip rumor by Michael to hide Stanley's affair; Andy dates Angela, Erin, Jessica). Calibrated.

@@ -1,0 +1,61 @@
+{
+ "question_id": "q042",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Dwight, correct (1069 lines vs Jim 798); unverified extra claim about word count.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 8,
+     "reader": 9
+    },
+    "calibration": "ok",
+    "truth": 1069,
+    "given": null,
+    "exactness": "exact",
+    "states_what_counted": false
+   }
+  },
+  "B": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "Dwight, correctly marked [memory]; 'full-season dialogue analyses confirm' asserts a source it never had.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 6,
+     "reader": 8
+    },
+    "truth": 1069,
+    "given": null,
+    "exactness": "exact",
+    "states_what_counted": false
+   }
+  },
+  "C": {
+   "score": 4,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "retrieval_miss",
+   "notes": "Names Dwight only as the sample leader and says the season leader cannot be determined; its sample counts (26 vs Erin 20) don't match the sent scenes (Dwight 35, Erin 26).",
+   "details": {
+    "lens_scores": {
+     "fact": 6,
+     "faithfulness": 6,
+     "reader": 3
+    },
+    "truth": 1069,
+    "given": null,
+    "exactness": "wrong",
+    "states_what_counted": true
+   }
+  }
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "caveats": "The quoted words 'False. I do not miss him.' are NOT in the transcript: the fan transcript's line ends at '[serious]' and the next row is a different scene (S3E1 sc.4). Attribution to Dwight/S3E1 rests on this line being the obvious setup (only scene where Dwight says he misses Jim; the [serious] direction marks the turn) plus 'False.' being Dwight's catchphrase; the exact wording of the punchline cannot be verified here. No other scene has 'I do not miss him' with Jim. Accept 'season 3 premiere' / 'after Jim moved to Stamford' as the 'when'.",
+ "question_id": "q079",
+ "reference": "Dwight says it, in the cold open of Gay Witch Hunt (S3E1), after Jim has transferred to Stamford: he fake-sobs 'Jim is gone. He's gone. I miss him so much... I cry myself to sleep, Jim!' then turns serious and denies it. The transcript records the fake-sobbing line and a [serious] direction but not the follow-up words themselves.",
+ "evidence": [
+  {
+   "scene": "S3E1 sc.3",
+   "line": "Dwight: [sobbing] Jim is gone. He's gone. I miss him so much. Ooooh I cry myself to sleep, Jim! [serious]"
+  }
+ ],
+ "sources": [
+  "S3E1 sc.3"
+ ],
+ "accepted_alternatives": [
+  "Dwight, Gay Witch Hunt (S3E1), season 3 premiere, while Jim was at Stamford"
+ ],
+ "confidence": "medium",
+ "question": "Who said this, and when: \"Jim. False. I do not miss him.\"",
+ "category": "who_said",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": true,
+ "owner_note": "Owner (2026-10-07): it was Dwight; our data is missing the punchline words (S3E1)."
+}

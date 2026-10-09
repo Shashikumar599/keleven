@@ -1,0 +1,34 @@
+{
+ "question_id": "q006",
+ "reference": "Lloyd Gross, a fictional salesman Jim and Dwight invented to get around the salesmen's commission cap, in Turf War (S8E23); Pam drew a sketch of him and Toby is later passed off as Lloyd.",
+ "evidence": [
+  {
+   "scene": "S8E23 sc.11",
+   "line": "Jim: The salesmen have a commission cap, but we figured out a way around it."
+  },
+  {
+   "scene": "S8E23 sc.11",
+   "line": "Dwight: Lloyd Gross is a fictional salesman we invented to ... how do I put this ... steal from the company. Embezzle. To commit fraud."
+  },
+  {
+   "scene": "S8E23 sc.12",
+   "line": "Dwight: [pointing at Toby] There he is. That's Lloyd."
+  }
+ ],
+ "sources": [
+  "S8E23 sc.10",
+  "S8E23 sc.11",
+  "S8E23 sc.12",
+  "S8E23 sc.14",
+  "S8E23 sc.15"
+ ],
+ "confidence": "high",
+ "caveats": "Only one fake salesman in the dataset; name appears only in S8E23.",
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "question": "What is the name of the fake salesman Jim and Dwight invent to earn extra commission?",
+ "category": "detail",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

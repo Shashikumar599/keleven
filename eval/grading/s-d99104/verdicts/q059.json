@@ -1,0 +1,49 @@
+{
+ "question_id": "q059",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Holly Flax, S4E14 sc.12/19; the sc.102 NOT FOUND flag is only a speaker-prefix/trim artifact (same text found in B's check).",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 9,
+     "reader": 10
+    }
+   }
+  },
+  "B": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Holly Flax, all quotes in sent scenes.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    }
+   }
+  },
+  "C": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Holly Flax; 'S4E18/19 finale' is valid split numbering and Goodbye Toby is the last S4 episode here.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 6,
+     "reader": 9
+    },
+    "calibration": "ok"
+   }
+  }
+ }
+}

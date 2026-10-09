@@ -1,0 +1,106 @@
+{
+ "question_id": "q045",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "All five core women (Jan, Carol, Holly, Helene, Donna) plus valid optional Margaret, Julie, Marie; nothing invented. Minor: 'Pam's landlady' is true (S4E10 sc.33) but listed as confirmed in passages that don't say it, and 'eventually marries' Holly goes beyond the transcripts (engagement S7E18).",
+   "details": {
+    "reference_items": [
+     "Jan",
+     "Carol",
+     "Holly",
+     "Helene",
+     "Donna"
+    ],
+    "found": [
+     "Jan",
+     "Carol",
+     "Holly",
+     "Helene",
+     "Donna",
+     "Margaret",
+     "Julie",
+     "Marie"
+    ],
+    "missed": [],
+    "invented": [],
+    "lens_scores": {
+     "fact": 6,
+     "faithfulness": 6,
+     "reader": 8
+    }
+   }
+  },
+  "B": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "All five core women with correct context, minor Julie and Marie separated and caveated; episode numbers (Happy Hour S6E21, Business Trip S5E8) are valid split numbering.",
+   "details": {
+    "reference_items": [
+     "Jan",
+     "Carol",
+     "Holly",
+     "Helene",
+     "Donna"
+    ],
+    "found": [
+     "Jan",
+     "Carol",
+     "Holly",
+     "Helene",
+     "Donna",
+     "Julie",
+     "Marie"
+    ],
+    "missed": [],
+    "invented": [],
+    "lens_scores": {
+     "fact": 6,
+     "faithfulness": 8,
+     "reader": 9
+    },
+    "calibration": "ok"
+   }
+  },
+  "C": {
+   "score": 5,
+   "verdict": "partial",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Jan, Helene, Holly (plus optional Margaret) from the passages; Carol and Donna missing because not sent. Also mentions the 'European girlfriend' brag (S6E4 sc.56), hedged as a mention but a doubtful item.",
+   "details": {
+    "reference_items": [
+     "Jan",
+     "Carol",
+     "Holly",
+     "Helene",
+     "Donna"
+    ],
+    "found": [
+     "Jan",
+     "Holly",
+     "Helene",
+     "Margaret"
+    ],
+    "missed": [
+     "Carol",
+     "Donna"
+    ],
+    "invented": [
+     "European girlfriend (hedged mention)"
+    ],
+    "lens_scores": {
+     "fact": 3,
+     "faithfulness": 9,
+     "reader": 4
+    }
+   }
+  }
+ }
+}

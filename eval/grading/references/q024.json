@@ -1,0 +1,31 @@
+{
+ "question_id": "q024",
+ "reference": "A gift basket. Dwight reads the card: 'Here's something to enjoy on your three non-vacation days. Nashua branch.' (a taunt: the prize is three extra vacation days). Dwight wants to send them a dead deer; Michael says they'll keep it as a reward for the end of the competition. Weight Loss (S5E1).",
+ "evidence": [
+  {
+   "scene": "S5E1 sc.102",
+   "line": "Dwight: Look what just arrived from the Nashua branch. [reads from card attached to gift basket] 'Here's something to enjoy on your three non-vacation days. Nashua branch.' Can I send them a dead deer?"
+  },
+  {
+   "scene": "S5E1 sc.102",
+   "line": "Michael: ...we are going to us it as a reward for the end of our competition."
+  },
+  {
+   "scene": "S5E1 sc.2",
+   "line": "Michael: Whichever branch loses the most weight gets three extra vacation days."
+  }
+ ],
+ "sources": [
+  "S5E1 sc.102",
+  "S5E1 sc.2"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "The basket's contents are visual only (not named in the transcript); an answer naming specific food items goes beyond the transcript. Weight Loss is a two-part episode, combined as S5E1 here.",
+ "question": "During the weight loss competition, what does the Nashua branch send Scranton, and what does the card say?",
+ "category": "detail",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

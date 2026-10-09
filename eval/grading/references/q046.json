@@ -1,0 +1,140 @@
+{
+ "question_id": "q046",
+ "reference": "Michael Scott is the long-term manager (S1 to S7E21), with Jim as co-manager (S6E2 to S6E15, then briefly sole manager for a few hours in S6E15). After Michael leaves: DeAngelo Vickers (S7E19-22), Dwight as acting manager (S7E23), Creed as acting manager (end of S7E23 into S7E24), Robert California picked but took the CEO job instead (S8E1), Andy Bernard (S8E1-S8E21), Nellie Bertram (takes over S8E19, confirmed S8E21), Andy reinstated (S8E24 to S9E21), then Dwight as permanent manager (S9E21 to the finale).",
+ "evidence": [
+  {
+   "scene": "S6E2 sc.32",
+   "line": "Michael: Everybody, David Wallace and I have talked and we have decided to promote Jim to the position of co-manager."
+  },
+  {
+   "scene": "S6E15 sc.21",
+   "line": "Jo: I think you will become the salesman, and congratulations! You're gonna be the new manager of this branch!"
+  },
+  {
+   "scene": "S6E15 sc.42",
+   "line": "Dwight: Boss for, what was it? Oh, four and a half hours? New record. Low."
+  },
+  {
+   "scene": "S7E20 sc.18",
+   "line": "Dwight: ...your other co-host, and new manager, DeAngelo Jeremitrius Vickers!"
+  },
+  {
+   "scene": "S7E23 sc.5",
+   "line": "Jim: Dwight has been acting manager for three months now. No. A week."
+  },
+  {
+   "scene": "S7E23 sc.30-31",
+   "line": "Jo: Till then, we need a new acting manager. Now, who's got the most experience in this office? ... [Dwight sees Creed claiming the desk in the manager's office]"
+  },
+  {
+   "scene": "S8E1 sc.5",
+   "line": "Jim: The Search Committee finally decided ... on Robert California... for the manager position. Who took one look around and left.... convinced Jo to make him CEO ... then the position was his to fill.... And he chose..."
+  },
+  {
+   "scene": "S8E1 sc.6",
+   "line": "Andy: True, I may have been the second choice, but I was the first-choice's first choice."
+  },
+  {
+   "scene": "S8E19 sc.23",
+   "line": "Nellie: Because I am your new manager."
+  },
+  {
+   "scene": "S8E21 sc.45",
+   "line": "Robert: Andy, we're going to go with Nellie as manager and put you back on the sales team."
+  },
+  {
+   "scene": "S8E24 sc.15",
+   "line": "Andy: I convinced David Wallace to buy Dunder Mifflin back from Sabre. And at three o'clock today he's gonna walk in here and reinstate me as manager."
+  },
+  {
+   "scene": "S9E21 sc.34",
+   "line": "David Wallace: Will you be the new manager? Dwight: ... I was interim manager once, but then I shot that gun. But this isn't interim manager."
+  }
+ ],
+ "sources": [
+  "S6E2 sc.32",
+  "S6E15 sc.21",
+  "S7E20 sc.18",
+  "S7E23 sc.3",
+  "S7E23 sc.30",
+  "S7E24 sc.4",
+  "S8E1 sc.5",
+  "S8E1 sc.6",
+  "S8E19 sc.23",
+  "S8E21 sc.45",
+  "S8E24 sc.15",
+  "S9E21 sc.34"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": [
+  {
+   "item": "Michael Scott (S1 to his departure in S7E21)",
+   "scene": "S7E21",
+   "core": true
+  },
+  {
+   "item": "Jim Halpert as co-manager with Michael (S6), briefly sole manager in S6E15",
+   "scene": "S6E2 sc.32; S6E15 sc.21",
+   "core": true
+  },
+  {
+   "item": "DeAngelo Vickers (Michael's replacement, S7E19-22)",
+   "scene": "S7E20 sc.18",
+   "core": true
+  },
+  {
+   "item": "Dwight Schrute as acting manager (S7E23), loses it after firing a gun",
+   "scene": "S7E23 sc.3, sc.29",
+   "core": true
+  },
+  {
+   "item": "Andy Bernard (S8E1, again S8E24 to S9E21)",
+   "scene": "S8E1 sc.6; S8E24 sc.15",
+   "core": true
+  },
+  {
+   "item": "Nellie Bertram (takes over S8E19, confirmed by Robert S8E21)",
+   "scene": "S8E19 sc.23; S8E21 sc.45",
+   "core": true
+  },
+  {
+   "item": "Dwight Schrute as permanent manager (S9E21 to finale)",
+   "scene": "S9E21 sc.34",
+   "core": true
+  },
+  {
+   "item": "Creed Bratton as acting manager after Dwight (S7E23-24)",
+   "scene": "S7E23 sc.31; S7E24 sc.4",
+   "core": false
+  },
+  {
+   "item": "Robert California, chosen as manager but became CEO instead (S8E1)",
+   "scene": "S8E1 sc.5",
+   "core": false
+  },
+  {
+   "item": "Charles Miner, VP who took over the branch's running in S5 (New Boss) while Michael stayed branch manager",
+   "scene": "S5E18 sc.13",
+   "core": false
+  },
+  {
+   "item": "Dwight briefly 'in charge' in S1E3 (Jan tells him he isn't a manager) or expecting to be boss in S3E23 The Job (Michael didn't get the corporate job)",
+   "scene": "S1E3 sc.29; S3E23 sc.58",
+   "core": false
+  },
+  {
+   "item": "Jim left in charge for days while Michael was away (e.g. Survivor Man, Employee Transfer)",
+   "scene": "S4E7 sc.15; S5E5 sc.10",
+   "core": false
+  }
+ ],
+ "confidence": "medium",
+ "caveats": "'Acting and temporary' managers are a judgment call: Creed and Robert California are optional (Creed's stint is short and partly visual; Robert never actually managed the branch). Charles Miner was a regional VP, not branch manager (David: 'You're still the branch manager', S5E18). Episode numbers use the dataset's combined numbering (e.g. Search Committee = S7E24 here). Jim being 'left in charge' for a day is not a managerial appointment.",
+ "accepted_alternatives": [],
+ "question": "Who manages the Scranton branch over the series, including acting and temporary managers?",
+ "category": "list",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": true,
+ "owner_note": "Owner (2026-10-07): anyone named as a manager is fine; Creed was also a manager (accept Creed)."
+}

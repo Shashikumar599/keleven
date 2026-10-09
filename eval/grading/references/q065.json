@@ -1,0 +1,31 @@
+{
+ "question_id": "q065",
+ "reference": "In Angry Andy (S8E21), during his outburst after learning he's being replaced by Nellie, Andy grabs Nellie's photo off the wall and smashes it on the ground ('And your stupid face!'), then punches a hole in the wall ('And your stupid office!'). He also throws a chair at Robert just before.",
+ "evidence": [
+  {
+   "scene": "S8E21 sc.41",
+   "line": "Andy: And your stupid face! [grabs Nellie's photo off the wall and smashes it on the ground] And your stupid office! [punches hole in the wall] Ah!"
+  },
+  {
+   "scene": "S8E21 sc.41",
+   "line": "Darryl: He does not like that wall."
+  },
+  {
+   "scene": "S8E21 sc.41",
+   "line": "Andy: Why don't you take a seat, you idiot? [throws chair]"
+  }
+ ],
+ "sources": [
+  "S8E21 sc.41",
+  "S8E21 sc.45"
+ ],
+ "premise_true": true,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "Visual, known from stage directions. Both parts required: smashes the photo, punches a hole in the wall.",
+ "question": "What does Andy do to the wall and to Nellie's photo in 'Angry Andy'?",
+ "category": "visual",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

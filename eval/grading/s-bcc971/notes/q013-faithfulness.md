@@ -1,0 +1,3 @@
+A 10: both quotes exact (S5E1 sc.6: 2,336 and 2,210), cited, nothing extra.
+B 7: numbers exact. Adds "Pam was leaving for art school" as an unlabelled memory claim (listed in memory_claims but not marked [memory] in the text) and "Dwight and Michael told Pam to step off" (Dwight only says "Pam is on the scale" in the sent SQL; Michael sends her away in sc.6 per reference).
+C 7: numbers right and calibrated. Adds "art school in New York" and "revealing her weight to be 126": 126 is the difference, but Kevin's line in sc.6 ("Pam, you weigh 226 pounds?") shows weight is not established; extra unsupported detail stated as fact.

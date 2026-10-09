@@ -1,0 +1,7 @@
+q066 reader lens (judgment; criteria 0-2)
+
+A: 8 (position 2, support 1, reading 2, counterpoint 2, scope 1). Clear pick (Ryan) that the reference lists as defensible (WUPHF, cooked books). Concrete support is real: Robert "talked her out of her own job" (S8E1 sc.5, Jim); Ryan leaves baby Drake behind and runs off with Kelly in the Finale (S9E23 sc.75 "You gave your baby an allergic reaction just to talk to me?", sc.82 Ravi: "report an abandoned baby"). Good counterpoint (Ryan's schemes fail; Robert more competent). Minor: no scene-level grounding on the Kelly claims; Angela via "corporate policy" is vague.
+
+B: 4 (position 1, support 1, reading 0, counterpoint 2, scope 1). Hedged pick (Jan) rests only on Michael's one line (S4E10 sc.30), which it admits. Reading error: Toby's counseling in S7E2 is a therapist steering a session ("I'm just trying to help you Michael", sc.34), not manipulation; Jim's advice to Andy (S3E9 sc.26) is a prank. Misses the strong cases (Dwight's coup, Ryan, Angela). Frames the answer around "narrow sample" rather than the show.
+
+C: 6 (position 2, support 1, reading 1, counterpoint 2, scope 1). Clear pick (Jan) with a decent counterpoint (Ryan). But most support is unlabelled-feeling general memory; "Kelly hints at during their arguments [S3E18 sc.14]" cites a Ferris-wheel milkshake line that shows nothing about manipulation; Dwight's Cornell application (S5E5 sc.54 "it'll make you respect him less") is offered as Angela manipulating, which reverses who schemes there.

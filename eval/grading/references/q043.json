@@ -1,0 +1,25 @@
+{
+ "question_id": "q043",
+ "reference": "Dwight: 7173 lines under the exact label 'Dwight' (7223 counting joint labels), second only to Michael (11605), ahead of Jim (6612) and Pam (5210).",
+ "evidence": [
+  {
+   "scene": "SQL",
+   "line": "All-series speaker counts: Michael 11605, Dwight 7173, Jim 6612, Pam 5210, Andy 3969, Kevin 1668, Angela 1660"
+  }
+ ],
+ "sources": [],
+ "premise_true": null,
+ "count": {
+  "truth": 7173,
+  "what_counted": "rows in lines (all seasons) with speaker label exactly 'Dwight'; winner apart from Michael is Dwight. Labels containing 'Dwight': 7223; Jim exact 6612 / containing 6647.",
+  "sql": "SELECT speaker, count(*) FROM lines GROUP BY speaker ORDER BY 2 DESC LIMIT 12"
+ },
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "Dataset line counts, not word counts or screen time. Dwight leads Jim by about 560 lines, so the ranking is robust to label variants.",
+ "accepted_alternatives": [],
+ "question": "Apart from Michael, which character has the most lines across the whole series?",
+ "category": "count",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

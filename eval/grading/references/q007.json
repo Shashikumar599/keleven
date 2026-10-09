@@ -1,0 +1,22 @@
+{
+ "question_id": "q007",
+ "reference": "22 times: Erin says \"Between the foster homes and the orphanage, I had lice 22 times\" in Lice (S9E10), while checking Meredith's head.",
+ "evidence": [
+  {
+   "scene": "S9E10 sc.16",
+   "line": "Erin: [checking Meredith's head] Trust me, I know what I'm doing. Between the foster homes and the orphanage, I had lice 22 times."
+  }
+ ],
+ "sources": [
+  "S9E10 sc.16"
+ ],
+ "confidence": "high",
+ "caveats": "Wording is slightly ambiguous: the intended reading is how many times Erin says she had lice (22). Read literally ('how many times did she say it'), she says it once. The 22 is her own claim, not otherwise confirmed.",
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "question": "How many times did Erin say she had lice?",
+ "category": "detail",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

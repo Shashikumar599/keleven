@@ -1,0 +1,44 @@
+{
+ "question_id": "q051",
+ "reference": "Main cause: Holly has to move back to Colorado because her father's health is failing ('My dad isn't doing so well'), and Michael chooses to go with her; he proposes, she accepts, and he announces 'Holly has to go back to Colorado. I'm going with her. I'm leaving.' (Garage Sale, S7E18). He leaves for Boulder, Colorado, in 'Goodbye, Michael' (S7E21), to start a new life with Holly.",
+ "evidence": [
+  {
+   "scene": "S7E18 sc.26",
+   "line": "Holly: I think I need to go home to Colorado. My dad isn't doing so well. ... And I want you to come with me."
+  },
+  {
+   "scene": "S7E18 sc.33",
+   "line": "Holly: ... Michael you are my life now. I'm not going to Colorado."
+  },
+  {
+   "scene": "S7E18 sc.39",
+   "line": "Michael: Thank you. So guys, guys, guys. We're moving to Colorado. ... Holly has to go back to Colorado. I'm going with her. I'm leaving."
+  },
+  {
+   "scene": "S7E21 sc.1",
+   "line": "Michael: Well, I'm moving to Colorado to start my new life with Holly."
+  },
+  {
+   "scene": "S7E21 sc.50",
+   "line": "Michael: So... Holly's my family now. She's my family."
+  }
+ ],
+ "sources": [
+  "S7E18 sc.26",
+  "S7E18 sc.33",
+  "S7E18 sc.39",
+  "S7E21 sc.1",
+  "S7E21 sc.23",
+  "S7E21 sc.50"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "Supporting points (credit, not required): the proposal in the annex (S7E18 sc.39); Holly's parents live in Boulder (S7E21 sc.23); he leaves a day early to avoid goodbyes (S7E21 sc.23). Holly first says she won't go so as not to make him choose (sc.33); it is Michael who decides they will both go. Being forced out or fired is wrong. Real-world reason (Steve Carell leaving the show) is off-camera and not the in-show answer.",
+ "accepted_alternatives": [],
+ "question": "Why does Michael leave Scranton?",
+ "category": "why",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

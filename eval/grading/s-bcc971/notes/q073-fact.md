@@ -1,0 +1,4 @@
+FACT lens, q073 (premise true: Kelly married Ryan, S7E14 sc.1 "Ryan Bailey Howard and I got divorced"; "like a week ago, we got really wasted")
+A: 9/10. Ryan (correct), divorced soon after, engaged to Ravi but never married him, ran off with Ryan in the finale (S9E23 per ref). The S8E21 sc.46 proposal and her choosing Ravi are exact ("I love Ravi and I choose him"). Minor: no scene cited for the marriage.
+B: 3/10. Right that she married Ryan in S7 (The Search, S7E15 split numbering is valid), but claims she later married Ravi: false, only engaged (S9E1 sc.8 "Her fiance Ravi"); no wedding to Ravi in the DB (no hit for ravi + marri/wedding).
+C: 1/10. Says transcripts don't say whom Kelly married; the marriage to Ryan is in S7E14 sc.1 (not sent, but answer gives no answer). Fails the question.

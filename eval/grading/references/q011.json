@@ -1,0 +1,27 @@
+{
+ "question_id": "q011",
+ "reference": "Since he was 18: Stanley says in a talking head he has tried to get on jury duty every single year since he was 18, in Classy Christmas (S7E11), after Toby gets jury duty.",
+ "evidence": [
+  {
+   "scene": "S7E11 sc.54",
+   "line": "Stanley: I have been trying to get on jury duty every single year since I was 18 years old. To get to go sit in an air-conditioned room downtown, judging people while my lunch is paid for... that is the life."
+  },
+  {
+   "scene": "S7E11 sc.53",
+   "line": "Stanley: So do they bring in food, or do you get to go out? / Toby: No, they bring it in. / Stanley: You lucky son of a bitch."
+  }
+ ],
+ "sources": [
+  "S7E11 sc.53",
+  "S7E11 sc.54"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "",
+ "question": "Since what age has Stanley been trying to get jury duty?",
+ "category": "detail",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

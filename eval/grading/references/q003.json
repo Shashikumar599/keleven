@@ -1,0 +1,16 @@
+{
+ "question_id": "q003",
+ "reference": "The completion is \"- Wayne Gretzky\" \"- Michael Scott\": Michael's whiteboard credits the quote to Wayne Gretzky and then signs it himself. This is a visual gag only; the transcripts don't contain it.",
+ "evidence": [],
+ "sources": [],
+ "confidence": "low",
+ "caveats": "No line, stage direction or mention of 'Gretzky', 'shots you don't take' or '100%' with this quote exists anywhere in the dataset; the gag is written on a whiteboard (visual-only). The answer is from well-known knowledge of the show, not verified in transcripts; episode not identified here. A grader should accept 'Wayne Gretzky - Michael Scott' (the attribution) as the completion; the question has no spoken continuation.",
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "question": "Finish the quote: \"You miss 100% of the shots you don't take...\"",
+ "category": "finish_the_quote",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": true,
+ "owner_note": "Owner confirmed (2026-10-06): reference is correct."
+}

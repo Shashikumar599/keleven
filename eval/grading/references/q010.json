@@ -1,0 +1,23 @@
+{
+ "question_id": "q010",
+ "reference": "500 feet of red wire, for $20 for the whole spool, bought at a flea market up by Dunmore High School; Prince Family Paper (S5E12).",
+ "evidence": [
+  {
+   "scene": "S5E12 sc.2",
+   "line": "Jim: I got 500 feet of red wire at a flea market up by Dunmore High School. 20 bucks for the whole spool. Crazy, what a deal."
+  }
+ ],
+ "sources": [
+  "S5E12 sc.1",
+  "S5E12 sc.2"
+ ],
+ "confidence": "high",
+ "caveats": "It is a prank on Dwight (who follows the wire and climbs a telephone pole); this is the cold open.",
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "question": "How much red wire did Jim buy, and how much did he pay for it?",
+ "category": "detail",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

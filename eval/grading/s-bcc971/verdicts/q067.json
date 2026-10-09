@@ -1,0 +1,73 @@
+{
+ "question_id": "q067",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "claim_beyond_evidence",
+   "notes": "Clear view with real anchors (S3E15 sc.38, S3E17 sc.46, S3E16 sc.10) and a counterpoint, but barely engages the actual series ending, states some speculation flatly, and overreaches ('routinely neglected' from one S2E16 scene).",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 7,
+     "reader": 7
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 1,
+     "counterpoint": 2,
+     "scope": 1
+    },
+    "total": 7
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "Marks speculation, ties it to the real ending (Austin/Athleap, correct name per S9E23 sc.26) and Roy's growth, gives a verdict and counterpoint. Some scene citations stretch (S3E15 sc.38 cited for Roy's indifference to her art and temper).",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 5,
+     "reader": 9
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 2,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 9
+   }
+  },
+  "C": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Opens as speculation, states the real history and concrete ending changes (Pratt, Austin), uses Roy's Cocktails fallout (S3E17 sc.48 'call the cops... paid them off') and Roy/Laura (S9E2), with a verdict and counter-scenario.",
+   "details": {
+    "lens_scores": {
+     "fact": 6,
+     "faithfulness": 8,
+     "reader": 9
+    },
+    "calibration": "ok",
+    "scores": {
+     "position": 2,
+     "support": 2,
+     "reading": 2,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 10
+   }
+  }
+ }
+}

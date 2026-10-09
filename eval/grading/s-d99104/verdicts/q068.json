@@ -1,0 +1,79 @@
+{
+ "question_id": "q068",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": "literal_reading",
+   "notes": "Picks Creed on his own 'mud and rain' boast (S3E1 sc.40) while admitting he is unreliable; Meredith (best-supported, S5E2 sc.6) only runner-up; no scenes. (Rubric total 8; adjusted from 7 after the score bands were aligned.)",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 7,
+     "reader": 5
+    },
+    "calibration": "ok",
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 1,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 8,
+    "adjusted": {
+     "from_score": 7,
+     "from_verdict": "partial",
+     "from_support": 0,
+     "why": "rubric total 8 was lowered by 1 to fit a score band mismatch (fixed in rubrics.md); restored 2026-10-06"
+    }
+   }
+  },
+  "B": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "claim_beyond_evidence",
+   "notes": "Picks Packer on Michael's retelling and Packer's own boast (S2E2 sc.3-4), calling it 'corroborated'; wavers; Meredith as counterpoint is good.",
+   "details": {
+    "lens_scores": {
+     "fact": 6,
+     "faithfulness": 6,
+     "reader": 5
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 0,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 7
+   }
+  },
+  "C": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "literal_reading",
+   "notes": "Picks Creed using his quip 'Haven't heard any complaints' (S8E21 sc.37) and a raised hand in a bit as evidence; Meredith 'verified by coworkers' rests on Angela's insult.",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 8,
+     "reader": 4
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 0,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 7
+   }
+  }
+ }
+}

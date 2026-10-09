@@ -1,0 +1,64 @@
+{
+ "question_id": "q067",
+ "reference": "Speculative; the show supports some anchors. Pam nearly married Roy (engaged ~3 years, wedding set for June, S1E1/S2E14) but called it off days before (S3E1). Roy was indifferent to her art (left her art show early, S3E16), wanted hot dogs at their wedding (S9E2), and reacted violently when she was honest about Jim (S3E17-18). Her growth (art classes, own apartment S3E1; coal-walk honesty S3E22) followed the breakup. Without that, the ending's core would change: no marriage to Jim (S6E4), no Cece/Phillip with Jim, no Pam selling the house to follow Jim to Austin (S9E23), and the documentary's central love story would be gone. Roy himself ends up happy with Laura and a successful gravel company (S9E2).",
+ "evidence": [
+  {
+   "scene": "S1E1 sc.34",
+   "line": "Pam: Roy's my fiance. We've been engaged about three years."
+  },
+  {
+   "scene": "S3E1 sc.24",
+   "line": "Pam: Yeah, I didn't go through with the wedding. I got cold feet ... I have my own apartment. I'm taking art classes."
+  },
+  {
+   "scene": "S3E16 sc.37",
+   "line": "Roy: It's cool if I go, right? I mean, I looked at all of them."
+  },
+  {
+   "scene": "S3E17 sc.46",
+   "line": "Roy: Yeah, you're right. This is so over. You kidding me, Pam!?"
+  },
+  {
+   "scene": "S3E17 sc.48",
+   "line": "Roy: I'm gonna kill Jim Halpert."
+  },
+  {
+   "scene": "S3E18 sc.3",
+   "line": "Toby: Well, we fired Roy, obviously."
+  },
+  {
+   "scene": "S9E2 sc.7",
+   "line": "Pam: Planned a wedding with him. He wanted hot dogs."
+  },
+  {
+   "scene": "S9E2 sc.17",
+   "line": "Roy: If it wasn't for you, I never would've met Laura. ... Started a gravel company."
+  },
+  {
+   "scene": "S9E23 sc.86",
+   "line": "Pam: Well, you... you bought the house without telling me, so I thought I could sell it without telling you."
+  },
+  {
+   "scene": "S9E23 sc.116",
+   "line": "Pam: ... There's a lot of beauty in ordinary things."
+  }
+ ],
+ "sources": [
+  "S1E1 sc.34",
+  "S3E1 sc.24",
+  "S3E16",
+  "S3E17",
+  "S3E18 sc.3",
+  "S9E2",
+  "S9E23"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "medium",
+ "caveats": "Counterfactual: no right answer. A good answer takes a position on how the ending would differ, grounds it in what actually happened (called-off wedding, Roy's attitude to her art, her later growth, the Jim/Pam ending), clearly marks the alternative as speculation, and gives a counterpoint (e.g. Roy did change by S9: he is kinder, successful, plays piano for Laura, so a married Roy-Pam could have grown too; or Pam might still have pursued art). Readings to avoid: stating speculation as fact; claiming Pam actually married Roy; treating Roy's 'dodged a bullet... just kidding' (S9E2) as a serious verdict; talking about the actors (Jenna Fischer, David Denman) instead of the characters.",
+ "question": "How would the ending have changed if Pam had married Roy instead?",
+ "category": "counterfactual",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}
