@@ -17,3 +17,6 @@ data/processed/
 .DS_Store
 .vscode/
 .idea/
+
+# Derived graph extraction output (not committed)
+graph/out/

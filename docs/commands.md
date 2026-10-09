@@ -102,7 +102,26 @@ Compare versions:
 python -m eval.grade summary --sets s-d99104,s-bcc971       # v1 (s-d99104) and v2 (s-bcc971): mean /10 per version x type x category
 ```
 
-## 7. Git
+## 7. Graph extraction (v3, in progress)
+
+```bash
+python -m graph.validate --file out.json --season 7 --episode 14 [--out clean.json]   # check one episode's extraction, no LLM
+```
+Prompts: `generation/prompts/extract_v1.md` and `review_v1.md` (drafts). Schemas: `graph/stage1_schema.json`, `graph/review_schema.json`.
+
+```bash
+python -m graph.extract_one --season 9 --episode 22 [--run]        # stage 1 for one episode, files in graph/out/ (--run = LLM call)
+python -m graph.review --season 9 --episode 22 [--run]             # review pass for one episode, files in graph/out/ (--run = LLM call)
+python -m graph.render --name S9E22 --title "A.A.R.M."             # readable Markdown of graph/out/ results into docs/samples/
+
+# many episodes, every stage stored in Postgres (migration 012); dry run unless --run
+python -m graph.run_extraction --label <label> --pilot [--run]     # the 10 pilot episodes
+python -m graph.run_extraction --label <label> --only S7E24,S9E23 [--run]
+python -m graph.run_extraction --label <label> --all --limit 20 [--run]
+python -m graph.run_extraction --label <label> --report            # funnel of a run, no calls
+```
+
+## 8. Git
 
 ```bash
 git status

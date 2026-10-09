@@ -1,0 +1,219 @@
+{
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "usage": {
+   "input": 26218,
+   "output": 323,
+   "thinking": 0
+  },
+  "latency_ms": 4632,
+  "prompt_sha256": "298b102d"
+ },
+ "checked": [
+  "c1",
+  "c2",
+  "c3",
+  "c4",
+  "c5",
+  "c6",
+  "c7",
+  "c8",
+  "c9",
+  "c10",
+  "c11",
+  "c12",
+  "c13",
+  "c14",
+  "c15",
+  "c16",
+  "c17",
+  "c18",
+  "c19",
+  "c20",
+  "c21",
+  "c22",
+  "c23",
+  "c24",
+  "c25",
+  "c26",
+  "c27",
+  "p1",
+  "p2",
+  "p3",
+  "p4",
+  "p5",
+  "e1",
+  "e2",
+  "e3",
+  "e4",
+  "e5",
+  "e6",
+  "e7",
+  "e8",
+  "e9",
+  "e10",
+  "e11",
+  "e12",
+  "e13",
+  "r1",
+  "r2",
+  "r3"
+ ],
+ "not_checked": [],
+ "hints": {
+  "c2": [
+   "counsel",
+   "reassur"
+  ],
+  "c4": [
+   "accept",
+   "reveal"
+  ],
+  "c5": [
+   "coworker",
+   "reject"
+  ],
+  "c6": [
+   "brief",
+   "caught",
+   "shar"
+  ],
+  "c7": [
+   "hous"
+  ],
+  "c8": [
+   "attend",
+   "fond",
+   "receiv"
+  ],
+  "c9": [
+   "operat",
+   "organiz"
+  ],
+  "c10": [
+   "reveal",
+   "visit"
+  ],
+  "c11": [
+   "chor",
+   "consider",
+   "dat",
+   "discuss"
+  ],
+  "c14": [
+   "farewell"
+  ],
+  "c16": [
+   "mock"
+  ],
+  "c17": [
+   "answer"
+  ],
+  "c18": [
+   "alongside"
+  ],
+  "c19": [
+   "greet"
+  ],
+  "c20": [
+   "reject"
+  ],
+  "c22": [
+   "disguise"
+  ],
+  "c24": [
+   "switch"
+  ],
+  "c26": [
+   "accept",
+   "lobby"
+  ],
+  "c27": [
+   "episode",
+   "prior"
+  ],
+  "p1": [
+   "branch",
+   "employe",
+   "main"
+  ],
+  "p2": [
+   "visit"
+  ],
+  "p3": [
+   "gather"
+  ],
+  "e1": [
+   "branch",
+   "entrance",
+   "install",
+   "system",
+   "vent"
+  ],
+  "e2": [
+   "refus"
+  ],
+  "e4": [
+   "appoint"
+  ],
+  "e5": [
+   "crash",
+   "disguise",
+   "reject"
+  ],
+  "e7": [
+   "compile",
+   "footage"
+  ],
+  "e8": [
+   "advis",
+   "follow"
+  ],
+  "e9": [
+   "reassur",
+   "unopen"
+  ],
+  "e10": [
+   "convinc",
+   "depart",
+   "share"
+  ],
+  "e11": [
+   "accept"
+  ],
+  "e12": [
+   "biological",
+   "inde",
+   "reveal"
+  ],
+  "e13": [
+   "assemble",
+   "coworker"
+  ],
+  "r3": [
+   "father"
+  ]
+ },
+ "corrections": [
+  {
+   "target": "characters.c26.description",
+   "action": "edit",
+   "new_value": "Accepts donuts from Darryl.",
+   "problem": "No line mentions a lobby.",
+   "lines": [
+    59074,
+    59079
+   ]
+  }
+ ],
+ "log": [
+  {
+   "target": "characters.c26.description",
+   "action": "edit",
+   "problem": "No line mentions a lobby.",
+   "status": "applied",
+   "old": "Accepts donuts from Darryl in the building lobby.",
+   "new": "Accepts donuts from Darryl."
+  }
+ ]
+}

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#475569"/></marker>
+    <marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#b45309"/></marker>
+  </defs>
+  <rect width="960" height="560" fill="#fafaf9"/>
+  <text x="24" y="32" font-size="18" font-weight="700" fill="#1c1917">First pass: what the graph looks like (one thread, illustrative)</text>
+  <text x="24" y="52" font-size="12" fill="#57534e">Each episode is extracted on its own; the pieces join because they point to the same character IDs. Facts: S7E14, S9E1, S9E23.</text>
+
+  <text x="24" y="100" font-size="11" fill="#78716c" font-weight="700">CHARACTERS</text>
+  <text x="24" y="285" font-size="11" fill="#78716c" font-weight="700">EVENTS</text>
+  <text x="24" y="470" font-size="11" fill="#78716c" font-weight="700">SCENES</text>
+
+  <!-- relation edges (timed) -->
+  <path d="M240 150 L 442 150" stroke="#b45309" stroke-width="2.5" marker-end="url(#r)" marker-start="url(#r)"/>
+  <text x="341" y="138" font-size="12" fill="#b45309" text-anchor="middle" font-weight="700">married</text>
+  <text x="341" y="170" font-size="10" fill="#b45309" text-anchor="middle">from S7E14 (already divorced)</text>
+  <path d="M518 150 L 722 150" stroke="#b45309" stroke-width="2.5" marker-end="url(#r)" marker-start="url(#r)"/>
+  <text x="620" y="138" font-size="12" fill="#b45309" text-anchor="middle" font-weight="700">engaged</text>
+  <text x="620" y="170" font-size="10" fill="#b45309" text-anchor="middle">S9E1</text>
+
+  <!-- characters -->
+  <g font-size="14" font-weight="700" fill="#0c4a6e" text-anchor="middle">
+    <circle cx="200" cy="150" r="40" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/><text x="200" y="155">Ryan</text>
+    <circle cx="480" cy="150" r="40" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/><text x="480" y="155">Kelly</text>
+    <circle cx="760" cy="150" r="40" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/><text x="760" y="155">Ravi</text>
+  </g>
+
+  <!-- participates edges -->
+  <g stroke="#0369a1" stroke-width="1.4" fill="none">
+    <path d="M200 190 L 200 292"/>
+    <path d="M458 184 L 240 292"/>
+    <path d="M760 190 L 760 292"/>
+    <path d="M500 184 L 740 292"/>
+    <path d="M480 190 L 480 292"/>
+    <path d="M232 174 L 440 300"/>
+  </g>
+  <text x="96" y="240" font-size="10" fill="#0369a1">PARTICIPATES_IN</text>
+
+  <!-- events -->
+  <g text-anchor="middle">
+    <rect x="90" y="292" width="220" height="78" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <text x="200" y="318" font-size="13" font-weight="700" fill="#14532d">E1  Kelly and Ryan marry</text>
+    <text x="200" y="336" font-size="11" fill="#166534">off-screen, announced with</text>
+    <text x="200" y="351" font-size="11" fill="#166534">the divorce (S7E14)</text>
+    <rect x="370" y="292" width="220" height="78" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <text x="480" y="318" font-size="13" font-weight="700" fill="#14532d">E3  Kelly runs off with Ryan</text>
+    <text x="480" y="336" font-size="11" fill="#166534">leaves Ravi and the baby</text>
+    <text x="480" y="351" font-size="11" fill="#166534">in the finale (S9E23)</text>
+    <rect x="650" y="292" width="220" height="78" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <text x="760" y="318" font-size="13" font-weight="700" fill="#14532d">E2  Kelly gets engaged to Ravi</text>
+    <text x="760" y="336" font-size="11" fill="#166534">"her fiance Ravi"</text>
+    <text x="760" y="351" font-size="11" fill="#166534">(S9E1)</text>
+  </g>
+
+  <!-- event links -->
+  <path d="M310 331 L 368 331" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M650 331 L 592 331" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+  <text x="340" y="322" font-size="9" fill="#475569" text-anchor="middle" font-weight="700">REFERS_TO</text>
+  <text x="620" y="322" font-size="9" fill="#475569" text-anchor="middle" font-weight="700">LEADS_TO</text>
+  <path d="M340 372 L 340 376" stroke="none"/>
+
+  <!-- scenes -->
+  <g text-anchor="middle">
+    <rect x="110" y="448" width="180" height="46" rx="6" fill="#f5f5f4" stroke="#78716c" stroke-width="1.5"/>
+    <text x="200" y="467" font-size="12" font-weight="700" fill="#44403c">S7E14 sc.1</text><text x="200" y="483" font-size="10" fill="#57534e">The Search</text>
+    <rect x="390" y="448" width="180" height="46" rx="6" fill="#f5f5f4" stroke="#78716c" stroke-width="1.5"/>
+    <text x="480" y="467" font-size="12" font-weight="700" fill="#44403c">S9E23 sc.66</text><text x="480" y="483" font-size="10" fill="#57534e">Finale</text>
+    <rect x="670" y="448" width="180" height="46" rx="6" fill="#f5f5f4" stroke="#78716c" stroke-width="1.5"/>
+    <text x="760" y="467" font-size="12" font-weight="700" fill="#44403c">S9E1 sc.8</text><text x="760" y="483" font-size="10" fill="#57534e">Season 9 premiere</text>
+  </g>
+  <g stroke="#78716c" stroke-width="1.6" fill="none" marker-end="url(#a)">
+    <path d="M200 370 L 200 446"/><path d="M480 370 L 480 446"/><path d="M760 370 L 760 446"/>
+  </g>
+  <g font-size="10" fill="#57534e">
+    <text x="208" y="414">HAPPENS_IN</text><text x="488" y="414">HAPPENS_IN</text><text x="768" y="414">HAPPENS_IN</text>
+  </g>
+
+  <!-- legend -->
+  <g font-size="11" fill="#44403c">
+    <circle cx="40" cy="528" r="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/><text x="54" y="532">character</text>
+    <rect x="136" y="521" width="14" height="14" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="156" y="532">event (cited)</text>
+    <rect x="252" y="521" width="14" height="14" rx="3" fill="#f5f5f4" stroke="#78716c" stroke-width="1.5"/><text x="272" y="532">scene (data)</text>
+    <path d="M372 528 L 402 528" stroke="#b45309" stroke-width="2.5"/><text x="408" y="532">relation, with dates</text>
+    <path d="M540 528 L 570 528" stroke="#475569" stroke-width="2"/><text x="576" y="532">link between events</text>
+    <path d="M710 528 L 740 528" stroke="#0369a1" stroke-width="1.4"/><text x="746" y="532">takes part in</text>
+  </g>
+</svg>

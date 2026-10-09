@@ -1,0 +1,14 @@
+{
+ "model": "gemini-3.8-flash",
+ "model_version": "gemini-3.8-flash",
+ "usage": {
+  "input": 9990,
+  "output": 4203,
+  "thinking": 0
+ },
+ "latency_ms": 33439,
+ "attempts": 1,
+ "thinking": "low",
+ "prompt_sha256": "e9bcfbf4",
+ "schema_sha256": "936cb24c"
+}

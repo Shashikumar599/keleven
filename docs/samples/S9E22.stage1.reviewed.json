@@ -1,0 +1,913 @@
+{
+ "clean": {
+  "characters": [
+   {
+    "local_id": "c1",
+    "names": [
+     "Dwight",
+     "Dwight K. Schrute"
+    ],
+    "description": "Serves as manager, tests staff for an assistant, and proposes to Angela.",
+    "present": true,
+    "lines": [
+     58889,
+     58910,
+     59119,
+     59320,
+     59358
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "c2",
+    "names": [
+     "Jim",
+     "Jim Halpert",
+     "Mr. Halpert"
+    ],
+    "description": "Helps Dwight choose an assistant, reassures Pam of his love, and counsels Dwight.",
+    "present": true,
+    "lines": [
+     58915,
+     58929,
+     59025,
+     59146,
+     59329
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "c3",
+    "names": [
+     "Pam"
+    ],
+    "description": "Worries about holding Jim back until he shows her a video and letter.",
+    "present": true,
+    "lines": [
+     58923,
+     58930,
+     59134,
+     59297,
+     59326
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "c4",
+    "names": [
+     "Angela"
+    ],
+    "description": "Brings Phillip to work, accepts Dwight's proposal, and reveals Phillip is his son.",
+    "present": true,
+    "lines": [
+     58905,
+     58943,
+     59293,
+     59351,
+     59363
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "c5",
+    "names": [
+     "Andy",
+     "Andrew Bernard",
+     "Ezra Cornell"
+    ],
+    "description": "Auditions for a singing show, gets rejected, and joins the coworkers at the bar.",
+    "present": true,
+    "lines": [
+     58911,
+     58955,
+     59236,
+     59253,
+     59377
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "c6",
+    "names": [
+     "Darryl"
+    ],
+    "description": "Returns briefly, gets caught leaving without saying goodbye, and shares a final dance.",
+    "present": true,
+    "lines": [
+     59035,
+     59038,
+     59081,
+     59166,
+     59333
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "c7",
+    "names": [
+     "Oscar"
+    ],
+    "description": "Helps Angela care for baby Phillip and houses her in his apartment.",
+    "present": true,
+    "lines": [
+     58904,
+     58906,
+     58953,
+     59207,
+     59340
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "c8",
+    "names": [
+     "Kevin"
+    ],
+    "description": "Becomes fond of Phillip after receiving a gift card and attends the viewing party.",
+    "present": true,
+    "lines": [
+     58888,
+     58952,
+     58978,
+     59277,
+     59376
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "c9",
+    "names": [
+     "Erin"
+    ],
+    "description": "Operates the office security door and organizes a goodbye dance with Darryl.",
+    "present": true,
+    "lines": [
+     58887,
+     58896,
+     59103,
+     59163,
+     59280
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "c10",
+    "names": [
+     "Phillip",
+     "Philip"
+    ],
+    "description": "Visits the office with Angela and is revealed to be Dwight's son.",
+    "present": true,
+    "lines": [
+     58903,
+     58947,
+     59178,
+     59216,
+     59363
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "c11",
+    "names": [
+     "Esther"
+    ],
+    "description": "Dates Dwight and discusses farm chores before he considers proposing to her.",
+    "present": true,
+    "lines": [
+     58908,
+     59192,
+     59197,
+     59307
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "c12",
+    "names": [
+     "Phyllis"
+    ],
+    "description": "Participates in the assistant obstacle course and dances with Darryl.",
+    "present": true,
+    "lines": [
+     58935,
+     59092,
+     59156,
+     59332,
+     59384
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "c13",
+    "names": [
+     "Stanley"
+    ],
+    "description": "Sleeps in the office and joins the staff at the bar.",
+    "present": true,
+    "lines": [
+     58950,
+     59208,
+     59385
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "c14",
+    "names": [
+     "Meredith"
+    ],
+    "description": "Attempts an assistant test and participates in Darryl's farewell dance.",
+    "present": true,
+    "lines": [
+     58949,
+     59040,
+     59159,
+     59335,
+     59368
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "c15",
+    "names": [
+     "Creed"
+    ],
+    "description": "Steams his clothes, worries about the documentary airing, and saves tables at the bar.",
+    "present": true,
+    "lines": [
+     58902,
+     58954,
+     59368,
+     59382
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "c16",
+    "names": [
+     "Clark"
+    ],
+    "description": "Participates in the mock assistant phone message test.",
+    "present": true,
+    "lines": [
+     59056,
+     59060,
+     59162,
+     59380
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "c17",
+    "names": [
+     "Pete",
+     "Plop"
+    ],
+    "description": "Answers a question in Jim's test for assistant candidates.",
+    "present": true,
+    "lines": [
+     59022,
+     59024,
+     59048,
+     59050
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "c18",
+    "names": [
+     "Casey",
+     "Casey Dean"
+    ],
+    "description": "Waits in line alongside Andy at the singing competition auditions.",
+    "present": true,
+    "lines": [
+     58956,
+     58962,
+     59003,
+     59065,
+     59230
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "c19",
+    "names": [
+     "Mark McGrath"
+    ],
+    "description": "Greets contestants waiting in line for the singing audition.",
+    "present": true,
+    "lines": [
+     59002,
+     59004,
+     59008
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "c20",
+    "names": [
+     "Clay Aiken"
+    ],
+    "description": "Serves as a judge and rejects Andy's audition.",
+    "present": true,
+    "lines": [
+     59239,
+     59246
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "c21",
+    "names": [
+     "Santigold"
+    ],
+    "description": "Judges the singing audition and tells Andy to leave.",
+    "present": true,
+    "lines": [
+     59235,
+     59240,
+     59252
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "c22",
+    "names": [
+     "Aaron Rodgers"
+    ],
+    "description": "Judges the singing auditions and calls out Andy's disguise.",
+    "present": true,
+    "lines": [
+     59237,
+     59242,
+     59248
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "c23",
+    "names": [
+     "Check-in guy"
+    ],
+    "description": "Manages check-ins and cuts off contestants in line for auditions.",
+    "present": true,
+    "lines": [
+     58912,
+     59218,
+     59225,
+     59227
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "c24",
+    "names": [
+     "Bartender"
+    ],
+    "description": "Works at Poor Richard's and switches the television to PBS.",
+    "present": true,
+    "lines": [
+     59371,
+     59375,
+     59378
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "c25",
+    "names": [
+     "Glenn"
+    ],
+    "description": "Speaks to Darryl in the warehouse about his delivery.",
+    "present": true,
+    "lines": [
+     59036
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "c26",
+    "names": [
+     "Hank"
+    ],
+    "description": "Accepts donuts from Darryl.",
+    "present": true,
+    "lines": [
+     59074
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "c27",
+    "names": [
+     "the senator"
+    ],
+    "description": "Divorced Angela prior to the episode.",
+    "present": false,
+    "lines": [
+     58906
+    ],
+    "flags": []
+   }
+  ],
+  "places": [
+   {
+    "local_id": "p1",
+    "name": "the office",
+    "kind": "workplace",
+    "description": "The main Scranton branch office where employees work and compete.",
+    "lines": [
+     58888,
+     58947,
+     59020
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "p2",
+    "name": "the warehouse",
+    "kind": "workplace",
+    "description": "Where Darryl secretly visits before trying to slip away.",
+    "lines": [
+     59036,
+     59079
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "p3",
+    "name": "Poor Richard's",
+    "kind": "public",
+    "description": "The bar where the office gathers to watch the documentary.",
+    "lines": [
+     58952,
+     59335,
+     59368
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "p4",
+    "name": "the side of the road",
+    "kind": "public",
+    "description": "Where Dwight pulls Angela over and proposes to her.",
+    "lines": [
+     59347,
+     59350,
+     59358
+    ],
+    "flags": []
+   },
+   {
+    "local_id": "p5",
+    "name": "Dwight's office",
+    "kind": "workplace",
+    "description": "The manager's office where Dwight talks with Jim and Angela.",
+    "lines": [
+     58979,
+     59214,
+     59288
+    ],
+    "flags": []
+   }
+  ],
+  "events": [
+   {
+    "id": "e1",
+    "text": "Dwight installs new security protocols and a steam vent system at the Scranton branch entrance.",
+    "kind": "job",
+    "place": "p1",
+    "participants": [
+     {
+      "character": "c1",
+      "role": "agent"
+     },
+     {
+      "character": "c9",
+      "role": "witness"
+     }
+    ],
+    "lines": [
+     58889,
+     58898,
+     58901
+    ],
+    "certainty": "stated",
+    "importance": "minor",
+    "flags": []
+   },
+   {
+    "id": "e2",
+    "text": "Angela brings her baby son Phillip into the office after the daycare refuses him.",
+    "kind": "family",
+    "place": "p1",
+    "participants": [
+     {
+      "character": "c4",
+      "role": "agent"
+     },
+     {
+      "character": "c10",
+      "role": "subject"
+     },
+     {
+      "character": "c1",
+      "role": "witness"
+     },
+     {
+      "character": "c7",
+      "role": "witness"
+     }
+    ],
+    "lines": [
+     58942,
+     58943,
+     58947
+    ],
+    "certainty": "stated",
+    "importance": "minor",
+    "flags": [
+     "participant_not_in_lines"
+    ]
+   },
+   {
+    "id": "e3",
+    "text": "Jim tricks Dwight into holding competitions for an assistant to the assistant to the regional manager.",
+    "kind": "prank",
+    "place": "p1",
+    "participants": [
+     {
+      "character": "c2",
+      "role": "agent"
+     },
+     {
+      "character": "c1",
+      "role": "patient"
+     }
+    ],
+    "lines": [
+     58986,
+     58990,
+     59025,
+     59034
+    ],
+    "certainty": "stated",
+    "importance": "minor",
+    "flags": []
+   },
+   {
+    "id": "e4",
+    "text": "Dwight appoints himself to be Jim's assistant to the assistant to the regional manager.",
+    "kind": "job",
+    "place": "p1",
+    "participants": [
+     {
+      "character": "c1",
+      "role": "agent"
+     },
+     {
+      "character": "c2",
+      "role": "agent"
+     }
+    ],
+    "lines": [
+     59116,
+     59118,
+     59119
+    ],
+    "certainty": "stated",
+    "importance": "minor",
+    "flags": []
+   },
+   {
+    "id": "e5",
+    "text": "Andy crashes the America's Next A Cappella Sensation audition room, sings in disguise, and is rejected by the judges.",
+    "kind": "job",
+    "place": null,
+    "participants": [
+     {
+      "character": "c5",
+      "role": "agent"
+     },
+     {
+      "character": "c20",
+      "role": "agent"
+     },
+     {
+      "character": "c21",
+      "role": "agent"
+     },
+     {
+      "character": "c22",
+      "role": "agent"
+     }
+    ],
+    "lines": [
+     59234,
+     59236,
+     59246,
+     59248,
+     59252
+    ],
+    "certainty": "stated",
+    "importance": "major",
+    "flags": []
+   },
+   {
+    "id": "e6",
+    "text": "Pam expresses her fear to Jim that she is holding him back and is not enough for him.",
+    "kind": "romance",
+    "place": "p1",
+    "participants": [
+     {
+      "character": "c3",
+      "role": "agent"
+     },
+     {
+      "character": "c2",
+      "role": "patient"
+     }
+    ],
+    "lines": [
+     59134,
+     59142,
+     59144
+    ],
+    "certainty": "stated",
+    "importance": "major",
+    "flags": [
+     "participant_not_in_lines"
+    ]
+   },
+   {
+    "id": "e7",
+    "text": "Jim asks the camera crew to compile video footage to show Pam his true feelings.",
+    "kind": "romance",
+    "place": "p1",
+    "participants": [
+     {
+      "character": "c2",
+      "role": "agent"
+     }
+    ],
+    "lines": [
+     59146,
+     59147,
+     59298
+    ],
+    "certainty": "stated",
+    "importance": "minor",
+    "flags": []
+   },
+   {
+    "id": "e8",
+    "text": "Jim advises Dwight to follow love and choose Angela over Esther.",
+    "kind": "romance",
+    "place": "p5",
+    "participants": [
+     {
+      "character": "c2",
+      "role": "agent"
+     },
+     {
+      "character": "c1",
+      "role": "patient"
+     },
+     {
+      "character": "c4",
+      "role": "subject"
+     }
+    ],
+    "lines": [
+     59314,
+     59315,
+     59318,
+     59320
+    ],
+    "certainty": "stated",
+    "importance": "major",
+    "flags": []
+   },
+   {
+    "id": "e9",
+    "text": "Jim gives Pam a video DVD and his unopened teapot letter, reassuring her of his love.",
+    "kind": "romance",
+    "place": "p1",
+    "participants": [
+     {
+      "character": "c2",
+      "role": "agent"
+     },
+     {
+      "character": "c3",
+      "role": "patient"
+     }
+    ],
+    "lines": [
+     59298,
+     59327,
+     59329,
+     59330
+    ],
+    "certainty": "stated",
+    "importance": "major",
+    "flags": []
+   },
+   {
+    "id": "e10",
+    "text": "The office staff convinces Darryl to share a final group dance before he departs Scranton.",
+    "kind": "milestone",
+    "place": "p1",
+    "participants": [
+     {
+      "character": "c6",
+      "role": "patient"
+     },
+     {
+      "character": "c9",
+      "role": "agent"
+     }
+    ],
+    "lines": [
+     59280,
+     59282,
+     59332,
+     59333
+    ],
+    "certainty": "stated",
+    "importance": "major",
+    "flags": []
+   },
+   {
+    "id": "e11",
+    "text": "Dwight pulls Angela over in traffic and proposes marriage to her, which she accepts.",
+    "kind": "romance",
+    "place": "p4",
+    "participants": [
+     {
+      "character": "c1",
+      "role": "agent"
+     },
+     {
+      "character": "c4",
+      "role": "patient"
+     }
+    ],
+    "lines": [
+     59350,
+     59354,
+     59358,
+     59359
+    ],
+    "certainty": "stated",
+    "importance": "major",
+    "flags": []
+   },
+   {
+    "id": "e12",
+    "text": "Angela reveals to Dwight that Phillip is indeed his biological son.",
+    "kind": "family",
+    "place": "p4",
+    "participants": [
+     {
+      "character": "c4",
+      "role": "agent"
+     },
+     {
+      "character": "c1",
+      "role": "patient"
+     },
+     {
+      "character": "c10",
+      "role": "subject"
+     }
+    ],
+    "lines": [
+     59361,
+     59363,
+     59366
+    ],
+    "certainty": "stated",
+    "importance": "major",
+    "flags": []
+   },
+   {
+    "id": "e13",
+    "text": "The Scranton coworkers assemble at Poor Richard's to watch the premiere of the office documentary.",
+    "kind": "milestone",
+    "place": "p3",
+    "participants": [
+     {
+      "character": "c1",
+      "role": "agent"
+     },
+     {
+      "character": "c2",
+      "role": "agent"
+     },
+     {
+      "character": "c5",
+      "role": "agent"
+     },
+     {
+      "character": "c8",
+      "role": "agent"
+     }
+    ],
+    "lines": [
+     59368,
+     59377,
+     59386,
+     59387
+    ],
+    "certainty": "stated",
+    "importance": "major",
+    "flags": [
+     "participant_not_in_lines"
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "a": "c4",
+    "b": "c27",
+    "type": "married",
+    "change": "ends",
+    "detail": "divorce",
+    "lines": [
+     58906
+    ],
+    "quote": "Angela's divorce from the senator",
+    "certainty": "stated",
+    "rid": "r1",
+    "flags": []
+   },
+   {
+    "a": "c1",
+    "b": "c4",
+    "type": "engaged",
+    "change": "begins",
+    "detail": null,
+    "lines": [
+     59358,
+     59359
+    ],
+    "quote": "yes...yes, I will!",
+    "certainty": "stated",
+    "rid": "r2",
+    "flags": []
+   },
+   {
+    "a": "c1",
+    "b": "c10",
+    "type": "family",
+    "change": "revealed",
+    "detail": "father and son",
+    "lines": [
+     59363,
+     59366
+    ],
+    "quote": "Phillip's your son.",
+    "certainty": "stated",
+    "rid": "r3",
+    "flags": []
+   }
+  ],
+  "refers_back": [
+   {
+    "event": null,
+    "text": "It's from the teapot. Everything you'll ever need to know is in that note.",
+    "lines": [
+     59328,
+     59329
+    ]
+   }
+  ],
+  "summary": "Dwight becomes permanent manager and selects Jim as his assistant, leading Jim to orchestrate a contest that results in Dwight appointing himself as assistant to the assistant. Pam worries that Jim sacrifices his career at Athlead for her, but Jim presents her with documentary footage and a long-withheld note to reaffirm his love. Darryl tries to leave Scranton quietly but is stopped for an emotional farewell dance. Andy crashes an a cappella singing audition and is rejected. Jim convinces Dwight to pursue Angela rather than propose to Esther; Dwight pulls Angela over on the road, proposes, and discovers that baby Phillip is his biological son. The staff gathers at Poor Richard's to watch the documentary premiere."
+ },
+ "issues": [
+  {
+   "severity": "flag",
+   "section": "events",
+   "index": 1,
+   "rule": "participant_not_in_lines",
+   "detail": "c7 in e2"
+  },
+  {
+   "severity": "flag",
+   "section": "events",
+   "index": 5,
+   "rule": "participant_not_in_lines",
+   "detail": "c2 in e6"
+  },
+  {
+   "severity": "flag",
+   "section": "events",
+   "index": 12,
+   "rule": "participant_not_in_lines",
+   "detail": "c8 in e13"
+  }
+ ]
+}
