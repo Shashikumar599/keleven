@@ -1,0 +1,65 @@
+{
+ "type": "object",
+ "propertyOrdering": [
+  "checked",
+  "corrections"
+ ],
+ "required": [
+  "checked",
+  "corrections"
+ ],
+ "properties": {
+  "corrections": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "propertyOrdering": [
+     "target",
+     "action",
+     "new_value",
+     "problem",
+     "lines"
+    ],
+    "required": [
+     "target",
+     "action",
+     "new_value",
+     "problem",
+     "lines"
+    ],
+    "properties": {
+     "target": {
+      "type": "string"
+     },
+     "action": {
+      "type": "string",
+      "enum": [
+       "edit",
+       "set",
+       "drop"
+      ]
+     },
+     "new_value": {
+      "type": "string",
+      "nullable": true
+     },
+     "problem": {
+      "type": "string"
+     },
+     "lines": {
+      "type": "array",
+      "items": {
+       "type": "integer"
+      }
+     }
+    }
+   }
+  },
+  "checked": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  }
+ }
+}

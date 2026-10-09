@@ -746,3 +746,70 @@ accepted_true outcome for a true premise; owner counts with tolerance (q040); a 
 reference (q072); off-camera partly covered by the transcripts (q054). eval/grade.py records rubric rubrics-v2 and
 accepts memory_unsure. v1 and v2 verdicts stay under rubrics-v1 and are not regraded. The questions file changed, so
 its hash differs from the one stored with the v1 and v2 runs (gold answers are not used by the systems or graders).
+
+**2026-10-09: Graph extraction prompt drafted** (generation/prompts/extract_v1.md, under review, not yet used by any run, so still editable). One Gemini Flash call per episode returns summary, events, relations (fixed types, change = begins / ends / revealed / shown), refers_back pointers and new_entities; evidence as line ids (code verifies them), a short quote only on relations; the prompt describes how to read the show (mockumentary, jokes and sarcasm are not facts) but no plot facts, to limit memory leaks.
+
+**2026-10-09: Characters are local per episode, identity is linked in a separate stage.** No registry of ids in the
+extraction prompt (everything data-driven, no nicknames from memory): the model lists local characters per episode
+(names as written, short description, present or mentioned) and writes events and relations against local ids. A
+re-runnable linking stage then groups the cards by name, decides with data signals (same episode = different people,
+same colleagues = same person, main-cast labels by code) and asks the LLM only for groups the signals cannot settle;
+unsure stays separate; generic labels are never merged. Result is the table episode_character(local_id -> entity).
+generation/prompts/extract_v1.md and docs/graph-design.md updated (draft, still under review).
+
+**2026-10-09: Places are separate from characters; importance is local.** Characters are people only; a places list
+(workplace, home, public, organization, other) holds where things happen, and events get an optional place.
+Event importance (major / minor) is defined only from the episode (a main storyline of the episode, or a lasting change
+the lines state), because one episode cannot show importance to the series; series-level importance is computed later from
+the graph (references back, linked events). The prompt no longer mentions memory or recognising the show (naming it
+invites recall); it says the episode text is the only source. extract_v1.md updated (draft).
+
+**2026-10-09: No 'ended' relation type; places are linked in stage 2.** A breakup, called-off engagement or divorce is
+the relation (dating, engaged or married) with change = ends; the relation list is crush, dating, engaged, married,
+family, boss, rival, friend. Places are local per episode in stage 1 and linked across episodes in stage 2 like
+characters (cards of names and descriptions plus the events there), not from a fixed list.
+
+**2026-10-09: Stage 1 validator written (graph/validate.py, graph/stage1_schema.json).** Lenient by owner decision: a bad
+detail is dropped or flagged, never the whole episode, and there is no automatic retry. Hard (drop the row or
+reference): line id not in the episode, local id not defined or duplicated, relation between a person and themselves,
+value outside its list, nothing valid left to cite. Flag (kept): quote not found in the cited lines (relation marked
+unverified), name not in the episode, participant not in the cited lines, unknown place, over-long or duplicate event,
+too many events. Episode status failed / flagged / ok; a failed episode is looked at by the owner, not retried. Tested
+on a hand-written sample with deliberate defects (no LLM call); every rule fired and the good rows passed.
+
+**2026-10-09: No 'shown' relation change.** In the S7E14 test the model filled in Jim-Pam "married, shown" from memory
+(no line says it): when nothing changes in the episode it supplies what it remembers. Relations are reported only when
+the episode begins, ends or reveals them (change = begins | ends | revealed); an open interval needs no repeated
+confirmation. Prompt, schema and validator updated.
+
+**2026-10-09: Two-pass extraction (draft).** After stage 1 a separate reviewer call checks the extraction against the
+episode text and returns a list of corrections only (edit / set / drop on items by id), never a rewrite: cheaper, auditable,
+the structure cannot drift; code applies the patches and re-validates, both versions kept. Instruction guards against
+over-deleting (reasonable inferences stay, marked implied; when in doubt keep). To be tested first on the stored S2E18 and
+S7E14 outputs where the errors are known (job titles, "at reception", stated vs implied). Draft prompt:
+generation/prompts/review_v1.md.
+
+**2026-10-09: Review pass gets hint words; all preprocessing is recorded.** Hint words (words of an item's own text that
+occur nowhere in the episode text, hand-written stemmer and common-word list) are added to the reviewer's input as pointers
+only; usefulness is measured afterwards from the corrections log. Every non-LLM step is now written down in
+docs/graph-design.md ("Preprocessing and code decisions") so the architecture document can import it.
+
+**2026-10-09: One review run per episode (no union of two).** A second review run recovers some corrections the first one
+misses (S2E18: Roy "Pam's fiance"), but doubles the review cost, so one run is accepted and the run-to-run variation is a
+known limit. Known residual limits, accepted: stage 1 certainty on inferred relations (Toby-Sasha "family, stated" with no
+line saying it) and generic words ("Office employee"); at answer time a relation is read together with its cited lines
+instead of being trusted blindly. Cost per episode with both passes: about 23k tokens in and 5k out, so about 4.3M in and
+1M out for 186 episodes (estimate from S7E14 and S2E18).
+
+**2026-10-09: Verb-first descriptions, strict support rule and evidence beside each item.** Stage 1 character and place
+descriptions must start with a verb (a title or noun cannot lead them); the review prompt defines support as "a line says or
+shows it about that person, place or event" (a plausible guess is not support) and the review input carries the text of each
+item's cited lines. S9E22 test: job-title leaks went from about 7 to 1.
+
+**2026-10-10: Migration 012 applied (extraction storage).** Tables extraction_runs and episode_extractions hold the JSON of each
+pass per episode (raw, validated, review, reviewed) under a run label; no graph tables yet (designed afterwards on top of
+these rows, rebuildable without LLM calls). Next: runner (both passes per episode, writes these rows, resumable, failures
+listed and not retried), then a 10-episode pilot after the owner approves the cost.
+
+**2026-10-10: Output limit raised to 32,768 tokens** for the graph extraction and review calls (the model allows 65,536; we
+pay only for tokens generated; real outputs so far 3.5-5.3k). Run label v3-extract-001: pilot of 10 episodes first, then all.

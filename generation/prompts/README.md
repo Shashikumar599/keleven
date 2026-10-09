@@ -14,6 +14,8 @@ is logged with every answer (qa_answers.prompt_sha256).
 | rag_v2.md | v2 | rag_v1.md | How the evidence was found: the search text (passages match it, not the exact question), the SQL result block (all lines, not a sample), [SQL] citations, counts defer to SQL; judgments about characters (a line's context, a word is not the trait, passages are examples for series-wide judgments) |
 | hybrid_v2.md | v2 | hybrid_v1.md | The same additions; SQL vs memory conflicts go to "conflicts"; for series-wide character judgments memory may lead (labelled), passages illustrate |
 | enhance_v1.md | v2 | | The enhancer: search_text, sql, assumptions; nothing added from memory |
+| extract_v1.md | v3 (graph extraction, DRAFT under review) | | One call per episode: events, timed relations, refers_back, summary; show context (mockumentary, jokes and sarcasm are not facts); evidence as line ids; fixed relation types |
+| review_v1.md | v3 (graph extraction review pass, DRAFT under review) | | A second call that checks the stage 1 extraction against the episode text and returns corrections only (edit, set, drop): removes details no line shows, fixes certainty, drops empty events; keep and mark implied when in doubt |
 
 v1 baseline hashes (eval/runs/2026-10-04-v1-baseline/job.json): rag_v1 5ef7191d, memory_v1 00c114b1, hybrid_v1
 2f685a0f.

@@ -1,0 +1,55 @@
+{
+  "characters": [
+    {"local_id": "c1", "names": ["Kelly"], "description": "Announces her divorce from Ryan and discusses it.", "present": true, "lines": [42528, 42531, 42537, 42543, 42550]},
+    {"local_id": "c2", "names": ["Ryan", "Ryan Bailey Howard"], "description": "Announces his divorce from Kelly and asks colleagues to take sides.", "present": true, "lines": [42531, 42534, 42540, 42545, 42551]},
+    {"local_id": "c3", "names": ["Erin"], "description": "Joins Dwight and Holly on a search to find Michael.", "present": true, "lines": [42591, 42647, 42673, 42745, 42809]},
+    {"local_id": "c4", "names": ["Phyllis"], "description": "Participates in the caption contest against Gabe.", "present": true, "lines": [42530, 42720, 42776, 42790, 42837]},
+    {"local_id": "c5", "names": ["Meredith"], "description": "Grabs Kelly's discarded ring and reacts to Gabe's contest.", "present": true, "lines": [42532, 42703, 42830]},
+    {"local_id": "c6", "names": ["Andy"], "description": "Asks questions about Kelly and Ryan's marriage and joins caption game.", "present": true, "lines": [42533, 42542, 42653, 42668, 42782]},
+    {"local_id": "c7", "names": ["Pam", "Pam Beasley"], "description": "Draws a caption contest cartoon and talks to Jim on the phone.", "present": true, "lines": [42536, 42574, 42618, 42664, 42796]},
+    {"local_id": "c8", "names": ["Kevin"], "description": "Reacts to the divorce announcement and participates in the caption contest.", "present": true, "lines": [42541, 42662, 42671, 42697, 42798]},
+    {"local_id": "c9", "names": ["Oscar"], "description": "Speaks to Ryan and joins in the caption contest against Gabe.", "present": true, "lines": [42548, 42652, 42700, 42716, 42792]},
+    {"local_id": "c10", "names": ["Jim"], "description": "Leaves Michael at a gas station to rescue his locked-in baby.", "present": true, "lines": [42553, 42573, 42604, 42616, 42627]},
+    {"local_id": "c11", "names": ["Michael", "Michal", "Michal G. Scott", "Michael J. Fox"], "description": "Gets stranded at a gas station and wanders around town until Holly finds him.", "present": true, "lines": [42556, 42564, 42635, 42722, 42825]},
+    {"local_id": "c12", "names": ["Holly"], "description": "Tracks down Michael by following intuitive clues and kisses him on a roof.", "present": true, "lines": [42557, 42565, 42644, 42740, 42826]},
+    {"local_id": "c13", "names": ["AJ"], "description": "Holly's ex-boyfriend who broke up with her weeks earlier.", "present": false, "lines": [42558]},
+    {"local_id": "c14", "names": ["Bob Vance"], "description": "Mentioned in Jim's clue for Pam.", "present": false, "lines": [42585]},
+    {"local_id": "c15", "names": ["Cece"], "description": "Jim and Pam's baby who was locked in the car by Helen.", "present": false, "lines": [42623, 42625]},
+    {"local_id": "c16", "names": ["Helen"], "description": "Calls Jim because she locked Cece in the car.", "present": true, "lines": [42607, 42611, 42615]},
+    {"local_id": "c17", "names": ["Guy"], "description": "Bystander asked by Jim to tell Michael to call the office.", "present": true, "lines": [42616, 42617]},
+    {"local_id": "c18", "names": ["Attendant"], "description": "Gas station attendant who talks to Michael and later Dwight's group.", "present": true, "lines": [42636, 42642, 42674, 42678]},
+    {"local_id": "c19", "names": ["Dwight"], "description": "Leads a search mission to find Michael across town.", "present": true, "lines": [42650, 42672, 42682, 42747, 42812]},
+    {"local_id": "c20", "names": ["Gabe"], "description": "Imposes strict rules on Pam's doodle contest, becoming the butt of everyone's jokes.", "present": true, "lines": [42656, 42701, 42713, 42781, 42834]},
+    {"local_id": "c21", "names": ["Darryl"], "description": "Boasts about captioning comics and insults Gabe's rules.", "present": true, "lines": [42659, 42665, 42705, 42773, 42788]},
+    {"local_id": "c22", "names": ["Joe"], "description": "Mentioned by Gabe as someone he could fax the doodle to.", "present": false, "lines": [42704]},
+    {"local_id": "c23", "names": ["Hot Dog Guy"], "description": "Refuses Michael's offer to trade a watch for a hot dog.", "present": true, "lines": [42723, 42727, 42729, 42731]},
+    {"local_id": "c24", "names": ["Cell Phone Sales Person"], "description": "Gives Holly a stress ball and mentions Michael's character Orville Tootenbacher.", "present": true, "lines": [42741, 42743]},
+    {"local_id": "c25", "names": ["Waiter"], "description": "Confronts Michael for eating food without paying.", "present": true, "lines": [42750, 42754, 42760, 42764, 42768]},
+    {"local_id": "c26", "names": ["Stanley"], "description": "Whispers to Phyllis during Gabe's confrontation about the IM chat.", "present": true, "lines": [42775, 42777, 42779]},
+    {"local_id": "c27", "names": ["Angela"], "description": "Submits a winning rude caption mocking Gabe.", "present": true, "lines": [42801]}
+  ],
+  "places": [
+    {"local_id": "p1", "name": "the office", "kind": "workplace", "description": "The main Dunder Mifflin office in Scranton.", "lines": [42528, 42651, 42681]},
+    {"local_id": "p2", "name": "gas station on Benet", "kind": "public", "description": "Gas station where Jim leaves Michael stranded.", "lines": [42604, 42627, 42644]},
+    {"local_id": "p3", "name": "cell phone store", "kind": "public", "description": "Store where Holly switches her phone plan.", "lines": [42740, 42741]},
+    {"local_id": "p4", "name": "Chinese restaurant", "kind": "public", "description": "Restaurant where Michael tries to dine and dash.", "lines": [42748, 42751, 42762]},
+    {"local_id": "p5", "name": "roof of a building", "kind": "public", "description": "Rooftop where Holly finds Michael.", "lines": [42816, 42818]}
+  ],
+  "events": [
+    {"id": "e1", "text": "Kelly and Ryan reveal that they got married a week ago and are now getting divorced.", "kind": "milestone", "place": "p1", "participants": [{"character": "c1", "role": "agent"}, {"character": "c2", "role": "agent"}, {"character": "c6", "role": "witness"}, {"character": "c7", "role": "witness"}], "lines": [42528, 42531, 42540, 42543], "certainty": "stated", "importance": "major"},
+    {"id": "e2", "text": "Jim leaves Michael behind at a gas station without his phone or wallet after Helen locks baby Cece in a car.", "kind": "other", "place": "p2", "participants": [{"character": "c10", "role": "agent"}, {"character": "c11", "role": "patient"}, {"character": "c16", "role": "agent"}], "lines": [42611, 42616, 42627, 42629], "certainty": "stated", "importance": "major"},
+    {"id": "e3", "text": "Pam initiates an office caption contest based on her doodles, which Gabe tries to regulate with strict rules.", "kind": "other", "place": "p1", "participants": [{"character": "c7", "role": "agent"}, {"character": "c20", "role": "agent"}, {"character": "c9", "role": "witness"}, {"character": "c21", "role": "witness"}], "lines": [42651, 42664, 42701, 42706], "certainty": "stated", "importance": "minor"},
+    {"id": "e4", "text": "Dwight, Holly, and Erin set out on a search to track down Michael.", "kind": "other", "place": null, "participants": [{"character": "c19", "role": "agent"}, {"character": "c12", "role": "agent"}, {"character": "c3", "role": "agent"}, {"character": "c11", "role": "patient"}], "lines": [42649, 42650, 42672], "certainty": "stated", "importance": "major"},
+    {"id": "e5", "text": "The office staff writes captions mocking Gabe in an instant message chat instead of following Gabe's rules.", "kind": "prank", "place": "p1", "participants": [{"character": "c20", "role": "patient"}, {"character": "c27", "role": "agent"}, {"character": "c7", "role": "witness"}, {"character": "c9", "role": "witness"}], "lines": [42716, 42781, 42795, 42801], "certainty": "stated", "importance": "minor"},
+    {"id": "e6", "text": "Holly finds Michael on a rooftop, and they confess they missed each other and kiss.", "kind": "romance", "place": "p5", "participants": [{"character": "c12", "role": "agent"}, {"character": "c11", "role": "agent"}], "lines": [42816, 42821, 42822, 42825, 42826], "certainty": "stated", "importance": "major"}
+  ],
+  "relations": [
+    {"a": "c1", "b": "c2", "type": "married", "change": "revealed", "detail": null, "lines": [42531, 42540, 42543], "quote": "Ryan Bailey Howard and I got divorced.", "certainty": "stated"},
+    {"a": "c1", "b": "c2", "type": "married", "change": "ends", "detail": null, "lines": [42531, 42540, 42545], "quote": "Ryan Bailey Howard and I got divorced.", "certainty": "stated"},
+    {"a": "c12", "b": "c13", "type": "dating", "change": "ends", "detail": null, "lines": [42558], "quote": "You broke up with AJ weeks ago.", "certainty": "stated"}
+  ],
+  "refers_back": [
+    {"event": null, "text": "You broke up with AJ weeks ago.", "lines": [42558]}
+  ],
+  "summary": "Kelly and Ryan announce they secretly married a week prior and are now getting divorced. While returning from a sales call, Jim accidentally strands Michael at a gas station without his phone or money due to an emergency with baby Cece. Dwight, Erin, and Holly set out across Scranton to locate Michael. Meanwhile, Pam starts a caption contest at the office that Gabe attempts to control, leading the coworkers to submit jokes mocking Gabe. Holly follows her instincts to a rooftop where she finds Michael, and the two share a kiss."
+}

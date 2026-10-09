@@ -151,3 +151,139 @@ One short entry per eval run: what changed, the scores, and one line of interpre
 - **Interpretation:** v2 did what it was built for: exact wording, counts and ordering are fixed. What is left is
   retrieval misses on whole-show questions (traits, arcs, lists over many episodes), memory errors, and weak
   judgment answers. That list is the starting point for the v3 (graph) design.
+
+## 2026-10-09 · Graph extraction, first single-episode test (S7E14 The Search, stage 1)
+- **What:** one Gemini call (gemini-3.8-flash, thinking low), extract_v1.md (sha c113ef11) + stage1_schema.json
+  (68b51374), 310 lines. Schema first rejected with 400 because of `maxItems`; removed (size limits are validator flags).
+  Samples in docs/samples/S7E14.stage1.*.
+- **Cost:** 10,345 input, 4,024 output tokens, no thinking, 28 s. Whole series estimate: about 1.9M input, 0.75M output.
+- **Validator:** 24 characters, 6 places, 6 events, 3 relations, 1 refers_back; one flag (participant not in cited lines).
+- **Checked against the transcript (by hand):** facts in the events are right (divorce announcement, Cece locked in a car,
+  Michael stranded, the search, Holly finds Michael on the roof, they kiss S7E14 sc.?, lines 42825-42827).
+  Problems: (1) **memory leak in descriptions:** job titles (customer service, accountant, receptionist, regional manager,
+  sales, HR, liaison, warehouse manager) appear in 0 lines of the episode, so the model supplied them from memory despite the
+  prompt; (2) **unsupported relation:** Jim-Pam "married / shown / stated" cites Michael's line "Is sex different after the
+  baby, Jim?", which does not state a marriage; the validator's quote check passed because the quote exists;
+  (3) missing: Holly-Michael relation although the kiss event is there, and Kelly-Ryan only "married ends" (no revealed);
+  (4) importance: the divorce announcement is "minor" against the rule that a relationship ending is major; (5) 6 events
+  for 310 lines (only the main plot); (6) the roof typed as workplace.
+- **Interpretation:** the pipeline works end to end and the events are grounded, but memory still enters through the
+  descriptions and through relations the lines do not state. Needs a prompt change (describe actions, no job titles unless
+  a line says it) and a validator check that cited lines contain relation cue words.
+- **Run 2 (same episode, prompt c273976a, edits: descriptions = actions with no job titles, stated vs implied, importance
+  rule, place kinds):** 10,547 in / 3,652 out, 26 s; 25 characters, 4 places, 5 events, 6 relations; 2 flags. Fixed: job
+  titles gone from descriptions (the only leftovers, "Pam's mother" and "Vendor", are supported or harmless), the divorce is
+  now major, the roof is public, a Holly-AJ breakup relation (dating ends, quote "You broke up with AJ weeks ago") and
+  family relations for Cece were added with sensible certainty (Pam-Cece implied). Still wrong: Jim-Pam "married, shown,
+  stated" again, citing "Aw you'll get through it hon.": no line in the episode says they are married (married, wife,
+  husband, wedding appear 0 times about them); Kelly-Ryan still only "ends" (no revealed row despite the instruction).
+- **Finding:** the memory leak survives in `shown` relations: nothing in the episode changes, so the model fills in what it
+  remembers. Proposal: drop `shown` from the schema (relations only when the episode begins, ends or reveals one; an open
+  interval needs no repeated confirmation).
+- **Run 3 (same episode, `shown` removed, prompt e9bcfbf4, schema 936cb24c):** 10,571 in / 3,459 out, 24 s; 27 characters,
+  5 places, 6 events, 3 relations, 3 flags (participant not in cited lines, mostly witnesses). Relations now: Kelly-Ryan
+  married `revealed` and `ends` (the two rows the prompt asks for, both quoting 42531 "Ryan Bailey Howard and I got
+  divorced"), Holly-AJ dating `ends` ("You broke up with AJ weeks ago"). The unsupported Jim-Pam "married" is gone; Jim and
+  Pam's family relations to Cece are gone with it (they were `shown`). All 3 relations are supported by their lines.
+  Samples updated in docs/samples/S7E14.stage1.*. Next: try 2-3 more episodes of different kinds before building the
+  pipeline.
+
+## 2026-10-09 · Graph extraction test 2: S2E18 (Take Your Daughter to Work Day), stage 1, prompt e9bcfbf4
+- **Run:** 9,990 in / 4,203 out, 33 s, 267 lines; 26 characters, 3 places, 8 events, 6 relations (all `revealed`), 1 flag.
+  Samples in docs/samples/S2E18.stage1.*.
+- **Small conflict with a named target:** extracted (e3 "Stanley aggressively confronts Ryan after seeing him talk with
+  Melissa", cites line 7974 = the exact line). Also Michael's dating-service sign-up (major romance), the Fundle Bundle tape,
+  the Struwwelpeter reading. Relation quotes are real: Kevin-Stacy engaged ("Abby's my fiancee Stacy's daughter"),
+  Stanley-Melissa family. Place "Michael's mother's house" typed home.
+- **Problems:** (1) job titles in 12 of 26 descriptions (receptionist, salesman, regional manager, HR, accountant, customer
+  service, temp, executive) none of which occurs in the episode text: the fix that worked on S7E14 did not hold here;
+  (2) `certainty` is optimistic: every relation is "stated", but Stanley-Terry married rests on Melissa's "That is my
+  step-mother" (implied at best) and Toby-Sasha family on lines where Toby only talks to Sasha; (3) e1 is a generic
+  event ("hosts the day") with children as agents.
+- **Interpretation:** events and quotes are grounded; memory enters through job-title descriptions and through inflated
+  certainty. Plans: descriptions that must start with a verb (an action, which job titles do not fit), a validator flag
+  for role nouns that are not in the episode text, and a verifier pass later (cited lines + claim -> stated / implied /
+  unsupported) instead of trusting stage 1 certainty.
+
+## 2026-10-09 · Review pass (corrector) first test on the stored S2E18 and S7E14 extractions
+- **What:** review_v1.md (sha in graph/out/*.review.json meta) + graph/review_schema.json; the reviewer sees the episode text
+  and the stage 1 extraction (with relation ids) and returns corrections (edit / set / drop); code applies and re-validates.
+  Not written to the database. Outputs in graph/out/ (not committed).
+- **S2E18:** 12,307 in / 1,089 out, 9 s; 12 corrections, 12 applied: dropped the empty event e1 ("the office hosts the
+  day"); removed job titles from 9 descriptions (receptionist, salesman x3, accountant x3, customer service, temp) and
+  "corporate executive" and "Pam's fiance" (no line shows them). The validator is clean afterwards.
+- **S2E18, missed:** "at reception" in event e6 (the leak the owner found), "Regional manager" (Michael), "HR
+  representative" (Toby), "Office employee" (Meredith), "Warehouse employee" (Roy, Darryl); no certainty changes at all, so
+  Stanley-Terry "married, stated" (evidence: "That is my step-mother") and Toby-Sasha stay "stated".
+- **S7E14 (run 3, few known errors):** 12,887 in / 280 out, 5 s; 3 corrections: a skipped edit of a character's names (field
+  not allowed), the AJ description corrected (Holly broke up with AJ, not the reverse; true to line 42558), and Helen removed
+  as participant of the gas-station event ("not present"): arguable, she is the cause. No damage to supported items.
+- **Interpretation:** the corrector is cheap (about 1k output tokens) and makes real, mostly right corrections without
+  rewriting, but one pass misses about half of the leaks and never tightens certainty. Idea: code computes the words in the
+  extraction that occur nowhere in the episode text and hands them to the reviewer as hints (it still decides, so paraphrases
+  are not deleted); and examples of certainty fixes in the prompt.
+- **Review run 2 on S2E18 (prompt with a `checked` list of every item, participant rule fixed):** 12,415 in / 1,390 out, 10 s;
+  `checked` covered 43 of 43 items; the 12 corrections have exactly the same targets as run 1. So the first pass was not
+  skipping items: it looked at everything and judged the same way. Re-checking the ground truth: Toby "HR" is supported
+  (line 8094 "you work for human resources"), "warehouse" is weakly supported (8169 "warehouse guys"), so those were not
+  real misses. Real misses left: "at reception" in e6 (a detail inside a supported sentence), Michael "Regional manager"
+  (lines say "the boss", 7887), and inflated certainty on inferred relations (Stanley-Terry, Toby-Sasha). The participant
+  rule change was not exercised by this episode (it concerns S7E14's Helen).
+
+- **Review run 3 on S2E18 (with hint words; 64 hints in 31 items):** 12,802 in / 1,520 out, 13 s; 43 of 43 checked; 14
+  corrections. New catches: "at reception" removed from e6; Michael "Regional manager" -> "Boss" (line 7887); Stanley-Terry
+  `married` stated -> implied. Hints: 15 of 64 hint words were removed by a correction (all the job titles plus `reception`,
+  `german`); 49 were harmless paraphrases left alone; one removed word (`service`) was not hinted but part of a hinted phrase.
+  The certainty change was not hint-driven. Not caught: Toby-Sasha certainty, Meredith "Office employee", and (run to run
+  variation) Roy "Pam's fiance", removed in runs 1 and 2 but not in run 3.
+- **Problem and fix:** in 6 descriptions the reviewer replaced a removed job title with "Employee" (a word no line gives; it also
+  changed "German stories" to "cautionary stories"). Added an edit guard in code (new words must come from the old text or the
+  episode vocabulary; others are removed again); replayed offline on the saved corrections: 14 of 14 applied, the
+  substitutions repaired.
+
+## 2026-10-09 · Both passes on S9E22 (Dwight proposes to Angela)
+- **Stage 1:** 16,231 in / 5,261 out, 35 s, 501 lines; 28 characters, 5 places, 12 events, 2 relations, 3 flags.
+  **Review:** 19,951 in / 532 out, 16 s; 47 of 47 checked, 3 corrections (Pam, Phyllis, Stanley "Sales rep" removed). Samples in
+  docs/samples/S9E22.*.
+- **Facts right:** Dwight stops Angela's car and proposes with his grandmother's ring (59358), she accepts ("Okay, yes...yes, I
+  will!" 59359) -> relation Dwight-Angela engaged / begins with that quote; "Phillip's your son" -> Dwight-Philip family
+  revealed; Pam's worry and Jim's montage; Andy's audition; Darryl's farewell; documentary premiere at Poor Richard's.
+- **Leaks left after the review (0 hits in the 501 lines):** "Accountant" for Kevin, Oscar, Angela; "Building security guard"
+  (Hank); "Works at the front desk" (Erin); "Former manager" (Andy). Supported: Milkmaid (58910), Regional manager (7 lines),
+  "Assistant to the regional manager". So the reviewer found 3 of about 7 unsupported role claims (it caught "accountant" on S2E18
+  but not here): reviewer recall on descriptions is unreliable on a longer episode even with hints.
+- **Interpretation:** events and relations are good; the leak is concentrated in character descriptions that start with a job
+  noun ("Accountant who ..."). The prompt asked for "what the person does" but never required a verb-first sentence (planned
+  after the S2E18 test, not applied). Fix at the source: description must start with a verb.
+- **Correction to the S9E22 entry above (owner asked for a thorough re-check):** "Accountant" for Angela is partly supported:
+  line 59260 Angela: "Thanks for letting me hang out in Accounting." (my search for "accountant" missed "Accounting"; the hint list
+  correctly did not hint it, because the stems match). Kevin and Oscar as accountants have no line. Confirmed unsupported:
+  Hank "Building security guard" (his only line is "Thank you."; hinted word `guard`, missed by the reviewer), Erin "Works at the
+  front desk" and Andy "Former manager" (not hinted: the words desk / manager occur elsewhere in the episode, so a vocabulary
+  check cannot see them), Glenn "Warehouse worker" (his line: "How was the delivery?"). Supported: Darryl and the warehouse
+  (59079), Milkmaid (58910), regional manager (7 lines), Assistant to the regional manager.
+- **Lesson:** the vocabulary hints only catch words that appear nowhere in the episode; a memory claim built from words used
+  elsewhere in the episode needs the reviewer to check the claim against that person's own lines. The reviewer prompt
+  ("supported if some line shows or reasonably implies it") lets a model that remembers the show accept a plausible guess.
+
+- **S9E22 rerun with verb-first descriptions (extract prompt 4953da27), stricter review prompt and evidence beside each item:**
+  stage 1 16,261 in / 5,204 out; review 26,218 in / 323 out, 4 s, 48 of 48 checked, 1 correction (Hank "in the building lobby":
+  no line mentions a lobby). Descriptions are now actions: every job-title leak of the first S9E22 run is gone from stage 1 (no
+  Accountant, Sales rep, Receptionist, Former manager, security guard). Checked every remaining description claim against the
+  lines: supported: Erin buzzes people in (stage direction 58888), Oscar invited Angela to move in (58906), Kevin and the gift card
+  (59257-59262), the senator's divorce (58906), Esther and the farm (59192), Creed (58954, 59368), check-in guy (58912, 59218);
+  weak: the bartender "switches to PBS" (the lines only show a tie, "Tie means I do nothing", then "All right.": an inference);
+  unsupported and left: Glenn "in the warehouse". About 1 leak left against about 7.
+- **Cost per episode now:** stage 1 about 16k in / 5k out (S9E22, 501 lines) plus review about 26k in / 0.3k out. For 186 episodes
+  about 6-8M input and 1M output tokens (the evidence block adds about 6k input per review).
+
+## 2026-10-10 · Quality sample of run v3-extract-001 (Claude's review; owner's review pending)
+- **What:** random sample (seed 7) of 30 events and 20 relations from the reviewed extractions of all 186 episodes
+  (graph/make_sample.py -> graph/out/quality-sample.md); each read against its cited lines, 14 doubtful ones checked against the
+  surrounding transcript. Results in graph/out/quality-sample-claude-review.md.
+- **Result:** events 28 correct / 2 partly / 0 wrong; relations 17 / 3 / 0 (R07 Dwight-Angela married is a contested trick
+  marriage ("That doesn't count!"); R11 Jim-Dwight boss is an inference from the Jim-Michael co-manager promotion; E09
+  "weekend of the wedding" is an inference, wedding June 10 vs trip June 8; E17 "second place" vs "employee number three").
+- **Findings:** errors are over-reach (inference or contested claim stated as fact), not invention. The participant flag (28% of
+  events) did not point to a wrong event in the sample. Importance is noisy (about 4 of 16 "major" arguable). The senator
+  appears as "Robert" (needs linking).

@@ -1,0 +1,312 @@
+{
+ "type": "object",
+ "propertyOrdering": [
+  "characters",
+  "places",
+  "events",
+  "relations",
+  "refers_back",
+  "summary"
+ ],
+ "required": [
+  "characters",
+  "places",
+  "events",
+  "relations",
+  "refers_back",
+  "summary"
+ ],
+ "properties": {
+  "characters": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "propertyOrdering": [
+     "local_id",
+     "names",
+     "description",
+     "present",
+     "lines"
+    ],
+    "required": [
+     "local_id",
+     "names",
+     "description",
+     "present",
+     "lines"
+    ],
+    "properties": {
+     "local_id": {
+      "type": "string"
+     },
+     "names": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "description": {
+      "type": "string"
+     },
+     "present": {
+      "type": "boolean"
+     },
+     "lines": {
+      "type": "array",
+      "items": {
+       "type": "integer"
+      }
+     }
+    }
+   }
+  },
+  "places": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "propertyOrdering": [
+     "local_id",
+     "name",
+     "kind",
+     "description",
+     "lines"
+    ],
+    "required": [
+     "local_id",
+     "name",
+     "kind",
+     "description",
+     "lines"
+    ],
+    "properties": {
+     "local_id": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     },
+     "kind": {
+      "type": "string",
+      "enum": [
+       "workplace",
+       "home",
+       "public",
+       "organization",
+       "other"
+      ]
+     },
+     "description": {
+      "type": "string"
+     },
+     "lines": {
+      "type": "array",
+      "items": {
+       "type": "integer"
+      }
+     }
+    }
+   }
+  },
+  "events": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "propertyOrdering": [
+     "id",
+     "text",
+     "kind",
+     "place",
+     "participants",
+     "lines",
+     "certainty",
+     "importance"
+    ],
+    "required": [
+     "id",
+     "text",
+     "kind",
+     "place",
+     "participants",
+     "lines",
+     "certainty",
+     "importance"
+    ],
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "text": {
+      "type": "string"
+     },
+     "kind": {
+      "type": "string",
+      "enum": [
+       "romance",
+       "job",
+       "conflict",
+       "prank",
+       "milestone",
+       "family",
+       "other"
+      ]
+     },
+     "place": {
+      "type": "string",
+      "nullable": true
+     },
+     "participants": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "required": [
+        "character",
+        "role"
+       ],
+       "properties": {
+        "character": {
+         "type": "string"
+        },
+        "role": {
+         "type": "string",
+         "enum": [
+          "agent",
+          "patient",
+          "subject",
+          "witness"
+         ]
+        }
+       }
+      }
+     },
+     "lines": {
+      "type": "array",
+      "items": {
+       "type": "integer"
+      }
+     },
+     "certainty": {
+      "type": "string",
+      "enum": [
+       "stated",
+       "implied",
+       "joke_or_false"
+      ]
+     },
+     "importance": {
+      "type": "string",
+      "enum": [
+       "major",
+       "minor"
+      ]
+     }
+    }
+   }
+  },
+  "relations": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "propertyOrdering": [
+     "a",
+     "b",
+     "type",
+     "change",
+     "detail",
+     "lines",
+     "quote",
+     "certainty"
+    ],
+    "required": [
+     "a",
+     "b",
+     "type",
+     "change",
+     "detail",
+     "lines",
+     "quote",
+     "certainty"
+    ],
+    "properties": {
+     "a": {
+      "type": "string"
+     },
+     "b": {
+      "type": "string"
+     },
+     "type": {
+      "type": "string",
+      "enum": [
+       "crush",
+       "dating",
+       "engaged",
+       "married",
+       "family",
+       "boss",
+       "rival",
+       "friend"
+      ]
+     },
+     "change": {
+      "type": "string",
+      "enum": [
+       "begins",
+       "ends",
+       "revealed"
+      ]
+     },
+     "detail": {
+      "type": "string",
+      "nullable": true
+     },
+     "lines": {
+      "type": "array",
+      "items": {
+       "type": "integer"
+      }
+     },
+     "quote": {
+      "type": "string",
+      "nullable": true
+     },
+     "certainty": {
+      "type": "string",
+      "enum": [
+       "stated",
+       "implied",
+       "joke_or_false"
+      ]
+     }
+    }
+   }
+  },
+  "refers_back": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "event",
+     "text",
+     "lines"
+    ],
+    "properties": {
+     "event": {
+      "type": "string",
+      "nullable": true
+     },
+     "text": {
+      "type": "string"
+     },
+     "lines": {
+      "type": "array",
+      "items": {
+       "type": "integer"
+      }
+     }
+    }
+   }
+  },
+  "summary": {
+   "type": "string"
+  }
+ }
+}
