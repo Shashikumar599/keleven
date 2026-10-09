@@ -1,0 +1,79 @@
+{
+ "question_id": "q036",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 6,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Both episodes right, but S8E21 details are wrong: the punch is in Nellie's office during the open-office blowup (sc.41), not a conference-room meltdown after Robert refuses to reinstate him; 'ceiling tiles' is also embellished (Jim only jokes about it, S3E13 sc.32).",
+   "details": {
+    "lens_scores": {
+     "fact": 6,
+     "faithfulness": 7,
+     "reader": 7
+    },
+    "calibration": "overconfident",
+    "parts": [
+     {
+      "part": "The Return",
+      "ok": true
+     },
+     {
+      "part": "Angry Andy",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "B": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "The Return and Angry Andy, S3E19 replay correctly flagged as a flashback.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 8,
+     "reader": 10
+    },
+    "parts": [
+     {
+      "part": "The Return",
+      "ok": true
+     },
+     {
+      "part": "Angry Andy",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "C": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "The Return and Angry Andy, replay correctly flagged, all supported.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 9,
+     "reader": 9
+    },
+    "parts": [
+     {
+      "part": "The Return",
+      "ok": true
+     },
+     {
+      "part": "Angry Andy",
+      "ok": true
+     }
+    ]
+   }
+  }
+ }
+}

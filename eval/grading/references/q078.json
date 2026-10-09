@@ -1,0 +1,54 @@
+{
+ "question_id": "q078",
+ "reference": "Jim drives Karen to the corporate job interview in New York (The Job, S3E23) but returns to Scranton and asks Pam out; he breaks up with Karen after the interview, and Ryan, not Karen, gets the job. Karen leaves Scranton (her desk is empty the next day, S4E1) and becomes regional manager of the Utica branch (Branch Wars, S4E6), where she tries to poach Stanley and is still hurt by Jim. When the Scranton staff visit Utica again (Lecture Circuit, S5E14-15) she is married to a dermatologist named Dan, pregnant, and congratulates Pam on her engagement to Jim.",
+ "evidence": [
+  {
+   "scene": "S3E23 sc.49",
+   "line": "Karen: So what's going to happen to us when I get this job?"
+  },
+  {
+   "scene": "S3E23 sc.78",
+   "line": "Jim: Pam. ... Um, are you free for dinner tonight?"
+  },
+  {
+   "scene": "S3E23 sc.79",
+   "line": "David: ... I'm very pleased to be able to offer you this job. ... Kelly: What?! [Ryan smiles]"
+  },
+  {
+   "scene": "S4E1 sc.4",
+   "line": "Jim: I broke up with Karen after the job interview ... But the next day her desk was empty ..."
+  },
+  {
+   "scene": "S4E6 sc.2",
+   "line": "Karen: I am the regional manager of Dunder-Mifflin Utica branch. ... your boyfriend's not in love with somebody else."
+  },
+  {
+   "scene": "S4E6 sc.32",
+   "line": "Karen: I cried for weeks over that guy ..."
+  },
+  {
+   "scene": "S5E14 sc.22",
+   "line": "Karen: Yes, Michael. My husband impregnated me. ... His name is Dan ... He's a dermatologist."
+  },
+  {
+   "scene": "S5E15 sc.4",
+   "line": "Karen: How's Jim? Pam: We're engaged. Karen: Oh my God, I'm so happy for you!"
+  }
+ ],
+ "sources": [
+  "S3E23",
+  "S4E1 sc.4",
+  "S4E6",
+  "S5E14",
+  "S5E15"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "Main stages: (1) Jim ends it after the NY interview and goes back to Pam; (2) she doesn't get the corporate job (Ryan does) and leaves Scranton; (3) she becomes Utica branch manager; (4) later married (Dan) and pregnant. A good answer needs at least the breakup + Utica manager; marriage/pregnancy is supporting credit. Her S7E16 line is archival footage from Michael's movie, not a new appearance. Wrong claims to watch for: that Karen got the corporate job, that she was fired, or that her baby was Jim's (Michael's joke, denied S5E14 sc.14). Whether she transferred from Scranton immediately is stated only by Jim's talking head (S4E1).",
+ "question": "What happened to Karen after Jim?",
+ "category": "story_arc",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

@@ -1,0 +1,27 @@
+{
+ "question_id": "q008",
+ "reference": "$3.75 a cupcake ($3.67 each if you buy a dozen), Creed says in The Farm (S9E17), correcting Pam's guess of $2.50.",
+ "evidence": [
+  {
+   "scene": "S9E17 sc.13",
+   "line": "Pam: ... How much is a cupcake? $2.50? Is that the price of our dignity?"
+  },
+  {
+   "scene": "S9E17 sc.13",
+   "line": "Creed: $3.75 a cupcake, actually. $3.67 if you buy a dozen."
+  }
+ ],
+ "sources": [
+  "S9E17 sc.13",
+  "S9E17 sc.9"
+ ],
+ "confidence": "high",
+ "caveats": "$2.50 is Pam's guess, not Creed's. $3.75 is the main answer; the $3.67-per-dozen price is a supporting detail.",
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "question": "How much does Creed say one of Packer's cupcakes costs?",
+ "category": "detail",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

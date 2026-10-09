@@ -1,0 +1,22 @@
+{
+ "question_id": "q027",
+ "reference": "Michael Scott, to Andy, in The Chump (S6E23). Andy: 'You're Ali Larter, I'm Beyonce.' Michael: 'I am Beyonce always.' (Reference to the film Obsessed.)",
+ "evidence": [
+  {
+   "scene": "S6E23 sc.17",
+   "line": "Andy: In any cheating movie, the person getting cheated on is the hero. You're Ali Larter, I'm Beyonce. Michael: I am Beyonce always. Andy: Not this time. Michael: Yes, I am."
+  }
+ ],
+ "sources": [
+  "S6E23 sc.17"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "Transcript wording has no comma ('I am Beyonce always'). The film name (Obsessed) is not in the transcript.",
+ "question": "Who says \"I am Beyoncé, always\"?",
+ "category": "who_said",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

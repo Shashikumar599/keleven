@@ -1,0 +1,31 @@
+{
+ "question_id": "q018",
+ "reference": "A large hot chocolate with caramel and a shot of peppermint: the coffee shop worker calls 'Michael?' and reads the cup, while Michael is pretending not to be Michael Scott to his date Margaret (Chair Model, S4E10).",
+ "evidence": [
+  {
+   "scene": "S4E10 sc.28",
+   "line": "Coffee shop worker: Michael? Michael? [reads cup] Large hot chocolate with caramel and a shot of peppermint."
+  },
+  {
+   "scene": "S4E10 sc.28",
+   "line": "Margaret: Are you Michael Scott? / Michael: Is who a Michael what?"
+  },
+  {
+   "scene": "S4E10 sc.27",
+   "line": "Michael: I'm trying to get a date with Pam's hot friend."
+  }
+ ],
+ "sources": [
+  "S4E10 sc.27",
+  "S4E10 sc.28"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "Chair Model is S4E10 in combined numbering (S4E14 split). The date is set up through Pam; 'blind date' is the question's framing.",
+ "question": "When Michael waits for his blind date at the coffee shop, what drink is called out for him?",
+ "category": "detail",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

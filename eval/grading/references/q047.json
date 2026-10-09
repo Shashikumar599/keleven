@@ -1,0 +1,38 @@
+{
+ "question_id": "q047",
+ "reference": "Before. Jim is already buying his parents' house in Season 5 ('Customer Survey', S5E6, 'in the process of buying my parents' house') and shows it to Pam in 'Frame Toby' (S5E8); he and Pam marry later, at Niagara (S6E4).",
+ "evidence": [
+  {
+   "scene": "S5E6 sc.18",
+   "line": "Jim: I need a decent bonus, because I'm actually in the process of buying my parents' house so that they can retire. ... Pam doesn't know about the house, so it's... a fun surprise."
+  },
+  {
+   "scene": "S5E8 sc.8",
+   "line": "Jim: Today's the day that I show Pam the house that I bought for us. Without telling her. But it's my parent's house, the house I grew up in"
+  },
+  {
+   "scene": "S5E8 sc.28",
+   "line": "Pam: You bought me a house!"
+  },
+  {
+   "scene": "S6E4 sc.8",
+   "line": "Pam: Next time we're all in this room Jim and I will be married."
+  }
+ ],
+ "sources": [
+  "S5E6 sc.18",
+  "S5E8 sc.8",
+  "S5E8 sc.28",
+  "S6E4"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "",
+ "accepted_alternatives": [],
+ "question": "Did Jim start buying his parents' house before or after he married Pam?",
+ "category": "order",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

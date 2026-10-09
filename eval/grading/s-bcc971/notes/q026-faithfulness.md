@@ -1,0 +1,3 @@
+A: 8. Mom and Brandon quotes exact (S8E14 sc33, sent). Presents "mom" as Val's claim, good. Does not flag that Val's "my mom's name is Brandon" is a sarcastic admission (not unfaithful, just incomplete). "Darryl confronts her" slightly framed.
+B: 9. Same quotes exact; adds honest note that sc15 labels the caller "Bob" (sc15 sent, quote exact). Calibrated.
+C: 5. Memory, knows_answer true, uncertain empty. Core (mom, Brandon) right, but "asking for directions" (S8E14 sc15 asks for the warehouse address) and "Darryl reveals he knows that is not true" overstate; "her boyfriend" is not in S8E14 (comes from S8E16). Mild overconfidence, slight inaccuracies.

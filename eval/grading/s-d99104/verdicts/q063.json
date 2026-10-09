@@ -1,0 +1,49 @@
+{
+ "question_id": "q063",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 1,
+   "verdict": "wrong",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Olive Oyl right but invents a nursing/breast reason; real reason is Jim won't wear Popeye (S7E6 sc.11).",
+   "details": {
+    "lens_scores": {
+     "fact": 1,
+     "faithfulness": 2,
+     "reader": 1
+    },
+    "calibration": "overconfident"
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Olive Oyl needs Popeye and Jim refuses (sc.11); omits optional supporting points.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 10,
+     "reader": 9
+    }
+   }
+  },
+  "C": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Same as B.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 10,
+     "reader": 9
+    }
+   }
+  }
+ }
+}

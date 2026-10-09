@@ -1,0 +1,37 @@
+{
+ "question_id": "q074",
+ "premise_true": false,
+ "reference": "No. Jan conceived through a sperm bank donor (S4E14, S5E3); she never had sex with Kevin, and the show never says Kevin is the father. At Jan's baby shower Kevin says he once donated sperm and jokes 'Maybe I'm the father' / 'I might have done it with Jan!'; Jan dismisses it ('It's not Kevin's child. Can't possibly be'). The donor's identity is never revealed, so Kevin's paternity is a running joke at most, not a fact.",
+ "evidence": [
+  {
+   "scene": "S4E14 sc.64",
+   "line": "Jan: I went to a sperm bank. Michael: You'd rather have somebody else's sperm than my sperm?"
+  },
+  {
+   "scene": "S5E3 sc.2",
+   "line": "Jim: Jan is about to have a baby with a sperm donor."
+  },
+  {
+   "scene": "S5E3 sc.43",
+   "line": "Kevin: I donated sperm. ... Maybe I'm the father. Jan: Well, this is a highly exclusive establishment. Kevin: Next to the IHOP? Jan: Well, I paid for an ideal specimen. ... Kevin: I might have done it with Jan!"
+  },
+  {
+   "scene": "S5E3 sc.44",
+   "line": "Jan: It's not Kevin's child. Can't possibly be. I mean, I don't know what I would do. Sue... icide?"
+  }
+ ],
+ "sources": [
+  "S4E14 sc.64",
+  "S5E3 sc.2",
+  "S5E3 sc.43",
+  "S5E3 sc.44"
+ ],
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "Premise is false as stated (no evidence Jan conceived from Kevin). Nuance: the show deliberately leaves a joke possibility, since Kevin donated at a bank that may be the same one (near the IHOP) and Jan doesn't know the donor; so an answer saying 'it is hinted as a joke but never confirmed' is fine and correct. Taking Kevin's 'I might have done it with Jan!' literally (that they slept together) is a literal reading error. Michael is not the father either.",
+ "question": "Did Jan conceive from Kevin?",
+ "category": "false_premise",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

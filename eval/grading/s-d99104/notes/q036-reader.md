@@ -1,0 +1,4 @@
+Reader lens, q036
+A: 8. Both episodes stated plainly first (The Return S3E13 sc.34; Angry Andy S8E21 sc.41), and correctly flags Safety Training as a flashback not a new punch (S3E19 sc.2). Slight overreach: "the same wall" - in S8E21 sc.41 he punches Nellie's office wall ("And your stupid office! [punches hole in the wall]"), not shown to be the S3 wall.
+B: 8. Both episodes, flashback handled correctly (S3E19 sc.2 is a recap of the incident). Hedge "this list may be incomplete" plus "as well as a third" muddles an otherwise direct answer.
+C: 6. Both episodes right with good context for The Return (phone prank -> anger management). But S8E21 setting is wrong: "meltdown in the conference room... nearly the exact same spot" - S8E21 sc.41 has him smashing Nellie's photo and punching "your stupid office"; not the conference room or the S3 spot.

@@ -1,0 +1,28 @@
+{
+ "question_id": "q057",
+ "reference": "The Utica branch: Karen tells the camera she is 'the regional manager of Dunder-Mifflin Utica branch' in Branch Wars (S4E6). Premise is true: in The Job (S3E23) Jim leaves the corporate interview and goes back to Pam; Karen's line in S4E6 refers to her boyfriend being 'in love with somebody else'.",
+ "evidence": [
+  {
+   "scene": "S4E6 sc.2",
+   "line": "Karen: I am the regional manager of Dunder-Mifflin Utica branch. Turns out it's a pretty easy gig when your boss isn't an idiot and your boyfriend's not in love with somebody else."
+  },
+  {
+   "scene": "S4E6 sc.6",
+   "line": "Michael: ...because our old friend Karen from Utica is going to give him more money to work there."
+  }
+ ],
+ "sources": [
+  "S4E6 sc.2",
+  "S4E6 sc.6",
+  "S3E23 sc.68"
+ ],
+ "premise_true": true,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "Karen's actual move/breakup with Jim happens largely off-screen between S3E23 and S4E1; the transcripts only show the result (S4E6).",
+ "question": "Karen left Scranton after Jim chose Pam. Which branch did she go on to manage?",
+ "category": "multi_hop",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

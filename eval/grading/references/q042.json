@@ -1,0 +1,25 @@
+{
+ "question_id": "q042",
+ "reference": "Dwight has the most lines in Season 9: 1069 lines under the exact speaker label 'Dwight' (1072 counting joint labels containing Dwight), well ahead of Jim (798) and Pam (735), then Andy (637).",
+ "evidence": [
+  {
+   "scene": "SQL",
+   "line": "S9 speaker counts: Dwight 1069, Jim 798, Pam 735, Andy 637, Angela 381, Erin 380, Oscar 294, Nellie 287, Darryl 278, Kevin 266"
+  }
+ ],
+ "sources": [],
+ "premise_true": null,
+ "count": {
+  "truth": 1069,
+  "what_counted": "rows in lines (season 9) with speaker label exactly 'Dwight'; the winner is Dwight. With labels containing 'Dwight' (joint lines) it is 1072; Jim 798 exact / 806 containing. The answer being graded is mainly WHO (Dwight); the number supports it.",
+  "sql": "SELECT speaker, count(*) FROM lines WHERE season=9 GROUP BY speaker ORDER BY 2 DESC LIMIT 10"
+ },
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "Counts are dataset lines (fan transcript rows), not words or screen time. Any number near 1069-1072 for Dwight is the dataset count; the key fact is that Dwight leads by a wide margin.",
+ "accepted_alternatives": [],
+ "question": "Who has the most lines in Season 9?",
+ "category": "count",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

@@ -1,0 +1,4 @@
+Judgment: facts relied on. Reference favors Meredith; Creed/Packer picks are defensible but only if facts are true.
+A: 8. Creed quote true: S3E1 sc.40 "In the sixties I made love to many many women, often outdoors, in the mud and the rain." Meredith/supplier discounts true (S5E2 sc.6). Mild: "Robert California sex-obsessed" unsupported by anything checked.
+B: 6. Claims "Todd Packer ... corroborated predatory pursuit": the twins story (S2E2 sc.4) is Michael's retelling only, nothing corroborates it. Quotes about Meredith are accurate (S7E4 sc.11 Angela "outhouse"; S9E11 sc.7).
+C: 7. Quotes true (S8E21 sc.37 Creed "Haven't heard any complaints"; S8E21 sc.39 hands raised). Says Meredith's activity is "verified by coworkers" with S7E4 sc.11 (insult from Angela, not verification); Robert California claim from memory unsupported.

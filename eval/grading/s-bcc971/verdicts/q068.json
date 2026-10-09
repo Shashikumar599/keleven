@@ -1,0 +1,73 @@
+{
+ "question_id": "q068",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Picks Creed from his real sixties claim (S3E1 sc.40) and gives Meredith's supplier deal (S5E2) as the counterpoint, but leans on a comic boast with 'almost certainly'; Meredith's deal is her own admission, not 'verified by others'.",
+   "details": {
+    "lens_scores": {
+     "fact": 6,
+     "faithfulness": 7,
+     "reader": 7
+    },
+    "calibration": "ok",
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 1,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 8
+   }
+  },
+  "B": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "literal_reading",
+   "notes": "Clear Creed pick with a good Meredith counterpoint, but its cited support is jokes read literally: Nellie's 'a thousand years old' (S8E21 sc.37) as real age, Meredith's in-character threesome line in the murder-mystery game (S6E9 sc.30).",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 7,
+     "reader": 5
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 0,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 7
+   }
+  },
+  "C": {
+   "score": 6,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "literal_reading",
+   "notes": "Same literal readings as B (S8E21 sc.37, S6E9 sc.30) plus Michael's herpes riff at Oscar (S7E4 sc.36, 'We were never lovers!') as an ex-lover list; Meredith's admission (S5E2) was not in its passages.",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 6,
+     "reader": 3
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 0,
+     "counterpoint": 1,
+     "scope": 2
+    },
+    "total": 6
+   }
+  }
+ }
+}

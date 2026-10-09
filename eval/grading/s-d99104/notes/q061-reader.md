@@ -1,0 +1,4 @@
+q061 reader note (S2 Halloween costumes)
+A: 6. Michael/Dwight/Jim right and read sensibly (Michael's papier-mache second head, S2E5 sc.3/sc.6; Dwight "I am a Sith Lord" and Jim's three-hole punch, sc.4). Misses Pam entirely (one of four asked) - incomplete for the asker; Pam is a cat (S2E5 sc.1 direction "[notices Pam, in her cat costume]", a scene it wasn't sent, so the gap is honest).
+B: 9. All four answered directly: two-headed Michael, Sith Lord, Three Hole Punch Jim, Pam as a cat. Slight overreach: "(Emperor Palpatine from Star Wars)" - Dwight only says "I am a Sith Lord" (S2E5 sc.4); naming a specific character is not supported.
+C: 10. All four, clearly: Michael two-headed (sc.3/sc.6), Dwight Sith Lord (sc.4), Jim three-hole punch (sc.4), Pam a cat [memory] (matches S2E5 sc.1 direction). Well organized, nothing misread.

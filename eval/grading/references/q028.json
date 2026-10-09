@@ -1,0 +1,22 @@
+{
+ "question_id": "q028",
+ "reference": "Jim, dressed as Dwight (impersonating him), in the cold open of Product Recall (S3E20).",
+ "evidence": [
+  {
+   "scene": "S3E20 sc.1",
+   "line": "Jim: [Dressed as Dwight] ... Question. What kind of bear is best? ... Jim: Fact. Bears eat beets. Bears. Beets. Battlestar Galactica. Dwight: Bears do not--- What is going on--- What are you doing?!"
+  }
+ ],
+ "sources": [
+  "S3E20 sc.1"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "Commonly attributed to Dwight; it is Jim mimicking Dwight. Answers saying 'Dwight' are wrong; 'Jim impersonating Dwight' is correct.",
+ "question": "Who says \"Bears. Beets. Battlestar Galactica.\"?",
+ "category": "who_said",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

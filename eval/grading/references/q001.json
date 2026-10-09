@@ -1,0 +1,22 @@
+{
+ "question_id": "q001",
+ "reference": "\"...stitious\" (\"I'm not superstitious, but... I'm... I am a little-stitious.\"), said by Michael in Fun Run (S4E1, combined numbering), about lifting the 'curse' after hitting Meredith with his car.",
+ "evidence": [
+  {
+   "scene": "S4E1 sc.25",
+   "line": "Michael: Well, I am taking responsibility. It is up to me to get rid of the curse that hit Meredith with my car. I'm not superstitious, but... I'm... I am a little-stitious."
+  }
+ ],
+ "sources": [
+  "S4E1 sc.25"
+ ],
+ "confidence": "high",
+ "caveats": "Transcript spells it 'little-stitious' (often quoted as 'a little stitious'); accept either spelling. Only occurrence in the dataset.",
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "question": "Finish the quote: \"I'm not superstitious, but I am a little...\"",
+ "category": "finish_the_quote",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

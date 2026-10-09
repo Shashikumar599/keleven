@@ -1,0 +1,27 @@
+{
+ "question_id": "q023",
+ "reference": "He married his first wife. Answering Roy ('When you were in the Navy, did you ever almost die?'), Captain Jack says he was thinking about his first wife, and 'The day I got back on shore, I married her.' Booze Cruise (S2E11). This prompts Roy to set a wedding date with Pam.",
+ "evidence": [
+  {
+   "scene": "S2E11 sc.29",
+   "line": "Captain Jack: Oh yeah, oh yeah. And I wasn't thinking about some customer. I was thinking about my first wife. The day I got back on shore, I married her."
+  },
+  {
+   "scene": "S2E11 sc.31",
+   "line": "Roy: ...Pam, I think enough is enough. I think we should set a date for our wedding. How about June 10th?"
+  }
+ ],
+ "sources": [
+  "S2E11 sc.29",
+  "S2E11 sc.31"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "",
+ "question": "On the booze cruise, what does Captain Jack say he did the day he got back on shore from the Navy?",
+ "category": "detail",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

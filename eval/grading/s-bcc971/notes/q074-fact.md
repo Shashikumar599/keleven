@@ -1,0 +1,4 @@
+FACT lens, q074 (premise false: sperm bank donor; S4E14 sc.64 "I went to a sperm bank"; S5E3 sc.44 "It's not Kevin's child. Can't possibly be.")
+A: 7/10. Core correct: never confirmed Kevin is the father, sperm donor, played as comic coincidence. Wrong detail: says Kevin realizes in Goodbye, Toby that it is the clinic where he donates; in S4E14 sc.62-63 Kevin just calls Michael over and reveals Jan's belly, and the "I donated sperm / next to the IHOP" exchange is S5E3 sc.43. Episode numbers 18/19 and S5E4 are split numbering (fine). "Jan chose a donor from a catalog": S4E14 sc.64 has the catalogue, OK.
+B: 9/10. Never confirmed, Jan denies (S5E3 sc.44), sperm bank next to IHOP (S4E14 sc.64), Kevin donated (S5E3 sc.43). All match; "left unconfirmed" is correct per ref.
+C: 9/10. Same correct content as B; "Astrid's father never confirmed" matches ref. Says Kevin "wonders if he could be the father" (S5E3 sc.43) accurate.

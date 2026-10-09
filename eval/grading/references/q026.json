@@ -1,0 +1,33 @@
+{
+ "question_id": "q026",
+ "reference": "Val says the flowers are from her mom. Darryl says the caller who asked him for the warehouse address ('real deep voiced woman') gave the name Brandon; Val laughingly agrees 'my mom's name is Brandon' (sarcastic: Brandon is her boyfriend, confirmed in After Hours S8E16). Special Project (S8E14).",
+ "evidence": [
+  {
+   "scene": "S8E14 sc.15",
+   "line": "Bob [caller]: I just need the address for the warehouse? I want to send my girlfriend some flowers. Darryl: Your girlfriend? Is your girlfriend Val? Bob: Yeah"
+  },
+  {
+   "scene": "S8E14 sc.33",
+   "line": "Val: Thanks, they're from my mom. ... Darryl: She said her name was Brandon, I think. Your mom's name is Brandon? Val: [laughs] Yeah Darryl, my mom's name is Brandon."
+  },
+  {
+   "scene": "S8E16 sc.22",
+   "line": "Andy: ...our server is none other than Brandon, her boyf! Brandon: How you doing, Val?"
+  }
+ ],
+ "sources": [
+  "S8E14 sc.15",
+  "S8E14 sc.33",
+  "S8E16 sc.22"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "medium",
+ "caveats": "In the phone scene (sc.15) the caller never states his name in the transcript, and the fan transcript labels him 'Bob'; the name 'Brandon' comes only from Darryl's retelling in sc.33. 'Mom' is Val's cover / joke, not the truth; 'Brandon' is the expected answer. Darryl's 'real deep voiced woman' is sarcastic.",
+ "question": "Who does Val say sent her flowers, and what name did that person give when calling Darryl for the address?",
+ "category": "detail",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": true,
+ "owner_note": "Owner (2026-10-07): reference is correct."
+}

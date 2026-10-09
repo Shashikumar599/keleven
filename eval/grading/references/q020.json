@@ -1,0 +1,38 @@
+{
+ "question_id": "q020",
+ "reference": "Kelly knows it: Lamar Odom, which she knows from the reality show storyline ('Chloe and Lamar') (Trivia, S8E11). The A-team's Jim and Darryl answer Shawn Marion, Ryan guesses 'LaDameon Washington', Kevin suggests Ron Artest; the host confirms 'Lamar Odom'.",
+ "evidence": [
+  {
+   "scene": "S8E11 sc.14",
+   "line": "Host: ... you did get your game on when you won the NBA's Sixth Man of the Year award in 2011. Who are you?"
+  },
+  {
+   "scene": "S8E11 sc.14",
+   "line": "Jim: Shawn Marion. / Darryl: Yes, Shawn Marion."
+  },
+  {
+   "scene": "S8E11 sc.14",
+   "line": "Kevin: Ron Artest, Kelly."
+  },
+  {
+   "scene": "S8E11 sc.14",
+   "line": "Kelly: No, it's Lamar Odom. If it'd been Ron Artest, it would have come up in Dancing with the Stars ... Lamar winning Sixth Man was a big storyline on Chloe and Lamar."
+  },
+  {
+   "scene": "S8E11 sc.14",
+   "line": "Host: All right, boards up. Let's see who got it. 'Lamar Odom' is what we were looking for."
+  }
+ ],
+ "sources": [
+  "S8E11 sc.14"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "Dunder Mifflin fields three teams (A-team, backup, just-have-fun). Kelly is with Kevin, apparently on the just-have-fun team with Meredith/Erin (sc.11, sc.16, sc.26), not the A-team; the question's 'the Dunder Mifflin team' is loose. Who knows it (Kelly) and the answer (Lamar Odom) are clear; an answer naming Jim or Darryl is wrong (they said Shawn Marion). The scene doesn't say explicitly which table got the point.",
+ "question": "At the bar trivia night, who on the Dunder Mifflin team knows the NBA Sixth Man of the Year 2011, and what is the answer?",
+ "category": "detail",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

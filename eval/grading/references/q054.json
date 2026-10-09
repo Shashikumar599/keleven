@@ -1,0 +1,44 @@
+{
+ "question_id": "q054",
+ "reference": "Mostly off-camera. The transcripts only show that he moved to Colorado (Boulder, where Holly's parents live) to start a life with Holly (S7E21), and that he returns in the Finale (S9E23) as Dwight's surprise 'bestish mensch' at Dwight and Angela's wedding, now with many kids ('so many pictures of his kids he had to get two phones'). Nothing else about his life between S7 and the finale is shown.",
+ "evidence": [
+  {
+   "scene": "S7E21 sc.1",
+   "line": "Michael: Well, I'm moving to Colorado to start my new life with Holly."
+  },
+  {
+   "scene": "S7E21 sc.23",
+   "line": "Holly: Boulder. Is something wrong? Are you okay?"
+  },
+  {
+   "scene": "S9E23 sc.68",
+   "line": "Jim: ...I just...really wish there was something I could do. [looks off] Dwight: [turns around] [whispering] Michael. I can't believe you came. Michael: That's what she said."
+  },
+  {
+   "scene": "S9E23 sc.76",
+   "line": "Pam: Michael has so many pictures of his kids he had to get two phones with two numbers and he pays two bills. ... He just so happy to have a family plan."
+  },
+  {
+   "scene": "S9E23 sc.84",
+   "line": "Michael: [crying] I feel like all my kids grew up and then they married each other. It's every parent's dream."
+  }
+ ],
+ "sources": [
+  "S7E21 sc.1",
+  "S7E21 sc.23",
+  "S9E23 sc.68",
+  "S9E23 sc.76",
+  "S9E23 sc.84"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "medium",
+ "caveats": "Off-camera kind: a transcript-only answer may say the transcripts barely cover it, but the finale scenes do give facts (Colorado with Holly, kids, returns as Dwight's best man), so citing them is correct and not beyond the evidence. Well established outside the transcripts (mark as memory): he married Holly and they live in Colorado with several children; in the finale he is Dwight's best man. The 'two phones' line is a joke about how many photos he has; the exact number of kids is not given in the transcripts. 'All my kids ... married each other' (sc.84) is Michael calling his former employees his kids, not his own children. Real-world: Steve Carell left the series after S7.",
+ "accepted_alternatives": [],
+ "question": "What happened to Michael after he left Scranton?",
+ "category": "off_camera",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": true,
+ "owner_note": "Owner (2026-10-07): he settled with Holly; that is the answer."
+}

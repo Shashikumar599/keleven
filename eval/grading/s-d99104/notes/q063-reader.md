@@ -1,0 +1,4 @@
+q063 reader note (why Pam's costume doesn't make sense)
+A: 1. Wrong reading of the scene: claims Pam says it doesn't make sense because she's nursing and her breasts are larger than Olive Oyl's. No such line: S7E6 search for nurs|boob|breast|chest|flat returns only Pam "Angela as the nurse!" (sc.37). The actual reason is Popeye's absence (S7E6 sc.11 Pam: "...it makes more sense when I'm standing next to Popeye, but... Jim doesn't want to put his costume on."). Only "Olive Oyl" is right.
+B: 9. Main cause stated plainly: Olive Oyl needs Popeye and Jim won't wear his (sc.11). Doesn't mention the supporting points (Dwight's "old Dwight Schrute's mom" jab, sc.11; Jim finally appearing as Popeye, sc.49), minor.
+C: 9. Same as B: main cause right and direct; no supporting context (Jim's "never really been a costume guy", sc.12; payoff sc.49).

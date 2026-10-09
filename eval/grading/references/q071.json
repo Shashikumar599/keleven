@@ -1,0 +1,35 @@
+{
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "caveats": "Visual action known only from a stage direction. Dwight being hit by Mose's manure (S4E4) is implied by audio ('Ow!'), not shown in the transcript; an answer naming Dwight for that scene is partially defensible but the clear case is Andy. Watch for reversal: Angela slaps Mose in S8E24; Mose wrestling Ryan (S3E5) never happens, Ryan refuses.",
+ "question_id": "q071",
+ "reference": "Mose hits Andy: in The Surplus (S5E9), at Schrute Farms, right after Dwight's fake/real wedding trick with Angela, Mose hits Andy in the head with a deflated ball (Andy: 'Ow!'). That is the only on-screen case of Mose hitting a person in the transcripts. Related but not the main answer: in Dwight K. Schrute's Farm (S4E4) Mose apparently throws manure at Dwight off-screen (Dwight: 'Do not throw it! ... Ow!').",
+ "evidence": [
+  {
+   "scene": "S5E9 sc.20",
+   "line": "Andy: Are we, uh... are we leaving or what? [Mose hits Andy in the head with a deflated ball] Ow!"
+  },
+  {
+   "scene": "S4E4 sc.29",
+   "line": "Dwight: Mose, what are you doing? No Mose! Put the--- Put the manure down! ... DO NOT THROW IT! Ow!"
+  },
+  {
+   "scene": "S8E24 sc.36",
+   "line": "Angela: Yes! [slaps Mose] Tell me! Tell me where he is! (Angela hits Mose, not the reverse)"
+  }
+ ],
+ "sources": [
+  "S5E9 sc.20",
+  "S4E4 sc.29",
+  "S8E24 sc.36"
+ ],
+ "accepted_alternatives": [
+  "Andy (S5E9, with a deflated ball)"
+ ],
+ "confidence": "high",
+ "question": "Whom did Mose hit?",
+ "category": "detail",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

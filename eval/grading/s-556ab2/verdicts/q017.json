@@ -1,0 +1,53 @@
+{
+ "question_id": "q017",
+ "method": "single",
+ "answers": {
+  "A": {
+   "score": 5,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Pockets part right, but says Andy gave the sweater; S8E21 sc.8 Kevin says Nellie gave it to him.",
+   "details": {
+    "parts": [
+     {
+      "part": "who gave it (Nellie)",
+      "ok": false
+     },
+     {
+      "part": "wishes it had pockets",
+      "ok": true
+     }
+    ],
+    "calibration": "overconfident"
+   }
+  },
+  "B": {
+   "score": 5,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Both claims correctly marked [memory] (no relevant scene was sent); pockets right, giver wrong (Andy instead of Nellie, S8E21 sc.8).",
+   "details": {
+    "parts": [
+     {
+      "part": "who gave it (Nellie)",
+      "ok": false
+     },
+     {
+      "part": "wishes it had pockets",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "C": {
+   "score": 2,
+   "verdict": "refused",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Honest refusal: S8E21 sc.8 was not among the sent scenes, and none of them mention the sweater.",
+   "details": {}
+  }
+ }
+}

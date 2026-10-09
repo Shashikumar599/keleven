@@ -1,0 +1,4 @@
+q055 reader note (off-camera: Emmy wins)
+A: 8. Transcript-only answer correctly recognizes the question is off-camera and says the passages don't cover it (DB: 0 lines match 'emmy'; the sent Dundies scenes are the in-show award, not the Emmys). Direct, honest; does not confuse Dundies with Emmys. Minimal: doesn't say why (real-world award, outside the show).
+B: 10. States plainly first that the transcripts don't cover it, then gives the answer (5 Primetime wins of 42 nominations, 2006 Outstanding Comedy Series) marked [memory], matching the reference. Serves the asker fully; clear separation of sources.
+C: 9. Leads with the number (5 of 42) and the 2006 Outstanding Comedy Series win, as the reference gives; well organized. "exact count" is slight overconfidence given sources differ (reference caveat: 4-5 accepted); extra episode-numbering detail ("Episodes 24/25") is clutter, not a reading issue.

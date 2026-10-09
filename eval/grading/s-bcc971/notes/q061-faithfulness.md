@@ -1,0 +1,4 @@
+Faithfulness note q061
+A: 8. Quotes all exact. Minor: "hooded robe" - S2E5 sc.4 only says "pulls his hood over his head and pops up his light saber"; no robe (Phyllis: "A monk?"). Memory claims (second head on shoulder, black circles) are labelled [memory]; fine.
+B: 5. Memory only. Adds "Emperor Palpatine" - S2E5 sc.4 Dwight says only "I am a Sith Lord"; nothing names Palpatine. Also "black cat, ears, painted whiskers" and "black" circles are not in the transcript (sc.1: "in her cat costume"). Says knows_answer with no uncertainty: overconfident on unverifiable detail, though core costumes are right.
+C: 9. Every claim backed. The flagged "NOT FOUND" evidence quote is only a formatting artifact: S2E5 sc.3 has Pam "Papier-mache?" then Michael "Yes." as separate lines. Refers to "second head" backed by sc.3 ("costume head") and sc.6 ("I don't really have two heads").

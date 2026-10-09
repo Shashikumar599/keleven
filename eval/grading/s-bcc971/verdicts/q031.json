@@ -1,0 +1,49 @@
+{
+ "question_id": "q031",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Michael to Toby, S2E22 sc.11, with the Boy Scouts trigger; quotes exact.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    }
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Michael to Toby, Casino Night S2E22; slightly loose context wording.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 7,
+     "reader": 9
+    },
+    "calibration": "ok"
+   }
+  },
+  "C": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Michael to and about Toby, S2E22 sc.11, context and quotes right.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    }
+   }
+  }
+ }
+}

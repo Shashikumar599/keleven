@@ -1,0 +1,22 @@
+{
+ "question_id": "q005",
+ "reference": "\"...I just hope I find it along the way. Like an improv conversation. An improversation.\" Michael in The Duel (S5E11).",
+ "evidence": [
+  {
+   "scene": "S5E11 sc.19",
+   "line": "Michael: Sometimes I'll start a sentence, and I don't even know where it's going. I just hope I find it along the way. Like an improv conversation. An improversation."
+  }
+ ],
+ "sources": [
+  "S5E11 sc.19"
+ ],
+ "confidence": "high",
+ "caveats": "The key continuation is 'I just hope I find it along the way'; 'improversation' is the punchline. The scene is a single-line talking head; the transcript gives no further context.",
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "question": "Finish the quote: \"Sometimes I'll start a sentence and I don't even know where it's going...\"",
+ "category": "finish_the_quote",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

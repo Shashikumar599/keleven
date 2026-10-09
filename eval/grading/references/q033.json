@@ -1,0 +1,32 @@
+{
+ "question_id": "q033",
+ "reference": "Stress Relief (S5E13 here; a two-part episode, split S5E14-15). Dwight sets a fire on purpose (cigarette into a trash can of paper and lighter fluid, also cuts the phones, blocks/heats doors, sets off firecrackers) as a surprise fire-safety drill, because nobody paid attention to his PowerPoint fire safety talk the week before: 'experience is the best teacher.' It ends with Stanley's heart attack.",
+ "evidence": [
+  {
+   "scene": "S5E13 sc.1",
+   "line": "Dwight: Last week I gave a fire safety talk. And nobody paid any attention. It's my own fault for using PowerPoint... experience is the best teacher. [lights a cigarette] Today, smoking is gonna save lives. [throws cigarette into garbage can filled with paper and lighter fluid]"
+  },
+  {
+   "scene": "S5E13 sc.2",
+   "line": "Dwight: [blowing air horn] ... This has been a test of our emergency preparedness. There is no fire. It was only a simulation."
+  },
+  {
+   "scene": "S5E13 sc.3",
+   "line": "David Wallace: You could have burned down the whole building."
+  }
+ ],
+ "sources": [
+  "S5E13 sc.1",
+  "S5E13 sc.2",
+  "S5E13 sc.3"
+ ],
+ "premise_true": true,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "Don't confuse with The Fire (S2E4), where Ryan starts the fire with a cheese pita in the toaster oven, not Dwight. Accept episode by title or split numbering (S5E14/15).",
+ "question": "In which episode does Dwight start a fire in the office, and why does he do it?",
+ "category": "which_episode",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

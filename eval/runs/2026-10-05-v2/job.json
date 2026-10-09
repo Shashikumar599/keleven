@@ -1,0 +1,23 @@
+{
+ "job": "batches/cxc6va98u93zb42id9fyy0k3i03mgqbl0yoz",
+ "label": "2026-10-05-v2",
+ "model": "gemini-3.8-flash",
+ "requests": 161,
+ "submitted_at": "2026-10-05T09:25:34.362134+00:00",
+ "questions_sha256": "13f9f4ff6f11747fdc2f2c92920177df41f0886667ce65181a5b16fb1eefdfaa",
+ "version": "v2",
+ "prompts": {
+  "rag": {
+   "file": "rag_v2.md",
+   "sha256": "b99b1177e3910e894a790112da4d01cc6bca3da13792e0528f74e2b5d03bd0f3"
+  },
+  "llm": {
+   "file": "memory_v1.md",
+   "sha256": "00c114b187141f642dc87d2c665268ef3a51666db40528cb51c73fe947ebb070"
+  },
+  "hybrid": {
+   "file": "hybrid_v2.md",
+   "sha256": "5b5419f8f863dfee17720b063d8b489e0a7e131a1a8705934830618557822dc3"
+  }
+ }
+}

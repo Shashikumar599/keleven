@@ -1,0 +1,58 @@
+{
+ "method": "debate",
+ "question_id": "q066",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Picks Ryan with verified scenes (S7E22 sc.14-15, S6E21 sc.29), puts Dwight and Jan (reference candidates) beside him, and gives a real counterpoint; [memory] claims are labelled and mostly hold. Reading slip: Dwight's S1E4 sc.48 'throw him to the wolves' boast is ironic (Jim is the one who fooled him), so it is weak evidence of manipulation.",
+   "details": {
+    "scores": {
+     "position": 2,
+     "support": 2,
+     "reading": 1,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 9
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Clear Ryan pick with every quote verified, and a counterpoint (Dwight, including the real S6E15 sc.28 plan to use Nick). Same reading slip as A with the ironic S1E4 boast; narrower field, but coverage is not a criterion.",
+   "details": {
+    "scores": {
+     "position": 2,
+     "support": 2,
+     "reading": 1,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 9
+   }
+  },
+  "C": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Clear Ryan pick backed by claims that all check out (WUPHF investors S7E9, arrest for double-booked sales in Goodbye, Toby S4E14 sc.41-42, finale baby S9E23), with a strong counterpoint: Robert California talked Jo out of her CEO job, which is verified in S8E1 sc.5 (Jim: 'convinced Jo to make him CEO... her own job'), so C's own brief wrongly conceded it.",
+   "details": {
+    "scores": {
+     "position": 2,
+     "support": 2,
+     "reading": 2,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 10,
+    "calibration": "ok"
+   }
+  }
+ }
+}

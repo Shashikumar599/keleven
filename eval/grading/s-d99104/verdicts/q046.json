@@ -1,0 +1,50 @@
+{
+ "question_id": "q046",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 5,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "retrieval_miss",
+   "notes": "Finds Michael, Jim, Dwight (acting, permanent), Creed; misses DeAngelo and Nellie; Andy only implied from Dwight's 'Michael or Andy' line. Flags itself as incomplete.",
+   "details": {
+    "lens_scores": {
+     "fact": 4,
+     "faithfulness": 8,
+     "reader": 3
+    },
+    "details_core": "5 of 7 core, 2 missed"
+   }
+  },
+  "B": {
+   "score": 5,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "All 7 core items, but invents two: Dwight acting manager in The Job (S3E23 sc.18-19 is only his fantasy) and Charles Miner as interim supervisor (S5E18 sc.13: Michael remains branch manager); presented as 'exact'.",
+   "details": {
+    "lens_scores": {
+     "fact": 6,
+     "faithfulness": 5,
+     "reader": 8
+    },
+    "calibration": "overconfident"
+   }
+  },
+  "C": {
+   "score": 6,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "memory_error",
+   "notes": "All 7 core items with good labels and Jim declining (S7E23 sc.3), but wrong Charles Miner claim (S5E18 sc.13) and 'complete' overclaim.",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 7,
+     "reader": 8
+    }
+   }
+  }
+ }
+}

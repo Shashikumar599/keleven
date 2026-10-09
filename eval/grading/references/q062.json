@@ -1,0 +1,41 @@
+{
+ "question_id": "q062",
+ "reference": "Costume Contest (S7E6): Gabe is dressed as Lady Gaga; Oscar Martinez wins the contest (and the Scranton/Wilkes-Barre coupon book), with his 'rational consumer' costume (i.e. ordinary clothes).",
+ "evidence": [
+  {
+   "scene": "S7E6 sc.13",
+   "line": "Gabe: [dressed as Lady Gaga] In case you can't read m-m-my Poker Face..."
+  },
+  {
+   "scene": "S7E6 sc.31",
+   "line": "Michael: ...And Gabe looks like Lady Gaga."
+  },
+  {
+   "scene": "S7E6 sc.50",
+   "line": "Pam: ...the winner... of the costume celebration spectacular... and the Scranton Wilkes-Barre coupon book... Oscar Martinez."
+  },
+  {
+   "scene": "S7E6 sc.33",
+   "line": "Oscar: I guess you could say I'm still in costume. I'm a rational consumer."
+  }
+ ],
+ "sources": [
+  "S7E6 sc.13",
+  "S7E6 sc.29",
+  "S7E6 sc.31",
+  "S7E6 sc.33",
+  "S7E6 sc.50",
+  "S7E6 sc.51",
+  "S7E6 sc.52",
+  "S7E6 sc.53"
+ ],
+ "premise_true": true,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "Talking heads after the result (sc.51-53) suggest people voted for Oscar tactically or confused him for Edward James Olmos (Creed), but the winner is clearly Oscar.",
+ "question": "In 'Costume Contest', what is Gabe dressed as, and who wins the contest?",
+ "category": "visual",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

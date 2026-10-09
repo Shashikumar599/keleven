@@ -1,0 +1,49 @@
+{
+ "question_id": "q020",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Kelly, Lamar Odom, Chloe and Lamar storyline, sc.14.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    }
+   }
+  },
+  "B": {
+   "score": 4,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Lamar Odom right but names Kevin; in sc.14 Kevin says Ron Artest and Kelly knows it.",
+   "details": {
+    "lens_scores": {
+     "fact": 3,
+     "faithfulness": 2,
+     "reader": 2
+    },
+    "calibration": "overconfident"
+   }
+  },
+  "C": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "Kelly, Lamar Odom, correct contrasts; 'sports fans' and 'Khloe' are small unsupported touches.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 9,
+     "reader": 9
+    }
+   }
+  }
+ }
+}

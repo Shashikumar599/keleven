@@ -9,9 +9,8 @@ __pycache__/
 *.egg-info/
 .pytest_cache/
 
-# Transcript data: copyrighted, downloaded or derived locally (see claude.md and findings/phase-0.md).
-# Rebuild with ingest/clean.py and ingest/load.py.
-data/raw/
+# Transcript data. data/raw (the source files) is tracked on purpose so a new machine can rebuild everything
+# (owner decision 2026-10-09; keep the repo private). Derived data is rebuilt by scripts/bootstrap.sh and never committed.
 data/processed/
 
 # Editor and OS clutter

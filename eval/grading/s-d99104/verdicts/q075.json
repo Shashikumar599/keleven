@@ -1,0 +1,85 @@
+{
+ "question_id": "q075",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Picks Creed as viewer favourite, says which sense of likeable, counterpoint: criminal Creed vs caring Phyllis; true on blackmail/theft; no scenes.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 8,
+     "reader": 7
+    },
+    "calibration": "ok",
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 2,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 9
+   }
+  },
+  "B": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": "evidence_misread",
+   "notes": "Phyllis with a clear definition and counterpoint, but misquotes S3E2 sc.9: Creed says 'Andrea's the office bitch', not Angela; Phyllis evidence thin. (Rubric total 8; adjusted from 7 after the score bands were aligned.)",
+   "details": {
+    "lens_scores": {
+     "fact": 6,
+     "faithfulness": 9,
+     "reader": 6
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 1,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 8,
+    "adjusted": {
+     "from_score": 7,
+     "from_verdict": "partial",
+     "from_support": 0,
+     "why": "rubric total 8 was lowered by 1 to fit a score band mismatch (fixed in rubrics.md); restored 2026-10-06"
+    }
+   }
+  },
+  "C": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": "evidence_misread",
+   "notes": "Same Angela/Andrea misreading (S3E2 sc.9); good use of the finale police report (S9E23 sc.9); Creed 'participates gamely' cited to Michael's thanks. (Rubric total 8; adjusted from 7 after the score bands were aligned.)",
+   "details": {
+    "lens_scores": {
+     "fact": 6,
+     "faithfulness": 9,
+     "reader": 6
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 1,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 8,
+    "adjusted": {
+     "from_score": 7,
+     "from_verdict": "partial",
+     "from_support": 0,
+     "why": "rubric total 8 was lowered by 1 to fit a score band mismatch (fixed in rubrics.md); restored 2026-10-06"
+    }
+   }
+  }
+ }
+}

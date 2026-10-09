@@ -1,0 +1,55 @@
+{
+ "question_id": "q078",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 2,
+   "verdict": "refused",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Honest refusal: of the scenes sent, S3E23 sc.67-69 stop before the breakup, and S4E1, S4E6 and S5E14-15 were not sent. Gives the reader nothing about Karen's fate.",
+   "details": {
+    "lens_scores": {
+     "fact": 1,
+     "faithfulness": 9,
+     "reader": 1
+    },
+    "main_cause_ok": false,
+    "wrong_claims": []
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Full arc: breakup after the NY interview, left Scranton, Utica regional manager, later married to Dan the dermatologist and pregnant; memory claims labelled, the one citation accurate. Omits that Ryan got the job; 'made peace' slightly embellished.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 8,
+     "reader": 9
+    },
+    "main_cause_ok": true,
+    "wrong_claims": []
+   }
+  },
+  "C": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Same complete arc with correct episode anchors; Branch Wars as S4E10 and Lecture Circuit as S5E16 are valid split numbering (the fact member's episode objection is dropped: Branch Wars is S4E6 combined = S4E10 split). Omits the corporate job outcome.",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 8,
+     "reader": 9
+    },
+    "calibration": "ok",
+    "main_cause_ok": true,
+    "wrong_claims": []
+   }
+  }
+ }
+}

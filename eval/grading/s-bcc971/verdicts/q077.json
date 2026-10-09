@@ -1,0 +1,55 @@
+{
+ "question_id": "q077",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Rejects the premise and keeps the Oscar affair (S9E6 sc.44), all grounded. Calls him only Angela's 'partner' rather than her husband; the sent scenes barely establish the marriage, so this is cautious rather than wrong, but less complete.",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 9,
+     "reader": 7
+    },
+    "premise_true": false,
+    "outcome": "corrected"
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "No; married Angela, affair with Oscar, came out and left both (S9E19 sc.33), with memory claims labelled. Slight compression of the ending (the Angela divorce comes later, S9E22 sc.7).",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 8,
+     "reader": 9
+    },
+    "premise_true": false,
+    "outcome": "corrected"
+   }
+  },
+  "C": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "No; married Angela, affair with Oscar, came out in Stairmageddon: right. Small error: his new partner is his chief of staff Wesley Silver (S9E19 sc.33), not his campaign manager.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 6,
+     "reader": 8
+    },
+    "calibration": "ok",
+    "premise_true": false,
+    "outcome": "corrected"
+   }
+  }
+ }
+}

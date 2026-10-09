@@ -1,0 +1,50 @@
+{
+ "question_id": "q041",
+ "reference": "Holly speaks in 17 episodes in this dataset (two-part episodes counted once): Goodbye, Toby (S4); Weight Loss, Business Ethics, Baby Shower, Crime Aid, Employee Transfer, Company Picnic (S5); Sex Ed, Classy Christmas, Ultimatum, The Seminar, The Search, PDA, Threat Level Midnight, Todd Packer, Garage Sale, Goodbye, Michael (S7). With two-part episodes split (Goodbye Toby, Weight Loss, Classy Christmas) that is 20.",
+ "evidence": [
+  {
+   "scene": "S4E14",
+   "line": "Holly's first episode, Goodbye, Toby (Parts 1&2), 73 lines"
+  },
+  {
+   "scene": "S7E21 sc.23",
+   "line": "Holly: [on phone] Hello there! ... I love you too."
+  }
+ ],
+ "sources": [
+  "S4E14",
+  "S5E1",
+  "S5E2",
+  "S5E3",
+  "S5E4",
+  "S5E5",
+  "S5E26",
+  "S7E4",
+  "S7E11",
+  "S7E12",
+  "S7E13",
+  "S7E14",
+  "S7E15",
+  "S7E16",
+  "S7E17",
+  "S7E18",
+  "S7E21"
+ ],
+ "premise_true": null,
+ "count": {
+  "truth": 17,
+  "what_counted": "distinct (season, episode) rows with a line whose speaker label contains 'Holly' (Holly, joint labels like 'Michael & Holly', and the mislabel 'Holy'), excluding 'Holly's Mom'/'Holly's Dad' (who appear only in S7E18 where Holly also speaks). Episodes table combines two-part episodes.",
+  "sql": "SELECT count(DISTINCT (season, episode)) FROM lines WHERE speaker ~* 'holly' AND speaker !~* 'holly''s';"
+ },
+ "list_items": null,
+ "confidence": "high",
+ "accepted_alternatives": [
+  "17 (two-part episodes counted once)",
+  "20 (two-part episodes Goodbye Toby, Weight Loss, Classy Christmas counted as two each)"
+ ],
+ "caveats": "Holly is talked about but does not speak in Lecture Circuit Part 2 (S5E15; Michael visits Nashua while she is away). She does not appear in the finale in this dataset. Goodbye, Michael is counted as one episode in either numbering. Her lines there are a phone call.",
+ "question": "In how many episodes does Holly speak?",
+ "category": "count",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

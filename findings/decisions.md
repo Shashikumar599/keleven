@@ -669,3 +669,80 @@ first" and "conflicts" rules now apply to facts. v1 prompts untouched. q080 adde
 **2026-10-05: Phases follow pipeline versions.** Phase 1 = v1 (vector RAG, locked with the v1 baseline),
 Phase 2 = v2 (hybrid search + enhancer + SQL), Phase 3 = v3 (graph). Findings docs follow suit: findings/phase-1.md
 covers v1, phase-2.md v2. This replaces the CLAUDE.md phase table (Phase 1 vector + keyword, Phase 2 SQL + router).
+
+**2026-10-05: Evaluation = blind holistic grading by Claude (evaluate-answers skill, rubrics-v1).** Per question,
+Claude sees all answers (memory, v1 rag/hybrid, v2 rag/hybrid) shuffled under letters with their type only, builds
+a reference from the transcripts first (SQL + scenes; its own memory only as a hint), then judges every answer with
+the rubric for the question's kind: fact, count, list, explanation, judgment, plus false-premise and off-camera
+rules, and per-type checks (transcripts: grounded / honest refusal; memory: calibration; both: labelling). One
+failure type per non-correct answer feeds the v3 design. Verdicts are qa_reviews by claude:claude-opus-5-5, never
+gold; the owner spot-checks about 10 questions. Blinding is imperfect: SQL results and [SQL] citations reveal v2.
+Summary columns per version (v1 memory / rag / hybrid, v2 ...); a memory answer shared by both versions is graded
+once (only q017 differs: v2 reused run 90's memory answer). Files: .claude/skills/evaluate-answers/, eval/grade.py.
+
+**2026-10-05: Grading method: single blind grader for facts, debate for judgment-type questions; scores out of
+10.** Fact, count, list, off-camera: one blind grader against the reference. why, story_arc, opinion,
+counterfactual, loaded, false_premise: debate, one round: an advocate per answer type (memory, transcripts only,
+transcripts + memory; all three, so no type is favoured or left undefended) writes a short brief (concede own
+mistakes first, then points with proof, at most two weaknesses of others with proof), then a neutral judge checks
+the proofs and decides in one pass. Proof = a checked transcript scene or the reference; the memory advocate must
+prove memory's claims in the transcripts too. Advocates on a faster model (Sonnet), judge on the main model; briefs
+about 150 words. Every answer gets a score 0-10 with fixed anchors, consistent with the verdict. References: 80,
+built blind (63 high, 14 medium, 3 low); owner reviews about 17.
+
+**2026-10-05: Grading sets get random names.** Names like g1 / g2 imply an order and so hint at versions; `init`
+now creates a random name (s-xxxxxx) per run, and only the coordinator knows the mapping (config.json, which
+graders may not read). The pilot set g1 was renamed s-556ab2 and its 18 reviews re-saved with the new name.
+
+**2026-10-05: Grading by council (option c), replacing single grader + debate.** Three identical graders would
+agree for the wrong reason (same model, same prompt), and the pilot's advocates mostly produced one-sided attacks.
+So every question is graded by a council of lenses: fact (is it true), faithfulness (honest about its evidence;
+memory calibration), reader (understands the show: context, sarcasm, completeness; judgment criteria). Members
+work independently (never see each other's notes), each with proof for every finding; a chair (main model) checks
+disagreements in the transcripts and gives one final score 0-10 per answer (not an average; fact errors weigh most,
+reading most for judgment questions). One agent per lens per batch of about 10 questions (independence between
+lenses at about a tenth of the cost of one agent per member per question). Fact and faithfulness on Sonnet, reader
+and chair on the main model (model diversity). Council verdicts are saved as reviewer claude-council:<model>.
+
+**2026-10-06: v1 judgment scores corrected.** Ten answers the B7 chair had lowered from 8 to 7 (to fit a mismatch
+between the judgment bands in rubrics.md and eval.grade save) were restored to 8; rubrics.md now uses 8-10 / 4-7 /
+0-3 for judgment totals too. Originals are kept in each verdict's details.adjusted.
+
+**2026-10-06: v2 graded; next steps for the evaluation.** v2 (set s-bcc971) graded by the same council as v1; results
+in experiment-log.md. Memory answers are reused between versions, so their v1 / v2 difference (7.3 / 7.1) is taken as
+grading noise and sets the threshold: only differences above about half a point on a mean count. Plan: (1) log
+(done), (2) review the biggest per-question changes (done in the log), (3) fix the rubric gaps before the v3 grading
+(v1 / v2 verdicts stay as graded), (4) optionally regrade about 10 memory answers to measure noise, (5) use the list
+of remaining failures as the v3 design brief, (6) after v3, run the same 80 questions and compare v1, v2 and v3.
+
+**2026-10-06: Owner review of three low-confidence references.** q003 (Gretzky quote, words not in the dataset):
+reference confirmed correct. q070 (short appearance, high impact): kept as is; recorded as having no single correct
+answer. q080 (most boring main character): reference confirmed, Toby is the universally accepted answer. All three are
+marked verified_by_owner in eval/grading/references/. Scores already given are unchanged.
+
+**2026-10-06: v1 vs v2 analysis written** to findings/v1-v2-grading-analysis.md (mechanisms, remaining weaknesses, rubric gaps, v3 lessons, plan A-D). Finding to carry into v3: the enhancer echoes the question (67 of 80 plans add at most one new word), SQL is not retried when it returns 0 rows (q071), and BM25 has no stemming (q073 'marry' vs 'married').
+
+**2026-10-07: Owner review of references (REVIEW.md).** Confirmed correct: q003, q026, q044 (go with the transcripts:
+Season 2), q060 (Kelly left Ravi and ran off with Ryan Howard), q080. q046: any character named as a manager is fine,
+Creed was also a manager. q054: Michael settled with Holly. q055: transcripts cannot answer it; an answer from general
+knowledge is fine. q070: no single correct answer. Marked verified_by_owner with an owner_note in
+eval/grading/references/. Questions whose answer is not in the transcripts (q003, q055, q079) stay in the set: the
+resulting randomness is accepted. Scores already given are unchanged. Not yet reviewed by the owner: q040, q072, q079.
+
+**2026-10-07: Owner review, remaining references.** q040: the owner's list (eval/grading/references/that's, 48 rows)
+is the correct answer: Michael 30 times, +-1 accepted, Dwight second (4). The dataset has only 24 Michael lines, so a
+transcript-only answer of 24 with what it counted is also accepted (accepted_alternatives). q072: the show gives no
+verified count of Dwight's cousins; "we do not know" is acceptable (the boast of seventy is only a claim). q079: it was
+Dwight; the data lacks the punchline words. All marked verified_by_owner. These three references changed or were
+clarified after v1 and v2 were graded; existing scores are unchanged and no regrade is planned unless the owner asks
+(q040 answers of about 24 would still be accepted; q072 B "no number is ever stated" is now less wrong, still invents Cousin Heiss).
+
+**2026-10-07: Question notes corrected and rubrics-v2.** questions.jsonl (owner yes): q032 gold now Stanley to Ryan, Take
+Your Daughter to Work Day S2E18 sc.23 (flashback S5E13 sc.8); q060 Ryan Howard, job not stated in the finale (Ravi is
+the pediatrician); q073 premise true, Kelly married Ryan (S7E14 sc.1). rubrics-v2 closes the gaps found in grading:
+failure type memory_unsure (honest "don't know" from memory); judgment answers whose better evidence was not sent are
+retrieval_miss; "answers only from its sample" is support / reading, not scope; quote-not-in-data rule (q079);
+accepted_true outcome for a true premise; owner counts with tolerance (q040); a "how many" list is graded per its
+reference (q072); off-camera partly covered by the transcripts (q054). eval/grade.py records rubric rubrics-v2 and
+accepts memory_unsure. v1 and v2 verdicts stay under rubrics-v1 and are not regraded. The questions file changed, so
+its hash differs from the one stored with the v1 and v2 runs (gold answers are not used by the systems or graders).

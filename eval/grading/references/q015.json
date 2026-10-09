@@ -1,0 +1,26 @@
+{
+ "question_id": "q015",
+ "reference": "Five hundred boxes went out; the paper was the '24 pound cream butter stock' (Michael, Product Recall, S3E20).",
+ "evidence": [
+  {
+   "scene": "S3E20 sc.5",
+   "line": "Michael: ... put an obscene watermark on our 24 pound cream butter stock. Five hundred boxes has gone out, with the image of a beloved cartoon duck, performing... unspeakable acts upon a certain cartoon mouse ..."
+  }
+ ],
+ "sources": [
+  "S3E20 sc.5"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "The transcript wording is '24 pound cream butter stock'; fan transcription may be imperfect (the aired line is often remembered as '24 pound cream bond'). Accept '24-pound cream' paper/stock with butter or bond; 500 boxes is the key number.",
+ "accepted_alternatives": [
+  "500 boxes; 24 pound cream butter stock",
+  "500 boxes; 24-pound cream bond paper"
+ ],
+ "question": "How many boxes of paper with the obscene watermark went out to customers, and what kind of paper was it?",
+ "category": "detail",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

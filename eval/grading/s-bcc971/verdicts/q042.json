@@ -1,0 +1,61 @@
+{
+ "question_id": "q042",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Dwight with 1,069 lines, runners-up Jim, Pam, Andy, all exactly as in the SQL result it was sent.",
+   "details": {
+    "truth": 1069,
+    "given": 1069,
+    "exactness": "exact",
+    "states_what_counted": true,
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    }
+   }
+  },
+  "B": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Right person (Dwight), which is what the question asks; no number, and the 'word count' lead is an unchecked extra claim.",
+   "details": {
+    "truth": 1069,
+    "given": null,
+    "exactness": "approximate",
+    "states_what_counted": false,
+    "calibration": "ok",
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 8,
+     "reader": 7
+    }
+   }
+  },
+  "C": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Dwight, 1,069 lines [SQL], exact.",
+   "details": {
+    "truth": 1069,
+    "given": 1069,
+    "exactness": "exact",
+    "states_what_counted": true,
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    }
+   }
+  }
+ }
+}

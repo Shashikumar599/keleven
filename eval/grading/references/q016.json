@@ -1,0 +1,35 @@
+{
+ "question_id": "q016",
+ "reference": "Because both receptionists are named Kelly, Charles says he will call Kelly Kapoor 'Kapoor' and the new receptionist 'Hannon'; the new receptionist asks to be called Erin instead, her middle name (The Michael Scott Paper Company, S5E21).",
+ "evidence": [
+  {
+   "scene": "S5E21 sc.4",
+   "line": "Charles: Hey Kelly? / Kelly: Yes? Charles, you wanted me? / Charles: Oh, I meant, I meant that Kelly. [New receptionist walks in]"
+  },
+  {
+   "scene": "S5E21 sc.6",
+   "line": "Charles: Okay, I'm gonna call you Kapoor, okay? And you, Hannon."
+  },
+  {
+   "scene": "S5E21 sc.6",
+   "line": "Erin: If we're changing names, can I be Erin? It's my middle name."
+  },
+  {
+   "scene": "S5E21 sc.6",
+   "line": "Charles: Erin. Okay, that's very pretty."
+  }
+ ],
+ "sources": [
+  "S5E21 sc.4",
+  "S5E21 sc.6"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "The speaker label 'Erin' is used even before she asks for the name. Charles only announces the surname plan in this scene; the transcripts don't show him repeatedly using 'Kapoor'/'Hannon'. Episode is S5E21 in this dataset's combined numbering (S5E23 in split numbering).",
+ "question": "What does Charles Miner start calling Kelly and Erin, and what does Erin ask to be called instead?",
+ "category": "detail",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

@@ -1,0 +1,49 @@
+{
+ "question_id": "q056",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "Angela, Andy (S5E11 sc.17) and the Senator; Senator engagement is only inferred from wedding/separation scenes cited.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 7,
+     "reader": 8
+    }
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Angela; Andy (S4E14) and Senator (S7E24) correct; 'divorced' not shown in the show (separated).",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 8,
+     "reader": 10
+    },
+    "calibration": "ok"
+   }
+  },
+  "C": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "Angela, Andy (cited) and Senator (marked memory); the Senator citations support only wedding/separation.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 8,
+     "reader": 9
+    }
+   }
+  }
+ }
+}

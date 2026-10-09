@@ -1,0 +1,4 @@
+Truth: The Return (S3E13) and Angry Andy (S8E21 sc.41, in Nellie's office).
+A 7: both episodes right. Wrong claim: S8E21 punch is "in the same wall" as the first; sc.41 is Nellie's office (Andy hits Nellie's wall), the S3E13 punch was in the main office. Also memory claim "only two occasions" unverified but matches reference. Safety Training correctly treated as flashback.
+B 10: both episodes right with correct causes (S3E13 sc.34 phone; S8E21 sc.41 Nellie's office); S3E19 flashback correctly not counted as a punch.
+C 6: both episodes right (S3E14 = split numbering OK) but wrong detail: S8E21 punch "during meltdown in the conference room ... same spot"; S8E21 sc.41 shows he punches the wall of Nellie's office after smashing her photo. Also "Andy returns from Florida" and "Robert refuses to reinstate" not shown in sc.41.

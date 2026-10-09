@@ -1,0 +1,48 @@
+{
+ "question_id": "q060",
+ "reference": "Kelly runs off with Ryan Howard (not her fiance Ravi). In the Finale (S9E23) Ryan gets Ravi to take baby Drake inside, Kelly and Ryan kiss and leave together ('We're running off into the sunset'), leaving the baby behind. Ryan's job is not stated in the finale; earlier in S9E1 Toby says Ryan quit Dunder Mifflin and moved to Ohio. Ravi, the man Kelly leaves, is a pediatrician (S9E23 sc.66; S9E1 calls him a pediatrics professor).",
+ "evidence": [
+  {
+   "scene": "S9E23 sc.75",
+   "line": "Kelly: Ravi, just do it. That baby is burning up... Ryan: He'll be fine. I let me suck on a strawberry. He's allergic... I had to talk to you. Kelly: You gave your baby an allergic reaction just to talk to me? [they kiss]"
+  },
+  {
+   "scene": "S9E23 sc.81",
+   "line": "Ryan: We're gonna be together forever. Kelly: We're running off into the sunset."
+  },
+  {
+   "scene": "S9E23 sc.82",
+   "line": "Kevin: They left together a little while ago. Kelly was hoping that you would keep the baby so they can start a new life together."
+  },
+  {
+   "scene": "S9E23 sc.66",
+   "line": "Kelly: Ravi is a pediatrician and some of his patients are total uggos."
+  },
+  {
+   "scene": "S9E1 sc.11",
+   "line": "Toby: Shortly after Kelly left, Ryan quit and also moved to Ohio, for what he claimed were unrelated reasons."
+  }
+ ],
+ "sources": [
+  "S9E23 sc.64",
+  "S9E23 sc.66",
+  "S9E23 sc.75",
+  "S9E23 sc.81",
+  "S9E23 sc.82",
+  "S9E1 sc.8",
+  "S9E1 sc.11"
+ ],
+ "premise_true": true,
+ "count": null,
+ "list_items": null,
+ "accepted_alternatives": [
+  "Ryan Howard; his current job isn't stated (he quit Dunder Mifflin / former temp, VP, etc.)"
+ ],
+ "confidence": "medium",
+ "caveats": "The question's 'what is his job' suggests the asker may be thinking of Ravi (pediatrician); but Kelly runs off with Ryan, abandoning Ravi. Grade: naming Ravi as the one she runs off with is wrong. For the job part, credit an answer that says Ryan's job isn't stated in the finale, or gives his former Dunder Mifflin roles (temp/ salesman/ ex-VP) as background; mentioning that Ravi is a pediatrician is a correct extra. An answer giving Ryan a specific current job not in the show is a wrong extra claim. Rubric kind fits imperfectly: this is effectively a partly mis-framed question.",
+ "question": "Who does Kelly run off with in the finale, and what is his job?",
+ "category": "multi_hop",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": true,
+ "owner_note": "Owner (2026-10-07): reference is correct; in the end Kelly left Ravi and ran off with Ryan Howard."
+}

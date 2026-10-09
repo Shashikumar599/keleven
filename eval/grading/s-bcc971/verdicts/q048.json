@@ -1,0 +1,49 @@
+{
+ "question_id": "q048",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Meredith first (Fun Run, S4 premiere), fire drill later (Stress Relief, S5; split numbering accepted).",
+   "details": {
+    "calibration": "ok",
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 9,
+     "reader": 9
+    }
+   }
+  },
+  "B": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Meredith first, cited to S4E1 sc.8; Stress Relief correctly marked [memory]; the apology-letter detail is true (S5E13 sc.46).",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 8,
+     "reader": 9
+    }
+   }
+  },
+  "C": {
+   "score": 2,
+   "verdict": "refused",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Honest refusal: the S5E13 sc.46-53 it was sent is the roast, with nothing about Dwight's staged fire (checked), and the SQL found no 'fire drill'; it correctly places the Meredith accident in S4E1.",
+   "details": {
+    "lens_scores": {
+     "fact": 1,
+     "faithfulness": 9,
+     "reader": 3
+    }
+   }
+  }
+ }
+}

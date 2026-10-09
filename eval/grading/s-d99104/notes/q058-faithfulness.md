@@ -1,0 +1,3 @@
+A: 9. Oscar claim supported: S9E14 sc9 "Angela's husband and I are in love", S9E18 sc29 "They caught us kissing on Halloween", S9E8 sc25 "He and the senator are gaying each other". No unlabelled outside claims.
+B: 5. Correct on Oscar, but adds that the Senator "publicly came out ... at a press conference in S9E18 ... revealed he was also involved with his campaign manager, Thomas": specific, unhedged and unverifiable. Reference does not support it (S9E19 shows reporters asking, and Erin's "Oscar is with the Senator too?"). Overconfident detail.
+C: 8. Cites S9E7 sc18 (Oscar: "I make Angela's husband spoon me back to bed", sent), S9E14 sc9, S9E8 sc25, S9E18 sc29, all verified. Extra campaign-manager claim properly marked [memory].

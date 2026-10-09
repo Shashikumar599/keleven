@@ -1,0 +1,49 @@
+{
+ "question_id": "q051",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 6,
+   "verdict": "partial",
+   "grounded": "yes",
+   "failure_type": "incomplete",
+   "notes": "Moves to Boulder to be with Holly (S7E21 sc.23) but omits why Holly goes (father unwell) and the proposal; padded with the S5E5 Nashua trip.",
+   "details": {
+    "lens_scores": {
+     "fact": 6,
+     "faithfulness": 8,
+     "reader": 4
+    }
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Moves to Colorado with Holly near her parents, after proposing; right cause. Garage Sale in split numbering.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 8,
+     "reader": 9
+    },
+    "calibration": "ok"
+   }
+  },
+  "C": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Moves to Boulder with Holly, who returned for her parents; proposal and parents labelled [memory]; S3/S5 asides pad but are accurate.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 9,
+     "reader": 8
+    }
+   }
+  }
+ }
+}

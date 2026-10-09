@@ -1,0 +1,3 @@
+A: 9. 24 and Dwight 3 are straight from the SQL result (SQL may be stated as a total). Quotes verified: S4E8 sc.23, S2E2 sc.34, S4E7 sc.56 Michael "That's what I said. That's what she said." all exist as Michael lines. Caveat: SQL excluded All/Everyone and did not state that Pam/Jim tie, but nothing false.
+B: 3. Memory: "approximately 34 to 35" for Michael is far above the dataset-supported 24 and is given with confidence; the Dwight 3-4 guess is fine and S2E12 cited correctly. Uncertainty list is present but the number is wrong, partly overconfident.
+C: 9. Same SQL numbers. Citations S2E2 sc.24 (Michael: "That's what she said. Pam?"), sc.34, S4E7 sc.56, S4E8 sc.23 are all real Michael lines. Labels correct, no overreach.

@@ -1,0 +1,3 @@
+A 9: clear "No", names the source (Michael's invented rumor S6E1 sc.19, the Brad Pitt confusion, "off the record, I'm kinda confused" sc.23) and reads the S8E20 sc.20 "I am gay" as an excuse to dump Jessica, which it is (he retracts and names Erin). Strong counterpoint included. Mixes in memory but marked.
+B 8: "most likely heterosexual", reads the S8E20 fake coming-out as a lie, cites rumor origin and the Brad Pitt scene. Sorting evidence into for/against lists is clunkier, and "most likely" hedges what the show settles (Michael: "I made it all up", S6E1 sc.27). Also quotes a scene (S6E8) that it was never sent.
+C 7: clear "No" and source of the rumor; short, but skips the Jessica fake confession and Andy's doubt scene, so the reader gets less of why people ask.

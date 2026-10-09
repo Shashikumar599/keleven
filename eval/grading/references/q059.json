@@ -1,0 +1,34 @@
+{
+ "question_id": "q059",
+ "reference": "Holly Flax. She arrives as Toby's replacement in Goodbye, Toby (S4E14), the episode of Toby's farewell before he leaves for Costa Rica (announced S4E11).",
+ "evidence": [
+  {
+   "scene": "S4E14 sc.12",
+   "line": "Holly: Hi. Yes, uh, I'm Holly Flax. I was told to ask for a Mr. Flenderson?"
+  },
+  {
+   "scene": "S4E14 sc.25",
+   "line": "Dwight: Accounting department, listen up. Holly, Human Resources."
+  },
+  {
+   "scene": "S7E18 sc.34",
+   "line": "Michael: This is where Toby announced that he was going to Costa Rica. Happiest day of my life. Until the day you came to replace him."
+  }
+ ],
+ "sources": [
+  "S4E14 sc.12",
+  "S4E14 sc.19",
+  "S4E14 sc.25",
+  "S4E11 sc.38",
+  "S7E18 sc.34"
+ ],
+ "premise_true": true,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "",
+ "question": "Who replaced Toby as HR rep when he left for Costa Rica?",
+ "category": "multi_hop",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

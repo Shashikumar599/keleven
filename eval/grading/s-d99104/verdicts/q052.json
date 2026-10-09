@@ -1,0 +1,49 @@
+{
+ "question_id": "q052",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Buying his parents' house so they can retire (S5E6 sc.18).",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    }
+   }
+  },
+  "B": {
+   "score": 4,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Mentions the house but adds invented motives (wedding costs, supporting Pam at art school); S5E6 sc.18 gives only the house.",
+   "details": {
+    "lens_scores": {
+     "fact": 4,
+     "faithfulness": 4,
+     "reader": 3
+    },
+    "calibration": "overconfident"
+   }
+  },
+  "C": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "House reason (sc.18); gold-digger line (sc.6) correctly treated as a joke.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 9,
+     "reader": 9
+    }
+   }
+  }
+ }
+}

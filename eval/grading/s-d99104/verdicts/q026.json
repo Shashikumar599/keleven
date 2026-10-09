@@ -1,0 +1,79 @@
+{
+ "question_id": "q026",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 6,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "evidence_misread",
+   "notes": "Mom and Brandon right (S8E14 sc.33), but adds that the caller 'in reality' was identified as Bob: 'Bob' is only the fan-transcript speaker label in sc.15, and the caller gave the name Brandon.",
+   "details": {
+    "lens_scores": {
+     "fact": 6,
+     "faithfulness": 7,
+     "reader": 7
+    },
+    "parts": [
+     {
+      "part": "who Val says",
+      "ok": true
+     },
+     {
+      "part": "name given",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Both parts right from S8E14 sc.33; describes Val's sarcastic agreement flatly without noting Brandon is really the boyfriend.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 10,
+     "reader": 6
+    },
+    "parts": [
+     {
+      "part": "who Val says",
+      "ok": true
+     },
+     {
+      "part": "name given",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "C": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Mom and Brandon (her boyfriend) right; 'Darryl reveals he knows' slightly overstates his teasing question in S8E14 sc.33.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 5,
+     "reader": 9
+    },
+    "calibration": "ok",
+    "parts": [
+     {
+      "part": "who Val says",
+      "ok": true
+     },
+     {
+      "part": "name given",
+      "ok": true
+     }
+    ]
+   }
+  }
+ }
+}

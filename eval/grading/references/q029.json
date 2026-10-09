@@ -1,0 +1,22 @@
+{
+ "question_id": "q029",
+ "reference": "Kevin Malone, in a talking head at the start of Beach Games (S3E22).",
+ "evidence": [
+  {
+   "scene": "S3E22 sc.15",
+   "line": "Kevin: I just want to lie on the beach and eat hot dogs. That's all I've ever wanted."
+  }
+ ],
+ "sources": [
+  "S3E22 sc.15"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "Michael later stages a hot-dog-eating contest in the same episode (sc.36), which may tempt answers toward Michael/Andy.",
+ "question": "Who says \"I just want to lie on the beach and eat hot dogs. That's all I've ever wanted\"?",
+ "category": "who_said",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

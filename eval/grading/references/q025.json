@@ -1,0 +1,32 @@
+{
+ "question_id": "q025",
+ "reference": "Broccoli Rob; he says he still lives near campus and stops in 'two, three times a week'. Here Comes Treble (S9E5). He sings the lead on 'Faith' (Andy's signature solo) via video on a flat-screen TV at the a cappella concert.",
+ "evidence": [
+  {
+   "scene": "S9E5 sc.32",
+   "line": "HCT Member #3: She said you wanted to hear \"Faith\". That's Broccoli Rob's signature song. Andy: That's my signature song."
+  },
+  {
+   "scene": "S9E5 sc.34",
+   "line": "Broccoli Rob: Look, it's not my fault that I still live near campus, and it's my duty as an alum to be friendly to the young guys., and stop in two, three times a week."
+  },
+  {
+   "scene": "S9E5 sc.10",
+   "line": "Andy: ...George Michael's Faith. That was one of my signature songs."
+  }
+ ],
+ "sources": [
+  "S9E5 sc.32",
+  "S9E5 sc.34",
+  "S9E5 sc.10"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "He appears on screen (video), not in person; transcript has 'Broccoli Rob' as the name (Andy also calls him 'Broccoli').",
+ "question": "What is the nickname of the Here Comes Treble alum who sings Andy's signature solo, and how often does he say he stops by campus?",
+ "category": "detail",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

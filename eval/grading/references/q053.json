@@ -1,0 +1,15 @@
+{
+ "question_id": "q053",
+ "reference": "Outside the transcripts: Dwight Schrute is played by Rainn Wilson (well established). The transcripts contain only dialogue and stage directions; no actor or cast names appear (no match for 'Rainn' or 'Wilson' in lines or directions), so a transcript-only answer should say the transcripts don't cover it.",
+ "evidence": [],
+ "sources": [],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "Fact is from outside knowledge, marked as such; it is very well established. Grading: memory answers 'Rainn Wilson' = correct; transcript-only answers should decline (inventing a name from passages is wrong); both-source answers giving Rainn Wilson marked [memory] are correct.",
+ "question": "Who plays Dwight Schrute?",
+ "category": "off_camera",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

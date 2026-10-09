@@ -1,0 +1,34 @@
+{
+ "question_id": "q013",
+ "reference": "In Weight Loss (S5E1) Darryl reads the group total as 2,336 pounds; after Pam (who is leaving for Pratt and is excluded by Michael) steps off it reads 2,210 pounds. (Kevin then asks 'Pam, you weigh 226 pounds?', a math error: the difference is 126.)",
+ "evidence": [
+  {
+   "scene": "S5E1 sc.6",
+   "line": "Darryl: 2,336 pounds. Y'all need to learn some portion control."
+  },
+  {
+   "scene": "S5E1 sc.6",
+   "line": "Michael: ... you are going to be leaving us next week, so vamoose. Vamoose, Pam. Dunder Mifflin family only."
+  },
+  {
+   "scene": "S5E1 sc.6",
+   "line": "Darryl: All right, got it. 2,210 pounds."
+  },
+  {
+   "scene": "S5E1 sc.6",
+   "line": "Kevin: Pam, you weigh 226 pounds?"
+  }
+ ],
+ "sources": [
+  "S5E1 sc.6"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "Kevin's '226 pounds' is his own miscalculation (2,336 - 2,210 = 126) and Holly/Pam's replies treat it as wrong; an answer giving 226 as Pam's weight or as a scale reading is wrong. Not to be confused with the later weigh-in in sc.40 (2,184 pounds).",
+ "question": "At the office's first group weigh-in for the weight loss competition, what did the scale read, and what after Pam stepped off?",
+ "category": "detail",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

@@ -1,0 +1,21 @@
+{
+ "question_id": "q055",
+ "reference": "Off-camera: the transcripts do not cover the show's Emmy wins (no line mentions the Emmys). Well established outside the show [not from transcripts]: The Office won 5 Primetime Emmy Awards (from 42 nominations), including Outstanding Comedy Series in 2006; the others were Creative Arts/writing awards (e.g. writing for 'Gay Witch Hunt', 2007, and single-camera picture editing). A transcript-only answer should say the transcripts don't cover it.",
+ "evidence": [],
+ "sources": [],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "accepted_alternatives": [
+  "5 Primetime Emmys (including Outstanding Comedy Series, 2006)",
+  "4 Primetime Emmys (some sources count only 4) with the 2006 Outstanding Comedy Series win",
+  "1 Emmy for Outstanding Comedy Series, if the answer explicitly restricts itself to the major/program award"
+ ],
+ "confidence": "medium",
+ "caveats": "Not checkable in the transcripts: a search for 'emmy' returns nothing (only Dundie awards). Figure is from general knowledge (Wikipedia-style summary: 5 wins of 42 Primetime nominations); sources differ slightly on the exact count and categories (Primetime vs Creative Arts), so 4-5 with the 2006 Outstanding Comedy Series win should be accepted.",
+ "question": "How many Emmy awards did The Office win?",
+ "category": "off_camera",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": true,
+ "owner_note": "Owner (2026-10-07): the transcripts cannot answer this; whatever answer comes from internet knowledge is fine."
+}

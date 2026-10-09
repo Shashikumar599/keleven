@@ -1,0 +1,3 @@
+A: 7. Honest decline from transcripts, then 5 Primetime wins, matches reference (5 incl. 2006 Comedy Series, 2007 writing Gay Witch Hunt). Details (2009 directing Stress Relief) plausible; 2013 Finale picture editing and Accountants Creative Arts claims not verifiable in transcripts and slightly shaky; lists six items against stated total of 5.
+B: 6. Also 5 of 42 and correct main facts, but calls Accountants a "Daytime Emmy" (it was a Creative Arts/primetime-era award, not Daytime): likely wrong extra claim; 2013 Finale win shaky.
+C: 10. Correctly says transcripts do not cover Emmys (no 'emmy' in lines; only Dundies).

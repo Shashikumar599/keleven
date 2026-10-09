@@ -1,0 +1,70 @@
+{
+ "question_id": "q066",
+ "reference": "No single answer. Strongest candidates the show supports: Dwight (stages a coup behind Michael's back with Jan, S3E3; schemes like steering Kelly into the minority program to sabotage Darryl, calling himself a would-be 'puppet master', S6E21); Jim (systematic manipulation of Dwight, e.g. Pavlov-style Altoid conditioning, S3E15); Ryan (cooks the books as VP, S4E14; pulls coworkers and Michael into WUPHF investments, S7E9); Angela (strings Andy along while sleeping with Dwight, S5E11); Jan (gives Michael's diary to her lawyer in the deposition, S4E8; Michael calls her 'crazy smart and really manipulative', S4E10). Phyllis blackmailing Angela (S5E10) and Robert California are lesser candidates.",
+ "evidence": [
+  {
+   "scene": "S3E3 sc.25",
+   "line": "Dwight: Is this Jan? ... It's about Michael."
+  },
+  {
+   "scene": "S3E3 sc.28",
+   "line": "Dwight: The decision to turn on Michael was difficult. But once I did it, I didn't look back."
+  },
+  {
+   "scene": "S6E21 sc.15",
+   "line": "Dwight: ... or the malleable simpleton who can be bought for a few fashion magazines?"
+  },
+  {
+   "scene": "S6E21 sc.47",
+   "line": "Dwight: Just once, I would like to be a puppet master and have nothing go wrong."
+  },
+  {
+   "scene": "S3E15 sc.2",
+   "line": "Jim: ... this scientist who trained dogs to salivate at the sound of a bell ... For the last couple of weeks I've been conducting a similar experiment."
+  },
+  {
+   "scene": "S4E14 sc.42",
+   "line": "Oscar: ... Ryan, to give the impression of sales, recorded them twice ..."
+  },
+  {
+   "scene": "S7E9 sc.15",
+   "line": "Ryan: So I've decided to open up a second round of investment to friends and family."
+  },
+  {
+   "scene": "S5E11 sc.17",
+   "line": "Andy: Are you sleeping with Dwight? Angela: A little bit."
+  },
+  {
+   "scene": "S4E8 sc.32",
+   "line": "Jan: Alright, I stole your diary and gave it to my lawyer."
+  },
+  {
+   "scene": "S4E10 sc.30",
+   "line": "Michael: ... she was just crazy smart and really manipulative ..."
+  },
+  {
+   "scene": "S5E10 sc.8",
+   "line": "Phyllis: Angela just does what I ask her to do so I won't tell everyone that she's cheating on Andy with Dwight."
+  }
+ ],
+ "sources": [
+  "S3E3",
+  "S6E21",
+  "S3E15",
+  "S4E14",
+  "S7E9",
+  "S5E11",
+  "S4E8",
+  "S4E10",
+  "S5E10"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "medium",
+ "caveats": "Judgment question. A good answer picks one (Dwight, Jim, Ryan, Angela or Jan are all defensible), backs it with concrete schemes, and gives a counterpoint (e.g. Dwight's schemes usually fail and are transparent; Jim's are pranks rather than self-serving; Ryan is more a con man than a schemer of people). Readings to avoid: Dwight's sales boast 'My job is to manipulate the customer' (S5E6) as proof of character is weak; Kelly's 'She manipulates you' (S5E1, about Darryl's 6-year-old) is a joke; Michael is mostly clumsy rather than manipulative (his rumor-spreading in S6E1 is a bungled cover-up). Real actors are out of scope. Characters' insults about each other are not evidence on their own.",
+ "question": "Who was the most manipulative character?",
+ "category": "opinion",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

@@ -1,0 +1,50 @@
+{
+ "question_id": "q056",
+ "reference": "Dwight's son Phillip is with Angela Martin (S9E22: 'Phillip's your son.'). Before Dwight, Angela was engaged to (and then married) State Senator Robert Lipton (engaged S7E24, married by S8). Earlier still she was engaged to Andy Bernard (proposal S4E14, ended S5E11). The most direct answer is the Senator; Andy is also correct as an earlier engagement.",
+ "evidence": [
+  {
+   "scene": "S9E22 sc.69",
+   "line": "Dwight: I don't care that Phillip's not my son. ... Angela: Phillip's your son."
+  },
+  {
+   "scene": "S7E24 sc.30",
+   "line": "Angela: ... Then he got down on one knee, and he said, will you be a Senator's wife?"
+  },
+  {
+   "scene": "S8E1 sc.11",
+   "line": "Angela: I am having a child with my husband, the Senator."
+  },
+  {
+   "scene": "S7E11 sc.58",
+   "line": "Angela: Hey everybody, this is my boyfriend, Senator Robert Lipton."
+  },
+  {
+   "scene": "S4E14 sc.70",
+   "line": "Andy: Angela, will you do me the honor... of giving me your tiny hand in marriage? Angela: ...Okay."
+  },
+  {
+   "scene": "S5E11 sc.17",
+   "line": "Angela: Andy, I'm engaged to you."
+  },
+  {
+   "scene": "S9E22 sc.69",
+   "line": "Angela: Okay, yes...yes, I will!"
+  }
+ ],
+ "sources": [
+  "S9E22 sc.69",
+  "S7E24 sc.30",
+  "S8E1 sc.11",
+  "S4E14 sc.70",
+  "S5E11 sc.17"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "Ambiguous 'before Dwight': two engagements precede Dwight's S9E22 proposal. Correct: the Senator (Robert Lipton), Andy Bernard, or both. Best answers name the Senator (most recent, and she married him) and/or Andy; an answer naming only Andy is still correct. Wrong: Jim, Roy (Roy was Pam's fiance), Oscar (the Senator's lover), or saying she was never engaged. Hop 1 (Angela is the mother) must be right.",
+ "question": "The woman Dwight has a son with: who was she engaged to before Dwight?",
+ "category": "multi_hop",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

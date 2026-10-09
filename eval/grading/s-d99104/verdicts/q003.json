@@ -1,0 +1,49 @@
+{
+ "question_id": "q003",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Gives the '- Wayne Gretzky - Michael Scott' attribution gag, labelled [memory]; visual-only, reference low confidence, MSPC whiteboard detail unverifiable.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 8,
+     "reader": 9
+    }
+   }
+  },
+  "B": {
+   "score": 2,
+   "verdict": "refused",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Honest refusal: the quote is a visual whiteboard gag absent from the whole dataset, so nothing relevant was sent.",
+   "details": {
+    "lens_scores": {
+     "fact": 0,
+     "faithfulness": 9,
+     "reader": 2
+    }
+   }
+  },
+  "C": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Correct attribution gag; 'S5E23' is valid split numbering for The Michael Scott Paper Company (S5E21 combined), detail not verifiable in transcripts.",
+   "details": {
+    "lens_scores": {
+     "fact": 6,
+     "faithfulness": 7,
+     "reader": 8
+    },
+    "calibration": "ok"
+   }
+  }
+ }
+}

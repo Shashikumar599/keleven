@@ -1,0 +1,27 @@
+{
+ "question_id": "q030",
+ "reference": "Creed Bratton, in a talking head during Michael's religion go-around in Fun Run (S4E1, Parts 1&2): 'I've been involved in a number of cults, both as a leader and a follower. You have more fun as a follower, but you make more money as a leader.'",
+ "evidence": [
+  {
+   "scene": "S4E1 sc.27",
+   "line": "Creed: I've been involved in a number of cults, both as a leader and a follower. You have more fun as a follower, but you make more money as a leader."
+  },
+  {
+   "scene": "S4E1 sc.26",
+   "line": "Michael: Alright let's just go around the room, and tell me what you believe in."
+  }
+ ],
+ "sources": [
+  "S4E1 sc.27",
+  "S4E1 sc.26"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "Fun Run is a two-parter, S4E1 combined here.",
+ "question": "Who says they have been involved in a number of cults, both as a leader and a follower?",
+ "category": "who_said",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

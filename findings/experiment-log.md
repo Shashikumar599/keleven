@@ -14,6 +14,9 @@ One short entry per eval run: what changed, the scores, and one line of interpre
 - **Self-reported:** rag said "not answerable from the passages" on 12 questions; llm said it didn't know on 2.
 - **Scores:** not graded yet (gold answers pending).
 - **Interpretation:** the pipeline runs end to end in batch. Accuracy is unknown until grading.
+- **Added later (2026-10-05):** q080 (added to the question set after this run) answered under v1 with single online
+  calls (`eval.run online`): v1 retrieval, rag_v1 and hybrid_v1, memory reused from the v2 run. Run 183. The
+  label now covers the same 80 questions as v2.
 - **Re-runs (same day):** the 4 cut-off answers were caused by the 4,096 output limit, which includes thinking: 5
   answers hit it at ~3,930 thinking tokens (232 others finished by 2,910). Limit raised to 16,384; those 5 (q017
   llm, q017 hybrid, q019 llm, q037 llm, q047 rag) re-run as single online calls and replaced in place; the JSONL
@@ -46,3 +49,105 @@ One short entry per eval run: what changed, the scores, and one line of interpre
   questions, but occasionally shifted (q002 distances by up to 0.0025), which reorders near ties. Hybrid at k=8
   measured 48 in one run and 49 in the next. Stored retrieval is the reference for each eval run.
 - **Interpretation:** keep k=8; hybrid gives +4 to +5 over v1 at the same prompt size.
+
+## 2026-10-05 · `2026-10-05-v2`
+- **What:** first full v2 run, 80 questions (questions file `13f9f4ff…`, adds q080 to the v1 set). v2 retrieval
+  (enhancer_v1 + hybrid search + SQL, k=8, ±1) prepared one question at a time (80 enhancer calls, median 2.0 s,
+  max 4.0 s), then one Gemini batch: rag_v2 (`b99b1177…`) and hybrid_v2 (`5b5419f8…`) for 80 questions; memory
+  answers reused from v1 for 79 (memory_v1 `00c114b1…`), one new for q080. 161 batched calls, max output 16,384.
+- **Retrieval (no LLM judgment):** right scene sent for 53/55 questions with known scenes (v1 44); gained q002,
+  q017, q027, q031, q049, q050, q051, q056, q079; lost none; still missing q045, q071. SQL written for 51/80
+  (all 6 count questions), 0 failed; SQL scenes added to the passages for 14.
+- **Run:** 240 answers, 0 errors. Tokens (new calls only): 1.17M input, 45k output, 99k thinking (v1: 1.06M /
+  58k / 173k); max thinking 3,238 (v1 13,261). 21 rag/hybrid answers cite [SQL].
+- **Citation check:** 4 evidence quotes not found in the passages (v1: 6); 0 citations to scenes not sent.
+- **Self-reported:** rag "not answerable" on 9 (v1: 12).
+- **Scores:** not graded yet.
+- **Interpretation:** retrieval is much better (+9 questions with the right scene). Thinking dropped by about
+  40% with better evidence; worth checking in grading whether answers got better, not just cheaper.
+
+## 2026-10-05 · Grading pilot: v1 (set s-556ab2, was g1), 6 questions
+- **What:** evaluate-answers skill, rubrics-v1, scores 0-10. Single blind grader (main model) for q017 (fact),
+  q040 (count), q045 (list); debate for q050 (why), q066 (opinion), q074 (false premise): three advocates (Sonnet,
+  one per answer type) wrote briefs, a neutral judge (main model) checked the proofs and scored. All fresh contexts.
+- **Scores (mean /10, 6 answers each):** v1 memory 7.8, v1 rag 5.5, v1 hybrid 7.8. RAG's losses are retrieval
+  misses (q017 honest refusal 2, q050 6, q045 6) and a count from a sample (q040: "6 or 7, Jim second", truth 24,
+  Dwight). Memory's: q017 Andy instead of Nellie, q040 "34-35". Hybrid matches memory where retrieval missed.
+- **Debate:** useful for pointing the judge at the deciding scenes; about half the advocates' attacks were false
+  (valid split episode numbers, a quote that was in the transcript), and the judge discarded them after checking.
+  The judge thinks reference-based grading would have given the same scores. The advocate instructions now warn
+  against numbering objections and ask for proofs checked in the database.
+- **Reference fix:** q045 gained two optional items the grader found (Julie at the Happy Hour, Margaret).
+- **Interpretation:** the pipeline works; v1 RAG's weakness on these 6 is retrieval, not reasoning.
+
+## 2026-10-05 · Grading pilot 2: council (set s-d99104 = v1), same 6 questions
+- **What:** council grading: fact and faithfulness members (Sonnet), reader member and chair (main model), each a
+  fresh agent covering the 6 questions; chair checks disputed findings in the transcripts. Reviewer
+  claude-council:claude-opus-5-5.
+- **Scores (mean /10):** v1 memory 7.5, v1 rag 5.0, v1 hybrid 7.3 (pilot 1: 7.8 / 5.5 / 7.8).
+- **Agreement between the two independent methods:** 18 answers; 9 identical, 17 within 1 point, mean absolute
+  difference 0.56. Council slightly stricter (reader lens): q066 rag 9 -> 7 (leans on a gag line, counterpoint is
+  just another candidate), q050 rag + memory 9 -> 8 (mixed citation / [memory] labels).
+- **Members:** fast members made several false findings the chair dropped after checking (Robert California
+  talking Jo out of her job is in S8E1 sc.5; the IHOP / catalogue line is in S4E14 sc.64; valid split episode
+  numbers). The lenses added findings a single grader scored as fine: buried main points (q050 rag), judgment
+  reading (q066 rag), honest refusal vs sample count (q017 vs q040).
+- **Interpretation:** grading is stable across methods (within about half a point on average), so differences
+  between versions larger than that are meaningful. The chair's database checks are essential.
+
+## 2026-10-05 · v1 graded by council (set s-d99104, all 80 questions)
+- **Method:** council per question (fact, faithfulness, reader members, then a chair), 80 questions x 3 answers
+  (memory, rag, rag + memory), scores 0-10; references built blind earlier. Run in batches of about 10 questions;
+  a usage limit interrupted one wave and the affected chairs / members were rerun.
+- **Mean score /10 (80 answers each):** memory 7.3, rag 7.6, rag + memory 8.8.
+- **Failure types:** memory: memory_error 26, incomplete 2, literal_reading 2; rag: retrieval_miss 18, incomplete 5,
+  claim_beyond_evidence 2, literal_reading 2, count_from_sample 1; hybrid: memory_error 4, claim_beyond_evidence 3,
+  evidence_misread 2, retrieval_miss 1.
+- **Where each wins:** rag beats memory on detail (9.1 vs 6.1), visual (9.0 vs 5.6), which_episode (9.8 vs 7.8),
+  multi_hop (9.6 vs 8.2); memory beats rag on who_said (9.9 vs 6.6), finish_the_quote (9.8 vs 6.8), order (9.3 vs
+  2.0), count (5.5 vs 2.3), opinion (7.5 vs 6.7).
+- **Rubric inconsistency found:** judgment totals were mapped 9-10 correct / 6-8 partial, while score anchors and
+  eval.grade save use 8-10 / 4-7; the B7 chair lowered 11 answers of rubric total 8 by one point (q067 B, C; q068
+  A; q069 C; q070 A; q075 B, C; q076 C; q080 A, B) so they could be saved as partial. Fixed in rubrics.md (8-10 /
+  4-7 / 0-3); those 11 scores are one point low in v1 and the verdict files are unchanged.
+- **Correction (2026-10-06):** the 10 judgment answers that had been lowered from 8 to 7 (q067 memory and hybrid; q068
+  memory; q069 hybrid; q070 hybrid; q075 hybrid and rag; q076 memory; q080 memory and rag) were restored to 8 (correct
+  band, support criterion 1) in the verdict files and in qa_reviews; the original values are kept in details.adjusted.
+  The chair had said 11; 10 are affected. v1 means after the correction: memory 7.3, rag 7.6 (unchanged to one
+  decimal), rag + memory 8.9 (was 8.8).
+
+## 2026-10-06 · v2 graded by council (set s-bcc971, all 80 questions) and v1 vs v2
+- **Method:** same as v1 (fact / faithfulness / reader members, then a chair), 80 questions x 3 answers, scores 0-10,
+  references unchanged. A usage limit stopped the run twice (C5 / C6 chairs, C7 members); affected agents were rerun,
+  nothing partial was saved. Chair verdicts: C5 24 correct / 2 partial / 2 wrong / 2 refused, C6 26 / 4 / 0 / 0, C7
+  19 / 10 / 1 / 0, C8 20 / 4 / 3 / 3 (C1-C4 are in the summary below).
+- **Mean score /10 (80 answers each):** memory v1 7.3 -> v2 7.1; rag 7.6 -> **8.7**; rag + memory 8.9 -> **9.4**.
+  The memory answers are the same ones (reused), so the 0.2 difference is grading noise: 9 of 80 memory answers
+  differ by 2 or more points between the two gradings. Differences under about half a point on a mean are not meaningful.
+- **Failure types:** rag retrieval_miss 18 -> 11, incomplete 5 -> 2, count_from_sample 1 -> 0; hybrid 15 failures
+  -> 3 (literal_reading, other, memory_error 1 each); memory_error 26 -> 22 (same answers, regraded).
+- **Per answer (rag and hybrid, 160 pairs):** 126 within 1 point; 20 improved by 3 or more, 2 worsened by 3 or more.
+  rag: 22 up, 47 same, 11 down; hybrid: 23 up, 44 same, 13 down.
+- **Biggest gains (rag, all 2 -> 9/10, retrieval_miss fixed):** counts q039 / q040 / q041 / q042 / q043 / q044 (SQL
+  gives the exact number; v1 guessed from a sample), who_said q027 "I am Beyonce" and q031 "Why are you the way that
+  you are" (BM25), finish_the_quote q002, detail q017 (Cornell sweater), order q047 / q049 (right scenes now found).
+- **Where v2 did worse:** q073 rag 10 -> 2 (v1 happened to retrieve S7E14, where Kelly marries Ryan; v2 did not, so
+  it honestly refused); q078 rag 6 -> 2 (Karen's arc, S4E1 / S4E6 / S5E14 not sent); q046 rag 5 -> 3 (managers list,
+  only 3 of 7 core managers retrieved); q070 rag 6 -> 4, q067 rag 9 -> 7 (judgment; weak candidates / a claim beyond
+  the evidence). Other drops are 1-2 points on answers that were already correct.
+- **Left after v2 (answer scored 5 or less, 12):** all rag but q071 hybrid (memory error): q003 (quote), q048 (staged
+  fire), q071 (Mose hits Andy S5E9), q073, q078, q046, q070, q045, q054, q069, q079; 10 of the 11 rag cases are
+  retrieval_miss (the needed scene was not in the top 8): one-off scenes whose wording the question does not share,
+  and series-wide questions (a list over many episodes, an arc over several seasons).
+- **Judgment questions:** rag opinion 7.0 -> 6.2 and story_arc 6.0 -> 2.0 (one question); transcript-only answers
+  picked weak candidates and read jokes literally (q068 Nellie's "a thousand years old", Meredith's in-character
+  line; q080 Pam's self-deprecation). Only 1 to 6 questions per category, so these are noisy.
+- **Grading problems raised by the chairs (rubric, not yet fixed):** no failure type for an honest "I don't know"
+  from a memory answer or for a weak judgment pick when retrieval was limited; scope criterion applied inconsistently
+  by the reader lens; no rule for a quote whose words are missing from the data (q079); no outcome label for a true
+  premise that is accepted (q073); q072 is a "how many" question filed as a list; q044 reference counts 30 / 27
+  Dundies lines where the systems' regex found 25 / 22 (same winning season); q054 and q055 references vs the
+  off-camera rule.
+- **Interpretation:** v2 did what it was built for: exact wording, counts and ordering are fixed. What is left is
+  retrieval misses on whole-show questions (traits, arcs, lists over many episodes), memory errors, and weak
+  judgment answers. That list is the starting point for the v3 (graph) design.

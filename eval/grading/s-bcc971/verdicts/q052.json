@@ -1,0 +1,57 @@
+{
+ "question_id": "q052",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 5,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Includes the real reason (buying his parents' house) but invents the rest of what Jim says: wedding costs and supporting Pam at art school are not his stated reasons (S5E6 sc.18). Jim is engaged and Pam is in New York at the time (S5E6 sc.6/35), so the fact member's 'not engaged' finding is dropped; the error is attributing these as his reasons.",
+   "details": {
+    "main_cause_ok": true,
+    "wrong_claims": [
+     "Jim says he needs the bonus for a wedding and to support Pam at art school"
+    ],
+    "calibration": "ok",
+    "lens_scores": {
+     "fact": 4,
+     "faithfulness": 3,
+     "reader": 3
+    }
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Buying his parents' house so they can retire, verbatim from S5E6 sc.18; omits that it is a surprise for Pam (minor).",
+   "details": {
+    "main_cause_ok": true,
+    "wrong_claims": [],
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    }
+   }
+  },
+  "C": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Same as B: correct reason quoted from S5E6 sc.18; omits the surprise-for-Pam detail.",
+   "details": {
+    "main_cause_ok": true,
+    "wrong_claims": [],
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    }
+   }
+  }
+ }
+}

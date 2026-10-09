@@ -1,0 +1,22 @@
+{
+ "question_id": "q002",
+ "reference": "\"...suffer every year!\" Dwight says it to Jim in Product Recall (S3E20) when Jim dresses up as Dwight.",
+ "evidence": [
+  {
+   "scene": "S3E20 sc.3",
+   "line": "Dwight: ... [Jim places a bobble-head on his desk] Identity theft is not a joke, Jim! Millions of families suffer every year!"
+  }
+ ],
+ "sources": [
+  "S3E20 sc.3"
+ ],
+ "confidence": "high",
+ "caveats": "Context (Jim dressed as Dwight) is visual and only partly implied by the line ('Imitation is the most sincere form of flattery'); the quote wording is certain.",
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "question": "Finish the quote: \"Identity theft is not a joke, Jim! Millions of families...\"",
+ "category": "finish_the_quote",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

@@ -1,0 +1,31 @@
+{
+ "question_id": "q009",
+ "reference": "A flat rate of $5,000 up front (instead of the usual 10%); Andy says it includes headshots, but Todd corrects him: it does not include headshots. Stairmageddon (S9E19).",
+ "evidence": [
+  {
+   "scene": "S9E19 sc.48",
+   "line": "Andy: Most talent agents take 10% of whatever jobs they get you, but with Carla you pay a flat rate of $5,000 up front. And that includes headshots."
+  },
+  {
+   "scene": "S9E19 sc.48",
+   "line": "Todd: Uh, it doesn't include headshots."
+  },
+  {
+   "scene": "S9E19 sc.48",
+   "line": "Andy: It doesn't include headshots."
+  }
+ ],
+ "sources": [
+  "S9E19 sc.47",
+  "S9E19 sc.48"
+ ],
+ "confidence": "high",
+ "caveats": "Two parts: $5,000 flat fee, and no headshots. An answer saying headshots are included (Andy's first claim) is wrong on that part. Todd is Carla Fern's assistant/staff ('Pay Todd on your way out', sc.47), not Todd Packer.",
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "question": "What does Andy pay his talent agent Carla, and does it include headshots?",
+ "category": "detail",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

@@ -1,0 +1,4 @@
+FACT lens, q077 (premise false: senator married Angela; Oscar was his secret lover; S9E19 sc.33 he dumps Oscar for Wesley Silver)
+A: 7/10. Correct "No" and affair with Oscar (S9E6 sc.44 "Oscar is having sex with the senator"). Never says he married Angela: only "Angela's partner" (S7E11 sc.58 "my boyfriend"), though the question needs "he married Angela instead" and S9E19 sc.33 says "my marriage to Angela". Incomplete about what actually happened.
+B: 9/10. No; married Angela, secret affair with Oscar, came out and ended both relationships: all true (S9E19 sc.32-33: "my marriage to Angela", dumps Oscar for Wesley; press conference scheduled in sc.18, shown on a computer screen). 
+C: 8/10. Same correct core (married Angela in S8, affair, came out in Stairmageddon). Error: says he is involved with his "campaign manager"; S9E19 sc.33 says "Chief of Staff Wesley Silver". Minor.

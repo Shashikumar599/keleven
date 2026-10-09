@@ -1,0 +1,46 @@
+{
+ "premise_true": true,
+ "count": null,
+ "list_items": null,
+ "caveats": "The wedding itself is off-camera and only reported by Kelly and Ryan in S7E14; Ryan's 'divorce' talk is played for comedy and the scene is chaotic (Kelly even says 'maybe we made a mistake'), but both treat the marriage as real. Answers saying Kelly never married (over-rejecting) are wrong; answers saying she married Ravi are wrong (only engaged). 'Ryan' with no mention of the divorce is still correct on the core.",
+ "question_id": "q073",
+ "reference": "Premise true: Kelly married Ryan. In The Search (S7E14) Kelly announces that she and 'Ryan Bailey Howard' got divorced; asked when they married, she says 'like a week ago, we got really wasted and it just felt right' (an off-screen drunk wedding in the Poconos weekend). Later she gets engaged to Ravi, a pediatrician (S8E21 she chooses Ravi; S9E1 'her fiancé Ravi'), but in the Finale (S9E23) she runs off with Ryan, leaving Ravi with Ryan's baby. No wedding to Ravi is shown.",
+ "evidence": [
+  {
+   "scene": "S7E14 sc.1",
+   "line": "Kelly: Over the weekend, Ryan Bailey Howard and I got divorced. [throws ring on the ground]"
+  },
+  {
+   "scene": "S7E14 sc.1",
+   "line": "Andy: Sorry, when did you get married? / Kelly: Ummm, like a week ago, we got really wasted and it just felt right."
+  },
+  {
+   "scene": "S8E21 sc.46",
+   "line": "Kelly: You mean so much to me. But, I love Ravi and I choose him."
+  },
+  {
+   "scene": "S9E1 sc.8",
+   "line": "Toby: Kelly Kapoor is gone. Her fiancé Ravi was hired as a pediatrics professor at Miami university."
+  },
+  {
+   "scene": "S9E23 sc.82",
+   "line": "Kevin: They left together a little while ago. Kelly was hoping that you would keep the baby so they can start a new life together."
+  }
+ ],
+ "sources": [
+  "S7E14 sc.1",
+  "S8E21 sc.46",
+  "S9E1 sc.8",
+  "S9E23 sc.66",
+  "S9E23 sc.75",
+  "S9E23 sc.82"
+ ],
+ "accepted_alternatives": [
+  "Ryan (a brief drunken marriage, announced and 'divorced' in S7E14)"
+ ],
+ "confidence": "high",
+ "question": "Whom did Kelly marry?",
+ "category": "false_premise",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

@@ -1,0 +1,3 @@
+A: 9/10. Main cause right: cheating with Dwight during the engagement (S5E11 sc.23 Dwight: "she certainly seems to enjoy making lovemaking with me"; sc.31 compare notes; sc.32 cancels cake). Minor: says Andy "challenged" Dwight, in sc.23 both agree to a duel; fine.
+B: 8/10. Main cause right. Minor slips: The Duel is S5E11 here (S5E12 in split numbering, acceptable); "Dwight rejects her as well" not verified in sc.31-34; Dwight "reveals" regular sleeping is roughly right (sc.31).
+C: 7/10. Evidence points to the affair, duel and "I broke up with Angela" (S5E22 sc.15), but never states plainly that the affair is why; says final reason not stated. Nothing false; main cause only implied.

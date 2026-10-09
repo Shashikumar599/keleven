@@ -1,0 +1,47 @@
+{
+ "question_id": "q036",
+ "reference": "Two episodes: The Return (S3E13 here, split S3E14), when Jim and Pam's prank of hiding his ringing phone sets him off and Michael has rebuffed him; and Angry Andy (S8E21), when he blows up at Nellie's office and punches a hole in its wall.",
+ "evidence": [
+  {
+   "scene": "S3E13 sc.34",
+   "line": "Andy: ...It's not funny! In fact, it's pretty freakin' unfunny! Oh, my GOD. [punches a hole in the wall] That... was an overreaction."
+  },
+  {
+   "scene": "S3E13 sc.36",
+   "line": "Jim: [inspecting the hole in the wall] Oh my God, that's half-inch drywall."
+  },
+  {
+   "scene": "S8E21 sc.41",
+   "line": "Andy: And your stupid face! [grabs Nellie's photo off the wall and smashes it] And your stupid office! [punches hole in the wall] Ah!"
+  },
+  {
+   "scene": "S8E21 sc.41",
+   "line": "Darryl: He does not like that wall."
+  }
+ ],
+ "sources": [
+  "S3E13 sc.34",
+  "S3E13 sc.36",
+  "S8E21 sc.41"
+ ],
+ "premise_true": true,
+ "count": null,
+ "list_items": [
+  {
+   "item": "The Return (S3E13 combined / S3E14 split)",
+   "scene": "S3E13 sc.34",
+   "core": true
+  },
+  {
+   "item": "Angry Andy (S8E21)",
+   "scene": "S8E21 sc.41",
+   "core": true
+  }
+ ],
+ "confidence": "high",
+ "caveats": "References that are not new punches: Safety Training (S3E19 sc.2) replays the clip in a recap; Beach Games (S3E22 sc.66) and Money (S4E4 sc.49) mention it. Citing these as punch episodes is wrong. The S8E21 punch is a stage direction only; also visual. Graded as fact with two required parts (both episodes).",
+ "question": "In which episodes does Andy punch a hole in the wall?",
+ "category": "which_episode",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

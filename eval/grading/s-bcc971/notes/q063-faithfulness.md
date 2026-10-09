@@ -1,0 +1,4 @@
+Faithfulness note q063
+A: 10. Claim and quote exact (S7E6 sc.11: "it makes more sense when I'm standing next to Popeye, but... Jim doesn't want to put his costume on"). Nothing beyond evidence.
+B: 2. Memory, confident (knows_answer true, uncertain empty) and contradicted by the transcript: says the costume "doesn't make sense" because Pam is nursing Cece and Olive Oyl is flat-chested. S7E6 sc.11 gives the real reason: no Popeye because Jim won't wear his costume (sc.12). The nursing explanation appears nowhere in S7E6 (grep for nurs/swee hits only "Angela as the nurse"). Overconfident, invented reason.
+C: 9. Quotes exact (sc.11, sc.12); Jim as Popeye with Cece at sc.49 ("[holding Cece] Spinach in a can. Power eat spinach. [Popeye sound]") supported. Swee'Pea correctly tagged [memory] (not in transcript). Slight stretch: links Dwight's "Dwight Schrute's mom" jab to her being without Popeye; sc.11 gives no such causal link.

@@ -1,0 +1,49 @@
+{
+ "question_id": "q027",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Michael, The Chump, Andy casts him as Ali Larter (S6E23 sc.17); all claims correctly labelled [memory]; S6E25 is valid split numbering and Donna is right.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 7,
+     "reader": 9
+    }
+   }
+  },
+  "B": {
+   "score": 2,
+   "verdict": "refused",
+   "grounded": "n/a",
+   "failure_type": "retrieval_miss",
+   "notes": "Honest refusal: S6E23 sc.17 was not among the scenes it was sent.",
+   "details": {
+    "lens_scores": {
+     "fact": 1,
+     "faithfulness": 9,
+     "reader": 1
+    }
+   }
+  },
+  "C": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Michael to Andy in The Chump, Obsessed/Ali Larter setup matches S6E23 sc.17; S6E25 is valid split numbering.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 6,
+     "reader": 9
+    },
+    "calibration": "ok"
+   }
+  }
+ }
+}

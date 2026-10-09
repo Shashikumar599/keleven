@@ -1,0 +1,3 @@
+A 5: covers the breakup, the empty desk and the Utica copier trip, but never says she became Utica's regional manager, nor where she ended up (Dan, pregnancy). Says "worked at" Utica. Incomplete on the arc the question asks for.
+B 8: full arc in order: breakup, Utica regional manager, Dan the dermatologist, pregnant. Episode numbers slip (Branch Wars as S4E10, Lecture Circuit S5E16) but the story is right; says Michael and Pam visited, the reference has the staff visiting with Pam's engagement.
+C 8: breakup, left Scranton, Utica manager, Dan, pregnant. Direct and complete; the source marking is clear.

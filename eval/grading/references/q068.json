@@ -1,0 +1,68 @@
+{
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "caveats": "Opinion question; no count is possible from transcripts. Readings to avoid: Michael's roast of Meredith and Dwight/Michael's riff in Sex Ed (S7E4 sc.36, list of places, aimed at Oscar) are jokes; Michael's own sexual claims are often boasts; Andy's snowman story (S9E5) is a joke. Answering with real actors is out of scope. A good answer picks one (Meredith is the best-supported) and notes it is inference.",
+ "question_id": "q068",
+ "reference": "Judgment, no single answer. Strongest candidate from the show: Meredith, whose sexual history is a running joke and partly confirmed by her own admissions (sleeping with the Hammermill rep Bruce Meyers for six years for discounts, S5E2). Other plausible candidates: Dwight and Angela (a years-long secret affair, sex in the office, a later baby contract), Michael (many claimed partners, Jan, Carol, Pam's mom Helene, but much of it is boasting, and he also jokes about '28 years without sex'), Kelly and Ryan ('making love, constantly', S7E14), Jan, Robert California. Avoid treating insults/boasts as fact.",
+ "evidence": [
+  {
+   "scene": "S5E2 sc.6",
+   "line": "Meredith: Well for the past six years I have been sleeping with him in exchange for discounts on our supplies and Outback Steakhouse gift certificates."
+  },
+  {
+   "scene": "S5E13 sc.69",
+   "line": "Michael: Meredith, you've slept with so many guys you're starting to look like one. Boom. Roasted. (a roast insult)"
+  },
+  {
+   "scene": "S9E14 sc.16",
+   "line": "Meredith: ... somebody had the balls to put my phone number on the men's room wall. Which is so messed up. It's 6782 not 83."
+  },
+  {
+   "scene": "S5E11 sc.31",
+   "line": "Andy: How can she be sleeping with you this whole time and only sleep with me twice? / Dwight: She said she was only sleeping with me."
+  },
+  {
+   "scene": "S7E15 sc.17",
+   "line": "Dwight: I've had intercourse in the office."
+  },
+  {
+   "scene": "S7E3 sc.37",
+   "line": "Dwight: No, no, no. Contractually we're obligated to have sex."
+  },
+  {
+   "scene": "S6E6 sc.15",
+   "line": "Michael: I'm sleeping with Pam's mom."
+  },
+  {
+   "scene": "S5E1 sc.46",
+   "line": "Michael: I once went 28 years without having sex. And then again for seven years."
+  },
+  {
+   "scene": "S7E14 sc.1",
+   "line": "Kelly: We were making love, constantly."
+  },
+  {
+   "scene": "S3E11 sc.10",
+   "line": "Michael: ... Sex. We had sex. I had sex with her. I had sex with Jan."
+  }
+ ],
+ "sources": [
+  "S5E2 sc.6",
+  "S5E13 sc.69",
+  "S9E14 sc.16",
+  "S5E11 sc.31",
+  "S7E15 sc.17",
+  "S7E3 sc.37",
+  "S6E6 sc.15",
+  "S5E1 sc.46",
+  "S7E14 sc.1",
+  "S3E11 sc.10",
+  "S8E10 sc.7"
+ ],
+ "confidence": "medium",
+ "question": "Which character likely had the most sex?",
+ "category": "opinion",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

@@ -1,0 +1,36 @@
+{
+ "question_id": "q039",
+ "reference": "Toby has 111 lines in Season 2 of the dataset (all speaker label 'Toby'; no variant or joint labels exist in S2). He speaks in 14 of the 22 episodes; most in The Dundies/Sexual Harassment (S2E2, 26 lines) and Conflict Resolution (S2E21, 22 lines).",
+ "evidence": [
+  {
+   "scene": "S2E2",
+   "line": "Toby: 26 lines in Sexual Harassment"
+  },
+  {
+   "scene": "S2E21",
+   "line": "Toby: 22 lines in Conflict Resolution"
+  },
+  {
+   "scene": "S2E18",
+   "line": "Toby: 13 lines in Take Your Daughter to Work Day"
+  }
+ ],
+ "sources": [
+  "S2E2",
+  "S2E21",
+  "S2E18"
+ ],
+ "premise_true": null,
+ "count": {
+  "truth": 111,
+  "what_counted": "rows in lines with season=2 and speaker='Toby' (the only Toby label in S2; all 111 have non-empty dialogue). Per episode: E2 26, E6 5, E7 1, E8 1, E10 3, E12 7, E13 3, E14 8, E17 4, E18 13, E19 8, E20 5, E21 22, E22 5.",
+  "sql": "SELECT count(*) FROM lines WHERE season=2 AND speaker ILIKE '%toby%';"
+ },
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "Count is of transcript lines (speaker turns) in this fan transcript; another transcript source or counting sentences/words would give a different number. The only joint label containing Toby ('Gabe/Kelly/Toby') is outside Season 2, so no alternative label reading changes the S2 count. Episode numbering: two-part episodes are combined rows; S2 has no two-parters so this does not matter.",
+ "question": "How many lines does Toby have in Season 2?",
+ "category": "count",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

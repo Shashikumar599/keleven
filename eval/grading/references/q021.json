@@ -1,0 +1,31 @@
+{
+ "question_id": "q021",
+ "reference": "Kerrigan from StarCraft (the 'Queen of Blades'), in Spooked (S8E5). Dwight first insists to Kelly/Ryan he is Kerrigan and blames Toby (presumably Andy's costume pre-screening forced him to drop parts of it); Kelly calls him a 'Jamaican zombie woman', Dwight repeats that line to Bert, and when Bert says he'd look like Kerrigan with bladed wings, Dwight admits 'I AM Kerrigan from Starcraft! I've been censored.'",
+ "evidence": [
+  {
+   "scene": "S8E5 sc.12",
+   "line": "Kelly: What are you, some kind of Jamaican zombie woman? ... Ryan: Whoopi Goldberg. Dwight: Has no one here heard of Kerrigan, from Starcraft? Queen of blades? It's all Toby's fault."
+  },
+  {
+   "scene": "S8E5 sc.24",
+   "line": "Dwight: I'm a Jamaican zombie woman, leave me alone, ghoul. Bert: If you had some really big wings with blades on the end, you'd kind of look like Kerrigan from Starcraft. Dwight: Damnit. I AM Kerrigan from Starcraft! I've been censored."
+  },
+  {
+   "scene": "S8E5 sc.24",
+   "line": "Dwight: Kerrigan is ruler of the Zerg swarm!"
+  }
+ ],
+ "sources": [
+  "S8E5 sc.12",
+  "S8E5 sc.24"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "The 'Jamaican zombie woman' label is Kelly's (sc.12); Dwight adopts it as a brush-off. Why the costume was 'censored' (wings removed) is implied, not shown explicitly in the lines (Andy pre-screens costumes, sc.3; Dwight blames Toby). Sc.51 repeats the 'Jamaican zombie woman' exchange with Bert but moves to Walking Dead talk (likely a deleted/alternate scene).",
+ "question": "At the Halloween party, Dwight says he is a Jamaican zombie woman. Which character does he admit his costume really is?",
+ "category": "detail",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

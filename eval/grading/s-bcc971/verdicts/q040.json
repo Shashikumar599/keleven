@@ -1,0 +1,61 @@
+{
+ "question_id": "q040",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Michael 24 and Dwight 3, straight from the SQL result; does not mention Pam's tie (one line, three uses).",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 9,
+     "reader": 9
+    },
+    "truth": 24,
+    "given": 24,
+    "exactness": "exact",
+    "states_what_counted": true
+   }
+  },
+  "B": {
+   "score": 2,
+   "verdict": "wrong",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Says about 34-35 for Michael against the dataset's 24; Dwight second (3-4) is right but hedged.",
+   "details": {
+    "lens_scores": {
+     "fact": 2,
+     "faithfulness": 3,
+     "reader": 3
+    },
+    "truth": 24,
+    "given": 34,
+    "exactness": "wrong",
+    "states_what_counted": false,
+    "calibration": "overconfident"
+   }
+  },
+  "C": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Michael 24 and Dwight 3 from the SQL result; cited scenes (including S2E2 sc.24 'That's what she said. Pam?') are real Michael lines.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 9,
+     "reader": 8
+    },
+    "truth": 24,
+    "given": 24,
+    "exactness": "exact",
+    "states_what_counted": true
+   }
+  }
+ }
+}

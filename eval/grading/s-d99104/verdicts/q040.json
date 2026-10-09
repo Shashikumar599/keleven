@@ -1,0 +1,61 @@
+{
+ "question_id": "q040",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 2,
+   "verdict": "wrong",
+   "grounded": "partly",
+   "failure_type": "count_from_sample",
+   "notes": "Gives 6-7 for Michael (dataset: 24 lines) and Jim as second (dataset: Dwight, 3 lines) from 8 sent scenes; quotes and citations are exact and it flags the sample, but the headline answer to a series-wide question is wrong.",
+   "details": {
+    "truth": 24,
+    "given": 6,
+    "exactness": "wrong",
+    "states_what_counted": true,
+    "lens_scores": {
+     "fact": 1,
+     "faithfulness": 6,
+     "reader": 3
+    }
+   }
+  },
+  "B": {
+   "score": 4,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Dwight as second (3-4) is right (dataset 3), but Michael's count of 34-35 is far from the dataset's 24.",
+   "details": {
+    "truth": 24,
+    "given": 34,
+    "exactness": "wrong",
+    "states_what_counted": false,
+    "lens_scores": {
+     "fact": 4,
+     "faithfulness": 3,
+     "reader": 6
+    },
+    "calibration": "overconfident"
+   }
+  },
+  "C": {
+   "score": 4,
+   "verdict": "partial",
+   "grounded": "yes",
+   "failure_type": "memory_error",
+   "notes": "Passage count (6-7) correctly scoped and cited; series total from [memory] 34-35 is wrong vs 24, while Dwight second [memory] is right (though 'closely followed by Jim' is off: Jim has 1 real use). Bottom line split across two answers.",
+   "details": {
+    "truth": 24,
+    "given": 34,
+    "exactness": "wrong",
+    "states_what_counted": true,
+    "lens_scores": {
+     "fact": 3,
+     "faithfulness": 6,
+     "reader": 5
+    }
+   }
+  }
+ }
+}

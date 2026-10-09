@@ -1,0 +1,39 @@
+{
+ "question_id": "q019",
+ "reference": "Homemade coupons: Nate gives Darryl pink paper coupons (e.g. 'one free tickle monster attack') and calls them 'Nate coupons. Or Nate-pons' (Special Project, S8E14).",
+ "evidence": [
+  {
+   "scene": "S8E14 sc.33",
+   "line": "Nate: ... I felt really terrible that you got me these lovely gloves and I didn't get you anything... [Hands Darryl pink slips of paper]"
+  },
+  {
+   "scene": "S8E14 sc.33",
+   "line": "Darryl: \"This coupon entitles you to one free tickle monster attack\""
+  },
+  {
+   "scene": "S8E14 sc.33",
+   "line": "Nate: Yeah, they're Nate coupons. Or Nate-pons. And they're all different. Cash that one in and I will bring you a stick of gum, anytime, any place."
+  },
+  {
+   "scene": "S8E14 sc.9",
+   "line": "Darryl: Oh, this is a gift, for....my man Nate here. ... Val: Cashmere."
+  }
+ ],
+ "sources": [
+  "S8E14 sc.33",
+  "S8E14 sc.9"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "The cashmere gloves were apparently meant for Val (Darryl improvises 'this is a gift, for... my man Nate here' when Val asks who it's for). 'Nate coupons' or 'Nate-pons' both count as what Nate calls them.",
+ "accepted_alternatives": [
+  "Nate coupons",
+  "Nate-pons"
+ ],
+ "question": "What does Nate give Darryl in return for the gloves, and what does Nate call them?",
+ "category": "detail",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

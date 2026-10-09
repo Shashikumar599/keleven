@@ -1,0 +1,46 @@
+{
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "caveats": "Highly open opinion question; any minor character with a clear plot consequence is acceptable if the impact is described correctly. Appearance counts (episodes with dialogue in the dataset): Mr. Brown 1, DeAngelo 4, Brian 5, Charles 7, Mose 9, Jo 9, Holly 17. Penalize claims of impact that didn't happen (e.g. wrong episodes) or picking a main cast member as 'short appearance'.",
+ "question_id": "q070",
+ "reference": "Judgment, no single answer. Plausible candidates with short runs but large plot impact: Charles Miner (about 7 episodes in S5) whose arrival drives Michael to quit and found the Michael Scott Paper Company (S5E19); Mr. Brown (one episode, Diversity Day S1E2, the show's early defining episode); DeAngelo Vickers (4 episodes, Michael's replacement); Brian the boom mic operator (about 5 episodes in S9) who breaks the documentary wall to comfort Pam; Holly (17 episodes) as Michael's love story is a stretch for 'short'; Mose, Robert California, Jo Bennett also arguable.",
+ "evidence": [
+  {
+   "scene": "S5E19 sc.3",
+   "line": "Michael: I looked at Wallace and I said 'I quit!' and as I turned to leave I looked back and I said 'You have no idea how high I can fly.'"
+  },
+  {
+   "scene": "S5E19 sc.22",
+   "line": "Michael: Alright, Michael Scott Paper Company. You want in?"
+  },
+  {
+   "scene": "S9E12 sc.50",
+   "line": "Brian: Yeah. Let's turn the cameras off. Seriously, guys. Enough. Enough."
+  },
+  {
+   "scene": "S9E13 sc.1",
+   "line": "Brian: It's fine. It was my first slip up in nine years of miking you."
+  },
+  {
+   "scene": "S7E21 sc.40",
+   "line": "DeAngelo: ... I can say, is that he is no Michael Scott."
+  }
+ ],
+ "sources": [
+  "S5E18",
+  "S5E19 sc.3",
+  "S5E19 sc.22",
+  "S1E2",
+  "S9E12 sc.50",
+  "S9E13 sc.1",
+  "S7E19",
+  "S7E21 sc.40"
+ ],
+ "confidence": "low",
+ "question": "Which character has a short appearance but a high impact on the show?",
+ "category": "opinion",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": true,
+ "owner_note": "Owner (2026-10-06): keep as is; hard to judge, record as no single correct answer."
+}

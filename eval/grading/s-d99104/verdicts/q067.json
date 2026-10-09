@@ -1,0 +1,85 @@
+{
+ "question_id": "q067",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "Clear position, labelled speculation, cited Roy's lack of involvement and Roy's later growth as counterpoint; a few citations (S3E18 sc.46 for Jim staying apart) attach to inferences.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 8,
+     "reader": 8
+    },
+    "scores": {
+     "position": 2,
+     "support": 2,
+     "reading": 2,
+     "counterpoint": 2,
+     "scope": 1
+    },
+    "total": 9
+   }
+  },
+  "B": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Position, speculation flagged, good counterpoint, but no scenes and loose on timeline (breakup placed after Casino Night; wedding was called off before S3E1, Roy's breakup S3E17). (Rubric total 8; adjusted from 7 after the score bands were aligned.)",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 5,
+     "reader": 7
+    },
+    "calibration": "overconfident",
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 1,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 8,
+    "adjusted": {
+     "from_score": 7,
+     "from_verdict": "partial",
+     "from_support": 0,
+     "why": "rubric total 8 was lowered by 1 to fit a score band mismatch (fixed in rubrics.md); restored 2026-10-06"
+    }
+   }
+  },
+  "C": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": "claim_beyond_evidence",
+   "notes": "Concrete finale loss and counterpoint, well labelled, but 'destructive temper [S3E17 sc.46]' and 'took Pam for granted' go beyond the cited scenes. (Rubric total 8; adjusted from 7 after the score bands were aligned.)",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 6,
+     "reader": 8
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 1,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 8,
+    "adjusted": {
+     "from_score": 7,
+     "from_verdict": "partial",
+     "from_support": 0,
+     "why": "rubric total 8 was lowered by 1 to fit a score band mismatch (fixed in rubrics.md); restored 2026-10-06"
+    }
+   }
+  }
+ }
+}

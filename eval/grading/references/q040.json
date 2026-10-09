@@ -1,0 +1,61 @@
+{
+ "question_id": "q040",
+ "reference": "Michael says 'That's what she said' in 24 transcript lines (about 24 uses; 23-25 depending on counting a cut-off attempt and an inaudible final one). Second most: Dwight, 3 lines (S2E12, S3E12, S5E17). Pam also says it 3 times, but in one line/scene (S5E6, three in a row), so she ties Dwight by utterance count.",
+ "evidence": [
+  {
+   "scene": "S2E2 sc.34",
+   "line": "Michael: THAT'S WHAT SHE SAID!"
+  },
+  {
+   "scene": "S2E12 sc.33",
+   "line": "Dwight: That's what she said. / Michael: That's my joke, damnit Dwight."
+  },
+  {
+   "scene": "S3E12 sc.36",
+   "line": "Dwight: That's what she said."
+  },
+  {
+   "scene": "S5E17 sc.27",
+   "line": "Dwight: That's what she said! [David laughs]"
+  },
+  {
+   "scene": "S5E6 sc.27",
+   "line": "Pam: [in New York] That's what she said! That's what she said! That's what she said!"
+  },
+  {
+   "scene": "S7E21 sc.51",
+   "line": "Michael: [...when he speaks it is inaudible now] That's what she said!"
+  }
+ ],
+ "sources": [
+  "S2E2 sc.24",
+  "S2E2 sc.34",
+  "S2E12 sc.33",
+  "S3E12 sc.36",
+  "S5E17 sc.27",
+  "S5E6 sc.27",
+  "S4E8 sc.23",
+  "S7E21 sc.51"
+ ],
+ "premise_true": null,
+ "count": {
+  "truth": 30,
+  "what_counted": "OWNER LIST (eval/grading/references/that's): Michael says it 30 times (31-32 counting the joint rows 'Michael (also mouthed by Jim)' and 'Michael and Darryl'); accept 29-31. Second most: Dwight, 4. lines spoken by speaker 'Michael' whose dialogue contains 'what she said' (each is one use). Second: Dwight 3 lines; Pam 1 line containing 3 uses; Jim 2 lines but only 1 real use (S4E7 sc.56; the other is a mention, S2E2 sc.34); 1 each for Stanley, Jan, Holly, David Wallace, Creed, 'Everyone', Deposition Reporter (reading back Michael's line).",
+  "sql": "SELECT speaker, count(*) FROM lines WHERE dialogue ~* 'what she said' GROUP BY speaker ORDER BY 2 DESC;",
+  "transcript_count": 24,
+  "tolerance": 1
+ },
+ "list_items": null,
+ "confidence": "medium",
+ "accepted_alternatives": [
+  "Second most: Dwight (3)",
+  "Second most: Dwight and Pam tied at 3 utterances (Pam's are all in one moment)",
+  "24 (and Dwight second): the count of lines in the transcript dataset, which lacks some of the 30 uses; correct for a transcript-only answer"
+ ],
+ "caveats": "Michael's 24 lines include: S4E8 sc.23 three lines in the deposition (two real uses plus 'Come again? That's what she said? I don't know...' playing dumb); S7E21 sc.51 the final inaudible one (transcribed but not heard on air). Not counted: S2E2 sc.24 'That's what she sai [clears throat]' (cut off; would make 25), the Deposition Reporter reading his line back, 'That's what HE said!' (S5E13 sc.35). Fan transcripts may miss some (e.g. Jim mouthing it along in S2E21 is a direction). Accept counts roughly 22-26 with a stated basis as correct; Dwight must be named second (ties with Pam acceptable).",
+ "question": "How many times does Michael say \"That's what she said\", and who says it the second most?",
+ "category": "count",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": true,
+ "owner_note": "Owner (2026-10-07): the shared list is the correct answer, +-1 acceptable (Michael 30, Dwight second with 4). The dataset has only 24 Michael lines, so a transcript-only answer of 24 stating what it counted is also correct."
+}

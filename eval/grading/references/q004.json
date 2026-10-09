@@ -1,0 +1,22 @@
+{
+ "question_id": "q004",
+ "reference": "\"...I do not do that thing.\" Dwight, talking head in Business School (S3E16).",
+ "evidence": [
+  {
+   "scene": "S3E16 sc.5",
+   "line": "Dwight: Whenever I'm about to do something, I think, 'Would an idiot do that?' And if they would, I do not do that thing."
+  }
+ ],
+ "sources": [
+  "S3E16 sc.5"
+ ],
+ "confidence": "high",
+ "caveats": "",
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "question": "Finish the quote: \"Whenever I'm about to do something, I think, 'Would an idiot do that?' And if they would...\"",
+ "category": "finish_the_quote",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

@@ -1,0 +1,27 @@
+{
+ "question_id": "q012",
+ "reference": "Syracuse: he introduces himself as 'Harry Jannerone, Dunder Mifflin Syracuse' in Turf War (S8E23).",
+ "evidence": [
+  {
+   "scene": "S8E23 sc.10",
+   "line": "Harry: Harry Jannerone, Dunder Mifflin Syracuse."
+  },
+  {
+   "scene": "S8E23 sc.29",
+   "line": "Harry: Mr. Ramish, Harry Jannerone. Dunder Mifflin, Syracuse ..."
+  }
+ ],
+ "sources": [
+  "S8E23 sc.10",
+  "S8E23 sc.29"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "",
+ "question": "Which Dunder Mifflin branch is Harry Jannerone from?",
+ "category": "detail",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

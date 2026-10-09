@@ -1,0 +1,33 @@
+{
+ "question_id": "q052",
+ "reference": "Because he is secretly in the process of buying his parents' house so that they can retire, and Pam doesn't know yet (a surprise). The bonus depends on Kelly's customer survey scores, which came back bad.",
+ "evidence": [
+  {
+   "scene": "S5E6 sc.18",
+   "line": "Jim: I need a decent bonus, because I'm actually in the process of buying my parents' house so that they can retire. And if history tells us anything, it's that you can't go wrong buying a house you can't afford. Pam doesn't know about the house, so it's... a fun surprise."
+  },
+  {
+   "scene": "S5E6 sc.6",
+   "line": "Jim: Those reports affect our bonuses, which is kind of great for me, because you wouldn't know it from looking at her, but Pam's a gold-digger."
+  },
+  {
+   "scene": "S5E6 sc.34",
+   "line": "Kelly: OK, I did it. All right? I lied ... I did it because you guys didn't come to my party"
+  }
+ ],
+ "sources": [
+  "S5E6 sc.6",
+  "S5E6 sc.18",
+  "S5E6 sc.34"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "high",
+ "caveats": "Sc.6 'Pam's a gold-digger' is a joke, not the reason; an answer giving that as the real reason is a literal reading. Supporting: survey reports affect bonuses (sc.6); Kelly faked the bad scores because Jim and Dwight skipped her party (sc.34). The house is revealed to Pam in Frame Toby (S5E8).",
+ "accepted_alternatives": [],
+ "question": "Why does Jim say he needs a decent bonus in 'Customer Survey'?",
+ "category": "why",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": false
+}

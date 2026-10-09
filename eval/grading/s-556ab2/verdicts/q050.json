@@ -1,0 +1,40 @@
+{
+ "method": "debate",
+ "question_id": "q050",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Main cause right (affair with Dwight during the engagement) plus the duel reveal and call-off, all confirmed in S5E11 sc.31-32; 'Season 5 Episode 12' is valid split numbering, so the briefs' episode objection fails. 'Dwight rejects her as well' is only implied (bobblehead in trash, sc.32): slight overreach.",
+   "details": {
+    "main_cause_ok": true,
+    "wrong_claims": [],
+    "calibration": "ok"
+   }
+  },
+  "B": {
+   "score": 6,
+   "verdict": "partial",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Everything it says is grounded (sc.23, S5E16 sc.20, S5E22 sc.15), but it explicitly declines to state the reason and only gives supporting events; the decisive scenes (sc.31-32) were not sent.",
+   "details": {
+    "main_cause_ok": false,
+    "wrong_claims": []
+   }
+  },
+  "C": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Main cause right; its [memory] claims (comparing notes, calling off the engagement) are correctly labelled and verified in S5E11 sc.31-32. Minor: leans on [memory] for the core link and calls the duel Andy's challenge, though Dwight named it.",
+   "details": {
+    "main_cause_ok": true,
+    "wrong_claims": []
+   }
+  }
+ }
+}

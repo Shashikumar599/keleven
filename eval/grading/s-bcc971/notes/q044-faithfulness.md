@@ -1,0 +1,3 @@
+A: 9. Memory. Honest refusal to commit (knows_answer False), names S2 and S7 as candidates, which matches the reference's two. Minor: calls Michael's Last Dundies S7E21 (dataset S7E20; split numbering excusable). Calibration ok (underconfident but honest).
+B: 9. Season 2 with 25, S7 22, S4 5, S1 2 exactly match SQL result sent; labelled [SQL]; quotes S2E1 sc1 ok. Slight looseness: says "mentions" though counted lines, and the regex \mdundies\M misses singular "Dundie" (reference 30), but it did not claim more than the result.
+C: 9. Same SQL; says "25 lines containing the term", correctly worded as lines. Same regex limitation; faithful to result sent.

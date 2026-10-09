@@ -1,0 +1,4 @@
+q060 reader note (Kelly runs off in finale; his job)
+A: 9. Right person first (Ryan; S9E23 sc.81 "We're running off into the sunset.", sc.82 Kevin "They left together"). Handles the job part honestly (not stated; quit DM and moved to Ohio, S9E1 sc.11). Doesn't notice the asker may be thinking of Ravi the pediatrician (S9E23 sc.66) - a missed chance to serve the asker, per reference caveat.
+B: 10. Best read of the mis-framed question: Ryan, no stated job (abandons baby Drake to run off - consistent with S9E23 sc.75/82), and anticipates the likely confusion: "If the question refers to the fiance ... that was Ravi, who is a pediatrician" (S9E23 sc.66). Direct and complete.
+C: 9. Same good reading: Ryan first, job not stated, Ohio "Silicon Prairie", then Ravi = pediatrician/pediatrics professor (S9E1 sc.8, S9E23 sc.66). A bit long; the career recap (temp, VP, bowling alley, salesman) is background clutter, but labeled.

@@ -1,0 +1,102 @@
+{
+ "question_id": "q072",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "Gives Dwight's 'I have seventy' (S7E22 sc.16) and names Mose, Amel, Zeke, Esther, all right. Zeke is cited [SQL] but no SQL row or sent scene says he is Dwight's cousin (S9E13 sc.24 not sent): a citation slip; also does not flag 70 as a boast.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 7,
+     "reader": 8
+    },
+    "reference_items": [
+     "seventy (claim)",
+     "Mose",
+     "Zeke",
+     "Amel",
+     "Esther",
+     "goat-fungus cousin"
+    ],
+    "found": [
+     "seventy (claim)",
+     "Mose",
+     "Zeke",
+     "Amel",
+     "Esther"
+    ],
+    "missed": [],
+    "invented": []
+   }
+  },
+  "B": {
+   "score": 3,
+   "verdict": "wrong",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Says no number is ever stated, but Dwight says 'I have seventy' (S7E22 sc.16); names Mose and Zeke correctly but adds 'Cousin Heiss', who appears nowhere in the transcripts.",
+   "details": {
+    "lens_scores": {
+     "fact": 3,
+     "faithfulness": 3,
+     "reader": 2
+    },
+    "calibration": "overconfident",
+    "reference_items": [
+     "seventy (claim)",
+     "Mose",
+     "Zeke",
+     "Amel",
+     "Esther",
+     "goat-fungus cousin"
+    ],
+    "found": [
+     "Mose",
+     "Zeke"
+    ],
+    "missed": [
+     "seventy (claim)"
+    ],
+    "invented": [
+     "Cousin Heiss"
+    ]
+   }
+  },
+  "C": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "70 claim plus Mose, Zeke, Amel, Esther and the goat-fungus cousin, all right; 'Other cousin Mose' correctly glossed as fabricated. Minor flaws: Zeke mis-cited to [SQL], unlabelled surname 'Bruegger' not in the transcripts, and no note that 70 is a boast or the fungus cousin a sales pitch.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 7,
+     "reader": 7
+    },
+    "reference_items": [
+     "seventy (claim)",
+     "Mose",
+     "Zeke",
+     "Amel",
+     "Esther",
+     "goat-fungus cousin"
+    ],
+    "found": [
+     "seventy (claim)",
+     "Mose",
+     "Zeke",
+     "Amel",
+     "Esther",
+     "goat-fungus cousin"
+    ],
+    "missed": [],
+    "invented": []
+   }
+  }
+ }
+}

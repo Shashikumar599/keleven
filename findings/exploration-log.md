@@ -213,6 +213,31 @@ no neighbour expansion, no metadata filters.
   retrieval caps RAG on trait questions; the fix is retrieval of portrayal (v3 character profiles). For hybrid, the
   source-priority rule (facts: transcripts first; series-wide judgments: memory may lead) is what mattered.
 
+## 17. References for all 80 questions, built blind by fresh-context subagents (evaluate-answers, task 1)
+- 8 subagents, about 10 questions each, without access to findings, runs or the drafts in questions.jsonl;
+  every fact checked in the transcripts. 63 high, 14 medium, 3 low confidence.
+- Compared with my earlier drafts (made independently): agreement on all factual questions except where the
+  drafts were wrong: q032 (Stanley yells "Boy, have you lost your mind" at Ryan in Take Your Daughter to Work Day
+  S2E18; the draft said to Michael in Did I Stutter), q060 (Kelly runs off with Ryan in the Finale, not Ravi; the
+  question's "his job" premise fails), q073 (the note called it a false premise; Kelly did marry Ryan, S7E14).
+  Independent references caught three of my mistakes.
+- Transcript gaps they surfaced: Kevin's chili spill is not in the transcript (only "undercook the onions");
+  the words "fire drill" never appear (Dwight says "simulation"); q079's quoted words are missing; Michael's
+  whiteboard Gretzky quote (q003) is visual only; the Nashua basket's contents are never named.
+- Data quirks: the episodes table splits Lecture Circuit into two rows while other two-part episodes are one;
+  Pam says "that's what she said" three times in one line (count by lines vs by uses differs).
+- Question-set issues: q056 has two valid answers (Andy and the Senator); q072 asks "how many cousins" but only
+  a boast ("I have seventy") gives a number; q054 is labelled off-camera though the Finale covers part of it.
+
+## 18. Over-cautious grounding: strict RAG under-answers (q050, v1, council pilot)
+- "Why did Andy break up with Angela?": v1 RAG quoted the right evidence (the lying, Dwight's "lovemaking" line,
+  the duel, "I broke up with Angela") but opened with "the passages do not... state Andy's explicit final reason",
+  listed events instead of the cause, and never said "because she was sleeping with Dwight".
+- Lens scores: faithfulness 9, fact 7, reader 5; chair 6 (partial, incomplete). Careful is not the same as useful.
+- Causes: the decisive scenes (S5E11 sc.15, 17, 31-32) were not retrieved, and the strict prompt ("every claim
+  supported by a quote") makes the model treat an obvious inference as unsupported. The opposite failure of
+  invented quotes (entry 14). Prompt ideas parked for v3.
+
 ## Patterns so far
 - Famous single-episode details: memory mostly right; RAG adds completeness, exact wording, attribution, citations.
 - Multi-episode stories: RAG partial (wrong era, wrong couple, missing key scenes).
@@ -226,3 +251,7 @@ no neighbour expansion, no metadata filters.
 - Trait / series-wide character judgments: retrieval finds the word, not the portrayal; answers read sarcasm,
   insults and self-deprecation literally, and passages can make the hybrid answer worse than memory unless the
   prompt lets memory lead for such judgments (entries 15-16).
+- Better evidence, less thinking: v2 answers used about 40% fewer thinking tokens than v1 (99k vs 173k; max 3.2k
+  vs 13k), with the right scene sent far more often (53 vs 44 of 55). Plausibly the model searches its memory and
+  reasons less when the passages already contain the answer. Whether answers got better, not just cheaper, is
+  for grading to show (experiment log, 2026-10-05-v2).
