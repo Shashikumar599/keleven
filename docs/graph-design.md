@@ -145,3 +145,22 @@ Everything the code does around the LLM calls, with where it lives. Decisions ar
 not named in the cited lines; in the quality sample it never pointed to a wrong event). Only `unverified_quote`, `no_quote` and
 `too_many_major` mean "look at this". Newer runs record it with severity `info`; the stored run v3-extract-001 has it as `flag` and
 is not re-derived.
+
+## Character linking as built (graph/link_certain.py, no LLM): only what the data proves
+**Rule (owner decision 2026-10-10): link only what we can say with certainty; the rest stays unlinked.** A character entity exists when
+a primary name (first name on the card) recurs in 40+ episodes with one card per episode; a name that recurs that often cannot be a
+one-off collision of different people. Smaller groups attach only on strong evidence (the entity's cards list the name on 2+
+cards and the two never appear together in an episode); on run v3-extract-001 that attached creed bratton and meredith palmer.
+Everything else is an unlinked, episode-local node (name, description, episode), still found through event text, the v2 search
+and name-string lookups. Name tests (surname conflicts) were dropped for certainty: they rejected Pam and Phyllis (maiden and
+married names) and missed a one-card "Robert Lipton" inside the 19-card "robert" group (Robert California and the senator are
+two people), so groups like robert, david, bob, todd packer, holly, nellie, karen stay unlinked.
+
+Result: **20 certain entities** (jim, dwight, pam, kevin, angela, phyllis, stanley, oscar, andy, meredith, ryan, kelly, creed, michael,
+toby, darryl, erin, jan, gabe, roy), 2,766 of 3,883 cards (71%). Coverage of what we extracted: 99% of events have at least one
+certain participant, 76% have two or more different ones; 137 of 325 relations (42%) have both ends certain, 152 have one end
+certain (the other end is an unlinked local node, found by name). **Known limitation (accepted):** recurring minor characters
+(David Wallace, Holly, Nellie, Karen, Robert California, the senator, Bob Vance, ...) are not entities; questions about them are
+answered from event text and the v2 search, not from graph identity. Exploratory tools: graph/link_characters.py (evidence
+analysis), graph/link_analysis.py.
+

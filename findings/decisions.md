@@ -813,3 +813,94 @@ listed and not retried), then a 10-episode pilot after the owner approves the co
 
 **2026-10-10: Output limit raised to 32,768 tokens** for the graph extraction and review calls (the model allows 65,536; we
 pay only for tokens generated; real outputs so far 3.5-5.3k). Run label v3-extract-001: pilot of 10 episodes first, then all.
+
+**2026-10-10: Character linking, what the data showed (v3-extract-001, graph/link_analysis.py).** 3,883 character cards, 888 distinct
+name strings, 557 distinct primary names (first name on the card). 37 primary names with 10+ cards cover 3,085 cards (79%); 67 with
+3-9 cards cover 299; 453 with 1-2 cards cover 499 (mostly one-off minor or generic roles, a few real people such as Walter Sr. and
+Philip Lipton). No primary name appears twice in one episode. **Merging names that appear together on a card is unsafe:** the union
+chained Jim, Pam, Andy and Michael into one cluster of 660 cards (nicknames used about each other, "Agent Michael Scarn"), and
+joined Phyllis with Phil Maguire, Bob Vance with Angela's husband, David Wallace with David Brent. Decision: link by primary name,
+aliases are evidence only, never merged transitively. Safe rule found: two primary names that share a word, appear on one card, never
+appear as separate cards in one episode and share co-characters are one person (David Wallace / David, Bob Vance / Bob,
+Robert California / Robert, Todd Packer / Packer: 24, 9, 12, 8 cards list both, 0 episodes together). Not caught by that rule:
+"the senator" / "Lipton", "Philip", "Esther", "Cece" etc. (about 520 small groups): LLM judge on cards, one pass, owner reviews
+the proposed merges.
+
+**2026-10-10: No LLM for linking small characters (memory leak risk, too little description to verify); evidence-only linking.** Owner
+objection: an LLM given one line per minor character would link them from memory. Data check (graph/link_analysis.py): 58 pairs of
+primary-name groups have name evidence (one's name is listed on the other's cards); 49 never appear together as separate cards in an
+episode, 9 do (cannot be the same person). Rules: merge only when evidence is strong (listed on 2+ cards), the two never appear as
+separate cards in one episode, the full names do not conflict (same first name, different surname, e.g. David Wallace vs David
+Brent), and no merge is allowed through a shared short name (a hub like "David") if it would join conflicting names. Weak
+single-listing pairs (e.g. jack / waiter, ira / sensei) go to an owner review list, never merged automatically. Everything else
+stays separate (unsure = separate); generic roles are not linked across episodes. Result goes to episode_character with the
+method and the evidence count.
+
+**2026-10-10: Character linker built (graph/link_characters.py) and weak links left out.** Evidence-only, no LLM: 557 primary names ->
+542 entities; 15 pairs merged (michael/michael scott, david/david wallace, robert/robert california, ryan/ryan howard, bob/bob vance,
+creed/creed bratton, meredith/meredith palmer, packer/todd packer, todd/todd packer, aunt shirley/shirley, cathy/kathy, jo/jo bennett,
+lipton/the senator, philip/phillip, robert lipton/senator); 15 blocked by a rule (together in an episode, conflicting surnames, or two
+cards in one episode); 27 weak pairs (listed once) are NOT merged. Owner decision: weak links stay out of the graph and are recorded as
+a limitation of the data. Review file: graph/out/character_link_review.md.
+
+**2026-10-10: Characters are linked only when certain (owner decision), graph/link_certain.py.** Entity = primary name in 40+
+episodes with one card per episode: 20 entities (the main cast), 71% of cards; creed bratton and meredith palmer attached by strong
+evidence; everything else stays unlinked (episode-local node), no LLM, no guessing. Coverage: 99% of events have 1+ certain
+participant, 76% have 2+; 137 of 325 relations have both ends certain, 152 one end. Surname-conflict tests dropped (rejected Pam and
+Phyllis, missed Lipton inside robert). Minor recurring characters (David Wallace, Holly, Nellie, Karen, the senator, ...) are a
+documented limitation; retrieval for them relies on event text and the v2 search, combined by the planner.
+
+## 2026-10-10: Graph tables (migration 013) applied; confidence tiers for characters
+
+- **Characters not proven certain are kept, with a tier** (changes the earlier "weak links stay out of the graph"): certain (40+ episodes,
+  one card per episode), probable (full name, 3+ episodes), possible (one-word name, 3+ episodes). Each link stores its tier; queries
+  filter by it. Groups are never chained or merged; "possible" only points at a named entity as `possible_same`. No LLM.
+  Why: David Wallace, Robert California, Nellie, Karen, Holly are recurring and worth having, as long as the doubt is stored.
+- **Schema decisions** (docs/graph-schema.md section 6, all my recommendations accepted by "go ahead"): candidate links live on the
+  entity (`graph_entity_links`), entity key is the normalised name (stable across rebuilds), foreign keys on local ids, `refers_back`
+  stored, evidence stays as line-id arrays, one `graph_current` row names the build used by queries, full-text index on event text,
+  `link_tier` kept per card.
+- Applied migration 013 and loaded build `v3-graph-001` from extraction run `v3-extract-001`: 104 entities, 3,883 characters (3,386
+  linked: 2,766 certain, 69 probable, 551 possible), 1,698 events, 4,568 participants, 793 places, 325 relations, 314 refers_back.
+- Not done yet: views (migration 014), relation timelines, graph search, planner.
+
+## 2026-10-10: Graph views (migration 014) applied
+
+- Views graph_characters_now, graph_relations_now, graph_events_now and function graph_lines(ids) over the build named in graph_current.
+  Resolved ends show entity and tier when linked, else the extracted name. Views hold no data, so they can change without a rebuild.
+- Next: relation timelines (intervals from begins / ends / revealed rows), then graph search and the planner.
+
+## 2026-10-10: Relation timelines (migration 015) applied
+
+- View graph_timeline_now: intervals per pair and type from the begins / ends / revealed rows, walked in episode order.
+  begins opens an interval (a repeated begins while open is merged); revealed or ends with nothing open makes an interval with an
+  unknown start; joke_or_false rows are left out; boss and crush keep direction, other types are symmetric.
+- Result on v3-graph-001: 325 relation rows become 199 intervals (136 with no known start, 137 with no known end). "No end" means
+  no end shown in the data, not still together. Pairs are matched by entity name or extracted name, so two different people with
+  one name would merge (not measured).
+- Next: graph search and where it sits in the planner, then the graph-style evaluation questions.
+
+## 2026-10-10: v3 pipeline = v2 + graph request from the same enhancer call; v2 stays frozen
+
+- v2 files and code are not touched: v3 gets its own prompts (enhance_v2.md, rag_v3.md, hybrid_v3.md; memory_v1.md is reused) and its own pipeline version.
+- The enhancer call (one per question, as in v2) gains a fourth output `graph`: people (copied from the question), kind (relationships /
+  events / between), relation (only if the question's words name it). Hybrid search always runs; SQL and graph are optional extras.
+  Chosen over a code-only name match (too noisy, misses questions that name nobody) and over a separate graph LLM call (extra cost).
+- The enhancer gets no list of graph entity names: the no-memory rule stays, code resolves the names against the graph and a name that
+  is not found simply returns nothing. Questions that name nobody ("who manages the branch") get no graph request in this version.
+- Answer prompts add one rule on reading graph rows: cite scenes and quotes, "the graph shows" and may be incomplete, implied rows hedged,
+  "start / end not shown" is not a date, possible-match people are not one person, passages win over the graph.
+- Prompts are drafts until reviewed; they freeze when v3 is first evaluated. Code (graph lookup, wiring, version row) comes after review.
+
+## 2026-10-10: the enhancer writes SQL over the graph views (replaces the fixed `graph` form); prompt named enhance_v3.md
+
+- The fixed form (people, kind, relation) could only express three shapes. Instead the enhancer returns `graph_sql`: one SELECT over
+  graph_timeline_now, graph_relations_now, graph_events_now and graph_characters_now, run by the existing read-only runner
+  (retrieval/sql.py: one SELECT, 50 rows, 5 s, office_app). The prompt carries the view schema and the name-matching rules;
+  names and filter values still come only from the question.
+- The enhancer prompt for the v3 phase is enhance_v3.md (renamed from enhance_v2.md, never run). Answer prompts: rag_v3.md and
+  hybrid_v3.md; memory_v1.md is reused. v2 files are untouched.
+- Costs accepted: a longer enhancer prompt (about 60 to 80 more lines) and the chance of wrong-but-valid graph SQL; the retry step
+  and the "values from the question" rule are the controls.
+- Next: test the enhancer alone on the six coverage questions plus a few new ones (about ten small LLM calls, ask first), then wire
+  graph_sql into retrieval and answer code and add the v3 row to pipeline_versions.
