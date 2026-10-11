@@ -1,0 +1,77 @@
+{
+ "question_id": "q013",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "2,336 then 2,210, S5E1 sc.6, exact.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    }
+   }
+  },
+  "B": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "2,336 then 2,210, S5E1 sc.6, exact.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    }
+   }
+  },
+  "C": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Both numbers right; the 126 lb for Pam is the arithmetic difference (not Kevin's 226 trap), consistent with Pam's 'not close to 200' in sc.6 but not stated in the show: minor overreach.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 6,
+     "reader": 9
+    },
+    "calibration": "ok"
+   }
+  },
+  "D": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Both numbers right and the reason Pam steps off matches Michael's line in sc.6.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    }
+   }
+  },
+  "E": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "Both numbers right; 'art school' is an unlabelled memory detail (sc.6 says only leaving next week), minor.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 8,
+     "reader": 9
+    }
+   }
+  }
+ }
+}

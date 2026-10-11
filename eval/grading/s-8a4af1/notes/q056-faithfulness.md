@@ -1,0 +1,6 @@
+q056 faithfulness. Checked S9E22 sc69 ("Phillip's your son."), S5E6 sc3 (Andy: "Big idea: double wedding. Me, Angela, you, Holly."), S5E11 sc12 (Dwight: "Because you're engaged to Andy."), S9E22 sc7 (Oscar: "Angela's divorce from the senator has been very difficult for her.").
+A: 8. Quotes exact. Claim Andy "proposed a double wedding" is supported by S5E6 sc3 (implies the engagement, not stated outright). "Passages do not mention any other engagements" is honest for what it was sent (sc7 was not sent). Misses the Senator but that is a fact-lens matter.
+B: 10. S5E11 sc12/sc17 directly support "engaged to Andy"; quotes exact.
+C: 9. Memory only, confident; claims check out against the reference (Andy proposal in Goodbye, Toby = S4E14; Senator proposal in Search Committee = S7E24; married and later divorced). Well calibrated.
+D: 9. Andy cited to S5E11; Lipton/Senator name correctly tagged [memory]; "married and divorced" backed by S9E22 sc7 (divorce from the senator) plus memory. Engagement to the Senator is not in sent scenes and is tagged as memory, correctly.
+E: 8. Andy cited to S5E6 sc3, which only implies engagement (weaker than S5E11). Lipton and "Martin" tagged [memory], accurate per the reference.

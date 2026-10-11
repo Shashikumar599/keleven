@@ -1,0 +1,3 @@
+A: 10. 500 feet, 20 bucks, flea market, whole spool: exact vs S5E12 sc2 Jim, in the sent SQL row. No memory claims.
+B: 10. Same facts, cited S5E12 sc.2, supported ("a whole spool" is in the line).
+C: 6. Core facts right (500 feet, $20, flea market). But it says the prank is in the cold open of "The Duel" (Season 5, Episode 12): in the dataset S5E12 is Prince Family Paper and The Duel is S5E11, so the title is wrong (not just numbering). Also "from Dwight's computer" is loosely supported (S5E12 sc1: Jim "it's a computer Dwight, computers have wires", Dwight follows the red cord and climbs a pole at sc2). Confident, no hedge: overconfident on the extra detail.

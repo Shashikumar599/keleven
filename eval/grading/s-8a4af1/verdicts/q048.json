@@ -1,0 +1,115 @@
+{
+ "question_id": "q048",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Meredith first (S4E1 sc.8, sc.25, exact), fire drill later in Stress Relief, the latter labelled [memory] and correct.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 9,
+     "reader": 9
+    },
+    "parts": [
+     {
+      "part": "order",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "B": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Meredith first (S4E1 Fun Run), fire drill in Stress Relief S5 (split numbering E14-15 accepted).",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 9,
+     "reader": 9
+    },
+    "calibration": "ok",
+    "parts": [
+     {
+      "part": "order",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "C": {
+   "score": 2,
+   "verdict": "refused",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Honest refusal: gives the Meredith fact with real cites but the fire-drill scenes (S5E13 sc.1-2; the words 'fire drill' never appear) were not sent.",
+   "details": {
+    "lens_scores": {
+     "fact": 2,
+     "faithfulness": 9,
+     "reader": 3
+    },
+    "parts": [
+     {
+      "part": "Meredith event",
+      "ok": true
+     },
+     {
+      "part": "order",
+      "ok": false
+     }
+    ]
+   }
+  },
+  "D": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "Meredith first, fire drill in Stress Relief (labelled memory), correct; adds a memory-labelled link between the drill and the apology letter (S5E13 sc.46 shows only the letter), slight overreach.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 8,
+     "reader": 8
+    },
+    "parts": [
+     {
+      "part": "order",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "E": {
+   "score": 2,
+   "verdict": "refused",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Honest refusal: states the Meredith event in S4E1 but says the fire drill is not in the evidence; the fire-drill scenes were not sent.",
+   "details": {
+    "lens_scores": {
+     "fact": 2,
+     "faithfulness": 9,
+     "reader": 3
+    },
+    "parts": [
+     {
+      "part": "Meredith event",
+      "ok": true
+     },
+     {
+      "part": "order",
+      "ok": false
+     }
+    ]
+   }
+  }
+ }
+}

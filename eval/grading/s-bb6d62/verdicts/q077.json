@@ -1,0 +1,55 @@
+{
+ "question_id": "q077",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "Correct no: he married Angela and had an affair with Oscar (S9E6 sc.44); the marriage is stated without a sent scene saying so and the S9E14 cite is weak.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 8,
+     "reader": 7
+    },
+    "premise_true": false,
+    "outcome": "corrected"
+   }
+  },
+  "B": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Correct no, married Angela, affair with Oscar, came out in S9E19; small slip calling Wesley Silver his 'campaign manager' (he is Chief of Staff, S9E19 sc.33).",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 7,
+     "reader": 9
+    },
+    "premise_true": false,
+    "outcome": "corrected",
+    "calibration": "ok"
+   }
+  },
+  "C": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Correct no, with the affair cited to S9E6 sc.44 and the marriage to Angela and 'did not end up with Oscar' labelled [memory].",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 9,
+     "reader": 7
+    },
+    "premise_true": false,
+    "outcome": "corrected"
+   }
+  }
+ }
+}

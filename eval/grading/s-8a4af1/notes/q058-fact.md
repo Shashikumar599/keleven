@@ -1,0 +1,6 @@
+FACT lens, q058 (reference: Oscar Martinez).
+A: 6. Oscar is right. Extra claim wrong: says the senator came out in S9E18 "Promos" and was also involved with his campaign manager "Thomas". In the transcripts the press conference is S9E19 sc.32-33 and the man named is "Chief of Staff Wesley Silver"; no "Thomas" (only "Ms. Thomas", S9E7 sc.22, a different person) and no "campaign manager" exists in season 9. Wrong name, role and episode on an extra claim of substance.
+B: 8. Oscar right, cited S9E6 sc.2 and S9E7 sc.18 (both check out). Memory extra: senator also seeing his "campaign manager" - actual role is Chief of Staff Wesley Silver (S9E19 sc.33); name not given, no episode given. "Betraying both Angela and Oscar": Oscar says "What?!" and Angela gasps, same scene. Small role slip.
+C: 8. Oscar right; cites S9E7 sc.18, S9E8 sc.25 (Dwight: "He and the senator are gaying each other"), S9E14 sc.9 ("Angela's husband and I are in love"), all verified. Same extra memory slip "campaign manager" (really Chief of Staff, S9E19 sc.33).
+D: 10. Oscar; S9E6 sc.2, S9E7 sc.18, S9E18 sc.29 (Oscar: "They caught us kissing on Halloween") all verified.
+E: 10. Oscar; S9E7 sc.18, S9E8 sc.25, S9E14 sc.9 verified.

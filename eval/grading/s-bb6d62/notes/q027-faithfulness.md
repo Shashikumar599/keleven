@@ -1,0 +1,3 @@
+A: 10. Michael, S6E23 sc.17; quotes exact ("I am Beyonce always." / "You're Ali Larter, I'm Beyonce."); context (infidelity talk with Andy) matches sc.17.
+B: 10. Same, supported by the sent SQL row and sc.17.
+C: 7. Memory, knows_answer true, uncertain empty. Speaker right, context right (Andy, Ali Larter, Donna: sc.17 Michael "his wife going off and having a little something-something with me"). But says "Season 6, Episode 25"; The Chump is S6E23 in the episodes table. Overconfident detail error, plus the film name Obsessed which the transcript does not contain (memory, true to the reference).

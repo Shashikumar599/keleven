@@ -1,0 +1,49 @@
+{
+ "question_id": "q059",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Holly Flax, S4E14 sc.12, sc.13 (Toby training the new HR rep), sc.25; all verified.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    }
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Holly Flax in Goodbye, Toby; split-numbering episode label accepted.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 9,
+     "reader": 8
+    },
+    "calibration": "ok"
+   }
+  },
+  "C": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Holly Flax with real citations; small slip that Toby introduced her to colleagues (Dwight does, S4E14 sc.25), though Toby does show her the desk (sc.14).",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 10,
+     "reader": 10
+    }
+   }
+  }
+ }
+}

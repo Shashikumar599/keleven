@@ -20,15 +20,13 @@ _Caveats: Transcript spells it 'little-stitious' (often quoted as 'a little stit
 
 _Caveats: Context (Jim dressed as Dwight) is visual and only partly implied by the line ('Imitation is the most sincere form of flattery'); the quote wording is certain._
 
-## q003 [finish_the_quote] (low confidence)
+## q003 [finish_the_quote] (verified)
 **Q:** Finish the quote: "You miss 100% of the shots you don't take..."
 
 **Reference:** The completion is "- Wayne Gretzky" "- Michael Scott": Michael's whiteboard credits the quote to Wayne Gretzky and then signs it himself. This is a visual gag only; the transcripts don't contain it.
 
 
 _Caveats: No line, stage direction or mention of 'Gretzky', 'shots you don't take' or '100%' with this quote exists anywhere in the dataset; the gag is written on a whiteboard (visual-only). The answer is from well-known knowledge of the show, not verified in transcripts; episode not identified here. A grader should accept 'Wayne Gretzky - Michael Scott' (the attribution) as the completion; the question has no spoken continuation._
-
-This answer is correct
 
 ## q004 [finish_the_quote] (high confidence)
 **Q:** Finish the quote: "Whenever I'm about to do something, I think, 'Would an idiot do that?' And if they would..."
@@ -252,7 +250,7 @@ _Caveats: The basket's contents are visual only (not named in the transcript); a
 
 _Caveats: He appears on screen (video), not in person; transcript has 'Broccoli Rob' as the name (Andy also calls him 'Broccoli')._
 
-## q026 [detail] (medium confidence)
+## q026 [detail] (verified)
 **Q:** Who does Val say sent her flowers, and what name did that person give when calling Darryl for the address?
 
 **Reference:** Val says the flowers are from her mom. Darryl says the caller who asked him for the warehouse address ('real deep voiced woman') gave the name Brandon; Val laughingly agrees 'my mom's name is Brandon' (sarcastic: Brandon is her boyfriend, confirmed in After Hours S8E16). Special Project (S8E14).
@@ -261,9 +259,7 @@ _Caveats: He appears on screen (video), not in person; transcript has 'Broccoli 
 - S8E14 sc.33: Val: Thanks, they're from my mom. ... Darryl: She said her name was Brandon, I think. Your mom's name is Brandon? Val: [laughs] Yeah Darryl, my mom's name is Brandon.
 - S8E16 sc.22: Andy: ...our server is none other than Brandon, her boyf! Brandon: How you doing, Val?
 
-_Caveats: In the phone scene (sc.15) the caller never states his name in the transcript, and the fan transcript labels him 'Bob'; the name 'Brandon' comes only from Darryl's retelling in sc.33. 'Mom' is Val's cover / joke, not the truth; 'Brandon' is the expected answer. Darryl's 'real deep voiced woman' is sarcastic.
-
-Yes your answer is correct_
+_Caveats: In the phone scene (sc.15) the caller never states his name in the transcript, and the fan transcript labels him 'Bob'; the name 'Brandon' comes only from Darryl's retelling in sc.33. 'Mom' is Val's cover / joke, not the truth; 'Brandon' is the expected answer. Darryl's 'real deep voiced woman' is sarcastic._
 
 ## q027 [who_said] (high confidence)
 **Q:** Who says "I am Beyoncé, always"?
@@ -398,7 +394,7 @@ _Caveats: Kevin spilling the pot on the carpet is visual only and not described 
 
 _Caveats: Count is of transcript lines (speaker turns) in this fan transcript; another transcript source or counting sentences/words would give a different number. The only joint label containing Toby ('Gabe/Kelly/Toby') is outside Season 2, so no alternative label reading changes the S2 count. Episode numbering: two-part episodes are combined rows; S2 has no two-parters so this does not matter._
 
-## q040 [count] (medium confidence)
+## q040 [count] (verified)
 **Q:** How many times does Michael say "That's what she said", and who says it the second most?
 
 **Reference:** Michael says 'That's what she said' in 24 transcript lines (about 24 uses; 23-25 depending on counting a cut-off attempt and an inaudible final one). Second most: Dwight, 3 lines (S2E12, S3E12, S5E17). Pam also says it 3 times, but in one line/scene (S5E6, three in a row), so she ties Dwight by utterance count.
@@ -410,11 +406,8 @@ _Caveats: Count is of transcript lines (speaker turns) in this fan transcript; a
 - S5E6 sc.27: Pam: [in New York] That's what she said! That's what she said! That's what she said!
 - S7E21 sc.51: Michael: [...when he speaks it is inaudible now] That's what she said!
 
-_Caveats: Michael's 24 lines include: S4E8 sc.23 three lines in the deposition (two real uses plus 'Come again? That's what she said? I don't know...' playing dumb); S7E21 sc.51 the final inaudible one (transcribed but not heard on air). Not counted: S2E2 sc.24 'That's what she sai [clears throat]' (cut off; would make 25), the Deposition Reporter reading his line back, 'That's what HE said!' (S5E13 sc.35). Fan transcripts may miss some (e.g. Jim mouthing it along in S2E21 is a direction). Accept counts roughly 22-26 with a stated basis as correct; Dwight must be named second (ties with Pam acceptable).
+_Caveats: Michael's 24 lines include: S4E8 sc.23 three lines in the deposition (two real uses plus 'Come again? That's what she said? I don't know...' playing dumb); S7E21 sc.51 the final inaudible one (transcribed but not heard on air). Not counted: S2E2 sc.24 'That's what she sai [clears throat]' (cut off; would make 25), the Deposition Reporter reading his line back, 'That's what HE said!' (S5E13 sc.35). Fan transcripts may miss some (e.g. Jim mouthing it along in S2E21 is a direction). Accept counts roughly 22-26 with a stated basis as correct; Dwight must be named second (ties with Pam acceptable)._
 
-
-
-_I have added that's file ,use that for reference and update answer if needed
 ## q041 [count] (high confidence)
 **Q:** In how many episodes does Holly speak?
 
@@ -443,7 +436,7 @@ _Caveats: Counts are dataset lines (fan transcript rows), not words or screen ti
 
 _Caveats: Dataset line counts, not word counts or screen time. Dwight leads Jim by about 560 lines, so the ranking is robust to label variants._
 
-## q044 [count] (medium confidence)
+## q044 [count] (verified)
 **Q:** In which season are the Dundies mentioned most?
 
 **Reference:** Season 2 (mostly the episode 'The Dundies', S2E1): 30 spoken lines mention the Dundies (38 mentions), just ahead of Season 7 (27 lines, almost all in 'Michael's Last Dundies', S7E20). Other seasons are far behind (S4: 6, S1: 2, S6: 1).
@@ -453,11 +446,7 @@ _Caveats: Dataset line counts, not word counts or screen time. Dwight leads Jim 
 - S7E20 sc.8: Michael: So as you know, the Dundies are my legacy. So I'm going to need to train a replacement.
 - S7E20 sc.25: Michael: So that is how it ends. My last Dundies ever.
 
-_Caveats: Close race. Spoken dialogue: S2 30 lines vs S7 27. If stage directions are counted too (lines_full text or directions), S2 30 vs S7 30, a tie (S7 has 5 directions mentioning a Dundie, incl. S7E21 sc.10). Season 2 is the answer by spoken mentions; an answer of Season 7 with a stated reasoning (e.g. counting episodes/directions, or Michael's Last Dundies) should be treated as close (partial), not right. Answers that cite only the two Dundies episodes without counting are fine if they pick S2.
-
-
-
-This should be correct , can go with transcripts_
+_Caveats: Close race. Spoken dialogue: S2 30 lines vs S7 27. If stage directions are counted too (lines_full text or directions), S2 30 vs S7 30, a tie (S7 has 5 directions mentioning a Dundie, incl. S7E21 sc.10). Season 2 is the answer by spoken mentions; an answer of Season 7 with a stated reasoning (e.g. counting episodes/directions, or Michael's Last Dundies) should be treated as close (partial), not right. Answers that cite only the two Dundies episodes without counting are fine if they pick S2._
 
 ## q045 [list] (high confidence)
 **Q:** List the women Michael dates over the series.
@@ -476,9 +465,9 @@ This should be correct , can go with transcripts_
 - S6E23 sc.12: Michael: I like Donna. Is it wrong to keep seeing her? ... if you ask her husband ...
 - S5E7 sc.25: Michael: [standing outside hotel room... whispering] Do you want to get some breakfast or something? Concierge Marie: I am so tired.
 
-_Caveats: The five main items are certain. Minor items are a judgment call: Marie is a one-night hook-up, not dating; set-up dates are unnamed. Do not count: 'Tara' (S7E11 sc.47, a girlfriend Michael claims to make Holly jealous; Dwight doubts she exists), the 'European girlfriend' at Niagara (S6E4 sc.56, implied invention), the dead chair model (S4E10), or Julie (S2E19, a date that never happened). Benihana waitresses (S3E10) are a brief rebound outing; mentioning them is fine but not required. An answer listing the five main women is complete; the order of Jan's on/off phases is not required._
+_Caveats: The five main items are certain. Minor items are a judgment call: Marie is a one-night hook-up, not dating; set-up dates are unnamed. Do not count: 'Tara' (S7E11 sc.47, a girlfriend Michael claims to make Holly jealous; Dwight doubts she exists), the 'European girlfriend' at Niagara (S6E4 sc.56, implied invention), the dead chair model (S4E10), or Julie (S2E19, a date that never happened). Benihana waitresses (S3E10) are a brief rebound outing; mentioning them is fine but not required. An answer listing the five main women is complete; the order of Jan's on/off phases is not required. Added after the pilot grading: Julie (Happy Hour) and Margaret (Chair Model) are real set-up dates, optional items; the S2E19 Julie date never happened._
 
-## q046 [list] (medium confidence)
+## q046 [list] (verified)
 **Q:** Who manages the Scranton branch over the series, including acting and temporary managers?
 
 **Reference:** Michael Scott is the long-term manager (S1 to S7E21), with Jim as co-manager (S6E2 to S6E15, then briefly sole manager for a few hours in S6E15). After Michael leaves: DeAngelo Vickers (S7E19-22), Dwight as acting manager (S7E23), Creed as acting manager (end of S7E23 into S7E24), Robert California picked but took the CEO job instead (S8E1), Andy Bernard (S8E1-S8E21), Nellie Bertram (takes over S8E19, confirmed S8E21), Andy reinstated (S8E24 to S9E21), then Dwight as permanent manager (S9E21 to the finale).
@@ -496,9 +485,7 @@ _Caveats: The five main items are certain. Minor items are a judgment call: Mari
 - S8E24 sc.15: Andy: I convinced David Wallace to buy Dunder Mifflin back from Sabre. And at three o'clock today he's gonna walk in here and reinstate me as manager.
 - S9E21 sc.34: David Wallace: Will you be the new manager? Dwight: ... I was interim manager once, but then I shot that gun. But this isn't interim manager.
 
-_Caveats: 'Acting and temporary' managers are a judgment call: Creed and Robert California are optional (Creed's stint is short and partly visual; Robert never actually managed the branch). Charles Miner was a regional VP, not branch manager (David: 'You're still the branch manager', S5E18). Episode numbers use the dataset's combined numbering (e.g. Search Committee = S7E24 here). Jim being 'left in charge' for a day is not a managerial appointment.
-
-Anyone who says manager is fine , creed was also manager _
+_Caveats: 'Acting and temporary' managers are a judgment call: Creed and Robert California are optional (Creed's stint is short and partly visual; Robert never actually managed the branch). Charles Miner was a regional VP, not branch manager (David: 'You're still the branch manager', S5E18). Episode numbers use the dataset's combined numbering (e.g. Search Committee = S7E24 here). Jim being 'left in charge' for a day is not a managerial appointment._
 
 ## q047 [order] (high confidence)
 **Q:** Did Jim start buying his parents' house before or after he married Pam?
@@ -580,7 +567,7 @@ _Caveats: Sc.6 'Pam's a gold-digger' is a joke, not the reason; an answer giving
 
 _Caveats: Fact is from outside knowledge, marked as such; it is very well established. Grading: memory answers 'Rainn Wilson' = correct; transcript-only answers should decline (inventing a name from passages is wrong); both-source answers giving Rainn Wilson marked [memory] are correct._
 
-## q054 [off_camera] (medium confidence)
+## q054 [off_camera] (verified)
 **Q:** What happened to Michael after he left Scranton?
 
 **Reference:** Mostly off-camera. The transcripts only show that he moved to Colorado (Boulder, where Holly's parents live) to start a life with Holly (S7E21), and that he returns in the Finale (S9E23) as Dwight's surprise 'bestish mensch' at Dwight and Angela's wedding, now with many kids ('so many pictures of his kids he had to get two phones'). Nothing else about his life between S7 and the finale is shown.
@@ -591,19 +578,15 @@ _Caveats: Fact is from outside knowledge, marked as such; it is very well establ
 - S9E23 sc.76: Pam: Michael has so many pictures of his kids he had to get two phones with two numbers and he pays two bills. ... He just so happy to have a family plan.
 - S9E23 sc.84: Michael: [crying] I feel like all my kids grew up and then they married each other. It's every parent's dream.
 
-_Caveats: Off-camera kind: a transcript-only answer may say the transcripts barely cover it, but the finale scenes do give facts (Colorado with Holly, kids, returns as Dwight's best man), so citing them is correct and not beyond the evidence. Well established outside the transcripts (mark as memory): he married Holly and they live in Colorado with several children; in the finale he is Dwight's best man. The 'two phones' line is a joke about how many photos he has; the exact number of kids is not given in the transcripts. 'All my kids ... married each other' (sc.84) is Michael calling his former employees his kids, not his own children. Real-world: Steve Carell left the series after S7.
+_Caveats: Off-camera kind: a transcript-only answer may say the transcripts barely cover it, but the finale scenes do give facts (Colorado with Holly, kids, returns as Dwight's best man), so citing them is correct and not beyond the evidence. Well established outside the transcripts (mark as memory): he married Holly and they live in Colorado with several children; in the finale he is Dwight's best man. The 'two phones' line is a joke about how many photos he has; the exact number of kids is not given in the transcripts. 'All my kids ... married each other' (sc.84) is Michael calling his former employees his kids, not his own children. Real-world: Steve Carell left the series after S7._
 
-He settled with Holly this is answer_
-
-## q055 [off_camera] (medium confidence)
+## q055 [off_camera] (verified)
 **Q:** How many Emmy awards did The Office win?
 
 **Reference:** Off-camera: the transcripts do not cover the show's Emmy wins (no line mentions the Emmys). Well established outside the show [not from transcripts]: The Office won 5 Primetime Emmy Awards (from 42 nominations), including Outstanding Comedy Series in 2006; the others were Creative Arts/writing awards (e.g. writing for 'Gay Witch Hunt', 2007, and single-camera picture editing). A transcript-only answer should say the transcripts don't cover it.
 
 
-_Caveats: Not checkable in the transcripts: a search for 'emmy' returns nothing (only Dundie awards). Figure is from general knowledge (Wikipedia-style summary: 5 wins of 42 Primetime nominations); sources differ slightly on the exact count and categories (Primetime vs Creative Arts), so 4-5 with the 2006 Outstanding Comedy Series win should be accepted.
-
-This is where transcripts fail and what ever answer come from internet scraping is fine_
+_Caveats: Not checkable in the transcripts: a search for 'emmy' returns nothing (only Dundie awards). Figure is from general knowledge (Wikipedia-style summary: 5 wins of 42 Primetime nominations); sources differ slightly on the exact count and categories (Primetime vs Creative Arts), so 4-5 with the 2006 Outstanding Comedy Series win should be accepted._
 
 ## q056 [multi_hop] (high confidence)
 **Q:** The woman Dwight has a son with: who was she engaged to before Dwight?
@@ -650,7 +633,7 @@ _Caveats: Erin's 'Oscar is with the Senator too?' (S9E19) hints the senator may 
 - S4E14 sc.25: Dwight: Accounting department, listen up. Holly, Human Resources.
 - S7E18 sc.34: Michael: This is where Toby announced that he was going to Costa Rica. Happiest day of my life. Until the day you came to replace him.
 
-## q060 [multi_hop] (medium confidence)
+## q060 [multi_hop] (verified)
 **Q:** Who does Kelly run off with in the finale, and what is his job?
 
 **Reference:** Kelly runs off with Ryan Howard (not her fiance Ravi). In the Finale (S9E23) Ryan gets Ravi to take baby Drake inside, Kelly and Ryan kiss and leave together ('We're running off into the sunset'), leaving the baby behind. Ryan's job is not stated in the finale; earlier in S9E1 Toby says Ryan quit Dunder Mifflin and moved to Ohio. Ravi, the man Kelly leaves, is a pediatrician (S9E23 sc.66; S9E1 calls him a pediatrics professor).
@@ -661,9 +644,7 @@ _Caveats: Erin's 'Oscar is with the Senator too?' (S9E19) hints the senator may 
 - S9E23 sc.66: Kelly: Ravi is a pediatrician and some of his patients are total uggos.
 - S9E1 sc.11: Toby: Shortly after Kelly left, Ryan quit and also moved to Ohio, for what he claimed were unrelated reasons.
 
-_Caveats: The question's 'what is his job' suggests the asker may be thinking of Ravi (pediatrician); but Kelly runs off with Ryan, abandoning Ravi. Grade: naming Ravi as the one she runs off with is wrong. For the job part, credit an answer that says Ryan's job isn't stated in the finale, or gives his former Dunder Mifflin roles (temp/ salesman/ ex-VP) as background; mentioning that Ravi is a pediatrician is a correct extra. An answer giving Ryan a specific current job not in the show is a wrong extra claim. Rubric kind fits imperfectly: this is effectively a partly mis-framed question.
-
-this is correct in the end he left ravi and ran with howard _
+_Caveats: The question's 'what is his job' suggests the asker may be thinking of Ravi (pediatrician); but Kelly runs off with Ryan, abandoning Ravi. Grade: naming Ravi as the one she runs off with is wrong. For the job part, credit an answer that says Ryan's job isn't stated in the finale, or gives his former Dunder Mifflin roles (temp/ salesman/ ex-VP) as background; mentioning that Ravi is a pediatrician is a correct extra. An answer giving Ryan a specific current job not in the show is a wrong extra claim. Rubric kind fits imperfectly: this is effectively a partly mis-framed question._
 
 ## q061 [visual] (high confidence)
 **Q:** What costumes do Michael, Dwight, Jim and Pam wear in the Season 2 Halloween episode?
@@ -738,9 +719,7 @@ _Caveats: Visual, known from stage directions. Both parts required: smashes the 
 - S4E10 sc.30: Michael: ... she was just crazy smart and really manipulative ...
 - S5E10 sc.8: Phyllis: Angela just does what I ask her to do so I won't tell everyone that she's cheating on Andy with Dwight.
 
-_Caveats: Judgment question. A good answer picks one (Dwight, Jim, Ryan, Angela or Jan are all defensible), backs it with concrete schemes, and gives a counterpoint (e.g. Dwight's schemes usually fail and are transparent; Jim's are pranks rather than self-serving; Ryan is more a con man than a schemer of people). Readings to avoid: Dwight's sales boast 'My job is to manipulate the customer' (S5E6) as proof of character is weak; Kelly's 'She manipulates you' (S5E1, about Darryl's 6-year-old) is a joke; Michael is mostly clumsy rather than manipulative (his rumor-spreading in S6E1 is a bungled cover-up). Real actors are out of scope. Characters' insults about each other are not evidence on their own.
-
-Answer has to be jan
+_Caveats: Judgment question. A good answer picks one (Dwight, Jim, Ryan, Angela or Jan are all defensible), backs it with concrete schemes, and gives a counterpoint (e.g. Dwight's schemes usually fail and are transparent; Jim's are pranks rather than self-serving; Ryan is more a con man than a schemer of people). Readings to avoid: Dwight's sales boast 'My job is to manipulate the customer' (S5E6) as proof of character is weak; Kelly's 'She manipulates you' (S5E1, about Darryl's 6-year-old) is a joke; Michael is mostly clumsy rather than manipulative (his rumor-spreading in S6E1 is a bungled cover-up). Real actors are out of scope. Characters' insults about each other are not evidence on their own._
 
 ## q067 [counterfactual] (medium confidence)
 **Q:** How would the ending have changed if Pam had married Roy instead?
@@ -758,9 +737,7 @@ Answer has to be jan
 - S9E23 sc.86: Pam: Well, you... you bought the house without telling me, so I thought I could sell it without telling you.
 - S9E23 sc.116: Pam: ... There's a lot of beauty in ordinary things.
 
-_Caveats: Counterfactual: no right answer. A good answer takes a position on how the ending would differ, grounds it in what actually happened (called-off wedding, Roy's attitude to her art, her later growth, the Jim/Pam ending), clearly marks the alternative as speculation, and gives a counterpoint (e.g. Roy did change by S9: he is kinder, successful, plays piano for Laura, so a married Roy-Pam could have grown too; or Pam might still have pursued art). Readings to avoid: stating speculation as fact; claiming Pam actually married Roy; treating Roy's 'dodged a bullet... just kidding' (S9E2) as a serious verdict; talking about the actors (Jenna Fischer, David Denman) instead of the characters.
-
-Fine with whatever this is , you can draw whaterver way , answer grading matter much more in this_
+_Caveats: Counterfactual: no right answer. A good answer takes a position on how the ending would differ, grounds it in what actually happened (called-off wedding, Roy's attitude to her art, her later growth, the Jim/Pam ending), clearly marks the alternative as speculation, and gives a counterpoint (e.g. Roy did change by S9: he is kinder, successful, plays piano for Laura, so a married Roy-Pam could have grown too; or Pam might still have pursued art). Readings to avoid: stating speculation as fact; claiming Pam actually married Roy; treating Roy's 'dodged a bullet... just kidding' (S9E2) as a serious verdict; talking about the actors (Jenna Fischer, David Denman) instead of the characters._
 
 ## q068 [opinion] (medium confidence)
 **Q:** Which character likely had the most sex?
@@ -778,11 +755,7 @@ Fine with whatever this is , you can draw whaterver way , answer grading matter 
 - S7E14 sc.1: Kelly: We were making love, constantly.
 - S3E11 sc.10: Michael: ... Sex. We had sex. I had sex with her. I had sex with Jan.
 
-_Caveats: Opinion question; no count is possible from transcripts. Readings to avoid: Michael's roast of Meredith and Dwight/Michael's riff in Sex Ed (S7E4 sc.36, list of places, aimed at Oscar) are jokes; Michael's own sexual claims are often boasts; Andy's snowman story (S9E5) is a joke. Answering with real actors is out of scope. A good answer picks one (Meredith is the best-supported) and notes it is inference.
-
-Nothing can be said , just  
-  
-just random fun question difficult to answer , finw with whatever scoring is_
+_Caveats: Opinion question; no count is possible from transcripts. Readings to avoid: Michael's roast of Meredith and Dwight/Michael's riff in Sex Ed (S7E4 sc.36, list of places, aimed at Oscar) are jokes; Michael's own sexual claims are often boasts; Andy's snowman story (S9E5) is a joke. Answering with real actors is out of scope. A good answer picks one (Meredith is the best-supported) and notes it is inference._
 
 ## q069 [opinion] (medium confidence)
 **Q:** Which character hated another character the most?
@@ -798,11 +771,9 @@ just random fun question difficult to answer , finw with whatever scoring is_
 - S8E18 sc.17: Dwight: Well, Jim, I just want to say that we haven't always got along and at times, I've even hated your guts.
 - S9E9 sc.4: Oscar: ... until she tried to have my kneecap shattered for sleeping with her husband.
 
-_Caveats: Opinion question. Michael->Toby is comic and partly exaggerated, but the show consistently plays it as genuine dislike (the room even objects in S6E23); Toby does not reciprocate. Dwight-Jim is a rivalry that turns into friendship, so 'hatred' there is weaker. Answers about real actors are out of scope.
+_Caveats: Opinion question. Michael->Toby is comic and partly exaggerated, but the show consistently plays it as genuine dislike (the room even objects in S6E23); Toby does not reciprocate. Dwight-Jim is a rivalry that turns into friendship, so 'hatred' there is weaker. Answers about real actors are out of scope._
 
-michal to toby is right answer_
-
-## q070 [opinion] (low confidence)
+## q070 [opinion] (verified)
 **Q:** Which character has a short appearance but a high impact on the show?
 
 **Reference:** Judgment, no single answer. Plausible candidates with short runs but large plot impact: Charles Miner (about 7 episodes in S5) whose arrival drives Michael to quit and found the Michael Scott Paper Company (S5E19); Mr. Brown (one episode, Diversity Day S1E2, the show's early defining episode); DeAngelo Vickers (4 episodes, Michael's replacement); Brian the boom mic operator (about 5 episodes in S9) who breaks the documentary wall to comfort Pam; Holly (17 episodes) as Michael's love story is a stretch for 'short'; Mose, Robert California, Jo Bennett also arguable.
@@ -813,9 +784,7 @@ michal to toby is right answer_
 - S9E13 sc.1: Brian: It's fine. It was my first slip up in nine years of miking you.
 - S7E21 sc.40: DeAngelo: ... I can say, is that he is no Michael Scott.
 
-_Caveats: Highly open opinion question; any minor character with a clear plot consequence is acceptable if the impact is described correctly. Appearance counts (episodes with dialogue in the dataset): Mr. Brown 1, DeAngelo 4, Brian 5, Charles 7, Mose 9, Jo 9, Holly 17. Penalize claims of impact that didn't happen (e.g. wrong episodes) or picking a main cast member as 'short appearance'.
-
-Brian can be , but again debateable and many answers _
+_Caveats: Highly open opinion question; any minor character with a clear plot consequence is acceptable if the impact is described correctly. Appearance counts (episodes with dialogue in the dataset): Mr. Brown 1, DeAngelo 4, Brian 5, Charles 7, Mose 9, Jo 9, Holly 17. Penalize claims of impact that didn't happen (e.g. wrong episodes) or picking a main cast member as 'short appearance'._
 
 ## q071 [detail] (high confidence)
 **Q:** Whom did Mose hit?
@@ -828,7 +797,7 @@ Brian can be , but again debateable and many answers _
 
 _Caveats: Visual action known only from a stage direction. Dwight being hit by Mose's manure (S4E4) is implied by audio ('Ow!'), not shown in the transcript; an answer naming Dwight for that scene is partially defensible but the clear case is Andy. Watch for reversal: Angela slaps Mose in S8E24; Mose wrestling Ryan (S3E5) never happens, Ryan refuses._
 
-## q072 [list] (medium confidence)
+## q072 [list] (verified)
 **Q:** How many cousins did Dwight have?
 
 **Reference:** Dwight claims he has seventy cousins (S7E22 The Inner Circle: 'Congratulations on your one cousin. I have seventy.'). Only a few are identified on screen: Mose (his farm partner, the main one), Zeke (Mose's brother, 'Dwight's my cousin', S9E13/S9E17), cousin Amel in Ohio (S5E25), and Esther, his third cousin and later girlfriend (S9E22). The show gives no exact verified count beyond Dwight's boast.
@@ -841,9 +810,7 @@ _Caveats: Visual action known only from a stage direction. Dwight being hit by M
 - S6E16 sc.1: Dwight: [on the phone with a client] ... My cousin, uh, came down with a case of that nasty new goat fungus.
 - S9E5 sc.38: Dwight: They're for my cousin Mose. ... and his crazy cousin Mose. Other cousin Mose. (a cover story for himself)
 
-_Caveats: Kind mismatch: the question asks 'how many' (a count) but is filed as a list. The only number in the show is Dwight's boast of seventy, said to one-up DeAngelo; treat it as Dwight's claim, not a verified count. An answer of 'one (Mose)' or 'two (Mose and Zeke)' misses the stated 70 and is at most partial. 'Other cousin Mose' in S9E5 is Dwight disguising himself, not a second Mose. The goat-fungus cousin is part of a sales pitch and may be invented.
-
-fine with what got from transcripts_
+_Caveats: Kind mismatch: the question asks 'how many' (a count) but is filed as a list. The only number in the show is Dwight's boast of seventy, said to one-up DeAngelo; treat it as Dwight's claim, not a verified count. An answer of 'one (Mose)' or 'two (Mose and Zeke)' misses the stated 70 and is at most partial. 'Other cousin Mose' in S9E5 is Dwight disguising himself, not a second Mose. The goat-fungus cousin is part of a sales pitch and may be invented._
 
 ## q073 [false_premise] (high confidence)
 **Q:** Whom did Kelly marry?
@@ -884,9 +851,7 @@ _Caveats: Premise is false as stated (no evidence Jan conceived from Kevin). Nua
 - S5E24 sc.7: Phyllis: Close your mouth, sweetie. You look like a trout.
 - S6E7 sc.31: Phyllis: Michael. You know, when you think about it, it's not all your fault. I mean, who puts a Koi pond in a lobby?
 
-_Caveats: Opinion question. Readings to avoid: taking Creed's wild talking heads as harmless jokes when several are confirmed in plot (Debbie Brown, Finale police); or calling Phyllis purely sweet (the blackmail arc is real). 'Likeable to viewers' (Creed as a comedic favorite) vs 'likeable as a person' are both fair readings if the answer says which it means.
-
-phyliss right answer_
+_Caveats: Opinion question. Readings to avoid: taking Creed's wild talking heads as harmless jokes when several are confirmed in plot (Debbie Brown, Finale police); or calling Phyllis purely sweet (the blackmail arc is real). 'Likeable to viewers' (Creed as a comedic favorite) vs 'likeable as a person' are both fair readings if the answer says which it means._
 
 ## q076 [loaded] (high confidence)
 **Q:** Was Andy gay?
@@ -934,18 +899,16 @@ _Caveats: The Angela-senator wedding itself is off-camera (between S7E24 and S8E
 
 _Caveats: Main stages: (1) Jim ends it after the NY interview and goes back to Pam; (2) she doesn't get the corporate job (Ryan does) and leaves Scranton; (3) she becomes Utica branch manager; (4) later married (Dan) and pregnant. A good answer needs at least the breakup + Utica manager; marriage/pregnancy is supporting credit. Her S7E16 line is archival footage from Michael's movie, not a new appearance. Wrong claims to watch for: that Karen got the corporate job, that she was fired, or that her baby was Jim's (Michael's joke, denied S5E14 sc.14). Whether she transferred from Scranton immediately is stated only by Jim's talking head (S4E1)._
 
-## q079 [who_said] (medium confidence)
+## q079 [who_said] (verified)
 **Q:** Who said this, and when: "Jim. False. I do not miss him."
 
 **Reference:** Dwight says it, in the cold open of Gay Witch Hunt (S3E1), after Jim has transferred to Stamford: he fake-sobs 'Jim is gone. He's gone. I miss him so much... I cry myself to sleep, Jim!' then turns serious and denies it. The transcript records the fake-sobbing line and a [serious] direction but not the follow-up words themselves.
 
 - S3E1 sc.3: Dwight: [sobbing] Jim is gone. He's gone. I miss him so much. Ooooh I cry myself to sleep, Jim! [serious]
 
-_Caveats: The quoted words 'False. I do not miss him.' are NOT in the transcript: the fan transcript's line ends at '[serious]' and the next row is a different scene (S3E1 sc.4). Attribution to Dwight/S3E1 rests on this line being the obvious setup (only scene where Dwight says he misses Jim; the [serious] direction marks the turn) plus 'False.' being Dwight's catchphrase; the exact wording of the punchline cannot be verified here. No other scene has 'I do not miss him' with Jim. Accept 'season 3 premiere' / 'after Jim moved to Stamford' as the 'when'.
+_Caveats: The quoted words 'False. I do not miss him.' are NOT in the transcript: the fan transcript's line ends at '[serious]' and the next row is a different scene (S3E1 sc.4). Attribution to Dwight/S3E1 rests on this line being the obvious setup (only scene where Dwight says he misses Jim; the [serious] direction marks the turn) plus 'False.' being Dwight's catchphrase; the exact wording of the punchline cannot be verified here. No other scene has 'I do not miss him' with Jim. Accept 'season 3 premiere' / 'after Jim moved to Stamford' as the 'when'._
 
-yes dwight right answer_
-
-## q080 [opinion] (low confidence)
+## q080 [opinion] (verified)
 **Q:** Who is the most boring main character in The Office?
 
 **Reference:** Judgment, no single answer. Best-supported: Toby, whom the show itself frames as boring: Michael says everyone will 'vomit due to boredom' at his safety talk (S3E19), 'we're gonna die of boredom' at his radon talk (S6E23), and jokes about 'the boring police' (S7E11). Other defensible picks: Stanley (deliberately disengaged), Pam (calls her own job 'the most boring job in the office', S3E22, and 'I love my boring life', S9E1), Jim as the 'straight man' (but he is the main prankster), Gabe, Oscar, Pete and Clark (S9). Note Toby and Gabe are main-cast-adjacent; if 'main' means original core cast, Stanley or Pam are the usual candidates.
@@ -957,8 +920,285 @@ yes dwight right answer_
 - S9E1 sc.44: Dwight: Come on, this will be the only thrill of your boring life. / Pam: Dwight, you may find this hard to believe, but I love my boring life.
 - S1E1 sc.6: Jim: ... And... I'm boring myself just talking about this. (about his job)
 
-_Caveats: Opinion question with no fact core. Readings to avoid: taking Michael's insults of Toby as an objective verdict (they are Michael's bias, which is itself a joke), or Jim's/Pam's self-deprecation about their jobs as calling themselves boring people. Whether Toby counts as a 'main' character is debatable (he is in the main cast from early on). An answer should take a position and give reasons from the show.
+_Caveats: Opinion question with no fact core. Readings to avoid: taking Michael's insults of Toby as an objective verdict (they are Michael's bias, which is itself a joke), or Jim's/Pam's self-deprecation about their jobs as calling themselves boring people. Whether Toby counts as a 'main' character is debatable (he is in the main cast from early on). An answer should take a position and give reasons from the show._
 
+## q081 [list] (verified)
+**Q:** With whom does Dwight have a romantic relationship over the series?
 
+**Reference:** Dwight's real romantic relationships in the transcripts: Angela Martin (the main one: secret relationship from season 2, break-up in S4E3, on-and-off affair while she is engaged to Andy, then fiancee/wife at the end, S9E22-23), Isabel Poreba (a hotel hookup at Jim and Pam's wedding weekend, then dating/kissing in S6E19), and Esther (a farm girl he courts and dates in S9E17-20, though he does not end up proposing). Minor / short: Nellie (a kiss and a hotel key-card tryst as a negotiating ploy, S8E16) and Kelly (she kisses him once, S2E10).
 
-Toby right answer_
+- S2E16 sc.24: Dwight: Girlfriend. Yes, ... she's not really the kind of person you'd think would be into Valentine's Day. Pam: Tightly wound? Dwight: (smirking) Exactly.
+- S2E22 sc.40: Dwight: [Kisses Angela, she slaps him and walks away smiling]
+- S4E2 sc.16: Jim: Dwight and Angela dating. Have been for six months. Pam: they have been dating for like two years.
+- S4E3 sc.75: Dwight: I stopped shaving because my girlfriend broke up with me.
+- S5E1 sc.19: Angela: Well, that was the last time, Dwight. I mean it. Dwight: Monkey. [kisses her] Angela: No, no. I have a fiance I very much like!
+- S5E4 sc.27: Dwight: You either break off your engagement with that singing buffoon, apologize, and then date me, or you can say good-bye to this.
+- S8E13 sc.31: Dwight: Need I remind you that we were together a month before the wedding? (Angela's baby Philip, Dwight believes he is the father)
+- S9E16 sc.45: Dwight: Be with me, Monkey. ... The eighty or ninety years that I have left in this life...I want to spend with you.
+- S9E22 sc.69: Dwight kneels with the ring; Angela: Okay, yes...yes, I will! [they kiss]
+- S9E23 sc.72: Minister: I now pronounce you man and wife.
+- S6E4 sc.55: Dwight [walking out of hotel room with a woman]: ... Isabel: So I'll see you at the wedding? Dwight: You know it. [they kiss]
+- S6E4 sc.56: Dwight: Isabel was nice, but I hope she doesn't think this is going anywhere.
+- S6E19 sc.50: Dwight: You are an impressive specimen. Isabel: Thank you. [Dwight and Isabel kiss]
+- S9E18 sc.14: Dwight: Esther, you look radiant as always. Esther: Thank you. [Dwight kisses her forehead]
+- S9E18 sc.6: Angela: Dwight is dating a brussel sprout farmer named Esther.
+- S9E20 sc.30: Esther: ...I knew I was seeing you tonight. [Esther kisses him]
+- S9E22 sc.61: Dwight: I was thinking of proposing to Esther today. ... Jim: So what is the problem? Dwight: Angela.
+- S8E16 sc.38: Nellie: give me a key card to your room. Meet me in seven minutes ... [Dwight and Nellie kiss]
+- S2E10 sc.59: Kelly: Hey. [Kelly leans up and kisses him] Dwight: You shouldn't do things like that. The man is supposed to do that.
+
+_Caveats: Core = relationships presented as ongoing (several scenes or an explicit girlfriend/dating label): Angela, Isabel, Esther. Optional = one-scene kisses (Nellie, a negotiating ploy; Kelly, her initiative, Dwight not interested). Dwight's unnamed ex-girlfriends and the 'I have a girlfriend' claims of S2E21 are Angela or unverifiable; S3E20 'Karen' line is a parody. Offscreen/visual details (e.g. the Esther relationship's end, Jan, Pam) are not covered; Esther is dated only in S9E17-20 and never engaged (his 'Engaged... Check' in S9E22 sc.10 is a planned goal). Fan transcripts miss lines, so a fourth minor partner could exist; none found by searching dating/girlfriend/kiss/sleep terms near Dwight._
+
+## q082 [list] (verified)
+**Q:** Which couples get engaged over the series?
+
+**Reference:** Couples engaged in the series: Pam and Roy (long engagement, season 1, wedding called off in S3), Jim and Pam (Jim proposes at the rest stop, S5E1), Phyllis and Bob Vance (S3), Andy and Angela (Andy proposes, S4E14), Michael and Holly (Michael proposes in the office, S7E18), Angela and Robert Lipton, the Senator (S7E24), and Dwight and Angela (Dwight proposes with his grandmother's ring, she accepts, S9E22). Minor/offscreen: Kelly and Ravi (called her fiance, S9E1) and Kevin and Stacy (called his fiancee in passing, S2).
+
+- S1E1 sc.34: Pam: Roy's my fiance. We've been engaged about three years.
+- S3E1 sc.24: Pam: I didn't go through with the wedding. I got cold feet, a few days before.
+- S3E1 sc.42: Phyllis: I'm getting married to Bob Vance.
+- S4E14 sc.74: Andy: Tuna! [hugs Jim] I'm engaged!
+- S4E14 sc.77: Holly: Andy proposed to one of your accountants.
+- S5E1 sc.97: Jim: Pam, will you marry me? Pam: Yes! [they embrace and kiss]
+- S5E2 sc.1: Jim: Pam and I are engaged.
+- S7E18 sc.39: Michael: Holly Flax, marrying me will you be? Holly: Your wife becoming me will I. [everyone cheers]
+- S7E24 sc.30: Pam [looking at an engagement ring on Angela's finger]: It's gorgeous, Angela. Angela: ... he got down on one knee, and he said, will you be a Senator's ...
+- S9E22 sc.69: Dwight kneels with the ring; Angela: Okay, yes...yes, I will! [they kiss]
+- S9E1 sc.8: Toby: Kelly Kapoor is gone. Her fiance Ravi was hired as a pediatrics professor at Miami university.
+- S2E18 sc.7: Kevin: Abby's my fiancee Stacy's daughter
+
+_Caveats: Core = engagements shown on screen or central to a storyline. Phyllis-Bob is made optional because the engagement itself is never shown, only 'I'm getting married' (S3E1) and the wedding (S3E15); I would accept it as correct too. Kelly-Ravi and Kevin-Stacy are only mentioned in passing (optional). NOT engagements: Michael-Carol (he proposes in public, Carol says no, S3E6 sc.41, 'you were never really engaged'); Michael 'I'm getting married' to his mother is a joke (S5E6 sc.3, 'Psych'); Dwight-Esther (considered, not done, S9E22 sc.61); Andy-Jessica (ring carried, no proposal, S8E12 sc.9); Ryan-Kelly married on impulse without an engagement shown. Kevin's S5E16 sc.25 'my fiance' (Lynn) is an unreliable aside. Fan transcripts miss visual proposals, and some off-camera engagements (e.g. Roy-Laura) are not covered._
+
+## q083 [list] (verified)
+**Q:** Which couples get married over the series?
+
+**Reference:** Couples who get married: Phyllis and Bob Vance (S3E15), Jim and Pam (wedding weekend in Niagara Falls, S6E4), Angela and Senator Robert Lipton (engaged S7E24; referred to as husband and wife from S8E1, wedding offscreen), Roy and Laura (Roy's wedding, S9E2), and Dwight and Angela (S9E23). Short-lived or unverified: Ryan and Kelly (an impulsive chapel marriage that is annulled/divorced within a week, S7E14), Michael and Holly (engaged S7E18, but a wedding is not shown or stated in the transcripts).
+
+- S3E15 sc.8: Michael: Phyllis is getting married. And I am in the wedding party.
+- S3E15 sc.16: Michael: It's your wedding. And you're nervous...
+- S5E25 sc.40: Bob Vance: Mind if I steal my wife?
+- S6E4 sc.76: Penny: [music starts playing and people start dancing down the isle] I begged them not to. (the Jim/Pam wedding procession)
+- S6E4 sc.77: Jim: I bought those boat tickets the day I saw that You Tube video... The boat was actually Plan C. The church was Plan B and Plan A was marrying her a long, long time ago.
+- S7E24 sc.65: Angela: Pam, you know how you and Jim did your ironic wedding? Pam: That was our dream wedding.
+- S8E1 sc.11: Angela: I am having a child with my husband, the Senator.
+- S9E1 sc.45: Angela: it's my husband's favorite cat... the only time I've seen him cry other than our wedding night.
+- S9E2 sc.7: Jim: We are going to Roy's wedding.
+- S9E2 sc.17: Roy: If it wasn't for you, I never would've met Laura.
+- S9E23 sc.72: Minister: I now pronounce you man and wife. [everyone cheers]
+- S7E14 sc.1: Kelly: Over the weekend, Ryan Bailey Howard and I got divorced. ... Andy: Sorry, when did you get married? Kelly: Ummm, like a week ago, we got really wasted and it just felt right.
+
+_Caveats: Core = weddings/marriages of main-cast couples that the transcripts support: Phyllis-Bob, Jim-Pam, Dwight-Angela, Angela-Robert (wedding itself offscreen, but husband/wife and 'wedding night' are stated). Optional: Roy-Laura (a minor, side-character wedding; only the wedding and name Laura are stated), Ryan-Kelly (legally a marriage by the characters' account, but a joke-like, week-long episode; I would credit it but not require it), Michael-Holly (the transcripts show only the engagement and the move to Colorado; any later wedding is not in the data, so an answer including it from memory cannot be checked, and an answer omitting it is fine). Not weddings: Dwight/Andy/Angela mock ceremony rehearsal at Schrute Farms (S5E9 sc.18), the cancelled Pam-Roy wedding (S3E1 sc.24), and Michael's 'I'm getting married' joke (S5E6 sc.3). The Jim-Pam secret Niagara boat ceremony is visual; the transcripts show the wedding weekend and S7E24 'ironic wedding'. Fan transcripts miss visual details._
+
+## q084 [story_arc] (verified)
+**Q:** What is the history between Jan and Michael across the series?
+
+**Reference:** Jan Levinson is Michael's corporate boss, then his girlfriend, then his ex, and finally the mother of a child that is not his. (1) Boss/subordinate: S1E1 sc.10 Jan gives Michael the downsizing news; S1E3 sc.3 she tells him to deliver bad news. (2) First kiss: after they win the county account at Chili's, they kiss (The Client, S2E7 sc.36); Michael pushes for 'closure' and she insists nothing happened (Performance Review, S2E8 sc.15, sc.28). In Casino Night (S2E22 sc.26, sc.39) Jan agrees to attend, Michael has also invited Carol, and Jan is left to be polite. (3) Secret affair: in Back from Vacation (S3E11 sc.32) Jan says he is wrong for her in every way but she is attracted to him, kisses him and tells him to meet at his condo. It continues in secret then goes public in Cocktails (S3E17 sc.20, sc.26: love-contract waiver, 'Jan and I are lovers'); the same night she throws herself at him in a bathroom and says it may have been a mistake to take it public (sc.36, sc.47). It stays tangled with work (The Negotiation S3E18 sc.37, sc.44, a third party must attend; Women's Appreciation S3E21 sc.6, sc.40, he tries to break it off by voicemail and she arrives and plays it back). In The Job (S3E23 sc.25, sc.34) she asks to get back together after a break and he agrees; Jan is fired by David Wallace while Michael is interviewing, and Michael withdraws his name (sc.65, sc.67); she moves in with him (sc.69). (4) Living together, Season 4: Jan is jobless, starts a candle business and is increasingly controlling and unstable (Fun Run/Dunder Mifflin Infinity S4E1-2 sc.52, S4E1 sc.59, S4E4 sc.8, sc.41, sc.72, sc.87 money trouble; The Deposition S4E8 sc.32, sc.46, her lawyer uses his diary and the Chili's parking-lot kiss, she says 'I love you too'). (5) End: at their Dinner Party (S4E9 sc.19, sc.20) a shouting fight ends with Jan throwing his Dundie at his plasma TV; police arrive, Michael goes off with Dwight and the relationship is over. In Chair Model (S4E10 sc.7, sc.30, sc.42, sc.44) Michael is on the rebound, says he's swearing off Jan, lives at Dwight's farm for a month and later says 'Jan and I had love... We did not have marriage'. (6) Aftermath: in Goodbye, Toby (S4E14 sc.64) Jan, pregnant, tells Michael he is not the father (sperm bank); he offers to go to Lamaze (sc.66, sc.81). Baby Astrid is born off screen; Michael meets her at the baby shower (S5E3 sc.17) and helps Jan in Weight Loss (S5E1 sc.113, sc.116). Later he refers to her as a former lover/disaster (S5E18 sc.7, S6E22 sc.16). Last on-screen meeting is Sex Ed (S7E4 sc.21, sc.23): a 'post mortem' of the relationship, where they agree it was exciting because it was wrong; she is happy as a single mom. Jan keeps appearing without him (S9E7, S9E15).
+
+- S2E7 sc.36: Jan: I am really- [Michael kisses Jan] Thrilled. [Michael and Jan kiss again] Let's go.
+- S2E8 sc.28: Michael: I just don't understand why you have to pretend like nothing happened. Jan: Because nothing did, Michael.
+- S2E22 sc.39: Michael: ...it has always been my understanding that we have an open relationship. (Carol and Jan both present)
+- S3E11 sc.32: Jan: You're wrong for me. In every way. But I still find myself wanting to... be with you. [kisses Michael] Wait 15 minutes... and meet me at your condo.
+- S3E17 sc.26: Michael: Jan and I are lovers. It feels so good to finally say that out loud.
+- S3E17 sc.47: Jan: ...Maybe it was a mistake to take it public.
+- S3E21 sc.40: Michael (voicemail): I think we need a little break, permanently... Jan arrives and plays it back.
+- S3E23 sc.25: Jan: I miss you. I want us to get back together.
+- S3E23 sc.65: David: The time has come for you to end your professional relationship with this company.
+- S3E23 sc.69: Michael: you could come and stay at my condo. Jan: my full-time job could be our relationship.
+- S4E8 sc.32: Michael: How can you give up my diary like that? ... Jan: I love you too.
+- S4E9 sc.19: Jan picks up Michael's dundie and throws it into his plasma screen tv
+- S4E9 sc.20: Dwight: Michael can come home with me. Jan: Bye Babe!
+- S4E10 sc.7: Michael: I was completely swearing off one woman. Jan.
+- S4E10 sc.44: Michael: Jan and I had love. We did not have marriage. We did have a baby carriage...
+- S4E14 sc.64: Jan: you are not the dad... I went to a sperm bank.
+- S5E3 sc.17: Michael: So this is Astird. Jan: Astrid.
+- S7E4 sc.21: Jan: Michael Scott, you are here for a post mortem.
+- S7E4 sc.23: Jan: if there's anything exciting about it it's because we both knew it was wrong!
+
+_Caveats: Main cause/spine: boss -> secret affair (from S2E7 kiss, S3E11 in earnest) -> public relationship (S3E17) -> Jan fired (S3E23) -> cohabitation -> Dinner Party breakup (S4E9) -> Jan's pregnancy by sperm donor, not Michael (S4E14) -> post mortem (S7E4). The breakup itself (the Dundie/TV fight) is shown at S4E9; the transcript does not show a formal 'breakup' line, it is inferred from Michael staying at Dwight's and S4E10 'after Jan and I...'. Jan's firing and Michael's role in it are visual-heavy; Michael says he did not tell her about it. Michael's Hawaii/Jamaica trip and many visual details are not in the transcripts._
+
+## q085 [story_arc] (verified)
+**Q:** How does the relationship between Andy and Erin change over the series?
+
+**Reference:** Andy and Erin go from mutual crush to couple to exes several times over. (1) Crush (Season 6): Andy tells the camera he likes Erin and hoped she would ask him out (Murder S6E9 sc.10); he gets her as Secret Santa (S6E12 sc.5); after his drum-line stunt (Sabre, S6E14 sc.25-26) each waits for the other to ask; in The Delivery (S6E16 sc.52, sc.65-67) Erin tells Michael she likes Andy, not Kevin, and Andy asks her out by fax. (2) First dates and dating: St. Patrick's Day (S6E17 sc.11, sc.16, sc.36) is their first date; Happy Hour (S6E19 sc.48) two dates; Secretary's Day (S6E20 sc.2, sc.22) their three-week anniversary. Erin throws cake and ends up hurt when she learns Andy was engaged to and slept with Angela (sc.22, sc.33: 'I can't trust Andy anymore'). (3) First breakup, off screen: by Nepotism (S7E1 sc.4-5) Erin is dating Gabe ('started dating Erin this summer'); the transcripts do not show the breakup itself. Andy plans to make her 'fall back in love with me' (Andy's Play S7E3 sc.5), friendly but awkward in PDA (S7E15 sc.10, sc.13, sc.33, Gabe is Erin's boyfriend and Andy has a new girlfriend); Gabe in S7E23 sc.8 asks if Andy is still in love with Erin; in Search Committee Erin asks Andy for a date with a sock puppet and he says he does not think they should (S7E24 sc.63). (4) Andy rejects, Erin pines (Season 8): Andy is dating Jessica (S8E5 sc.39, 31 dates), Erin tries to make him jealous (Pool Party S8E12 sc.12, sc.17, sc.26), says he 'rejected me' (Test the Store S8E17 sc.23, Special Project S8E14 sc.5). (5) Reunion: in Get the Girl (S8E19 sc.26, sc.36, sc.40) Andy drives to Florida to win her back while technically still dating Jessica, Erin says he has broken her heart and 'we're not meant to be', but then runs after him and they kiss; Welcome Party (S8E20 sc.11, sc.24) he dumps Jessica and declares love for Erin; Angry Andy S8E21 sc.8 they are a couple ('my girlfriend's back'); Fundraiser S8E22 sc.5 Erin says Andy is her date. (6) Together while Andy is away, then end: Erin is Andy's girlfriend through S9 (S9E3, S9E6 sc.14, sc.22, S9E12 sc.34). During Andy's three-month absence on his boat she grows close to Pete (S9E12 sc.30-34). On his return (Couples Discount S9E15 sc.3, sc.35) she breaks up with him ('We're breaking up'); in Moving On (S9E16 sc.1, sc.3, sc.5, sc.21, sc.47) she and Pete are seeing each other, Andy is bitter and stalks her phone and uses a meeting to embarrass them. Later Oscar says 'Erin just dumped you' (S9E20 sc.11). Final state: exes, Erin with Pete, Andy chasing acting.
+
+- S6E9 sc.10: Andy: I like Erin. There, I said it. I was kinda hoping she would ask me out
+- S6E16 sc.52: Erin: I'm so sorry if I gave you the impression I'm into Kevin, but I'm not. I like Andy.
+- S6E16 sc.67: Andy: I'm... I'm asking you out. Erin: Oh, my God. That's amazing.
+- S6E17 sc.11: Andy: Erin and I have our first date tonight, and it has to be perfect.
+- S6E20 sc.22: Erin: [throws a piece of cake at Andy's face] I know about Angela! I know that you were engaged to her and that you were sleeping with her!
+- S7E1 sc.4: Gabe: I started dating Erin this summer.
+- S7E3 sc.5: Andy: my plan is to make Erin fall back in love with me tonight.
+- S7E24 sc.63: Andy: Listen, I'm really flattered, but I don't think we should.
+- S8E5 sc.39: Andy: Erin I think you know I've been dating someone. ... Thirty-one [dates].
+- S8E17 sc.23: Erin: My best friend was my boss, Andy. We dated for a while, but since then, he rejected me
+- S8E19 sc.36: Erin: Andy, you broke my heart. ... I think at some point... we're not meant to be.
+- S8E19 sc.40: Erin: Andy I love you! Stop! Oh, this is the wrong Prius. [horns honking as they kiss in the street]
+- S8E20 sc.24: Andy: I'm in love with a girl. Her name is Erin Hannon
+- S9E12 sc.34: Erin: Andy is my boyfriend. Pete and I are just friends.
+- S9E15 sc.35: Erin: We're breaking up. ... I was worried that you were dead. You were gone for three months.
+- S9E16 sc.5: Erin: Pete and I have started seeing each other and Andy still doesn't know.
+- S9E20 sc.11: Oscar: Erin just dumped you.
+
+_Caveats: Main arc (core): crush -> dating (S6) -> split and Erin with Gabe, Andy later with Jessica, Erin pines (S7-S8) -> Andy wins her back (S8E19-20) -> together through S9 -> Erin dumps him on his return from the boat (S9E15) and goes with Pete. Several transitions are off screen in the transcripts: the first breakup between S6E20 and S7E1, Andy's reasons for rejecting Erin in S7-S8, and the explicit moment Andy and Jessica end. Scene text for who is dating whom in Season 8 relies on talking heads. S9E15 sc.35 is the break-up line; I did not read the surrounding scene in full beyond the quoted line._
+
+## q086 [list] (verified)
+**Q:** Which marriages and affairs of Stanley are shown over the series?
+
+**Reference:** Marriage: Stanley is married to Teri throughout (named at the Dundies S2E1 sc.25; seen at Night Out S4E11 sc.48; 'Teri, Stanley's wife' in Gossip S6E1 sc.9). Affair 1, shown: Cynthia, his former rehab nurse and also married (Gossip S6E1 sc.15, sc.30: Teri had already caught them once; Michael tells the office and it is true); Stanley brings Cynthia to Niagara (S6E4 sc.20, a shared hotel room) and Dwight/Gabe call her his mistress at the Garden Party (S8E4 sc.19, sc.34). In Promos (S9E18 sc.22) Phyllis says 'I thought Terry knew about Cynthia?' and Stanley answers 'She does. But neither of them know about Lydia', so Teri knows of Cynthia. Affair 2, only mentioned: Lydia (S9E18 sc.22, no scene with her). Stanley says in A.A.R.M. that during the documentary he has 'had three affairs' (S9E22 sc.20); only Cynthia and Lydia are named. The marriage ends only by mention: in the Finale he lives alone in Florida and says 'The man who delivered my divorce papers came by fan boat' (S9E23 sc.49); the transcripts do not name who filed or show the divorce. Hints of earlier marriages are a joke only: 'I used to tell my wife... I say the same thing to my current wife, and I'll say it to my next one too' (S4E12 sc.13), which implies an earlier wife but does not show one.
+
+- S2E1 sc.25: Stanley: I did, my wife's name is Terri.
+- S6E1 sc.9: Phyllis: Teri, Stanley's wife. She's at an interior decorating expo in Philly.
+- S6E1 sc.15: Stanley: Cynthia's been keeping me company. She was my nurse, when I was in rehabilitation. ... Yeah, but Michael, I'm going to go break it off.
+- S6E1 sc.30: Michael: Teri was already suspicious, because she had caught Stanley and Cynthia a few months ago... Cynthia, also married.
+- S6E4 sc.20: Stanley: Are you crazy? I brought Cynthia with me.
+- S8E4 sc.19: Dwight: STANLEY HUDSON AND HIS MISTRESS CYNTHIA!
+- S9E18 sc.22: Phyllis: I thought Terry knew about Cynthia? Stanley: She does. But neither of them know about Lydia.
+- S9E22 sc.20: Stanley: Over the course of this documentary I've had three affairs.
+- S9E23 sc.49: Stanley: I'm living in Florida now... The man who delivered my divorce papers came by fan boat
+- S4E12 sc.13: Stanley: I say the same thing to my current wife, and I'll say it to my next one too.
+
+_Caveats: Only one marriage (Teri) and two named affairs (Cynthia, Lydia) are supported. Cynthia is the only affair with scenes (S6E1, S6E4, S8E4 mention); Lydia, the third affair and the divorce are mentions only. The transcripts do not say the divorce papers came from Teri (inferred only); S9E22 sc.20 does not say the number includes Lydia. Teri's presence in scenes is mostly visual (stage directions only); lines often mislabel 'Terri' spelling. Not checked: any further Stanley relationship scenes not matching the keyword searches (cynthia, lydia, teri, wife, affair, mistress, divorce)._
+
+## q087 [story_arc] (verified)
+**Q:** How does Jim and Pam's relationship progress from the first season to the end? Give the key episodes.
+
+**Reference:** Main arc: Jim's unspoken crush on Pam (engaged to Roy) in S1-S2 becomes an open confession, then years of bad timing and other partners, then a relationship, engagement and marriage, then a late test of the marriage over Jim's Philadelphia job. Key stages with episodes: S1 (Pilot, Hot Girl) Jim is her work friend while she is engaged to Roy (S1E1 sc.34; S1E6 sc.15). S2: Jim tells Michael on the booze cruise about a crush, publicly downplays it (S2E13 sc.35, 37); S2E22 Casino Night, Jim tells Pam 'I'm in love with you', she says 'I can't' (S2E22 sc.51), then they kiss (S2E22 sc.54, S3E1 sc.2). S3: Pam calls off her wedding to Roy (S3E1 sc.24); Jim transfers to Stamford and dates Karen (S3E9 sc.3), Pam is briefly back with Roy (S3E16 sc.8) and then tells Roy about the kiss and ends it (S3E17 sc.46); Jim returns with Karen; in The Job (S3E23) Jim, after interviewing in NYC, asks Pam out to dinner (S3E23 sc.78). S4: Jim breaks up with Karen (S4E1 sc.4); Pam and Jim date (S4E1 sc.43, public by S4E2 sc.2, S4E2 sc.60 'I'm dating Jim'). Jim has bought a ring a week after they began dating (S4E10 sc.34); he plans to propose at the S4E14 party but Andy proposes to Angela first and Pam leaves for the Pratt Institute in NYC (S4E14 sc.15, 30, 70). S5E1 Jim proposes (S5E1 sc.97); they announce it (S5E2 sc.1). S6E4 Niagara: they marry, Pam five months pregnant (S6E4 sc.8, 66, 77). S6E16 The Delivery: daughter Cece is born. S8: second child Phillip (S8E4 sc.35; S8E16). S9: Jim secretly takes a Philadelphia sports-marketing job (Athleap/Athlead); Pam is hurt, they fight (S9E15 sc.28, 33), Pam says she will not move the family to Philly (S9E19 sc.42), couple's therapy (S9E20 sc.10); Jim steps back from Athleap and returns full time (S9E22 sc.16, 40); in the finale (S9E23) they move on together (Austin mention, S9E23 sc.99) and Jim calls Pam 'my wife' (S9E23 sc.55).
+
+- S1E6 sc.15: Jim: Pam and I are good buddies. I'm sort of Pam's go-to guy for her problems ... her fiance Roy.
+- S2E13 sc.35: Jim: Well the cats out of the bag. I used to have a crush on Pam and now I [hesitate] don't.
+- S2E22 sc.51: Jim: I was just... I'm in love with you. ... Pam: Well, I um... I... I can't.
+- S2E22 sc.54: Pam: ... Listen, Jim... [They kiss]
+- S3E1 sc.24: Pam: I didn't go through with the wedding. I got cold feet, a few days before.
+- S3E9 sc.3: Jim: I have started to see Karen. It's very new ...
+- S3E17 sc.46: Pam: Remember that casino night about a month before we were supposed to get married? I kissed Jim. ... Roy: This is so over.
+- S3E23 sc.78: Jim: Pam. ... Um, are you free for dinner tonight? Pam: Yes. Jim: All right. Then... it's a date.
+- S4E1 sc.4: Jim: I broke up with Karen after the job interview ...
+- S4E2 sc.60: Pam (to Ryan): I'm uh, I'm dating Jim.
+- S4E10 sc.34: Jim: [shows camera an engagement ring] Got it a week after we started dating.
+- S4E14 sc.15: Pam: Guess who just got into the Pratt School of Design. ... I have to go to New York for three months.
+- S4E14 sc.70: Andy proposes to Angela on the microphone while Jim puts his ring back in his pocket.
+- S5E1 sc.97: Jim: Pam, will you marry me? Pam: Yes! [they embrace and kiss]
+- S5E2 sc.1: Jim: Pam and I are engaged.
+- S6E4 sc.66: Pam: ... when we were getting married and I'm five months pregnant ...
+- S6E4 sc.77: Jim: ... Plan A was marrying her a long, long time ago. Pretty much the day I met her.
+- S6E16 sc.36: Jim: Oh, my God! Look at her! baby, she's so beautiful!
+- S8E4 sc.35: Pam: ... I also would like to toast Phillip Halpert ...
+- S9E15 sc.28: Jim: ... Who knows less about his marriage than the sound guy.
+- S9E19 sc.42: Pam: ... I am not moving our family to Philly.
+- S9E20 sc.10: Pam: So, we had couple's therapy.
+- S9E22 sc.16: Jim: ... I almost lost Pam over this business. I'm not risking that again.
+- S9E23 sc.55: Jim: She pays me back every day just by being my wife so that's fine.
+
+_Caveats: Much of this arc is visual (glances, the S5E1 gas-station proposal setting, the S6E4 Niagara boat ceremony, the S9E15 Valentine's Day fight) and the fan transcript captures only the dialogue; the exact content of the S2E22 kiss in the transcript is a parenthetical stage direction and its order against 'I can't' is not fully clear from text alone. Episode numbers use the dataset's combined numbering. The S3E23 dinner date is clear, but the first actual date is not shown and the S4E1 'we're dating' scene (sc.43) is the first on-record statement; Jim says they had been dating 'a couple months' by S4E2 sc.2. S8 Phillip's birth is not shown directly in the scenes I read (only toasts and mentions), and the specifics of how the Philly conflict resolves (a DVD gesture, the Austin move) come from finale fragments, not a full read of S9E23._
+
+## q088 [list] (verified)
+**Q:** Who were Michael's bosses over the series?
+
+**Reference:** Michael's direct bosses at Dunder Mifflin, in order: Ed Truck (his predecessor/old boss, Scranton manager before him), Jan Levinson (VP Northeast region, his boss S1-S3 until fired at the end of S3), David Wallace (corporate CFO and later CEO, above Michael throughout and his direct boss after Jan), Ryan Howard (briefly VP Northeast sales, S4 only, 'I'm your boss'), Charles Miner (new VP Northeast, S5E18, whom Michael quit over), and Jo Bennett (CEO of Sabre after it bought Dunder Mifflin, S6E14-on). Michael himself lists 'David, Charles, Jan, Ed Truck' as his bosses (S7E8). Optional/debatable: Gabe (Sabre corporate liaison, chain of command in S7 although Michael insists 'Gabe is not the boss'), Robert California (CEO who arrives only after Michael has left), Alan Brand (company CEO seen once at a shareholder meeting in S6E10), Mr. Figaro (joke 'other boss' at his second job).
+
+- S7E8 sc.23: Michael: Better men than Gabe have tried to be my boss. David got fired. Charles got fired. Jan went crazy. Ed Truck, who I liked, got decapitated.
+- S3E4 sc.5: Michael: ... My old boss Ed Truck has died.
+- S4E2 sc.28: Jan: ... Ed Truck, your old boss, threatened ...
+- S2E8 sc.5: Michael: My boss is coming in today, the lovely Jan Levinson-Gould ...
+- S2E22 sc.4: Jan: ... your branch is currently number four of the five branches that I oversee.
+- S3E17 sc.6: Michael: ... my boss's boss's boss, the CFO ... is having a little shindig for all the managers
+- S3E23 sc.81: Michael: Jan got fired. And I realized that I could not work for a company that would fire my girlfriend.
+- S4E2 sc.10: Ryan: ... I know I used to be a temp here, but now everything is different. I'd like your respect. I am your boss now.
+- S4E4 sc.45: Ryan: I'm your boss. (replying to Michael's 'my boss can back you up')
+- S4E13 sc.46: Michael: ... my old temp is now my boss, so, gives you an idea of how quickly you can move up
+- S5E18 sc.4: Michael: ... Sir Charles Miner and he is the new VP for the Northeast region.
+- S5E18 sc.34: Michael: [gets up to shake David's hand] I quit.
+- S6E15 sc.2: Michael: Today, Jo Bennett, the CEO from Sabre, is coming to see us here for the first time.
+- S6E15 sc.9: Jo: ... I am CEO of Sabre International ...
+- S7E6 sc.29: Michael: ... if you have something to say, it goes through me, and then I take it to Gabe. Chain of command.
+- S7E8 sc.12: Michael: What? No Gabe is... Gabe is not the boss.
+
+_Caveats: Core list follows Michael's own S7E8 roll call (David, Charles, Jan, Ed Truck) plus Jo Bennett. Ed Truck was Michael's old boss per S3E4/S4E2, but appears on screen only as a past figure (S2E14 meeting). Ryan is a legitimate boss in S4 but short-lived and comedic, so optional. Whether acting/corporate heads like Gabe, Alan Brand or Robert California count is a judgment call. Titles come from dialogue; the transcripts do not state a formal org chart._
+
+## q089 [list] (verified)
+**Q:** Whom does Angela date or marry over the series?
+
+**Reference:** Angela's partners on screen: (1) Dwight Schrute, her secret on-and-off partner. They had been dating roughly two years by S4E2 (Pam: 'for like two years, since before your barbeque'; Jim: 'six months'), ended when Dwight's handling of her cat Sprinkles ended it (S4E2: 'I can't be with you. Every time I look in your eyes I see Sprinkles' stiff lifeless body'). Dwight then resumes the affair while she is engaged to Andy (revealed S5E10-S5E11). Later a baby-making 'contract' arrangement with Dwight (S6E16 'Bare my child', S7E3, S7E8), and a final reunion and engagement to Dwight in S9E22 (marriage ceremony in S9E23 finale). (2) Andy Bernard: couple by S4E9 (Dinner Party), engaged S4E14 (proposal in the parking-lot party), wedding planning S5; Angela cheats with Dwight during the engagement; exposed in S5E11 The Duel; Andy cancels the wedding in S5E11 sc.32. (3) Senator Robert Lipton: boyfriend S7E11, engaged S7E24, husband by S8E1, son Phillip (S8E13); marriage a sham (he is gay, affair with Oscar S9E6-S9E8, S9E19), Angela cheated on him with Dwight (S9E18) and they separate/divorce (S9E20-S9E22).
+
+- S4E2 sc.16: Jim: Umm, Dwight and Angela dating. Have been for six months. / Pam: No, they have been dating for like two years. Since before your barbeque.
+- S4E2 sc.37: Angela: I can't do this. I can't be with you. Every time I look in your eyes I see Sprinkles' stiff lifeless body.
+- S4E9 sc.7: Michael: ... it will be me and Jan, and Pam and Jim, and Angela and Andy. (Andy and Angela arrive as a couple)
+- S4E14 sc.70: Andy: Angela, will you do me the honor... of giving me your tiny hand in marriage? Angela: ...Okay.
+- S5E10 sc.46: Phyllis: Angela's having sex with Dwight. I caught them doing it after Toby's going away party.
+- S5E11 sc.17: Andy: That you're sleeping with Dwight. Angela: ... we were together, and then he killed sprinkles, and then we stopped, and... I don't know exactly when we started up again.
+- S5E11 sc.32: Andy: ... I would like to cancel a wedding cake that I had ordered.
+- S6E16 sc.9: Dwight: I want to have a child for business reasons and I want you to be the mother ... bang it out.
+- S7E3 sc.11: Dwight: Angela? Don't like her anymore ... Just contractually obligated to make a baby with her.
+- S7E11 sc.58: Angela: Hey everybody, this is my boyfriend, Senator Robert Lipton.
+- S7E24 sc.30: Angela: ... he got down on one knee, and he said, will you be a Senator's wife?
+- S8E1 sc.11: Angela: I am having a child with my husband, the Senator.
+- S9E6 sc.2: Oscar: ... Senator Lipton and I are having an affair.
+- S9E18 sc.33: Angela: Yes and I cheated on you with Dwight, it looks like they got it on film.
+- S9E19 sc.33: Robert: It wasn't until my marriage to Angela that I realized how...charmless I find the female body.
+- S9E21 sc.53: Angela: No, not the senator. I love Dwight.
+- S9E22 sc.69: Dwight: ... I love you! (proposal) Angela: Okay, yes...yes, I will! ... Phillip's your son.
+
+_Caveats: Start of the Dwight relationship is not shown on screen in the transcripts; only Pam's S4E2 line gives about two years before S4E2 (with Jim's six-month claim being wrong). The start of Andy and Angela is not shown directly: Andy asks her out and is refused in S4E4 sc.89, yet by S4E5 sc.10 he says he has been making out with her, and they arrive as a couple in S4E9. When the Dwight baby contract ended is unclear (S7E9 sc.36 Dwight finds her gone with a note). Wedding to the Senator happens off-screen between S7E24 and S8E1 (S8E13: pregnancy 'conceived out of wedlock' before the wedding). The finale wedding of Angela and Dwight is S9E23 (sc.41 bridal kidnapping, sc.72 minister: 'I now pronounce you man and wife'); the proposal is S9E22 sc.69._
+
+## q090 [order] (verified)
+**Q:** Did Angela get engaged to Andy before or after she broke up with Dwight?
+
+**Reference:** After. Angela's break-up with Dwight comes first, in season 4 right after the cat Sprinkles dies (Fun Run, S4E1, where Dwight admits euthanizing the cat; by Launch Party S4E3 and Money S4E4 Dwight says his girlfriend has broken up with him). The engagement to Andy comes later, in Goodbye, Toby (S4E14), when Andy proposes onstage at the going-away party and Angela says 'Okay'. (Later in season 5 the engagement ends and Angela goes back to Dwight; she sells the ring, S5E15.)
+
+- S4E1 sc.69: Angela: You put her in my freezer. ... How could you do that without telling me? ... Don't touch me Dwight! [runs off crying] (Dwight euthanized Sprinkles)
+- S4E3 sc.39: Angela: How do you tell someone it's over? You send them a notarized letter, right? Well, what if the recipient is your notary? (Dwight is her notary)
+- S4E3 sc.75: Dwight: I stopped shaving because my girlfriend broke up with me.
+- S4E4 sc.19: Dwight: My girlfriend and I broke up recently. And I must say, I am relieved.
+- S4E14 sc.70: Andy: Angela, will you do me the honor... of giving me your tiny hand in marriage? Angela: ...Okay.
+- S5E11 sc.17: Angela: we were together, and then he killed sprinkles, and then we stopped, and... I don't know exactly when we started up again.
+- S5E15 sc.7: Angela: I sold Andy's engagement ring on eBay.
+
+_Caveats: The break-up with Dwight is not shown as one explicit on-screen scene in the transcripts: it is established by the Sprinkles fight (S4E1 sc.69, 'Don't touch me Dwight'), her 'notarized letter' line (S4E3 sc.39) and Dwight's later statements (S4E3 sc.75, S4E4 sc.19). Either way it precedes the S4E14 proposal. Angela and Dwight later resume an affair behind Andy's back (S5E11 sc.17), which is not the same as the first break-up._
+
+## q091 [why] (verified)
+**Q:** Why did the Scranton branch always perform better than the rest?
+
+**Reference:** The premise is only partly supported. The show says Scranton was the top branch on sales and profit in specific stretches, mainly seasons 5-6: David Wallace tells Michael that Utica, Albany and all the other branches are struggling while Scranton reports strong numbers and beats last year (S5E11); Michael says Scranton has the best sales of any regional branch (S5E14, the lecture circuit); Dwight calls it the most profitable branch (S6E10 sc.23) and Alan credits Michael with steady profits (S6E10 sc.32). But 'always' is not supported: in S1E1 Scranton and Stamford are rivals for one branch to survive; in S2E22 Michael admits 'our numbers are down'; in S3E7 the board votes to close Scranton (it is saved only because Stamford is closed instead, and Jan says it is 'not all about numbers'); in S3E2 Michael concedes 'Stamford is better in sales'; and Buffalo's staff claim 'we're the best branch in the company' (S5E26). No branch comparison with figures is shown, and 'better' is only ever shown by sales or profit statements, not hard data. The show gives no single stated cause. What it gives or implies: (1) Michael's people-first, relationship-based style: he remembers clients' families (S4E2 sc.56), runs the branch as a 'people business' (S2E16 sc.29), and David Wallace says he is 'not our most traditional guy' but something he does is right (S5E11); Michael himself cannot explain it and offers nonsense as his 'secret recipe' (S5E11, S5E14), so the show plays the success as unexplained or accidental. (2) A strong, loyal sales staff: Dwight (top salesman, beats the website, S4E3 sc.38), Jim, Stanley ('most consistently high sales numbers', S8E1 sc.40), Phyllis. (3) Michael attributes it to staff following his lead and to Jan's fondness for the branch (S2E22 sc.57), i.e. his own boasting and favouritism rather than evidence. The honest answer: Scranton was shown outperforming in the middle seasons, plausibly because of Michael's client rapport and a good sales team, but the show never states a cause and it was not 'always'.
+
+- S5E11 sc.18: David: Utica, Albany, all the other branches are struggling, but your branch is reporting strong numbers. ... something you are doing... is right.
+- S5E14 sc.4: Michael: Apparently Scranton has the best sales of any regional branch. So David Wallace has asked me to go to all the branches... sharing my secret recipe for success.
+- S6E10 sc.23: Dwight: Michael Scott you run the most profitable branch of Dunder Mifflin. How do you do it?
+- S6E10 sc.32: Alan: In these uncertain times, Michael has managed to maintain steady profits from his Scranton branch.
+- S1E1 sc.10: Jan: the board have decided we can't justify a Scranton branch and a Stamford branch.
+- S2E22 sc.57: Michael: Our numbers are down, yes, but we have a heck of a crew here in Scranton... They follow my lead. ... Jan loves this branch, and I think that's really more than half the battle.
+- S3E2 sc.41: Michael: He made a better paper airplane, Stamford is better in sales... I get it.
+- S3E7 sc.4: Jan: I am here to tell you that we are closing the Scranton branch. ... Michael: we're not doing that bad and our numbers are gonna come up. Jan: it's not all about numbers, Michael. It's about talent.
+- S3E7 sc.36: Jan: Your branch is not closing; Stamford is closing.
+- S5E26 sc.31: Man from Buffalo: We're the best branch in the company!
+- S4E2 sc.56: Michael: ...your daughter Emily. How's she doing? (client relationship)
+- S2E16 sc.29: Michael: at Dunder Mifflin Scranton, we're not just in the paper business, we're in the people business.
+- S8E1 sc.40: Andy: Stanley... has the most consistently high sales numbers of anyone in this office.
+
+_Caveats: Transcripts only give statements (David, Alan, Michael, Dwight), no data, and other branches are mostly offscreen (Stamford is the only one shown in depth, S3E7-8; Utica/Nashua briefly in S5E14-15). Michael is an unreliable boaster, and Dwight's 'most profitable' line is a planted softball question. The premise 'always better' is not supported (S1E1, S2E22, S3E2, S3E7 show the opposite); it is true only for stretches of seasons 5-6. Stated causes are thin: the show mostly implies Michael's rapport and a competent sales staff, and treats his success as unexplained. A grader should accept a premise correction ('not always, but strong in S5-6') plus those implied causes; an answer that invents a single stated cause, or accepts 'always' flatly, should lose credit._
+
+## q092 [opinion] (verified)
+**Q:** Was Angela toxic and mean?
+
+**Reference:** Judgment question with no single answer; the loaded wording ('toxic') is not something the show states. What the show supports: Angela is a rigid, judgmental, snobbish and frequently cruel person to her coworkers, played for comedy, but she is also shown as vulnerable, loyal in her way and capable of apologies and warmth, so most defensible readings are 'mean and harsh, but not simply a villain'. STRONGEST EVIDENCE OF CRUELTY: (a) insults to coworkers: tells Kelly 'your job is pointless. And you're a slut and everyone thinks so' (S3E20 sc.60); calls Toby 'pathetic' after slapping him (S3E10 sc.76); on Oscar, 'It explains so much' about his being gay (S3E1 sc.8) and 'he looks like he just got off the boat... Gross!' about his sandals (S5E24 sc.8); calls Meredith 'disgusting. Those feet. They're like the paws of an orangutan' on the morning of her own wedding (S9E23 sc.8); tells Phyllis her parties are 'stupid, tacky' (S5E10 sc.46) and berates her over the Launch Party banner, 'Angry at you for doing something stupid' (S4E3 sc.17); sneers at Pam's baby name, 'Phillip is wasted on you' (S8E4 sc.54); (b) control and exclusion: she runs the Party Planning Committee as a women-only club ('Never' to Kevin, S3E13 sc.13) and boasts of squashing the Weight Loss Buddy Support Group and the Finer Things Club as 'renegade clubs' (S4E6 sc.41); (c) vindictiveness in S9: she is furious at Oscar, 'a friend', for the affair with her husband and Dwight understands she wanted 'a stranger's knees whacked' (S9E8 sc.25). Note that the affair is a betrayal by her, too (she cheated on Andy with Dwight in S5, and on her senator husband with Dwight). MOMENTS THAT SOFTEN HER: she genuinely grieves for her cat Sprinkles and sobs (S4E1 sc.23, sc.40) and Dwight explains that her barbs come from grief (S4E4 sc.88); she cries when she feels the party committee is slighted (S2E10 sc.25); she tears up while apologizing to Oscar and invites him onto the committee ('I'm sorry for the way those certain events transpired', S3E13 sc.13); she half-apologizes to Kelly (S3E20 sc.71, 'I wish I hadn't called you stupid'); she brings brownies to thank coworkers who covered for her (S8E14 sc.1) and makes a nut-free batch for Kevin; she is heartbroken and humiliated by Oscar and the senator and comforted by Dwight (S9E8 sc.33); she says she lost touch with her sister for 16 years over a forgotten disagreement (S3E10 sc.42), which reads as stubbornness with a sad cost. Her devotion to Dwight (S5E11, S9E23) and the marriage they eventually have also show real attachment. PLAUSIBLE POSITIONS: (1) Yes, mean: judgmental, controlling and often cruel to people who cannot hit back; (2) 'Mean but comic and human': harsh and prim, with insecurity and grief under it, and capable of remorse; (3) Yes, but 'toxic' is too clinical a label for a sitcom character whose cruelty is exaggerated for laughs and who is often cruel in turn to Dwight and Andy. Readings to avoid: taking the insults by or about her (Erin's 'evil witch', Oscar's 'cold and awkward and cruel') as a verdict instead of coworkers' jokes or complaints; treating the cat-grief scenes as proof she is warm; claiming a single scene settles it; claiming she is 'mean to everyone': she is rarely cruel to Dwight, Andy, or senior figures; and treating real-person comments about the actor as part of this.
+
+- S3E20 sc.60: Angela: Well what you say is stupid, and your job is pointless. And you're a slut and everyone thinks so.
+- S3E20 sc.71: Angela: Oh. Thank you, Kelly. And I wish I hadn't called you stupid.
+- S3E10 sc.76: Angela: [slaps Toby] ... Michael was so right about you. You are pathetic.
+- S3E1 sc.8: Angela: [in reference to Oscar being gay] It explains so much.
+- S5E24 sc.8: Angela: The man is wearing sandals... Gross! I mean he looks like he just got off the boat.
+- S3E13 sc.13: Angela: ...I'm sorry for the way those certain events transpired. [starts to cry] ... Kevin: Can I join too? Angela: Never.
+- S5E10 sc.46: Angela: ...you won't be able to plan your stupid, tacky parties anymore. So you move the tree.
+- S4E3 sc.17: Angela: I feel angry. Angry at you. Angry at you for doing something stupid.
+- S4E6 sc.41: Angela: Renegade clubs are dangerous. I squashed the Weight Loss Buddy Support Group.
+- S8E4 sc.54: Angela: Phillip is wasted on you.
+- S9E8 sc.25: Dwight: I could understand you wanting to get a stranger's knees whacked. But a co-worker... Angela: Exactly, a friend... seducing your husband.
+- S9E23 sc.8: Angela: Look at Meredith. She's disgusting. Those feet. They're like the paws of an orangutan.
+- S4E1 sc.23: Dwight: ...your cat is dead. Angela: [sobbing]
+- S4E4 sc.88: Dwight: Angela is in a great deal of pain because of the death of her cat... it makes her say things. So... best to just lay off.
+- S2E10 sc.25: Angela: Michael should have asked the party planning committee first... [starts to cry]
+- S8E14 sc.1: Angela: I wanted to thank you guys for covering for me so I made some treats... I made a batch with no nuts, special for you Kevin
+- S9E8 sc.33: Angela: I feel so stupid. I sit next to him every day. Dwight: You're not stupid... You're gonna be okay, Monkey.
+- S3E10 sc.42: Angela: My sister and I used to be best friends, and we haven't talked in 16 years. Over some disagreement, I don't even remember.
+- S9E8 sc.1: Oscar: if she's cold and awkward and cruel to me, then great, it's business as usual.
+
+_Caveats: Judgment question: the transcripts support many cruel moments and several softening ones, but no scene decides it. 'Toxic' is a loaded word the show never uses; the show uses 'witch' (Erin, S7E24 sc.61, a joke) and 'cruel' (Oscar, S9E8 sc.1, a complaint in his own confession). I did not read every Angela scene (about 9 seasons of material); S3E1 sc.8 is a single line whose surrounding scene was not read in full, so use it only as supporting. Any clear position with cited scenes, the strongest counterpoint and no reading of an insult or joke as a verdict is acceptable; a refusal to take a position is not._

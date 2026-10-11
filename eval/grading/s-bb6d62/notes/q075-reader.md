@@ -1,0 +1,5 @@
+READER lens, q075 (Creed vs Phyllis likeable) Judgment.
+
+A: 8/10. Position: Phyllis, as an everyday colleague (clear). Support: cited scenes (fudge S9E23 sc.10, Santa S6E12 sc.7), Creed's criminal past (S9E23 sc.9). Counterpoint given (Phyllis's petty side, marked [memory]). Reading fine. Small flaw: calls Creed "harmlessly detached" yet lists crimes, and uses Creed's Santa joke (S6E12 sc.8, "More evil, and strictly wrong?") as if it were character evidence.
+B: 8/10. Position: Phyllis more traditionally likeable. Cited support, counterpoint (Creed's charm, S5E25 sc.35, S9E23 sc.105), and a sensible caveat that the sample is narrow. Same mild over-reliance on the S6E12 sc.8 joke. Does not mention Phyllis's blackmail streak (S5E10 sc.8), so the counterpoint is on the other side.
+C: 6/10. Takes a position (Creed, "by viewers") and separates fan-favourite from in-universe person, a sound frame. But no scenes at all, and "possible murderer" is unsupported (S9E23 sc.9 lists drugs, meat, LSD). Gives the Phyllis blackmail counterpoint, matching S5E10 sc.8, without citing.

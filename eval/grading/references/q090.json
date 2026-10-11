@@ -1,0 +1,53 @@
+{
+ "question_id": "q090",
+ "reference": "After. Angela's break-up with Dwight comes first, in season 4 right after the cat Sprinkles dies (Fun Run, S4E1, where Dwight admits euthanizing the cat; by Launch Party S4E3 and Money S4E4 Dwight says his girlfriend has broken up with him). The engagement to Andy comes later, in Goodbye, Toby (S4E14), when Andy proposes onstage at the going-away party and Angela says 'Okay'. (Later in season 5 the engagement ends and Angela goes back to Dwight; she sells the ring, S5E15.)",
+ "evidence": [
+  {
+   "scene": "S4E1 sc.69",
+   "line": "Angela: You put her in my freezer. ... How could you do that without telling me? ... Don't touch me Dwight! [runs off crying] (Dwight euthanized Sprinkles)"
+  },
+  {
+   "scene": "S4E3 sc.39",
+   "line": "Angela: How do you tell someone it's over? You send them a notarized letter, right? Well, what if the recipient is your notary? (Dwight is her notary)"
+  },
+  {
+   "scene": "S4E3 sc.75",
+   "line": "Dwight: I stopped shaving because my girlfriend broke up with me."
+  },
+  {
+   "scene": "S4E4 sc.19",
+   "line": "Dwight: My girlfriend and I broke up recently. And I must say, I am relieved."
+  },
+  {
+   "scene": "S4E14 sc.70",
+   "line": "Andy: Angela, will you do me the honor... of giving me your tiny hand in marriage? Angela: ...Okay."
+  },
+  {
+   "scene": "S5E11 sc.17",
+   "line": "Angela: we were together, and then he killed sprinkles, and then we stopped, and... I don't know exactly when we started up again."
+  },
+  {
+   "scene": "S5E15 sc.7",
+   "line": "Angela: I sold Andy's engagement ring on eBay."
+  }
+ ],
+ "sources": [
+  "S4E1 sc.69",
+  "S4E3 sc.39",
+  "S4E3 sc.75",
+  "S4E4 sc.19",
+  "S4E14 sc.70",
+  "S5E11 sc.17"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "accepted_alternatives": [],
+ "confidence": "high",
+ "caveats": "The break-up with Dwight is not shown as one explicit on-screen scene in the transcripts: it is established by the Sprinkles fight (S4E1 sc.69, 'Don't touch me Dwight'), her 'notarized letter' line (S4E3 sc.39) and Dwight's later statements (S4E3 sc.75, S4E4 sc.19). Either way it precedes the S4E14 proposal. Angela and Dwight later resume an affair behind Andy's back (S5E11 sc.17), which is not the same as the first break-up.",
+ "question": "Did Angela get engaged to Andy before or after she broke up with Dwight?",
+ "category": "order",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": true,
+ "owner_note": "accepted as is by the owner, 2026-10-11"
+}

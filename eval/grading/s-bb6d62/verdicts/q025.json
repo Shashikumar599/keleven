@@ -1,0 +1,79 @@
+{
+ "question_id": "q025",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 5,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Broccoli Rob right, but frequency 'about once a month' is wrong (sc.34: two, three times a week); half the question wrong.",
+   "details": {
+    "lens_scores": {
+     "fact": 4,
+     "faithfulness": 3,
+     "reader": 4
+    },
+    "calibration": "overconfident",
+    "parts": [
+     {
+      "part": "nickname",
+      "ok": true
+     },
+     {
+      "part": "frequency",
+      "ok": false
+     }
+    ]
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Both parts right and cited (sc.32, sc.34); 'when confronting Andy' is loose wording.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 9,
+     "reader": 8
+    },
+    "parts": [
+     {
+      "part": "nickname",
+      "ok": true
+     },
+     {
+      "part": "frequency",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "C": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Broccoli Rob and 'two, three times a week', exact and cited S9E5 sc.32/34.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 9,
+     "reader": 9
+    },
+    "parts": [
+     {
+      "part": "nickname",
+      "ok": true
+     },
+     {
+      "part": "frequency",
+      "ok": true
+     }
+    ]
+   }
+  }
+ }
+}

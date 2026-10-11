@@ -1,0 +1,49 @@
+{
+ "question_id": "q057",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Utica, correct; the episode hedge 'Episode 10 (or 6)' is a minor slip (Branch Wars is S4E6 here).",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 8,
+     "reader": 8
+    },
+    "calibration": "ok"
+   }
+  },
+  "B": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Utica, cited S4E6 sc.2 verbatim.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    }
+   }
+  },
+  "C": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Utica, cited S4E6 sc.2 verbatim.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    }
+   }
+  }
+ }
+}

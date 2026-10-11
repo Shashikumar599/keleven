@@ -1,0 +1,61 @@
+{
+ "question_id": "q071",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 2,
+   "verdict": "refused",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Honestly says the evidence does not show Mose hitting anyone and only guesses Dwight (S4E4 sc.29); the real answer, Andy at S5E9 sc.20, was not sent.",
+   "details": {
+    "lens_scores": {
+     "fact": 2,
+     "faithfulness": 9,
+     "reader": 3
+    },
+    "parts": [
+     {
+      "part": "whom Mose hit (Andy)",
+      "ok": false
+     }
+    ]
+   }
+  },
+  "B": {
+   "score": 1,
+   "verdict": "wrong",
+   "grounded": "no",
+   "failure_type": "claim_beyond_evidence",
+   "notes": "Flatly says Mose hits Dwight with manure, but S4E4 sc.29 only has Dwight shouting 'Ow!' with no hit shown, and wrongly adds that Mose hits no one else (S5E9 sc.20, Andy).",
+   "details": {
+    "lens_scores": {
+     "fact": 3,
+     "faithfulness": 4,
+     "reader": 2
+    },
+    "parts": [
+     {
+      "part": "whom Mose hit (Andy)",
+      "ok": false
+     }
+    ]
+   }
+  },
+  "C": {
+   "score": 0,
+   "verdict": "wrong",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Says Mose hits no one, contradicted by S5E9 sc.20 (Mose hits Andy); the Fun Run and Double Date examples are irrelevant.",
+   "details": {
+    "lens_scores": {
+     "fact": 0,
+     "faithfulness": 2,
+     "reader": 1
+    },
+    "calibration": "overconfident"
+   }
+  }
+ }
+}

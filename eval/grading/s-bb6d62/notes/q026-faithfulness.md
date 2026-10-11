@@ -1,0 +1,3 @@
+A: 10. Mom, then Brandon, cited to S8E14 sc.33; quotes match (Darryl "She said her name was Brandon, I think", Val "my mom's name is Brandon"). The Bob/Brandon label conflict (sc.15 speaker "Bob") is honestly flagged, and "boyfriend" came from the sent S8E16 scenes. "Val continues the cover-up" is a fair reading.
+B: 6. Memory, knows_answer true, uncertain empty; answer right (mom, Brandon). But says Darryl "knows that is not true"; in S8E14 sc.33 Darryl only asks "Your mom's name is Brandon?" and Val laughs it off; he does not reveal a contradiction. Mild overreach, calibration ok.
+C: 10. Same facts as A with the sc.15 Bob label flagged; "jokingly confirms" matches sc.33 Val "[laughs] Yeah Darryl, my mom's name is Brandon."

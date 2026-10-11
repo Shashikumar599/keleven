@@ -1,0 +1,90 @@
+{
+ "question_id": "q085",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Whole arc is right (dating, Angela split, Gabe, Jessica, Florida, boat trip, Pete, Erin ends it) but with wrong anchors: St. Patrick's Day as S6E19, Secretary's Day as S6E22, the break-up placed in Moving On (it is S9E15 sc.35) and unsupported 'civil friends' ending; confident.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 6,
+     "reader": 7
+    },
+    "calibration": "overconfident",
+    "main_cause_ok": true,
+    "wrong_claims": [
+     "episode labels off",
+     "ending as civil friends unsupported"
+    ]
+   }
+  },
+  "B": {
+   "score": 5,
+   "verdict": "partial",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Every claim is supported but the arc is thin: omits why the first split happened (Angela, S6E20 sc.22), Jessica, Pete and the final breakup; ends at 'I don't love you anymore' (S9E15 sc.32) without saying they split for good.",
+   "details": {
+    "lens_scores": {
+     "fact": 6,
+     "faithfulness": 9,
+     "reader": 5
+    },
+    "main_cause_ok": true,
+    "wrong_claims": []
+   }
+  },
+  "C": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Full arc with causes (Angela revelation, Gabe/Jessica, Florida win-back, boat trip, Pete), cited quotes check out and memory parts are labelled and consistent with the transcripts.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 8,
+     "reader": 8
+    },
+    "main_cause_ok": true,
+    "wrong_claims": []
+   }
+  },
+  "D": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Fullest arc with accurate scenes from crush through Angela cake scene, sock puppet refusal, Jessica, Florida kiss, S9E15 breakup, Pete and the S9E16 spite meeting (sc.48 quote is real); 'hires' Gabe and Alice is slight overreach.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 8,
+     "reader": 9
+    },
+    "main_cause_ok": true,
+    "wrong_claims": []
+   }
+  },
+  "E": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Same full arc, entirely transcript-grounded with verified citations (S6E20 sc.22, S7E24 sc.63, S8E19 sc.40, S9E15 sc.35, S9E16 sc.5, sc.47-48); minor 'bringing in' exes wording.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 9,
+     "reader": 9
+    },
+    "main_cause_ok": true,
+    "wrong_claims": []
+   }
+  }
+ }
+}

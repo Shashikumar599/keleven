@@ -1,0 +1,138 @@
+{
+ "question_id": "q081",
+ "reference": "Dwight's real romantic relationships in the transcripts: Angela Martin (the main one: secret relationship from season 2, break-up in S4E3, on-and-off affair while she is engaged to Andy, then fiancee/wife at the end, S9E22-23), Isabel Poreba (a hotel hookup at Jim and Pam's wedding weekend, then dating/kissing in S6E19), and Esther (a farm girl he courts and dates in S9E17-20, though he does not end up proposing). Minor / short: Nellie (a kiss and a hotel key-card tryst as a negotiating ploy, S8E16) and Kelly (she kisses him once, S2E10).",
+ "evidence": [
+  {
+   "scene": "S2E16 sc.24",
+   "line": "Dwight: Girlfriend. Yes, ... she's not really the kind of person you'd think would be into Valentine's Day. Pam: Tightly wound? Dwight: (smirking) Exactly."
+  },
+  {
+   "scene": "S2E22 sc.40",
+   "line": "Dwight: [Kisses Angela, she slaps him and walks away smiling]"
+  },
+  {
+   "scene": "S4E2 sc.16",
+   "line": "Jim: Dwight and Angela dating. Have been for six months. Pam: they have been dating for like two years."
+  },
+  {
+   "scene": "S4E3 sc.75",
+   "line": "Dwight: I stopped shaving because my girlfriend broke up with me."
+  },
+  {
+   "scene": "S5E1 sc.19",
+   "line": "Angela: Well, that was the last time, Dwight. I mean it. Dwight: Monkey. [kisses her] Angela: No, no. I have a fiance I very much like!"
+  },
+  {
+   "scene": "S5E4 sc.27",
+   "line": "Dwight: You either break off your engagement with that singing buffoon, apologize, and then date me, or you can say good-bye to this."
+  },
+  {
+   "scene": "S8E13 sc.31",
+   "line": "Dwight: Need I remind you that we were together a month before the wedding? (Angela's baby Philip, Dwight believes he is the father)"
+  },
+  {
+   "scene": "S9E16 sc.45",
+   "line": "Dwight: Be with me, Monkey. ... The eighty or ninety years that I have left in this life...I want to spend with you."
+  },
+  {
+   "scene": "S9E22 sc.69",
+   "line": "Dwight kneels with the ring; Angela: Okay, yes...yes, I will! [they kiss]"
+  },
+  {
+   "scene": "S9E23 sc.72",
+   "line": "Minister: I now pronounce you man and wife."
+  },
+  {
+   "scene": "S6E4 sc.55",
+   "line": "Dwight [walking out of hotel room with a woman]: ... Isabel: So I'll see you at the wedding? Dwight: You know it. [they kiss]"
+  },
+  {
+   "scene": "S6E4 sc.56",
+   "line": "Dwight: Isabel was nice, but I hope she doesn't think this is going anywhere."
+  },
+  {
+   "scene": "S6E19 sc.50",
+   "line": "Dwight: You are an impressive specimen. Isabel: Thank you. [Dwight and Isabel kiss]"
+  },
+  {
+   "scene": "S9E18 sc.14",
+   "line": "Dwight: Esther, you look radiant as always. Esther: Thank you. [Dwight kisses her forehead]"
+  },
+  {
+   "scene": "S9E18 sc.6",
+   "line": "Angela: Dwight is dating a brussel sprout farmer named Esther."
+  },
+  {
+   "scene": "S9E20 sc.30",
+   "line": "Esther: ...I knew I was seeing you tonight. [Esther kisses him]"
+  },
+  {
+   "scene": "S9E22 sc.61",
+   "line": "Dwight: I was thinking of proposing to Esther today. ... Jim: So what is the problem? Dwight: Angela."
+  },
+  {
+   "scene": "S8E16 sc.38",
+   "line": "Nellie: give me a key card to your room. Meet me in seven minutes ... [Dwight and Nellie kiss]"
+  },
+  {
+   "scene": "S2E10 sc.59",
+   "line": "Kelly: Hey. [Kelly leans up and kisses him] Dwight: You shouldn't do things like that. The man is supposed to do that."
+  }
+ ],
+ "sources": [
+  "S2E16 sc.24",
+  "S2E22 sc.40",
+  "S4E2 sc.16",
+  "S4E3 sc.75",
+  "S5E1 sc.19",
+  "S5E4 sc.27",
+  "S8E13 sc.31",
+  "S9E16 sc.45",
+  "S9E22 sc.69",
+  "S9E23 sc.72",
+  "S6E4 sc.55",
+  "S6E19 sc.50",
+  "S9E18 sc.14",
+  "S9E20 sc.30",
+  "S9E22 sc.61",
+  "S8E16 sc.38",
+  "S2E10 sc.59"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": [
+  {
+   "item": "Angela Martin (secret relationship, break-up, on/off affair, fiancee and wife by S9E22-23)",
+   "scene": "S4E2 sc.16; S5E1 sc.19; S9E22 sc.69; S9E23 sc.72",
+   "core": true
+  },
+  {
+   "item": "Isabel Poreba (hookup at the wedding weekend, then dating and kissing)",
+   "scene": "S6E4 sc.55; S6E19 sc.50",
+   "core": true
+  },
+  {
+   "item": "Esther (farm courtship, dating; he considers proposing but picks Angela)",
+   "scene": "S9E18 sc.14; S9E20 sc.30; S9E22 sc.61",
+   "core": true
+  },
+  {
+   "item": "Nellie Bertram (one kiss / planned tryst as a ploy in the hotel)",
+   "scene": "S8E16 sc.38",
+   "core": false
+  },
+  {
+   "item": "Kelly Kapoor (she kisses him once, he is startled)",
+   "scene": "S2E10 sc.59",
+   "core": false
+  }
+ ],
+ "accepted_alternatives": [],
+ "confidence": "medium",
+ "caveats": "Core = relationships presented as ongoing (several scenes or an explicit girlfriend/dating label): Angela, Isabel, Esther. Optional = one-scene kisses (Nellie, a negotiating ploy; Kelly, her initiative, Dwight not interested). Dwight's unnamed ex-girlfriends and the 'I have a girlfriend' claims of S2E21 are Angela or unverifiable; S3E20 'Karen' line is a parody. Offscreen/visual details (e.g. the Esther relationship's end, Jan, Pam) are not covered; Esther is dated only in S9E17-20 and never engaged (his 'Engaged... Check' in S9E22 sc.10 is a planned goal). Fan transcripts miss lines, so a fourth minor partner could exist; none found by searching dating/girlfriend/kiss/sleep terms near Dwight.",
+ "question": "With whom does Dwight have a romantic relationship over the series?",
+ "category": "list",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": true,
+ "owner_note": "accepted as is by the owner, 2026-10-11"
+}

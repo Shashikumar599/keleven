@@ -1,0 +1,117 @@
+{
+ "question_id": "q070",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 0,
+   "verdict": "wrong",
+   "grounded": "no",
+   "failure_type": "refused_with_evidence",
+   "notes": "Says the passages hold nothing relevant, yet it was sent S9E18 sc.22 (Brian, the fired crew guy), S6E15 sc.8-9 (Jo Bennett) and S9E13 (Mose), all usable candidates; no position.",
+   "details": {
+    "lens_scores": {
+     "fact": 1,
+     "faithfulness": 3,
+     "reader": 1
+    },
+    "scores": {
+     "position": 0,
+     "support": 0,
+     "reading": 0,
+     "counterpoint": 0,
+     "scope": 0
+    },
+    "total": 0
+   }
+  },
+  "B": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "Picks Charles Miner with the right impact (Michael quits, Michael Scott Paper Company) and a Jo Bennett counterpoint; minor slips (six episodes rather than seven, Jo's screen time, Prince Family padding, loose citation of S6E15 sc.9).",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 7,
+     "reader": 8
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 2,
+     "counterpoint": 2,
+     "scope": 1
+    },
+    "total": 8
+   }
+  },
+  "C": {
+   "score": 3,
+   "verdict": "wrong",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "The pick rests on 'BFD. Engaged ain't married. Never, ever, ever give up.' attributed to Captain Jack, but S2E11 sc.37 gives it to Michael, so the claimed impact is invented; the Ed Truck second candidate is accurate (S2E14, death S3E4).",
+   "details": {
+    "lens_scores": {
+     "fact": 3,
+     "faithfulness": 3,
+     "reader": 3
+    },
+    "scores": {
+     "position": 2,
+     "support": 0,
+     "reading": 0,
+     "counterpoint": 1,
+     "scope": 0
+    },
+    "total": 3,
+    "calibration": "overconfident"
+   }
+  },
+  "D": {
+   "score": 5,
+   "verdict": "partial",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Quotes are accurate (S3E5 sc.28, S9E13 sc.22-23), but the pick of Mose is conceded to have 'negligible' practical impact, and the Brian evidence it was sent shows only a mention; the better candidates' scenes were not sent.",
+   "details": {
+    "lens_scores": {
+     "fact": 4,
+     "faithfulness": 7,
+     "reader": 3
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 0,
+     "counterpoint": 1,
+     "scope": 1
+    },
+    "total": 5
+   }
+  },
+  "E": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "claim_beyond_evidence",
+   "notes": "Picks Brian (a reference candidate, breaks the documentary wall, S9E12 sc.50) with a fair counterpoint, but support is almost all memory, it overclaims that Brian 'created the central marital conflict' and garbles Hunter's song.",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 7,
+     "reader": 7
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 1,
+     "counterpoint": 2,
+     "scope": 1
+    },
+    "total": 7
+   }
+  }
+ }
+}

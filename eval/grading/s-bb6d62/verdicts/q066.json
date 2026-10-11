@@ -1,0 +1,74 @@
+{
+ "question_id": "q066",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Clear position and counterpoint with true cited quotes, but picks Robert California (a lesser candidate) on a management speech (S8E1 sc.39) and overrates Michael's clumsy bids as pervasive schemes; stronger candidates (Dwight, Jan, Ryan) were not in the passages.",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 9,
+     "reader": 6
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 1,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 8,
+    "calibration": "n/a"
+   }
+  },
+  "B": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Picks Ryan, a reference candidate, with sensible support (Kelly, WUPHF, Goodbye Toby fraud) and the right counterpoint that his schemes backfire. Robert talking Jo into giving him the CEO job is backed by Jim in S8E1 sc.5 (the faithfulness member's S8E24 objection is dropped).",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 5,
+     "reader": 8
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 2,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 9,
+    "calibration": "ok"
+   }
+  },
+  "C": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Lands on Robert after a five-name list; includes Ryan, Angela, Michael with sensible reading and labelled memory, but the pick rests on one speech and the support is mostly memory.",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 6,
+     "reader": 7
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 2,
+     "counterpoint": 1,
+     "scope": 2
+    },
+    "total": 8
+   }
+  }
+ }
+}

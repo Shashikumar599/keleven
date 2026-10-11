@@ -1,0 +1,6 @@
+q073 fact lens. Premise TRUE (reference): Kelly married Ryan; S7E14 sc.1 "Ryan Bailey Howard and I got divorced", Andy: "when did you get married?" Kelly: "like a week ago, we got really wasted". Engaged to Ravi (S9E1 sc.8 "her fiancé Ravi"), no wedding shown; finale she leaves with Ryan.
+A: 9. Ryan Howard, cites S7E14 sc.1 (checked). Does not add the Ravi engagement; small omission only.
+B: 1. Says the transcripts don't say whom Kelly married or whether she did; no answer. Misses S7E14 sc.1. Effectively rejects/refuses a true premise.
+C: 9. Ryan, brief S7 marriage then divorce; Ravi engaged but never married; finale she runs off with Ryan: all match the reference. S8E21 sc.46 turn-down of Ryan for Ravi is correct.
+D: 8. Ryan, divorce about a week later (matches "a week ago"), engaged to Ravi, never married him, finale with Ryan: all correct. Memory extra "moved to Ohio" is not checked in the transcripts (S9E1 sc.8 only says Miami university), minor.
+E: 5. Right on Ryan (S7 The Search), but claims Kelly "married Dr. Ravi" and that the finale shows it: false, reference: only engaged, no wedding shown (S9E1 sc.8 "fiancé"). Also gives the episode as S7E15 (split numbering, acceptable). Wrong extra claim of substance.

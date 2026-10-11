@@ -1,0 +1,76 @@
+{
+ "question_id": "q045",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "All five core women with cited scenes plus Margaret (a real optional blind date, S4E10 sc.28-30); one quote stitched from adjacent words, substance true.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 9,
+     "reader": 8
+    },
+    "found": [
+     "Jan",
+     "Carol",
+     "Holly",
+     "Helene",
+     "Donna"
+    ],
+    "missed": [],
+    "invented": []
+   }
+  },
+  "B": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "All five core plus real optional Margaret, Julie, Marie; memory claims labelled. Claim that Michael marries Holly is not in the transcripts (only the proposal) but is marked [memory].",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 8,
+     "reader": 8
+    },
+    "found": [
+     "Jan",
+     "Carol",
+     "Holly",
+     "Helene",
+     "Donna"
+    ],
+    "missed": [],
+    "invented": []
+   }
+  },
+  "C": {
+   "score": 6,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "All five core women present, but Donna is called a bar manager (she manages Sid & Dexter's, S6E21 sc.11), episodes are misplaced (Happy Hour is S6E19, Business Trip S5E7) and Holly is called eventual wife; several wrong details.",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 5,
+     "reader": 6
+    },
+    "found": [
+     "Jan",
+     "Carol",
+     "Holly",
+     "Helene",
+     "Donna"
+    ],
+    "missed": [],
+    "invented": [],
+    "calibration": "ok"
+   }
+  }
+ }
+}

@@ -1,0 +1,4 @@
+READER lens, q036
+A: 6. Gives both episodes up front, but the story details are shaky: it puts the S8E21 punch in "the conference room" and says Robert California refuses to reinstate him, "in nearly the exact same spot". S8E21 sc.41 is in Nellie's office (Andy smashes Nellie's photo, "your stupid office! [punches hole in the wall]"), Robert only says "take a seat". A reader would carry away a wrong scene.
+B: 9. Both episodes, correct context (S3E13 sc.34 phone prank; S8E21 sc.41 Nellie's photo), and correctly flags that Safety Training S3E19 sc.2 only replays the clip, so no false third episode.
+C: 9. Same two episodes, notes the Safety Training flashback as a replay, not a new punch. Slightly loose ("Michael rejects his friendship" is accurate to sc.34; "Robert dismissing him" is a small stretch).

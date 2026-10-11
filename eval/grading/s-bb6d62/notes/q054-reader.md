@@ -1,0 +1,4 @@
+READER lens, q054
+A: 5. Gives only the finale return (S9E23 sc.68: Dwight "Michael. I can't believe you came."), and says the rest is missing; honest but never mentions Colorado/Holly or kids, which the show does cover (S7E21 sc.1, S9E23 sc.76). Phrase "the graph shows" is jargon to a reader.
+B: 8. Most complete for a reader: Colorado with Holly, kids, finale return and Pam's two-phones line. Pam's line is real (S9E23 sc.76 "so many pictures of his kids he had to get two phones") but was tagged [memory] though it is in the transcript; "arranged by Jim" is a fair reading of sc.68 (Jim: "really wish there was something I could do. [looks off]"). Marriage is [memory], marked.
+C: 8. Same story, fluent and complete, confident; split-numbered episodes and "bestest mensch" (show says "Bestish Mensch", sc.68) are small slips. No hedge on what the show actually shows vs. later life.

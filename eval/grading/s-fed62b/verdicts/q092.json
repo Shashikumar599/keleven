@@ -1,0 +1,117 @@
+{
+ "question_id": "q092",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Clear position (mostly unkind) with cited scenes (S3E20 sc.71, S5E3 sc.12, S9E8) and a real counterpoint (helps with Aunt Shirley, vulnerability, late softening); avoids the word 'toxic'. Stretch: S5E5 sc.54 is not cruelty by her, and the redemption arc is uncited memory.",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 8,
+     "reader": 7
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 1,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 8
+   }
+  },
+  "B": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Position 'cold and abrasive', cited cruelty and sound counterpoint (acts follow betrayal, cat grief, helps with the aunt), honest about the narrow sample, no label repeated; thin on her strongest insults and shares the S5E5 stretch.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 8,
+     "reader": 7
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 1,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 8
+   }
+  },
+  "C": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "claim_beyond_evidence",
+   "notes": "Takes a position with a good counterpoint, but adopts 'mean and toxic' as its own verdict, overstates 'unprovoked contempt', and cites the hitman Trevor to S9E8 sc.25 though that scene does not name him (he is the hitman in sc.16, which was not sent).",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 7,
+     "reader": 6
+    },
+    "scores": {
+     "position": 2,
+     "support": 2,
+     "reading": 1,
+     "counterpoint": 2,
+     "scope": 0
+    },
+    "total": 7
+   }
+  },
+  "D": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "other",
+   "notes": "Memory answer with a firm yes and a counterargument; its facts fit the show (affair with Dwight, Oscar plot, belittling Phyllis and Pam), but no scene is cited, it is overconfident, and 'nine seasons of largely vindictive treatment' is a sweeping reading.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 7,
+     "reader": 6
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 1,
+     "counterpoint": 2,
+     "scope": 1
+    },
+    "total": 7,
+    "calibration": "overconfident"
+   }
+  },
+  "E": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Clear position that she is regularly cold and cruel, strongest counterpoint (grief, betrayal, regret toward Kelly, helping Dwight), calibrated about the narrow sample, no loaded label repeated.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 9,
+     "reader": 7
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 1,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 8
+   }
+  }
+ }
+}

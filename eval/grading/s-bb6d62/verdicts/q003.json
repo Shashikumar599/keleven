@@ -1,0 +1,49 @@
+{
+ "question_id": "q003",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 2,
+   "verdict": "refused",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Honest refusal; the gag is visual and not in the transcripts or the passages sent, but no completion given.",
+   "details": {
+    "lens_scores": {
+     "fact": 2,
+     "faithfulness": 9,
+     "reader": 3
+    }
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Gives accepted completion Wayne Gretzky / Michael Scott labelled [memory]; MSPC episode title plausible (S5E23 is split numbering), unverified.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 7,
+     "reader": 8
+    }
+   }
+  },
+  "C": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Same accepted completion from memory; episode detail unverified.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 7,
+     "reader": 7
+    },
+    "calibration": "ok"
+   }
+  }
+ }
+}

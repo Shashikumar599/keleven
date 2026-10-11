@@ -137,11 +137,12 @@ graph_relations_now(season, episode, rid, type, change, detail, quote, certainty
   a_entity and b_entity are null when the person is not linked across episodes; a_name and b_name are always set.
 
 graph_events_now(season, episode, event_id, text, kind, certainty, importance, line_ids, place_name, place_kind,
-                 participants)
+                 participants, actor_names)
   One row per event. kind: romance, job, conflict, prank, milestone, family, other. importance: major or minor, judged
   inside that one episode only. participants is a jsonb list of {name, entity, tier, role}; role is agent, patient,
-  subject or witness. Test a person with
-  participants @> '[{"entity": "karen"}]' (linked) or participants::text ILIKE '%karen%'.
+  subject or witness. actor_names is a lower-case text of the people who took part in the event (every role except
+  witness), written as 'angela | dwight'. Test whether a person took part with actor_names ILIKE '%gabe%'; test whether
+  they were there at all, even only watching, with participants::text ILIKE '%gabe%'.
 
 graph_characters_now(season, episode, local_id, names, names_lc, description, present, line_ids, entity_name, link_tier)
   One row per character per episode.
@@ -160,8 +161,9 @@ graph_characters_now(season, episode, local_id, names, names_lc, description, pr
 7. Questions about two named people ("what happened between X and Y", "their history"): return their relationship periods
    from graph_timeline_now and their major events from graph_events_now in one query with UNION ALL, both written with
    the same six columns (source, season, episode, text, importance, line_ids). Match the pair in both orders (X as a_key and
-   Y as b_key, and the other way round). Keep only importance = 'major' events: an event where the two are merely in the
-   same scene is not an event between them, and minor events would fill the 50 rows before the later years.
+   Y as b_key, and the other way round). Keep only importance = 'major' events, and test both people with actor_names:
+   an event where one only watches is not an event between them, and minor events would fill the 50 rows before the
+   later years.
 8. A query that can return more than 50 rows must not cut off the end of the story: narrow it (major events, one relation
    type) before relying on LIMIT.
 
@@ -201,20 +203,20 @@ Question: Who did Pam marry, and which episode is the wedding?
  "graph_sql": "SELECT a_name, b_name, start_ep, end_ep, first_ep, certainty, line_ids FROM graph_timeline_now WHERE type = 'married' AND (a_key ~ '\\mpam\\M' OR b_key ~ '\\mpam\\M') ORDER BY first_ep LIMIT 50"}
   (Not "Pam Jim wedding Niagara": both words would come from memory, not the question.)
 
-Question: Whom did Michael date?
-{"search_text": "Michael date", "sql": null,
- "assumptions": "dating relationships of Michael as the graph lists them; a partner shown only by first name is a separate person per name",
- "graph_sql": "SELECT a_name, b_name, a_tier, b_tier, start_ep, end_ep, first_ep, last_ep, certainty, line_ids FROM graph_timeline_now WHERE type = 'dating' AND 'michael' IN (a_key, b_key) ORDER BY first_ep LIMIT 50"}
+Question: Whom did Ryan date?
+{"search_text": "Ryan date", "sql": null,
+ "assumptions": "dating relationships of Ryan as the graph lists them; a partner shown only by first name is a separate person per name",
+ "graph_sql": "SELECT a_name, b_name, a_tier, b_tier, start_ep, end_ep, first_ep, last_ep, certainty, line_ids FROM graph_timeline_now WHERE type = 'dating' AND 'ryan' IN (a_key, b_key) ORDER BY first_ep LIMIT 50"}
 
-Question: What happened to Karen after Jim?
-{"search_text": "Karen after Jim", "sql": null,
- "assumptions": "events that involve Karen, in episode order; 'after Jim' is left to the answering step",
- "graph_sql": "SELECT season, episode, text, importance, line_ids FROM graph_events_now WHERE participants::text ILIKE '%karen%' ORDER BY season, episode LIMIT 50"}
+Question: What happened to Gabe over the years?
+{"search_text": "Gabe", "sql": null,
+ "assumptions": "events that involve Gabe, in episode order",
+ "graph_sql": "SELECT season, episode, text, importance, line_ids FROM graph_events_now WHERE actor_names ILIKE '%gabe%' ORDER BY season, episode LIMIT 50"}
 
-Question: What happened between Jim and Karen?
-{"search_text": "Jim Karen", "sql": null,
- "assumptions": "relationship periods of Jim and Karen in either order, and the major events that involve both of them",
- "graph_sql": "SELECT 'relationship' AS source, first_ep / 100 AS season, first_ep % 100 AS episode, type || ', start ' || coalesce(start_ep::text, 'not shown') || ', end ' || coalesce(end_ep::text, 'not shown') AS text, 'major' AS importance, line_ids FROM graph_timeline_now WHERE (a_key ~ '\\mjim\\M' AND b_key ~ '\\mkaren\\M') OR (a_key ~ '\\mkaren\\M' AND b_key ~ '\\mjim\\M') UNION ALL SELECT 'event', season, episode, text, importance, line_ids FROM graph_events_now WHERE importance = 'major' AND participants::text ILIKE '%jim%' AND participants::text ILIKE '%karen%' ORDER BY season, episode LIMIT 50"}
+Question: What is the history between Darryl and Val?
+{"search_text": "Darryl Val", "sql": null,
+ "assumptions": "relationship periods of Darryl and Val in either order, and the major events that involve both of them",
+ "graph_sql": "SELECT 'relationship' AS source, first_ep / 100 AS season, first_ep % 100 AS episode, type || ', start ' || coalesce(start_ep::text, 'not shown') || ', end ' || coalesce(end_ep::text, 'not shown') AS text, 'major' AS importance, line_ids FROM graph_timeline_now WHERE (a_key ~ '\\mdarryl\\M' AND b_key ~ '\\mval\\M') OR (a_key ~ '\\mval\\M' AND b_key ~ '\\mdarryl\\M') UNION ALL SELECT 'event', season, episode, text, importance, line_ids FROM graph_events_now WHERE importance = 'major' AND actor_names ILIKE '%darryl%' AND actor_names ILIKE '%val%' ORDER BY season, episode LIMIT 50"}
 
 Question: Who is the best boss in the show?
 {"search_text": "best boss", "sql": null, "assumptions": null, "graph_sql": null}

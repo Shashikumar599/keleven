@@ -1,0 +1,73 @@
+{
+ "question_id": "q067",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 6,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Clear, flagged as speculation, with a counterpoint, but says Roy trashed the bar in S3E17 (not in the transcript; sc.46-48 has only the breakup and 'kill Jim Halpert') and puts the engagement break-off at Casino Night.",
+   "details": {
+    "lens_scores": {
+     "fact": 6,
+     "faithfulness": 6,
+     "reader": 6
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 1,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 8,
+    "calibration": "overconfident"
+   }
+  },
+  "B": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Position, speculation marked, cited anchors (S3E15 sc.38, S3E16 sc.8, S5E4 sc.37, S9E2) and a real counterpoint. Minor: 'S3E46' is a typo for S3E17 sc.46 (quote real), and S2E16 sc.38 only loosely shows dismissiveness.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 7,
+     "reader": 7
+    },
+    "scores": {
+     "position": 2,
+     "support": 2,
+     "reading": 1,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 9
+   }
+  },
+  "C": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "claim_beyond_evidence",
+   "notes": "Good position and counterpoint, memory tagged; but states 'Pam was never truly in love with him' as settled, uses S2E16 sc.38 as proof of neglect, and misnames Athlead as Athleap.",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 7,
+     "reader": 7
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 1,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 8
+   }
+  }
+ }
+}

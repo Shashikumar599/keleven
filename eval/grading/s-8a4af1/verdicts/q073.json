@@ -1,0 +1,87 @@
+{
+ "question_id": "q073",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Ryan Howard, with exact S7E14 sc.1 divorce quote; omits Ravi engagement, minor.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 9,
+     "reader": 9
+    },
+    "premise_true": true,
+    "outcome": "accepted_true"
+   }
+  },
+  "B": {
+   "score": 2,
+   "verdict": "refused",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Honest refusal for the passages seen (S7E14 not sent), but no answer to a true premise.",
+   "details": {
+    "lens_scores": {
+     "fact": 1,
+     "faithfulness": 8,
+     "reader": 2
+    },
+    "premise_true": true,
+    "outcome": "n/a"
+   }
+  },
+  "C": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Ryan (S7 marriage, divorce), engaged to but never married to Ravi, finale run-off, all [memory] and correct; S7E14 not cited.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 8,
+     "reader": 8
+    },
+    "premise_true": true,
+    "outcome": "accepted_true"
+   }
+  },
+  "D": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Ryan cited to S7E14 sc.1, engaged to Ravi but never married, finale with Ryan; memory labelled.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 8,
+     "reader": 9
+    },
+    "premise_true": true,
+    "outcome": "accepted_true"
+   }
+  },
+  "E": {
+   "score": 5,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Right on Ryan (The Search) but claims she married Ravi, shown in the finale; only engaged, no wedding (S9E1 sc.8 'fiance'); self-contradicts.",
+   "details": {
+    "lens_scores": {
+     "fact": 5,
+     "faithfulness": 2,
+     "reader": 3
+    },
+    "premise_true": true,
+    "outcome": "accepted_true",
+    "calibration": "overconfident"
+   }
+  }
+ }
+}

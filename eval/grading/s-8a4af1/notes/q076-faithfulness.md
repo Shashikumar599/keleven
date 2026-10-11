@@ -1,0 +1,6 @@
+Faithfulness note q076
+A 9: S6E1 sc19, sc21 (Brad Pitt), S8E20 sc20/sc24 and S9E18 sc26 all match the transcripts; "all partners women" labelled [memory]. Reading of S8E20 as a lie to leave Jessica matches the reference.
+B 8: memory only; the Gossip rumor invented by Michael to bury a true one matches the reference (S6E1 sc17-19). "he concludes he is straight" is slightly tidy: in sc23 Andy says "I prefer women... off the record, I'm kinda confused" (reference). Relationships Angela/Erin/Jessica are right.
+C 9: quotes exact (sc20 "Twice before", sc24 "So not gay", S9E18 sc26 "I'm not gay!"; the NOT FOUND marks are only the speaker-name prefix). "heterosexual" and "all relationships women" labelled [memory].
+D 10: every quote exact: sc19 "and Andy is gay", sc20 "Twice before", S8E20 sc20 "I am gay, and I prefer men", sc24, S9E18 sc26; nothing beyond the evidence.
+E 7: quotes exact, but "Oscar privately noted that Andy was an 'insecure heterosexual'" (S6E1 sc21) bends the source: Oscar's line is the rhetorical "To comfort insecure heterosexual men? That can't possibly fall to me", right after he says "you might be gay. You might be gay." Not a statement that Andy is heterosexual; "privately" is not in the text.

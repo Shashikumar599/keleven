@@ -1,0 +1,6 @@
+READER q054 (Michael after Scranton). Reference: mostly off-camera; Colorado with Holly (S7E21 sc.1), returns in finale S9E23 sc.68 as Dwight's surprise "Bestish Mensch", Pam sc.76 on the kids' pictures/two phones.
+A 9: complete, direct: Boulder, married, kids, finale best man, Pam's two-phones line (S9E23 sc.76 per reference). Minor: "bestest mensch" (transcript says "Bestish Mensch", sc.68), finale numbered E24/25 (split numbering, fine), no source labels.
+B 6: gives the finale return correctly (sc.68: Jim says he can't be best man, then Dwight whispers "Michael. I can't believe you came."). Honestly says the rest is missing, but omits the Colorado move, which was available in S7E21; incomplete for the reader.
+C 8: Colorado with Holly, marriage/kids, finale, Pam; "arranged by Jim" is supported (sc.68 Jim stalls, "Best prank ever" sc.69). Cites sc.68 correctly; labels the finale and Pam facts as [memory] though in the transcripts, cosmetic. Says "two phones" fine.
+D 5: honest decline but with Colorado move (S7E21 sc.1) and "not left yet" (sc.4); gives the reader little, because the finale scenes were not sent. Hedged fairly, useful only for the first step.
+E 8: Colorado, marriage, kids, finale best man, Pam's two phones; all behind [memory], which is allowed. Complete and direct; "bestest mensch" slight wording slip.

@@ -1,0 +1,117 @@
+{
+ "question_id": "q076",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "No; reads Michael's rumor, Brad Pitt doubt, S8E20 fake coming-out and retraction, S9E18 denial correctly; does not say Michael admitted inventing it.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 9,
+     "reader": 8
+    },
+    "scores": {
+     "position": 2,
+     "support": 2,
+     "reading": 2,
+     "counterpoint": 2,
+     "scope": 1
+    },
+    "total": 9
+   }
+  },
+  "B": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Right no, rumor false, but says it covered 'a true rumor about Stanley's affair' (the true rumor was Pam's pregnancy, S6E1 sc.27; Stanley's affair was invented); says Andy concludes he is straight (sc.23 'kinda confused'); skips S8E20.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 8,
+     "reader": 7
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 1,
+     "counterpoint": 1,
+     "scope": 2
+    },
+    "total": 7,
+    "calibration": "overconfident"
+   }
+  },
+  "C": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "No; rumor fabricated, Brad Pitt doubt, S8E20 lie and retraction, S9E18 denial; memory labelled. NOT FOUND marks are speaker-prefix only.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 9,
+     "reader": 8
+    },
+    "scores": {
+     "position": 2,
+     "support": 2,
+     "reading": 2,
+     "counterpoint": 2,
+     "scope": 1
+    },
+    "total": 9
+   }
+  },
+  "D": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "No; exact quotes, fake coming-out read as an excuse and retracted, Andy's wondering as counterpoint; does not say the rumor was invented.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 10,
+     "reader": 7
+    },
+    "scores": {
+     "position": 2,
+     "support": 2,
+     "reading": 1,
+     "counterpoint": 1,
+     "scope": 2
+    },
+    "total": 8
+   }
+  },
+  "E": {
+   "score": 6,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "evidence_misread",
+   "notes": "Right no, but misreads Oscar: in S6E1 sc.21 Oscar says 'you might be gay' and the 'insecure heterosexual men' line is rhetorical, not a note that Andy is straight; omits the Brad Pitt doubt as counterpoint.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 7,
+     "reader": 7
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 1,
+     "counterpoint": 0,
+     "scope": 2
+    },
+    "total": 6
+   }
+  }
+ }
+}

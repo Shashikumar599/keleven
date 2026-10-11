@@ -1,0 +1,4 @@
+FACT lens, q061 (S2E5 Halloween costumes)
+A: 9. All four match the reference (Michael second head, Dwight Sith Lord, Jim three-hole punch, Pam cat). Proof: S2E5 sc.1 "Pam, in her cat costume"; sc.4 "I am a Sith Lord", "three round pieces of paper taped to a shirt"; sc.6 "I don't really have two heads". Minor: "hood and lightsaber" is not in the dialogue (matches the reference only).
+B: 7. Four costumes right, but adds "specifically Emperor Palpatine [memory]" and "black" cutouts. S2E5 only says "Sith Lord"; a search for palpatine/emperor/black in S2E5 found nothing. Unverifiable extra claim of substance.
+C: 6. Four costumes right in substance, but the extras are not in the transcripts: "Emperor Palpatine", "black cat with painted whiskers", "black paper circles" (S2E5 has only "cat costume", "Sith Lord", "round pieces of paper"). Several unverifiable details.

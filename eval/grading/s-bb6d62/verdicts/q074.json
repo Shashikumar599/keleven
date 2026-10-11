@@ -1,0 +1,55 @@
+{
+ "question_id": "q074",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Says no: Jan used a sperm bank, insists 'It's not Kevin's child' (S5E3 sc.44), and Kevin's guess is unconfirmed; does not take his joke literally.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 9,
+     "reader": 9
+    },
+    "premise_true": false,
+    "outcome": "corrected"
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Same correct 'no', adds the S4E14 sc.64 sperm-bank setup (the flagged IHop quote is real) and labels 'never confirmed' as [memory].",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 8,
+     "reader": 9
+    },
+    "premise_true": false,
+    "outcome": "corrected"
+   }
+  },
+  "C": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Correct 'no, never confirmed' with right episodes (split numbering); minor embellishments ('regularly donates', donor from catalog).",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 6,
+     "reader": 7
+    },
+    "premise_true": false,
+    "outcome": "corrected",
+    "calibration": "ok"
+   }
+  }
+ }
+}

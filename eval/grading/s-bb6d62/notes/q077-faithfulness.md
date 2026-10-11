@@ -1,0 +1,4 @@
+Faithfulness q077
+A: 8. Claims (senator married Angela, secret affair with Oscar) are true and the affair rests on S9E6 sc.44 (Kevin: "Oscar is having sex with the senator and Angela doesn't even know."; the packet's "not found" is the quote's added tail "Her life is a complete sham!", which is real). Slip: the marriage to Angela is stated as fact with no [memory] tag while none of the sent passages is the proposal/husband line (S7E24 sc.46 is Ryan/Oscar gossip); only Kevin's line implies it. S9E14 sc.32 cite is weak support.
+B: 7. Memory only, knows_answer True, correct on marriage, affair and S9E19 coming out. Slip: says he came out revealing involvement with his "campaign manager"; S9E19 sc.33 says Chief of Staff Wesley Silver. Small wrong detail under a confident answer.
+C: 9. Marries-Angela and "did not end up with Oscar" are tagged [memory] and true; affair cited to exact S9E6 sc.44 words. Labels are correct. Brief and honest.

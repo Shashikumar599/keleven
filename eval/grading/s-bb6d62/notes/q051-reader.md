@@ -1,0 +1,4 @@
+READER lens, q051
+A: 6. Direct and correct but thin: gives "new life with Holly" without saying why Colorado (Holly's father's health, S7E18 sc.26/39 per reference). Proof of the quote: S7E21 sc.1 and sc.50 "Holly's my family now" (checked). Reader learns the destination, not the cause.
+B: 6. Same core as A plus "Holly moved to Colorado to care for elderly parents [memory]"; points at the right kind of cause but hedged-by-label and loosely phrased (Holly needed to go home because her dad was ill; "moved" is imprecise). "fiancée" is unlabelled. Its sc.50 quote adds "The babies that I make with her..." which is in S7E21 sc.50 (checked; the packet's NOT FOUND is a truncation artifact, text exists).
+C: 8. Most useful: names Colorado, Holly, and her parents' health as the reason, plus the proposal and the two episodes (numbers are split numbering S7E19/22 vs S7E18/21 here; acceptable). Confident and complete for a general reader.

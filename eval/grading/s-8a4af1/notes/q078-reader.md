@@ -1,0 +1,6 @@
+q078 reader note. Reference stages checked: S4E1 sc.4 (Jim broke up after the interview, desk empty), S4E6 sc.2 (Karen regional manager of Utica), S5E14 sc.22 (husband Dan, dermatologist, pregnant).
+A: 9. Tells the whole arc in order: breakup, leaves Scranton, Utica regional manager, married to Dan the dermatologist and pregnant, warm with Pam. Complete and easy to follow; memory answer so no scene cites, episode numbers in split numbering (accepted).
+B: 9. Full arc with cites: breakup after the NY interview, empty desk, Utica manager (labelled memory), the Stanley raid, later pregnancy and Dan. Slightly cluttered by the mixed citations, but a reader gets everything needed.
+C: 1. Refuses ("passages do not contain information") and even says the breakup is not shown. Honest given what it was sent (only up to S3E23), but the reader gets nothing.
+D: 8. Covers breakup, leaving Scranton, Utica manager, Dan and pregnancy, with memory labels. Misses the Stanley-poaching raid detail; straightforward and complete on the required stages.
+E: 7. Short bullet list with the key stages (breakup, moved to Utica, pregnant, married Dan) cited to the lines, hedged as from a graph that may be incomplete. Never says she became Utica's regional manager and leaves out the corporate-job outcome, so the answer is thinner than the others.

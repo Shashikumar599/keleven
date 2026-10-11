@@ -1,0 +1,6 @@
+q067 reader lens
+A: 7. Clear position (marriage would have failed; Jim-Pam never happen), marks speculation after a flat opening claim, real counterpoint ("maturity and dignity" S3E16 sc.8, checked). Misses the post-breakup growth and ending details (Austin, Roy/Laura); counterpoint on Roy supporting her art show is thin (reference: he left her show early, S3E16 sc.37).
+B: 8. Opens by saying it is speculation, offers two scenarios and a clear conclusion, gives the strongest counterpoint (conflict-avoidance trapping her). Uses the real ending (Austin/Athleap) and Roy's later maturity as memory, labelled. Slightly sprawling but direct.
+C: 7. Position clear, speculation flagged, counterpoint balanced by Roy maturing (S9E2). Leans on unlabelled-as-scene memory for most of the ending; "never in love with Roy" is stated as fact, not speculation.
+D: 7. Same shape as A; opens with a flat claim ("would not have occurred") before hedging; cites S9E2 Roy wedding correctly (sc.11-12 are Jim and Pam arriving; checked sc.12 "Is this his house?"). Good counterpoint (Roy matured). Pam art-school-while-engaged-to-Jim is accurate to the show.
+E: 7. Opens "entirely speculative", takes a position, offers a counter view; mentions Roy trashing the bar (S3E17) and Roy/Laura (S9E2). No scene proof but a reader gets a complete useful answer. Typo "Athlead".

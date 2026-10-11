@@ -1,0 +1,97 @@
+{
+ "question_id": "q041",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "17, matches truth; states it counted distinct episodes with a Holly speaker label.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    },
+    "truth": 17,
+    "given": 17,
+    "exactness": "exact",
+    "states_what_counted": true
+   }
+  },
+  "B": {
+   "score": 6,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Says approximately 16 (or 17) and lists 16 episodes, omitting Goodbye, Michael; close and labelled approximate but not exact.",
+   "details": {
+    "lens_scores": {
+     "fact": 6,
+     "faithfulness": 6,
+     "reader": 5
+    },
+    "truth": 17,
+    "given": 16,
+    "exactness": "approximate",
+    "states_what_counted": false,
+    "calibration": "overconfident"
+   }
+  },
+  "C": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "17 from the SQL, exact; does not spell out what was counted beyond the dataset.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 9,
+     "reader": 7
+    },
+    "truth": 17,
+    "given": 17,
+    "exactness": "exact",
+    "states_what_counted": false
+   }
+  },
+  "D": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "17 from the SQL, exact; quote verified; does not say what was counted.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 8
+    },
+    "truth": 17,
+    "given": 17,
+    "exactness": "exact",
+    "states_what_counted": false
+   }
+  },
+  "E": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "17 distinct episodes from the SQL, with real example episodes.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 8
+    },
+    "truth": 17,
+    "given": 17,
+    "exactness": "exact",
+    "states_what_counted": true
+   }
+  }
+ }
+}

@@ -287,3 +287,78 @@ One short entry per eval run: what changed, the scores, and one line of interpre
 - **Findings:** errors are over-reach (inference or contested claim stated as fact), not invention. The participant flag (28% of
   events) did not point to a wrong event in the sample. Importance is noisy (about 4 of 16 "major" arguable). The senator
   appears as "Robert" (needs linking).
+
+## 2026-10-10 · v3 run `2026-10-10-v3` (answers collected, not graded yet)
+- **What:** pipeline v3 (v2 + graph query) on the 80 questions, k=8 expand=1. Two batch jobs: enhancer (80 requests, 325,864 in / 7,365 out
+  tokens, 0 failures) then answers (160 requests, rag and hybrid; memory reused; 0 errors; rag 654k in / 70k out+thinking, hybrid 657k / 75k).
+  Prompts enhance_v3 b200846f, rag_v3 0f0aedc9, hybrid_v3 2ac86123. Graph build v3-graph-001.
+- **Enhancer plans:** graph query for 15 questions (q034 q036 q045 q046 q047 q048 q050 q054 q057 q058 q071 q072 q073 q077 q078), transcript SQL for 55
+  (v2: 51). No query failed. Graph returned 0 rows for q071 and q077; transcript SQL 0 rows for q005 q006 q009 q071 q079; q046 hit the 50-row cap.
+- **Citation check (not a grade):** answers with a flagged quote or scene: rag 5, hybrid 7 (v2: 2 and 1). The check compared quotes with passages and with
+  the lines shown beside graph rows; a first version missed quotes written with the speaker name, fixed in retrieval/graph.py quote_text. Still 12 answers
+  flagged after the fix, most because the quote comes from a line that was not shown (only the first 2 lines of a graph row are sent), from SQL rows,
+  or joins two lines. Whether any is invented is for the grading (faithfulness lens) to decide.
+- **rag answerable=false:** 7 (v2: 9).
+- **Interpretation:** nothing about quality yet; grading comes next. q078 and the q045 shape were seen during design, so those questions are reported separately.
+
+## 2026-10-10 · v3 grading, first 30 questions (set s-bb6d62, Sonnet 5.5 council; v2 = stored grading s-bcc971, not regraded)
+- **What:** q001-q030 graded by the council (3 lens members per batch of 10, then a chair), rubrics-v2, owner-verified references, all roles claude-sonnet-5-5.
+  The remaining 50 questions are not graded yet. None of the 30 got a graph query (the 15 graph questions start at q034), so this part checks that the v3 enhancer
+  and answer prompts did not hurt questions the graph does not touch.
+- **Mean score /10, q001-q030:** memory v2 6.63 / v3 6.73 (+0.10); rag 9.63 / 9.60 (-0.03); hybrid 9.77 / 9.83 (+0.07). Verdict counts identical for v2 and v3 in every column
+  (rag 29 correct + 1 refused; hybrid 30 correct; memory 18 correct, 7 partial, 5 wrong). Only two rag/hybrid answers moved by 2 points: q013 hybrid 8 -> 10, q029 hybrid 10 -> 8.
+- **Grader noise, measured:** the 30 memory answers are the same stored text in both gradings; 11 of 30 got a different score (mean absolute difference 0.37, maximum 1,
+  mean change +0.10). Differences of this size between v2 and v3 are noise.
+- **Interpretation:** no regression on the 30 questions the graph does not touch, and no gain either (these are mostly detail and quote questions v2 already answers). The
+  comparison that matters is q031-q080 (all 15 graph questions) and the ten new graph questions.
+- Caveats: the grader models of the stored v2 grading were mixed and unrecorded; v3 answers can reveal the version ("according to the graph"), though none of these 30 did.
+
+## 2026-10-10 · v3 grading, all 80 questions (set s-bb6d62; v2 = stored grading s-bcc971, not regraded)
+- **What:** all 80 questions graded by the council (Sonnet 5.5, all roles), 240 answers (rag, hybrid, memory). Replaces the 30-question entry above.
+- **Mean score /10, v2 -> v3, all 80:** memory 7.06 -> 6.62 (-0.44); rag 8.65 -> 8.78 (+0.12); hybrid 9.36 -> 9.14 (-0.23).
+  Verdicts rag: correct 64 -> 68, partial 10 -> 7, refused 5 -> 3, wrong 1 -> 2; hybrid: correct 77 -> 72, partial 2 -> 7, wrong 1 -> 1.
+- **Grader drift measured on identical text:** the 80 memory answers are the same stored text in both gradings; 37 of 80 got a different score, mean absolute difference
+  0.66, maximum 4, mean signed -0.44 (this grader is harsher). So differences below about 0.5 on the mean are noise; adjusted for the drift: rag +0.56, hybrid +0.21.
+  The drift is largest on opinion (-1.33 on identical memory text), so opinion-question drops are mostly the grader.
+- **The 15 graph-query questions:** rag 6.40 -> 7.60 (+1.20), hybrid 8.73 -> 8.13 (-0.60), memory -0.93 (drift). The other 65: rag -0.12, hybrid -0.14.
+  The gain is the transcript-only (rag) answers on q045 5->9, q046 3->7, q073 2->9, q078 2->6 (all four had retrieval-miss failures in v2). Hybrid was already 8-9 on
+  them (memory covered the gap) and did not move. The five questions looked at during design (q045 q046 q071 q073 q078): rag 2.80 -> 6.60; the other ten graph-query
+  questions: rag 8.2 -> 8.1, hybrid 9.4 -> 8.7 (no gain). q071 (Mose) and q048 (fire drill) are still unanswerable: the graph held no matching event.
+- **By category (rag):** list 5.7 -> 8.3, false_premise 6.3 -> 8.7, story_arc 2 -> 6 (n=1); opinion 6.2 -> 4.7, multi_hop 9.8 -> 9.0; detail, which_episode, visual, count unchanged.
+- **Regressions to look at:** q070 rag 4 -> 1 (refused although its passages held the answer, refused_with_evidence); q058 hybrid 9 -> 6 (memory extra "campaign manager Thomas" invented,
+  the show says Chief of Staff Wesley Silver); q071 hybrid 3 -> 1; judgment questions q068 q069 q080 q067 (literal_reading, claim_beyond_evidence; partly grader drift).
+- **Interpretation:** the graph fixes what it was built for (list, arc and false-premise questions where one search misses the later seasons) in the transcript-only answers, by
+  3 to 7 points each. The 80-question mean does not move beyond noise because most questions never touch the graph and the hybrid answers were already carried by memory. The gain
+  is shown on questions studied during design, so it is not yet independent evidence: the ten new graph questions are the held-out test.
+- **Caveats:** different grader models than the stored v2 grading (mixed, unrecorded) and visible drift; single run; v3 answers can reveal the version ("according to the graph");
+  the packet's citation flags were partly stale (fixed in the run file, not in the database).
+
+## 2026-10-11 · v2 vs v3 on the twelve new questions q081-q092 (combined blind set s-fed62b, Sonnet 5.5 council, one session)
+- **What:** ten graph-shaped questions (q081-q090, written by Claude before looking at graph output) and two owner controls (q091 why Scranton performed better, q092 was Angela toxic and mean). Runs 2026-10-11-v2-new
+  and 2026-10-11-v3-new; the memory answer is shared (v2's text, reused by v3). Each question had five answers (v2 rag, v2 hybrid, v3 rag, v3 hybrid, memory) shuffled under A-E and graded in one session, so grader drift
+  does not separate the versions. References built from the transcripts only and accepted by the owner. Graders were told to score each answer on its own merits.
+- **Mean score /10:** all 12: memory 7.00; rag v2 6.00 -> v3 7.58 (+1.58); hybrid v2 7.58 -> v3 8.08 (+0.50). The ten graph-shaped: rag 5.60 -> 7.60 (+2.00), hybrid 7.60 -> 8.30 (+0.70).
+  The two controls (n=2): rag 8.0 -> 7.5, hybrid 7.5 -> 7.0.
+- **Per question:** rag v3 better on 6, equal on 5, worse on 1; hybrid better on 6, equal 3, worse 3. Verdicts rag: correct 4 -> 7, wrong 1 -> 0; hybrid 8 correct in both. Failure types rag: retrieval_miss 5 -> 2.
+  Clear moves (3+ points): rag q082 4 -> 10, q085 5 -> 9, q084 5 -> 8, q087 3 -> 8; hybrid q084 5 -> 9.
+- **Not fixed:** q086 (Stanley's marriages and affairs: rag 5, hybrid 6, unsupported Lydia claims), q088 (Michael's bosses: v3 rag 5, retrieval_miss; hybrid 9 -> 8), q083 and q089 partial (the S5E9 mock wedding
+  read as a marriage), q090 hybrid 9 -> 7, and hybrid still has claim_beyond_evidence in 4 of 12 answers.
+- **Reference gaps found by graders (owner to decide):** q081 add Melvina (S9E13 sc.24, S4E9 sc.19) as optional; q083 Karen and Dan are married (S5E14 sc.22); q086 the "three affairs" line (S9E22 sc.20) is not tied to Cynthia and Lydia.
+- **Interpretation:** on questions that need a list or a history across many seasons, the graph lifts the transcript-only answers by about 2 points on average and removes most retrieval misses; hybrid gains less (0.7) because memory already
+  covers part of the gap and also adds unsupported claims. The two controls moved by half a point, within noise. Caveats: only 12 questions, one run, single-answer scores are noisy by 1-2 points, the questions were chosen to suit
+  list and arc queries, v3 answers can reveal the version ("according to the graph").
+
+## 2026-10-11 · v2 vs v3 on q001-q080, regraded in one combined blind session (set s-8a4af1, Sonnet 5.5 council) - supersedes the separate-session comparison above
+- **What:** each question had five answers (v2 rag, v2 hybrid, v3 rag, v3 hybrid, one shared memory answer) under shuffled letters, judged by the same council in one session; graders had no earlier scores
+  or notes and were told to score each answer on its own merits. 400 answers, 80 chairs' verdict files. The first runs of the council hit the session limit; the missing notes and verdicts were redone.
+- **Mean score /10, v2 -> v3, all 80:** rag 8.65 -> 8.88 (+0.22); hybrid 9.21 -> 9.19 (-0.03); memory (shared text) 6.69. Verdict counts: rag correct 63 -> 66, refused 5 -> 3, wrong 1 -> 1; hybrid identical (75 / 4 / 1).
+- **15 graph-query questions:** rag 6.33 -> 7.73 (+1.40), hybrid 8.13 -> 8.47 (+0.33). **Other 65:** rag -0.05, hybrid -0.11. **All 92 (with q081-q092):** rag 8.30 -> 8.71 (+0.40), hybrid 9.00 -> 9.04 (+0.04).
+- **Where the gain is:** rag q045 5 -> 9, q046 3 -> 6, q073 2 -> 9, q078 2 -> 7 (the questions studied during design: rag 2.80 -> 6.60, hybrid +0.60). The other ten graph-query questions: rag 8.1 -> 8.3, hybrid 8.7 -> 8.9
+  (no real change). By category rag: list 5.7 -> 8.0, false_premise 6.3 -> 9.0, story_arc 2 -> 7 (n=1); opinion 6.2 -> 5.5. rag retrieval_miss failures 10 -> 4.
+- **Per question:** rag v3 better on 13, equal on 59, worse on 8 (moves of 3+: four better, one worse); hybrid better on 15, equal on 48, worse on 17 (no move of 3+).
+- **Regressions:** q070 rag 5 -> 0 (refused although its passages held candidates), q058 hybrid memory extras (invented "campaign manager Thomas"), judgment questions q068 q069 q080 (literal reading of jokes).
+- **Interpretation:** with grader drift removed, v3 leaves the 80-question mean unchanged (+0.22 rag, -0.03 hybrid, within noise) and does no harm on the 65 questions it does not touch. The graph removes
+  retrieval misses on list, history and false-premise questions in the transcript-only answers (by 3 to 7 points on four questions; +1.40 over the 15 graph-query questions) but not in hybrid, where memory already
+  covers the gap; the gain beyond the four studied questions is small on the old set and large (+2.00 rag, +0.70 hybrid) on the ten new graph-shaped questions.
+- **Caveats:** one run; Sonnet-only graders; v3 answers can reveal the version ("according to the graph"); per-answer scores are noisy by 1 to 2 points; q040's reference is internally inconsistent (30 against 24); the citation
+  results stored in the database for the first v3 run are from the stricter check (the run file was updated).

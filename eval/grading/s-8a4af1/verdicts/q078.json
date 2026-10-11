@@ -1,0 +1,87 @@
+{
+ "question_id": "q078",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Full arc: breakup, leaves Scranton, Utica regional manager, married to dermatologist Dan and pregnant; split episode numbers accepted; omits Pam/Ryan outcome.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 6,
+     "reader": 9
+    },
+    "main_cause_ok": true,
+    "wrong_claims": [],
+    "calibration": "ok"
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Breakup and empty desk (S4E1 sc.4), Utica manager and Stanley raid, pregnancy and Dan (S5E14); memory labelled and true.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 9,
+     "reader": 9
+    },
+    "main_cause_ok": true,
+    "wrong_claims": []
+   }
+  },
+  "C": {
+   "score": 2,
+   "verdict": "refused",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Honest refusal; only S3 scenes up to S3E23 sc.67-69 were sent, nothing after the breakup.",
+   "details": {
+    "lens_scores": {
+     "fact": 2,
+     "faithfulness": 9,
+     "reader": 1
+    },
+    "main_cause_ok": false,
+    "wrong_claims": []
+   }
+  },
+  "D": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Breakup, leaves Scranton, Utica manager, Dan and pregnancy; only the S3E23 sc.68 claim cited, rest labelled [memory] and true.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 9,
+     "reader": 8
+    },
+    "main_cause_ok": true,
+    "wrong_claims": []
+   }
+  },
+  "E": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "yes",
+   "failure_type": "incomplete",
+   "notes": "Breakup, move to Utica, pregnancy, Dan all cited and true, but never says she became Utica regional manager and gets pregnant/married order reversed.",
+   "details": {
+    "lens_scores": {
+     "fact": 6,
+     "faithfulness": 8,
+     "reader": 7
+    },
+    "main_cause_ok": true,
+    "wrong_claims": []
+   }
+  }
+ }
+}

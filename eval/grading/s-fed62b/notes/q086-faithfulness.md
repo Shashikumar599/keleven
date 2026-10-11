@@ -1,0 +1,11 @@
+q086 faithfulness
+
+A (memory): 5. Asserts with confidence (knows_answer True, uncertain []) that the Teri marriage "ends after Michael exposes Stanley's infidelity in 'Gossip'". Contradicted: in Promos Phyllis says "I thought Terry knew about Cynthia?" Stanley: "She does. But neither of them know about Lydia" (S9E18 sc22), and the divorce papers are mentioned only in the finale (S9E23 sc49). "Teri (Second Wife)" and a "first wife" are unsupported (only the S4E12 sc13 joke). Right: Teri at the Dundies (S2E1 sc25), Cynthia and Niagara (S6E4 sc20), Florida and carving birds (S9E23 sc49). Lydia missing.
+
+B (transcripts only): 9. Every claim traces to a cited scene: "my wife's name is Terri" (S2E1 sc25), Teri at an expo (S6E1 sc9), Cynthia the rehab nurse (S6E1 sc15), "Mr. and Mrs. Stanley Hudson" and "I brought Cynthia with me" (S6E4 sc20), "three affairs" (S9E22 sc20). States honestly that Cynthia is the only named partner in its text.
+
+C (transcripts only): 8. Supported: "current wife ... my next one too" (S4E12 sc13; the inference of an earlier wife is reasonable but is an inference), "Teri's been traveling a lot" and Cynthia (S6E1 sc15), Niagara (S6E4 sc20), three affairs and "my wife did it" (S9E22 sc20). Does not claim Lydia or divorce, honestly hedged.
+
+D (transcripts + memory): 6. "First wife: previous ex-wife [S4E12 sc13]": the line only says "my wife ... current wife ... next one", it never says ex-wife. Memory claim that Stanley is "shown having an affair" with Lydia during the Sabre Florida project in Season 8: labelled [memory] but the transcripts only mention Lydia in S9E18 sc22 with no scene of her (S8 only has Cynthia mentioned S8E4 and a Stanley cocktail line S8E16 sc12). "Two lovers" cite is Michael's line S6E16 sc44, supported. "three affairs" S9E22 sc20 supported.
+
+E (transcripts + memory): 6. Same memory error: Lydia affair "shown" in Season 8 Sabre Florida (no such scene; Lydia is only named in S9E18 sc22). "Third Affair" heading misstates S9E22 sc20, where Stanley says he has had three affairs in total, and "two marriages" rests on a memory claim ("first wife, mother of Melissa") that is only an inference from "step-mother" (S2E18 sc34 Melissa: "That woman is not my mother. That is my step-mother"). Teri at the Dundies (S2E1 sc25), Teri's job (S6E1 sc9), Cynthia (S6E1 sc15, S6E4 sc20) are supported.

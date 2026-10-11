@@ -1,0 +1,3 @@
+A: 10. Mom; caller gave name Brandon; Val laughingly confirms (S8E14 sc.33: "She said her name was Brandon, I think. Your mom's name is Brandon?" / Val: "Yeah Darryl, my mom's name is Brandon."). Notes the Bob label in sc.15 correctly. "Deep voice" is Darryl's line, right.
+B: 8. Both parts right (mom, Brandon, S8E14). Minor: "asking for directions" vs address (sc.33: "looking for the address"); does not mention Val's laughing confirmation, and does not flag it as a cover story, though "her boyfriend" is true per reference.
+C: 10. Mom; Brandon; Val jokingly confirms; notes Bob label in sc.15. All checked in sc.15 and sc.33.

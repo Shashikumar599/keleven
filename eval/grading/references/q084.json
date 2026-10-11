@@ -1,0 +1,113 @@
+{
+ "question_id": "q084",
+ "reference": "Jan Levinson is Michael's corporate boss, then his girlfriend, then his ex, and finally the mother of a child that is not his. (1) Boss/subordinate: S1E1 sc.10 Jan gives Michael the downsizing news; S1E3 sc.3 she tells him to deliver bad news. (2) First kiss: after they win the county account at Chili's, they kiss (The Client, S2E7 sc.36); Michael pushes for 'closure' and she insists nothing happened (Performance Review, S2E8 sc.15, sc.28). In Casino Night (S2E22 sc.26, sc.39) Jan agrees to attend, Michael has also invited Carol, and Jan is left to be polite. (3) Secret affair: in Back from Vacation (S3E11 sc.32) Jan says he is wrong for her in every way but she is attracted to him, kisses him and tells him to meet at his condo. It continues in secret then goes public in Cocktails (S3E17 sc.20, sc.26: love-contract waiver, 'Jan and I are lovers'); the same night she throws herself at him in a bathroom and says it may have been a mistake to take it public (sc.36, sc.47). It stays tangled with work (The Negotiation S3E18 sc.37, sc.44, a third party must attend; Women's Appreciation S3E21 sc.6, sc.40, he tries to break it off by voicemail and she arrives and plays it back). In The Job (S3E23 sc.25, sc.34) she asks to get back together after a break and he agrees; Jan is fired by David Wallace while Michael is interviewing, and Michael withdraws his name (sc.65, sc.67); she moves in with him (sc.69). (4) Living together, Season 4: Jan is jobless, starts a candle business and is increasingly controlling and unstable (Fun Run/Dunder Mifflin Infinity S4E1-2 sc.52, S4E1 sc.59, S4E4 sc.8, sc.41, sc.72, sc.87 money trouble; The Deposition S4E8 sc.32, sc.46, her lawyer uses his diary and the Chili's parking-lot kiss, she says 'I love you too'). (5) End: at their Dinner Party (S4E9 sc.19, sc.20) a shouting fight ends with Jan throwing his Dundie at his plasma TV; police arrive, Michael goes off with Dwight and the relationship is over. In Chair Model (S4E10 sc.7, sc.30, sc.42, sc.44) Michael is on the rebound, says he's swearing off Jan, lives at Dwight's farm for a month and later says 'Jan and I had love... We did not have marriage'. (6) Aftermath: in Goodbye, Toby (S4E14 sc.64) Jan, pregnant, tells Michael he is not the father (sperm bank); he offers to go to Lamaze (sc.66, sc.81). Baby Astrid is born off screen; Michael meets her at the baby shower (S5E3 sc.17) and helps Jan in Weight Loss (S5E1 sc.113, sc.116). Later he refers to her as a former lover/disaster (S5E18 sc.7, S6E22 sc.16). Last on-screen meeting is Sex Ed (S7E4 sc.21, sc.23): a 'post mortem' of the relationship, where they agree it was exciting because it was wrong; she is happy as a single mom. Jan keeps appearing without him (S9E7, S9E15).",
+ "evidence": [
+  {
+   "scene": "S2E7 sc.36",
+   "line": "Jan: I am really- [Michael kisses Jan] Thrilled. [Michael and Jan kiss again] Let's go."
+  },
+  {
+   "scene": "S2E8 sc.28",
+   "line": "Michael: I just don't understand why you have to pretend like nothing happened. Jan: Because nothing did, Michael."
+  },
+  {
+   "scene": "S2E22 sc.39",
+   "line": "Michael: ...it has always been my understanding that we have an open relationship. (Carol and Jan both present)"
+  },
+  {
+   "scene": "S3E11 sc.32",
+   "line": "Jan: You're wrong for me. In every way. But I still find myself wanting to... be with you. [kisses Michael] Wait 15 minutes... and meet me at your condo."
+  },
+  {
+   "scene": "S3E17 sc.26",
+   "line": "Michael: Jan and I are lovers. It feels so good to finally say that out loud."
+  },
+  {
+   "scene": "S3E17 sc.47",
+   "line": "Jan: ...Maybe it was a mistake to take it public."
+  },
+  {
+   "scene": "S3E21 sc.40",
+   "line": "Michael (voicemail): I think we need a little break, permanently... Jan arrives and plays it back."
+  },
+  {
+   "scene": "S3E23 sc.25",
+   "line": "Jan: I miss you. I want us to get back together."
+  },
+  {
+   "scene": "S3E23 sc.65",
+   "line": "David: The time has come for you to end your professional relationship with this company."
+  },
+  {
+   "scene": "S3E23 sc.69",
+   "line": "Michael: you could come and stay at my condo. Jan: my full-time job could be our relationship."
+  },
+  {
+   "scene": "S4E8 sc.32",
+   "line": "Michael: How can you give up my diary like that? ... Jan: I love you too."
+  },
+  {
+   "scene": "S4E9 sc.19",
+   "line": "Jan picks up Michael's dundie and throws it into his plasma screen tv"
+  },
+  {
+   "scene": "S4E9 sc.20",
+   "line": "Dwight: Michael can come home with me. Jan: Bye Babe!"
+  },
+  {
+   "scene": "S4E10 sc.7",
+   "line": "Michael: I was completely swearing off one woman. Jan."
+  },
+  {
+   "scene": "S4E10 sc.44",
+   "line": "Michael: Jan and I had love. We did not have marriage. We did have a baby carriage..."
+  },
+  {
+   "scene": "S4E14 sc.64",
+   "line": "Jan: you are not the dad... I went to a sperm bank."
+  },
+  {
+   "scene": "S5E3 sc.17",
+   "line": "Michael: So this is Astird. Jan: Astrid."
+  },
+  {
+   "scene": "S7E4 sc.21",
+   "line": "Jan: Michael Scott, you are here for a post mortem."
+  },
+  {
+   "scene": "S7E4 sc.23",
+   "line": "Jan: if there's anything exciting about it it's because we both knew it was wrong!"
+  }
+ ],
+ "sources": [
+  "S1E1 sc.10",
+  "S2E7 sc.36",
+  "S2E8 sc.28",
+  "S2E22 sc.39",
+  "S3E11 sc.32",
+  "S3E17 sc.26",
+  "S3E17 sc.47",
+  "S3E21 sc.40",
+  "S3E23 sc.65",
+  "S3E23 sc.69",
+  "S4E8 sc.32",
+  "S4E9 sc.19",
+  "S4E9 sc.20",
+  "S4E10 sc.7",
+  "S4E14 sc.64",
+  "S5E3 sc.17",
+  "S7E4 sc.21",
+  "S7E4 sc.23"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "accepted_alternatives": [],
+ "confidence": "high",
+ "caveats": "Main cause/spine: boss -> secret affair (from S2E7 kiss, S3E11 in earnest) -> public relationship (S3E17) -> Jan fired (S3E23) -> cohabitation -> Dinner Party breakup (S4E9) -> Jan's pregnancy by sperm donor, not Michael (S4E14) -> post mortem (S7E4). The breakup itself (the Dundie/TV fight) is shown at S4E9; the transcript does not show a formal 'breakup' line, it is inferred from Michael staying at Dwight's and S4E10 'after Jan and I...'. Jan's firing and Michael's role in it are visual-heavy; Michael says he did not tell her about it. Michael's Hawaii/Jamaica trip and many visual details are not in the transcripts.",
+ "question": "What is the history between Jan and Michael across the series?",
+ "category": "story_arc",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": true,
+ "owner_note": "accepted as is by the owner, 2026-10-11"
+}

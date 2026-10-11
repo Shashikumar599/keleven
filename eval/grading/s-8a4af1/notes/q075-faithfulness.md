@@ -1,0 +1,6 @@
+Faithfulness note q075
+A 8: pure memory, no scene claims; blackmail of Angela (S5E10), Creed as thief/criminal match the reference. "possible murderer" rests on Creed's own jokes, stated as hedged ("possible"). Confidence fits an opinion question.
+B 8: quotes exact (S6E12 sc6 "Congrats Phil!", S9E23 sc9 police/LSD, sc10 fudge, sc105 song, S5E25 sc35 windshield). Overreach: "Creed's ... warmth toward the group" from one donated windshield ornament (S5E25 sc35). Says "faking his death" is in the police list; sc9 says he faked his death in the baler and then police showed up (close enough). Honestly flags the narrow sample.
+C 9: transcript quotes exact (S3E20 sc53, S4E14 sc22 "Quabity assuance", S6E12 sc7/8, S9E23 sc9/10); memory claims (knitting, Debbie Brown firing, blackmail) all labelled [memory] and true per reference (S3E20, S5E10). "barely knows his job title" is a fair reading of sc22.
+D 8: quotes exact; "faking his death again in a baler" supported by S9E23 sc9. "blunt and judgmental" built only from Phyllis's "She's not hot" (S5E12 sc5), thin; Creed "generously" offering ornament is mild overreach.
+E 8: citations exact (sc10 fudge, sc105 song, sc107 "I still have my medal from that", S6E12 sc8). Memory claims (blackmail, barbed remarks, Creed avoids drama) labelled. "participates enthusiastically" in Cafe Disco from one line is slight overreach.

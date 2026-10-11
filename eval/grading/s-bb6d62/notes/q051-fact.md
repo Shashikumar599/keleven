@@ -1,0 +1,4 @@
+FACT lens, q051
+A: 7. Gets the destination and motive (Colorado, new life with Holly; S7E21 sc.1, sc.50 "Holly's my family now"). Misses the cause in the reference: Holly has to go back because her dad is unwell and Michael decides to go with her (S7E18 sc.26, sc.39). Nothing false.
+B: 8. Same core as A plus "fiancee" (true, proposal S7E18 sc.39) and [memory] that Holly moved to care for her elderly parents (close to the reference's "my dad isn't doing so well", S7E18 sc.26). Its quote from S7E21 sc.50 is real (the scene text has a bracket in the middle, so the checker flagged it).
+C: 8. Memory: Colorado with fiancee Holly to help care for aging parents (matches ref cause), proposal and decision in Garage Sale, departure in Goodbye, Michael. Episode numbers (E19, E22) are split numbering of S7E18, S7E21 here; accepted. "Aging parents" slightly broader than "her father".

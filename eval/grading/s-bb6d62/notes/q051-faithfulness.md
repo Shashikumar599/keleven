@@ -1,0 +1,4 @@
+q051 faithfulness
+A: 8. Core claim backed by S7E21 sc.1 (Michael: "I'm moving to Colorado to start my new life with Holly") and sc.50 ("Holly's my family now"). Slight stretch: sc.52 is Pam relaying that he was excited to see Holly, so it supports "family" only loosely. No invented quote.
+B: 7. Quotes are real (sc.50 text matches; the tool's NOT FOUND is only because a stage direction sits mid-quote). But "his fiancée" appears in the first sentence next to the sc.1 citation, unlabelled: S7E21 has no "fianc" word in the passages (checked), so it is a memory claim without a [memory] tag. The elderly-parents claim is labelled [memory] correctly.
+C: 8. Memory only, confident and consistent with the reference (Holly, Colorado, her parents; proposal in Garage Sale S7E18, which is "Season 7 Episode 19" in split numbering, fine). Calibration ok. Says "fiancée" which is true (proposal S7E18 sc.39 per reference).

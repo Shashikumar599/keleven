@@ -1,0 +1,5 @@
+READER lens, q080 (Most boring main character) Judgment.
+
+A: 6/10. Position: Toby (clear), three candidates, counterpoint given. Support is partly weak: uses Michael's "if Toby is a part of it... then it'll suck" (S3E22 sc.9) as proof Toby is boring, but that is Michael's bias, not a verdict on boredom; the rest of the Toby case is [memory]. Pam's lines (S3E22 sc.13, S9E1 sc.44) are used correctly as her self-description, not as a verdict. Reasonable but reading is only partial.
+B: 5/10. Position: Toby, with Stanley as alternative and a good counterpoint (his quirks, Costa Rica, Strangler). Reads the show sensibly, but no scene cited at all, so support is generic memory.
+C: 4/10. Position: Pam. Takes her self-deprecating lines about her job (S3E22 sc.13) and Dwight's jab (S9E1 sc.44) as proof she is boring, a reading the show does not support (she says she loves her life, and "beauty in ordinary things", S9E23 sc.116). It does give that as the counterpoint and flags the thin sample, and cites well, but the pick rests on a literal reading of a joke. Also uses Michael's Toby insult (S3E22 sc.9) as filler.

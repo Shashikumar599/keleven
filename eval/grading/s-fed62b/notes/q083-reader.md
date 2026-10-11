@@ -1,0 +1,6 @@
+q083 READER lens (core: Phyllis/Bob, Jim/Pam, Dwight/Angela, Angela/Senator; optional Roy/Laura, Ryan/Kelly, Michael/Holly)
+A 4: only Phyllis, Jim/Pam, Ryan/Kelly. Pads with Michael's mother and Jeff (S3E15 sc17 "My Mom was marrying Jeff") and Scrantonicity band weddings: irrelevant to "couples of the series". Misses Dwight/Angela and Angela/Senator; the reader gets a half answer. Hedge is fair.
+B 6: has Phyllis, Jim/Pam, Senator (S8E1 sc11 "my husband, the Senator"), Roy/Laura, Ryan/Kelly. But gives Dwight/Angela as married in Season 5 on the S5E9 sc18 mock ceremony (Andy playing Angela's father, "Man and wife"), missing the real wedding S9E23; adds Karen/Dan (S5E14 sc22 "My husband... Dan"), a side mention. Right pair, wrong event.
+C 8: memory; all four core plus Roy/Laura, Michael/Holly (off-screen, unverifiable) and Ryan/Kelly. Clear. Slight invented detail ("4:00 a.m. courthouse"), not in transcripts.
+D 8: Phyllis, Jim/Pam, Ryan/Kelly from transcripts, then Senator, Roy/Laura, Dwight/Angela, Michael/Holly labelled memory: complete with honest split. Padded with Michael's mother/Jeff (S3E15 sc17).
+E 9: Phyllis, Jim/Pam, Ryan/Kelly, Angela/Senator, Roy/Laura; reads the S5E9 sc18 scene as a mock/unintentional ceremony and not as the wedding, then Dwight/Angela finale as memory. Best reading of the trick wedding; complete.

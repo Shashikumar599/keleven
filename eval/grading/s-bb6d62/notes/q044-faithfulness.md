@@ -1,0 +1,4 @@
+q044 faithfulness
+A: 8. Memory; says it does not know (knows_answer False) and names S2 and S7 as the candidates, which are the real top two (S2E1 sc1 "Tonight is the Dundies..."; S7 Michael's Last Dundies is S7E20 here, A says S7E21, a small slip). Honest, calibrated, but declines to pick.
+B: 8. "25 lines" for S2 and 22 for S7 match the SQL it was sent (text ~* '\mdundies\M'); quotes S2E1 sc1 and sc49 are real. Calls S7's 22 lines "mentions" (lines, not mentions) and does not say the count covers only the plural "Dundies" in text; the reference counts dund(ie|y) in dialogue (30 vs 27), so the ranking holds but figures are the SQL's. Memory label is not needed and none was used.
+C: 8. Same SQL-backed figures (25, 22, 5, 2) and the real S2E1 sc1 quote; states "lines containing the word Dundies", the accurate reading of its query. Does not note the plural-only/text-column limitation.

@@ -1,0 +1,3 @@
+A: 10. All quotes exact vs S9E19 sc48 (Andy "$5,000 up front... includes headshots"; Todd "Uh, it doesn't include headshots."; Andy "It doesn't include headshots."). SQL returned 0 rows but sc45-49 was sent, so grounded. Attribution to Todd correct.
+B: 7. Memory: $5,000 and no headshots both right, Carla Fern exists (S9E19 sc35). "Retainer" is a loose word (the line says flat rate up front), and it gives no sign of source or uncertainty; calibration ok since correct.
+C: 10. Quotes exact; "Well, of course not, because that would be insane if it did. Still getting a bargain, though." verified at S9E19 sc48 (Andy). Todd correction accurate. No unlabelled memory.

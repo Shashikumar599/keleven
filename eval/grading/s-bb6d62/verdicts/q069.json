@@ -1,0 +1,73 @@
+{
+ "question_id": "q069",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Right pick (Michael vs Toby, two bullets, Frame Toby) with Angela/Oscar as counterpoint, but invents a Goodbye Toby neck-injury beat (no neck line in S4E14), says Frame Toby is S5E9 (it is S5E8), puts the kneecap line in S9E8 and inflates it to a hitman (S9E9 sc.4 says 'tried to have my kneecap shattered').",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 5,
+     "reader": 9
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 2,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 9,
+    "calibration": "overconfident"
+   }
+  },
+  "B": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "claim_beyond_evidence",
+   "notes": "Right pick (Michael vs Toby) but mostly memory; its one cite is about Toby's replacement (S4E14 sc.17), Angela's 'Pam died' line is a staged party roast (S8E20 sc.21) used as the strongest counterpoint, and Darryl's one line is inflated to unanimous resentment.",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 7,
+     "reader": 7
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 1,
+     "counterpoint": 1,
+     "scope": 2
+    },
+    "total": 7
+   }
+  },
+  "C": {
+   "score": 3,
+   "verdict": "wrong",
+   "grounded": "partly",
+   "failure_type": "literal_reading",
+   "notes": "Picks Angela vs Pam on a staged party roast where everyone chants 'We hate Pam' (S8E20 sc.21) and pads with 'He hated himself' (S3E5, a quiz answer); Michael vs Toby is only a passing alternative. Honest low-confidence note and the performative-setting counterpoint save it from lower.",
+   "details": {
+    "lens_scores": {
+     "fact": 3,
+     "faithfulness": 6,
+     "reader": 3
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 0,
+     "counterpoint": 1,
+     "scope": 2
+    },
+    "total": 6
+   }
+  }
+ }
+}

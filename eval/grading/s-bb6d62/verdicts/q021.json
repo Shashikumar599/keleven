@@ -1,0 +1,49 @@
+{
+ "question_id": "q021",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Kerrigan, Queen of Blades, Spooked S8E5; the stated motive is a mild inference.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 8,
+     "reader": 8
+    },
+    "calibration": "ok"
+   }
+  },
+  "B": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Kerrigan from StarCraft, cited to sc.12 and sc.24 with exact quotes.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 8
+    }
+   }
+  },
+  "C": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "Right answer with exact quote; the causal link 'Toby barred him from bringing weapons' is an inference beyond the lines.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 8,
+     "reader": 9
+    }
+   }
+  }
+ }
+}

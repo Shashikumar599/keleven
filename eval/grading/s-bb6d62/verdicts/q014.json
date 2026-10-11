@@ -1,0 +1,49 @@
+{
+ "question_id": "q014",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "$4,300 by end of day, S5E9 sc.1.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    }
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "$4,300 right; episode given as S5E10 is split numbering (accepted).",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 6,
+     "reader": 6
+    },
+    "calibration": "ok"
+   }
+  },
+  "C": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "$4,300 and deduction detail, S5E9 sc.1.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    }
+   }
+  }
+ }
+}

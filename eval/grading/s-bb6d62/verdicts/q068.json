@@ -1,0 +1,74 @@
+{
+ "question_id": "q068",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 5,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "literal_reading",
+   "notes": "Picks Creed on Nellie's insult 'a thousand years old' and banter (S8E21 sc.37) plus memory, and misstates Phyllis (sc.37-38 is her late orgasm, not Bob). Meredith named as rival with the supplier deal from memory; its counterpoint undercuts the verdict.",
+   "details": {
+    "lens_scores": {
+     "fact": 4,
+     "faithfulness": 7,
+     "reader": 4
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 0,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 7,
+    "calibration": "n/a"
+   }
+  },
+  "B": {
+   "score": 4,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "literal_reading",
+   "notes": "Quotes are real but the Creed verdict rests on an insult ('a thousand years old') and the Union of the Monkey gag read as evidence; Meredith's Hammermill evidence (S5E2) was not sent.",
+   "details": {
+    "lens_scores": {
+     "fact": 4,
+     "faithfulness": 6,
+     "reader": 3
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 0,
+     "counterpoint": 1,
+     "scope": 2
+    },
+    "total": 6
+   }
+  },
+  "C": {
+   "score": 5,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "literal_reading",
+   "notes": "Picks Creed from his own '60s boast (S3E1 sc.40, a punchline) while correctly citing Meredith's supplier arrangement (S5E2), which is the better-supported case; hedged and flagged as unreliable.",
+   "details": {
+    "lens_scores": {
+     "fact": 5,
+     "faithfulness": 8,
+     "reader": 4
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 1,
+     "counterpoint": 2,
+     "scope": 2
+    },
+    "total": 8,
+    "calibration": "ok"
+   }
+  }
+ }
+}

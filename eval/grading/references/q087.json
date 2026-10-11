@@ -1,0 +1,128 @@
+{
+ "question_id": "q087",
+ "reference": "Main arc: Jim's unspoken crush on Pam (engaged to Roy) in S1-S2 becomes an open confession, then years of bad timing and other partners, then a relationship, engagement and marriage, then a late test of the marriage over Jim's Philadelphia job. Key stages with episodes: S1 (Pilot, Hot Girl) Jim is her work friend while she is engaged to Roy (S1E1 sc.34; S1E6 sc.15). S2: Jim tells Michael on the booze cruise about a crush, publicly downplays it (S2E13 sc.35, 37); S2E22 Casino Night, Jim tells Pam 'I'm in love with you', she says 'I can't' (S2E22 sc.51), then they kiss (S2E22 sc.54, S3E1 sc.2). S3: Pam calls off her wedding to Roy (S3E1 sc.24); Jim transfers to Stamford and dates Karen (S3E9 sc.3), Pam is briefly back with Roy (S3E16 sc.8) and then tells Roy about the kiss and ends it (S3E17 sc.46); Jim returns with Karen; in The Job (S3E23) Jim, after interviewing in NYC, asks Pam out to dinner (S3E23 sc.78). S4: Jim breaks up with Karen (S4E1 sc.4); Pam and Jim date (S4E1 sc.43, public by S4E2 sc.2, S4E2 sc.60 'I'm dating Jim'). Jim has bought a ring a week after they began dating (S4E10 sc.34); he plans to propose at the S4E14 party but Andy proposes to Angela first and Pam leaves for the Pratt Institute in NYC (S4E14 sc.15, 30, 70). S5E1 Jim proposes (S5E1 sc.97); they announce it (S5E2 sc.1). S6E4 Niagara: they marry, Pam five months pregnant (S6E4 sc.8, 66, 77). S6E16 The Delivery: daughter Cece is born. S8: second child Phillip (S8E4 sc.35; S8E16). S9: Jim secretly takes a Philadelphia sports-marketing job (Athleap/Athlead); Pam is hurt, they fight (S9E15 sc.28, 33), Pam says she will not move the family to Philly (S9E19 sc.42), couple's therapy (S9E20 sc.10); Jim steps back from Athleap and returns full time (S9E22 sc.16, 40); in the finale (S9E23) they move on together (Austin mention, S9E23 sc.99) and Jim calls Pam 'my wife' (S9E23 sc.55).",
+ "evidence": [
+  {
+   "scene": "S1E6 sc.15",
+   "line": "Jim: Pam and I are good buddies. I'm sort of Pam's go-to guy for her problems ... her fiance Roy."
+  },
+  {
+   "scene": "S2E13 sc.35",
+   "line": "Jim: Well the cats out of the bag. I used to have a crush on Pam and now I [hesitate] don't."
+  },
+  {
+   "scene": "S2E22 sc.51",
+   "line": "Jim: I was just... I'm in love with you. ... Pam: Well, I um... I... I can't."
+  },
+  {
+   "scene": "S2E22 sc.54",
+   "line": "Pam: ... Listen, Jim... [They kiss]"
+  },
+  {
+   "scene": "S3E1 sc.24",
+   "line": "Pam: I didn't go through with the wedding. I got cold feet, a few days before."
+  },
+  {
+   "scene": "S3E9 sc.3",
+   "line": "Jim: I have started to see Karen. It's very new ..."
+  },
+  {
+   "scene": "S3E17 sc.46",
+   "line": "Pam: Remember that casino night about a month before we were supposed to get married? I kissed Jim. ... Roy: This is so over."
+  },
+  {
+   "scene": "S3E23 sc.78",
+   "line": "Jim: Pam. ... Um, are you free for dinner tonight? Pam: Yes. Jim: All right. Then... it's a date."
+  },
+  {
+   "scene": "S4E1 sc.4",
+   "line": "Jim: I broke up with Karen after the job interview ..."
+  },
+  {
+   "scene": "S4E2 sc.60",
+   "line": "Pam (to Ryan): I'm uh, I'm dating Jim."
+  },
+  {
+   "scene": "S4E10 sc.34",
+   "line": "Jim: [shows camera an engagement ring] Got it a week after we started dating."
+  },
+  {
+   "scene": "S4E14 sc.15",
+   "line": "Pam: Guess who just got into the Pratt School of Design. ... I have to go to New York for three months."
+  },
+  {
+   "scene": "S4E14 sc.70",
+   "line": "Andy proposes to Angela on the microphone while Jim puts his ring back in his pocket."
+  },
+  {
+   "scene": "S5E1 sc.97",
+   "line": "Jim: Pam, will you marry me? Pam: Yes! [they embrace and kiss]"
+  },
+  {
+   "scene": "S5E2 sc.1",
+   "line": "Jim: Pam and I are engaged."
+  },
+  {
+   "scene": "S6E4 sc.66",
+   "line": "Pam: ... when we were getting married and I'm five months pregnant ..."
+  },
+  {
+   "scene": "S6E4 sc.77",
+   "line": "Jim: ... Plan A was marrying her a long, long time ago. Pretty much the day I met her."
+  },
+  {
+   "scene": "S6E16 sc.36",
+   "line": "Jim: Oh, my God! Look at her! baby, she's so beautiful!"
+  },
+  {
+   "scene": "S8E4 sc.35",
+   "line": "Pam: ... I also would like to toast Phillip Halpert ..."
+  },
+  {
+   "scene": "S9E15 sc.28",
+   "line": "Jim: ... Who knows less about his marriage than the sound guy."
+  },
+  {
+   "scene": "S9E19 sc.42",
+   "line": "Pam: ... I am not moving our family to Philly."
+  },
+  {
+   "scene": "S9E20 sc.10",
+   "line": "Pam: So, we had couple's therapy."
+  },
+  {
+   "scene": "S9E22 sc.16",
+   "line": "Jim: ... I almost lost Pam over this business. I'm not risking that again."
+  },
+  {
+   "scene": "S9E23 sc.55",
+   "line": "Jim: She pays me back every day just by being my wife so that's fine."
+  }
+ ],
+ "sources": [
+  "S2E22 sc.51",
+  "S3E1 sc.24",
+  "S3E17 sc.46",
+  "S3E23 sc.78",
+  "S4E1 sc.4",
+  "S4E14 sc.15",
+  "S4E14 sc.70",
+  "S5E1 sc.97",
+  "S6E4 sc.66",
+  "S6E16 sc.36",
+  "S9E15 sc.28",
+  "S9E19 sc.42",
+  "S9E20 sc.10",
+  "S9E22 sc.16"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "confidence": "medium",
+ "caveats": "Much of this arc is visual (glances, the S5E1 gas-station proposal setting, the S6E4 Niagara boat ceremony, the S9E15 Valentine's Day fight) and the fan transcript captures only the dialogue; the exact content of the S2E22 kiss in the transcript is a parenthetical stage direction and its order against 'I can't' is not fully clear from text alone. Episode numbers use the dataset's combined numbering. The S3E23 dinner date is clear, but the first actual date is not shown and the S4E1 'we're dating' scene (sc.43) is the first on-record statement; Jim says they had been dating 'a couple months' by S4E2 sc.2. S8 Phillip's birth is not shown directly in the scenes I read (only toasts and mentions), and the specifics of how the Philly conflict resolves (a DVD gesture, the Austin move) come from finale fragments, not a full read of S9E23.",
+ "question": "How does Jim and Pam's relationship progress from the first season to the end? Give the key episodes.",
+ "category": "story_arc",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": true,
+ "owner_note": "accepted as is by the owner, 2026-10-11"
+}

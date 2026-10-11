@@ -1,0 +1,77 @@
+{
+ "question_id": "q018",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Large hot chocolate with caramel and a shot of peppermint, S4E10 sc.28.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    }
+   }
+  },
+  "B": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Large hot chocolate with caramel and a shot of peppermint, S4E10 sc.28.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    }
+   }
+  },
+  "C": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Large hot chocolate with caramel and a shot of peppermint, S4E10 sc.28.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    }
+   }
+  },
+  "D": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Large hot chocolate with caramel and a shot of peppermint, S4E10 sc.28.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    }
+   }
+  },
+  "E": {
+   "score": 5,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Hot chocolate with caramel is right but 'caramel drizzle' is invented and the peppermint shot is missing; episode right (split numbering).",
+   "details": {
+    "lens_scores": {
+     "fact": 5,
+     "faithfulness": 5,
+     "reader": 4
+    },
+    "calibration": "overconfident"
+   }
+  }
+ }
+}

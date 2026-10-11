@@ -79,10 +79,18 @@ def set_label(args):
 def init(args):
     """Create a grading set for a run under a random name (no order, no version hint), unless --set is given."""
     import secrets
+    if getattr(args, "labels", None):
+        args.label = args.labels[0]
     if not (EVAL / "runs" / f"{args.label}.jsonl").exists():
         sys.exit(f"no run {args.label}")
     args.set = args.set or f"s-{secrets.token_hex(3)}"
-    (set_dir(args.set) / "config.json").write_text(json.dumps({"label": args.label}))
+    cfg = {"label": args.label}
+    if getattr(args, "labels", None):            # combined set: several runs of the same questions, graded in one blind session
+        missing = [l for l in args.labels if not (EVAL / "runs" / f"{l}.jsonl").exists()]
+        if missing:
+            sys.exit(f"no run {', '.join(missing)}")
+        cfg = {"label": args.labels[0], "labels": args.labels}
+    (set_dir(args.set) / "config.json").write_text(json.dumps(cfg))
     print(f"grading set {args.set} ready")
 
 
@@ -167,11 +175,26 @@ def packet(args):
     if row is None:
         sys.exit(f"{q['id']} is not in this set's run")
     key = load_key(args.set)
+    labels = json.loads((set_dir(args.set) / "config.json").read_text()).get("labels")
     if q["id"] not in key:
-        systems = list(row["answers"])
-        random.SystemRandom().shuffle(systems)
-        key[q["id"]] = {chr(65 + i): {"label": label, "run_id": row["run_id"], "system": s}
-                        for i, s in enumerate(systems)}
+        if labels:                  # combined set: every run's rag and hybrid answer, and the memory answer once
+            entries, seen_memory = [], False
+            for lb in labels:
+                r = run_row(lb, q["id"])
+                if r is None:
+                    sys.exit(f"{q['id']} is not in run {lb}")
+                for sysname in r["answers"]:
+                    if sysname == "llm" and seen_memory:
+                        continue
+                    seen_memory = seen_memory or sysname == "llm"
+                    entries.append({"label": lb, "run_id": r["run_id"], "system": sysname})
+            random.SystemRandom().shuffle(entries)
+            key[q["id"]] = {chr(65 + i): e for i, e in enumerate(entries)}
+        else:
+            systems = list(row["answers"])
+            random.SystemRandom().shuffle(systems)
+            key[q["id"]] = {chr(65 + i): {"label": label, "run_id": row["run_id"], "system": s}
+                            for i, s in enumerate(systems)}
         (set_dir(args.set) / "key.json").write_text(json.dumps(key, indent=1))
     ref = json.loads(ref_path.read_text())
 
@@ -184,7 +207,8 @@ def packet(args):
         if ref.get(f) not in (None, "", []):
             print(f"  {f}: {ref[f]}")
     for letter, k in sorted(key[q["id"]].items()):
-        a = row["answers"][k["system"]]
+        k_label = k.get("label", label)
+        a = run_row(k_label, q["id"])["answers"][k["system"]] if labels else row["answers"][k["system"]]
         d = a.get("data") or {}
         print(f"\n## Answer {letter}: {TYPE[k['system']]}")
         if a.get("error"):
@@ -204,7 +228,7 @@ def packet(args):
             print(f"- evidence S{ev['season']}E{ev['episode']} sc{ev['scene']} "
                   f"{'NOT FOUND: ' + ', '.join(probs) if probs else 'ok'}: {ev['quote']!r}")
         if k["system"] != "llm":
-            sent, plan = scenes_sent(label, q["id"])
+            sent, plan = scenes_sent(k_label, q["id"])
             print(f"- scenes it was sent: {sent}")
             res = (plan or {}).get("sql_result")
             if res:
@@ -236,10 +260,17 @@ def save(args):
         details = {**(g.get("details") or {}), "score": g["score"], "letter": letter, "rubric": RUBRIC,
                    "grading_set": args.set, "method": v.get("method", "single")}
         reviewer = COUNCIL_REVIEWER if v.get("method") == "council" else REVIEWER
+        if combined_set(args.set):          # a combined set re-grades runs already graded: keep the earlier reviews (unique per run, system, reviewer)
+            reviewer = f"{reviewer}#{args.set}"
         log_review(k["run_id"], k["system"], reviewer, g["verdict"], notes=g.get("notes"), grounded=g["grounded"],
                    failure_type=g.get("failure_type"), details=details)
     (set_dir(args.set) / "verdicts" / f"{qid}.json").write_text(json.dumps(v, indent=1, ensure_ascii=False))
     print(f"saved {qid}: {len(v['answers'])} answers")
+
+
+def combined_set(name):
+    """True for a set made with init --labels (several runs graded together)."""
+    return bool(json.loads((set_dir(name) / "config.json").read_text()).get("labels"))
 
 
 def status(args):
@@ -312,6 +343,7 @@ def main():
     ap.add_argument("--set", help="grading set (one version), e.g. v1")
     ap.add_argument("--sets", type=lambda s: s.split(","), help="summary: grading sets, e.g. v1,v2")
     ap.add_argument("--label", help="eval run label graded in this set")
+    ap.add_argument("--labels", type=lambda s: s.split(","), help="init: several run labels for one combined, blind set")
     ap.add_argument("--question", help="question id")
     ap.add_argument("--file", help="JSON file to save (reference or verdicts)")
     args = ap.parse_args()

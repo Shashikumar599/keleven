@@ -1,0 +1,49 @@
+{
+ "question_id": "q041",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "17 from the SQL result; cited examples S4E14 and S5E4 are real. Does not say two-part episodes count once.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 9,
+     "reader": 9
+    }
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "17 from the SQL result, quote real; bare answer without stating what was counted.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 9,
+     "reader": 8
+    }
+   }
+  },
+  "C": {
+   "score": 6,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Says approximately 16 (or 17), lists 16 episodes and misses Goodbye, Michael (S7E21); labelled approximate and within 15%, but the split-numbering explanation is wrong (would be 20).",
+   "details": {
+    "lens_scores": {
+     "fact": 6,
+     "faithfulness": 6,
+     "reader": 6
+    },
+    "calibration": "ok"
+   }
+  }
+ }
+}

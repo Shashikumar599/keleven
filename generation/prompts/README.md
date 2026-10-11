@@ -22,3 +22,7 @@ is logged with every answer (qa_answers.prompt_sha256).
 
 v1 baseline hashes (eval/runs/2026-10-04-v1-baseline/job.json): rag_v1 5ef7191d, memory_v1 00c114b1, hybrid_v1
 2f685a0f.
+
+v3 files are FINAL as of 2026-10-10 and frozen for evaluation (a change makes a new file): enhance_v3 b200846f,
+rag_v3 0f0aedc9, hybrid_v3 2ac86123; memory_v1 is reused. The enhancer examples use questions that are not in
+eval/questions.jsonl.

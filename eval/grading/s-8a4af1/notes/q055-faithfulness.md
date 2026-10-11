@@ -1,0 +1,6 @@
+q055 faithfulness. Checked: a search of lines for 'emmy' returns 0 rows, so the transcripts cannot support any Emmy claim; the sent scenes (Dundies, Lotto) are only in-universe awards.
+A: 10. Says the transcripts do not cover it; justified (no Emmy text exists).
+B: 8. States the transcript has nothing on Emmys, then gives the count 5 and every detail tagged [memory]; labels right. Count 5 and 2006 Comedy Series match the reference. Detail list (Finale editing 2013, Accountants listed among the 5 Primetime wins) is unverifiable here and a little over-specific.
+C: 10. Honest refusal, justified (0 'emmy' hits).
+D: 5. No transcripts, so grounding n/a; confidently "exact count of 5 out of 42", knows_answer True. Reference accepts 5 of 42. But it adds shaky specifics stated flatly: Accountants won a "Daytime Emmy" (the reference/knowledge says Creative Arts), and "The Job" picture editing 2007 is doubtful. Confidence somewhat exceeds the detail reliability.
+E: 7. Says transcripts have nothing, tags every outside claim [memory]; count 5 and Comedy Series 2006 fit the reference. Same doubtful detail ("The Job" 2007 editing, Finale 2013), though it says Creative Arts for The Accountants, which is the safer wording.

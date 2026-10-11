@@ -1,0 +1,49 @@
+{
+ "question_id": "q055",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Gives 5 Primetime wins with Comedy Series 2006 (matches the reference) but backs it with a long, unverifiable breakdown and calls The Accountants a 'Daytime Emmy' (it was a Creative Arts/Primetime-family award), all stated with full confidence.",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 6,
+     "reader": 8
+    },
+    "calibration": "overconfident"
+   }
+  },
+  "B": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Says the transcripts do not cover Emmys, then gives 5 wins incl. Comedy Series 2006, all tagged [memory]; some of the category list is doubtful but labelled and the headline matches the reference.",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 8,
+     "reader": 9
+    }
+   }
+  },
+  "C": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Transcript-only answer correctly says the passages do not cover Emmy awards (no 'emmy' in the data).",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 7
+    }
+   }
+  }
+ }
+}

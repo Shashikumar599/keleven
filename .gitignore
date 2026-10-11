@@ -20,3 +20,5 @@ data/processed/
 
 # Derived graph extraction output (not committed)
 graph/out/
+
+.claude/

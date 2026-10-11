@@ -1,0 +1,82 @@
+{
+ "question_id": "q072",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "Leads with Dwight's 70 (S7E22 sc.16) and names Mose, Zeke, Amel, Esther, all real; slips are citing Zeke to S9E17 sc.10 (not his 'cousin' line) and listing 'Other cousin Mose' as a separate cousin.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 7,
+     "reader": 7
+    },
+    "reference_items": [
+     "seventy (claim)",
+     "Mose"
+    ],
+    "found": [
+     "seventy (claim)",
+     "Mose"
+    ],
+    "missed": [],
+    "invented": []
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "Gives Dwight's 70 with the exact quote, names Mose, Amel, Esther, Zeke, and rightly flags the goat-fungus and 'other cousin Mose' items as pitch/invention; Zeke's cite (S9E13 sc.24) is true but was not sent.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 8,
+     "reader": 8
+    },
+    "reference_items": [
+     "seventy (claim)",
+     "Mose"
+    ],
+    "found": [
+     "seventy (claim)",
+     "Mose"
+    ],
+    "missed": [],
+    "invented": []
+   }
+  },
+  "C": {
+   "score": 3,
+   "verdict": "wrong",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Says no total is ever stated, missing Dwight's 'seventy' (S7E22 sc.16); Mose and Zeke are right but 'Cousin Heiss' appears nowhere in the transcripts.",
+   "details": {
+    "lens_scores": {
+     "fact": 3,
+     "faithfulness": 3,
+     "reader": 3
+    },
+    "reference_items": [
+     "seventy (claim)",
+     "Mose"
+    ],
+    "found": [
+     "Mose"
+    ],
+    "missed": [
+     "seventy (claim)"
+    ],
+    "invented": [
+     "Cousin Heiss"
+    ],
+    "calibration": "overconfident"
+   }
+  }
+ }
+}

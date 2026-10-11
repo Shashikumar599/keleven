@@ -904,3 +904,135 @@ documented limitation; retrieval for them relies on event text and the v2 search
   and the "values from the question" rule are the controls.
 - Next: test the enhancer alone on the six coverage questions plus a few new ones (about ten small LLM calls, ask first), then wire
   graph_sql into retrieval and answer code and add the v3 row to pipeline_versions.
+
+## 2026-10-10: enhancer tests (13 single calls, enhance_v3.md draft) and the actor_names view column (migration 016)
+
+- Seven questions run before the edits (3 from the prompt's own examples, so they only showed the format is followed; 4 new). New shapes worked:
+  "Which relationships ended in season 3?" got the relations view with change = 'ends'; "Who was Jan's boss?" got the right direction.
+  Names and filter values came only from the question; no query errors; about 3.7k input and 100 to 120 output tokens per call.
+- Problems found: (1) the "between two people" example taught a query that matched people who only witnessed an event and sorted
+  chronologically under LIMIT 50, so the end of the story (Dwight and Angela's engagement and wedding) was cut; (2) the extraction reports
+  repeated "ends" rows, so one pair shows several fragmented intervals (not a query problem).
+- Changes (the prompts had not been evaluated, so edited in place): between-two-people rule = relationship periods plus major events in
+  one UNION ALL query; a rule against cutting the story with LIMIT; answer prompts told that several rows of a pair and type can be
+  one relationship or a break-up and a reunion. Migration 016 appends `actor_names` (non-witness participants, lower case) to
+  graph_events_now; the prompt tells the model to test people with it.
+- Result on Dwight and Angela: 37 rows (was 50, cut), now reaching S9E22 (proposal) and S9E23 (wedding); events where one only watched
+  are mostly gone (41 major events with both named became 29 by actors), but some noise stays (fire alarm, roast, lunch) and a few
+  real ones are lost where Angela was recorded as a witness (S3E12, S9E1). Accepted for now. Pam and Roy: 15 clean rows.
+
+## 2026-10-10: v3 wiring (new modules only; v1 and v2 files untouched)
+
+- New files: generation/enhance_v3.py (Plan3 with graph_sql, one fix attempt per failed query), retrieval/graph.py (runs graph SQL with
+  sql.py's checks and limits, attaches up to 2 transcript lines per row from line_ids, formats the "Graph result" block, marks
+  possible-match people), retrieval/hybrid_v3.py (retrieve_graph = v2 flow + graph query, imports v2's search and SQL helpers),
+  generation/answer_v3.py (v2 prompt + graph block; citation check = v2's, then scenes and quotes that came with graph rows count as
+  sent), ask_v3.py (separate entry point), migration 017 (row v3 in pipeline_versions).
+- Deliberately not changed: retrieval/__init__.py (version dispatch), ask.py, app/server.py, eval/run.py, common/qalog.py. v3 is not yet
+  selectable in the app, the eval harness or qa_runs logging; that wiring edits v1/v2 files and needs a separate decision.
+- Tested without LLM calls: the graph block and prompt for the Pam and Roy plan (6.1k chars, lines attached, possible-match marked),
+  the citation check on a graph quote, and that the v1/v2 modules still import and build_prompt is unchanged.
+- Known weakness: a timeline row spans many episodes, so the two lines shown with it may come from different episodes than the row's
+  own episode column.
+
+## 2026-10-10: v3 selectable in the app (additive edits to shared plumbing)
+
+- retrieval/__init__.py: v3 branch in retrieve() and "graph" -> v3 in VERSION_BY_METHOD (so logging records version v3). CURRENT_VERSION stays v2.
+- app/server.py: v3 accepted and marked ready; v3 requests use answer_v3 and rag_v3 / hybrid_v3 / memory_v1; v1 and v2 requests take
+  the same code path as before. app/static/app.js: the dev-mode "Search preparation" panel also shows the graph query, its rows and
+  the transcript lines beside them (only when the plan has graph_sql, so v1 and v2 panels are unchanged).
+- Not changed: generation/answer.py, enhance.py, retrieval/hybrid.py, sql.py, vector.py, ask.py, eval/run.py, common/*.
+- Checked without LLM calls: /api/info lists v3 as ready, the request model accepts v3, version_of maps graph to v3. Not yet run: a real
+  question through the app.
+
+## 2026-10-10: eval harness can run v3 (additive edit of eval/run.py)
+
+- eval/run.py now takes --version v3. Version-specific pieces moved into small helpers (prompt file, prompt hash, prompt text, prompt
+  builder, citation check, answer function) that call the old v1/v2 functions unchanged and the v3 ones for v3. The batch, status,
+  collect, rerun and online steps all use them.
+- retrieval.jsonl keeps its rule of ids only: for v3 the graph result is stored without its transcript lines and the lines are fetched
+  again from the same line_ids when the retrieval is rebuilt (checked: same lines, same prompt after a store and rebuild).
+- Checked without LLM calls: the batch requests rebuilt for the stored v1 baseline and v2 labels are byte-identical to before the edit
+  (same hashes), the CLI accepts v3, and v3 prompt file names and hashes resolve.
+- Not run: prepare for v3 (80 enhancer calls plus Voyage), submit, collect. Prompts (enhance_v3, rag_v3, hybrid_v3) must be frozen first.
+
+## 2026-10-10: v3 prompts finalized and frozen
+
+- enhance_v3.md, rag_v3.md and hybrid_v3.md are final; memory_v1.md is reused. Hashes are in generation/prompts/README.md. Any change from
+  now on is a new file (enhance_v4.md and so on) and a new pipeline version row.
+- Last review fixed one leak: the enhancer examples "What happened to Karen after Jim?" (q078 word for word) and "Whom did Michael date?" (q045
+  reworded) were replaced by Ryan, Gabe and Darryl / Val examples, none of which is in eval/questions.jsonl. The three new example graph queries
+  were run against the live graph and are valid (2, 4, 43 and 7 rows for the four graph examples).
+- Earlier single tests with q078 and q045-style questions were run before this change, so q078 stays in the "seen during design" group.
+- The run stays one batch job per label, as before: a label holds one version (the harness refuses to mix), so v2 and v3 are separate labels, each
+  one job for all its questions.
+
+## 2026-10-10: v3 eval runs the enhancer as its own batch job
+
+- Two batch jobs per v3 label instead of 80 online enhancer calls: (1) enhance-submit / enhance-status / enhance-collect send every question to
+  the enhancer in ONE job (about 50% cheaper) and write eval/runs/<label>/enhancer_plans.jsonl; (2) prepare --version v3 reads those plans (no
+  enhancer calls), runs Voyage search and the SQL / graph queries locally; plan and submit then send the answers as the second job.
+- Failure handling: a question whose enhancer response is missing or invalid has no plan and its enhancer runs online in prepare (reported).
+  A query that fails is still fixed with one online fix call, as in v2.
+- Code: eval/run.py (three new steps; prepare reads the plans) and retrieval/hybrid_v3.py (retrieve_graph accepts a ready enhancement). v1 and v2
+  paths unchanged (batch requests for the stored v1 and v2 labels still hash identically).
+- Checked without Gemini: retrieve_graph with a stored plan runs end to end (one Voyage query embedding; a dummy llm would have failed on any
+  call), and enhance-collect handles one good, one errored and one invalid response (1 plan, 2 reported).
+- Not run: enhance-submit itself. Suggested label 2026-10-10-v3.
+
+## 2026-10-10: grading the v3 run (set s-bb6d62)
+
+- Only the v3 answers are graded (rag, hybrid and the reused memory answers); v2 is compared through the stored grading s-bcc971, not regraded.
+  The memory answers are identical to v2's, so their new scores measure grader noise. Questions that move by 2 or more points may have their v2
+  answer graded again to tell a real change from a different verdict.
+- Grader model: claude-sonnet-5-5 for every council member and the chair, recorded in the set config (the earlier sets mixed Sonnet and Opus and did
+  not record it). Rubrics-v2 and the owner-verified references, as before.
+- Known bias risk: v3 answers say "according to the graph", so a grader can tell the version. Accepted; reported with the results.
+- Run in batches of 10 questions (3 lens members, then the chair), saved per question, so a stop loses nothing.
+
+## 2026-10-10: v3 grading stopped at 30 questions
+- q001-q030 graded and logged (see experiment-log). Grading of q031-q080 waits for the owner's go (20 more agents: 5 batches x 3 members + chair).
+
+## 2026-10-10: v3 full grading done; next
+- All 80 graded and logged (experiment-log). Next steps proposed: the ten held-out graph questions (owner writes questions and gold answers; v2 and v3 both graded together),
+  then findings/v3-analysis.md. Not done: updating the stored citation_check rows in qa_answers to the graph-aware check.
+
+## 2026-10-11: twelve questions added to the set (q081-q092)
+- Added to eval/questions.jsonl as q081-q092, split test, no gold answers, verified false: ten graph-oriented drafts by Claude (written before looking at graph
+  output for them, none repeating an existing question or a prompt example) and two from the owner (q091 why the Scranton branch performed better, q092 was Angela toxic and mean).
+  Treated like any other question; the file hash changed (the earlier v2 and v3 runs were made on the first 80). Draft table: eval/graph_questions_draft.md.
+- References to be built the same way as for the 80: independent agents, transcripts only (not the graph tables), then the owner reviews.
+
+## 2026-10-11: references for q081-q092 built
+- Four Sonnet 5.5 reference builders (transcripts only, no graph tables, no findings) saved references for q081-q092: confidence high for q084 and q090, medium for the rest;
+  all verified_by_owner false. eval/grading/references/REVIEW.md now lists 92 references for the owner to review.
+- Points for the owner: q083 excludes the S5E9 mock ceremony (Dwight tells Angela it was legally real) and the cancelled Pam and Roy wedding, and cannot settle Michael and Holly;
+  q091 sets premise_true false (Scranton is shown on top only in S5-S6); q084's caveats mention a Hawaii/Jamaica trip as "not in the transcripts" (unchecked); q085 quotes S9E15 sc.35 without reading the whole scene;
+  q086 Stanley's "three affairs" and the divorce papers are mentions only; q088 treats Ryan, Gabe, Robert California and Alan Brand as optional bosses.
+
+## 2026-10-11: owner accepted the references for q081-q092
+- The owner said "these answers are fine": verified_by_owner set to true for q081-q092 (owner_note added), REVIEW.md regenerated. The judgment calls in the references (q083 excluding the S5E9 mock
+  ceremony, q088 optional bosses, q091 premise false) stand as written. questions.jsonl gold fields stay empty; the references are the answer key for grading, as for the first 80.
+
+## 2026-10-11: q081-q092 run on v2 and v3 and graded in one combined blind set
+- Runs: labels 2026-10-11-v2-new (v2: online enhancer, one answer batch of 36 requests incl. memory) and 2026-10-11-v3-new (v3: enhancer batch of 12, answer batch of 24; the memory answers are the
+  v2 run's, reused). Graph queries returned rows for q081-q090, none for q091 and q092 (the enhancer wrote none). No errors.
+- eval/grade.py: `init --labels L1,L2` makes a combined set; its packet shuffles every run's rag and hybrid answer and the memory answer once under letters A-E, so the same grader judges both versions
+  in one session. Single-run sets are unchanged (packets byte-identical before and after the edit).
+- Grader: claude-sonnet-5-5, all roles, recorded in the set config. Council: 2 batches of 6 questions (3 lens members, then a chair).
+
+## 2026-10-11: q081-q092 graded (v2 vs v3, one combined blind session)
+- Results in experiment-log. Ten graph-shaped questions: v3 rag +2.00, v3 hybrid +0.70; controls within noise. Next: findings/v3-analysis.md (combined view of the 80 and the 12), reference updates the owner decides on, commit.
+
+## 2026-10-11: regrading q001-q080 as one combined blind session (set s-8a4af1)
+- Why: the first v3 grading (s-bb6d62, Sonnet) and the stored v2 grading (s-bcc971, mixed graders) were separate sessions; the identical memory answers differed on 37 of 80 (mean abs 0.66, max 4), so
+  the gap between versions was mixed with grader drift. The owner asked for a fair, unbiased regrade.
+- How: set s-8a4af1 holds both runs (2026-10-05-v2 and 2026-10-10-v3): five answers per question (v2 rag, v2 hybrid, v3 rag, v3 hybrid, one shared memory answer) under shuffled letters, graded by one
+  council (Sonnet 5.5, all roles) in one session, as for q081-q092. Graders get no earlier scores or notes. Only 9 of 160 rag and hybrid answer pairs were textually identical, so all 80 are regraded.
+- eval/grade.py: a combined set saves its reviews under the reviewer name "<council reviewer>#<set>", so the earlier reviews in qa_reviews are kept. The earlier sets s-bcc971 and s-bb6d62 stay as records.
+- Waves: members for q001-q040 first (12 agents), then q041-q080, a chair per batch of ten (8 chairs).
+
+## 2026-10-11: unbiased regrade of the 80 done (s-8a4af1); next
+- Same-session blind regrade gives rag +0.22 and hybrid -0.03 on the 80, +1.40 / +0.33 on the 15 graph-query questions; see experiment-log. The earlier separate-session numbers (rag +0.12, hybrid -0.23) agree: no overall change.
+- Open: write findings/v3-analysis.md (the 92 together, what the graph fixes and misses, v4 candidates: enhancer for questions that name nobody, more graph rows per query, fix q070-style refusals, hybrid unsupported claims);
+  owner decisions on reference gaps (q081 Melvina, q083 Karen and Dan, q086 "three affairs", q040 count inconsistency); commit and push (not done).

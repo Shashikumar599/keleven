@@ -1,0 +1,93 @@
+{
+ "question_id": "q082",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "All six core and three optional couples, each with the right scene; nothing invented.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 9,
+     "reader": 9
+    },
+    "missed": [],
+    "invented": []
+   }
+  },
+  "B": {
+   "score": 4,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "evidence_misread",
+   "notes": "Only 3 of 6 core (Pam/Roy, Jim/Pam, Andy/Angela); lists Holly and AJ as engaged though S7E12 sc.4-5 is only Michael's fear (AJ had not proposed); misses Michael/Holly, Dwight/Angela, Senator.",
+   "details": {
+    "lens_scores": {
+     "fact": 3,
+     "faithfulness": 7,
+     "reader": 3
+    },
+    "missed": [
+     "Michael/Holly",
+     "Dwight/Angela",
+     "Angela/Senator"
+    ],
+    "invented": [
+     "Holly and AJ"
+    ]
+   }
+  },
+  "C": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "All six core plus Phyllis/Bob and Kelly/Ravi with accurate details; Roy/Laura engagement and 'Season 8' for Kelly unverifiable but optional/minor; calibrated.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 8,
+     "reader": 8
+    },
+    "calibration": "ok",
+    "missed": [],
+    "invented": []
+   }
+  },
+  "D": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "All six core, three from passages and the rest labelled memory; slight overreach that Pam breaks off the engagement is cited to S5E2 sc.1, which only says she was engaged to Roy.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 8,
+     "reader": 8
+    },
+    "missed": [],
+    "invented": []
+   }
+  },
+  "E": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "All six core and three optional couples with correct scenes; Roy/Laura flagged as memory.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 9,
+     "reader": 9
+    },
+    "missed": [],
+    "invented": []
+   }
+  }
+ }
+}

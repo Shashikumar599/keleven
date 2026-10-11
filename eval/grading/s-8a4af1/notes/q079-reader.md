@@ -1,0 +1,6 @@
+q079 reader note. Checked in db: S3E1 sc.3 Dwight: "[sobbing] Jim is gone. He's gone. I miss him so much. Ooooh I cry myself to sleep, Jim! [serious]"; sc.4 is a different scene (Michael/Toby). So "False. I do not miss him" is not in the data; the setup scene and speaker are.
+A: 9. Names the setup scene (S3E1 sc.3, Dwight's fake sobbing) and says plainly the punchline words are missing and the SQL found nothing. Answers who and when, and is honest about the gap. Slightly cautious about naming Dwight outright ("appears to begin this talking head").
+B: 9. Direct answer (Dwight, S3E1 Gay Witch Hunt), shows the sobbing line as proof, labels the punchline [memory] and notes the transcript cuts off at "[serious]". Best mix of direct and honest.
+C: 9. Same as B: Dwight, S3E1 sc.3, fake sob then deadpan "False. I do not miss him" labelled memory, and the cut-off at "[serious]" noted. Stray "[P1]" citation tag is a small blemish.
+D: 7. Quotes the right setup line in S3E1 and says the rest is missing, but does not clearly state "Dwight said it"; the reader must infer the answer from the cited scene. Honest, less direct than A.
+E: 8. Memory answer: Dwight, S3E1 Gay Witch Hunt, talking head after Jim left for Stamford. Right and direct, but no scene or hedge; the reader cannot tell this rests on memory with no support.

@@ -1,0 +1,6 @@
+q074 fact lens. Premise FALSE (reference): Jan used a sperm bank (S4E14 sc.64 "I went to a sperm bank"); S5E3 sc.43-44 Kevin: "I donated sperm. Maybe I'm the father... I might have done it with Jan!"; Jan: "It's not Kevin's child. Can't possibly be." Donor never revealed. All lines checked in the database.
+A: 9. Corrects: never confirmed, Jan denies, sperm bank next to IHOP, Kevin's guess. All claims match S4E14 sc.64 and S5E3 sc.43-44. Slight stretch: Kevin only asks "Next to the IHOP?", so "he donated at that same bank" is an inference, shared by all answers.
+B: 9. "According to Jan, no", sperm bank, Kevin's suggestion treated as speculation, never confirmed. Correct and does not read Kevin's joke literally.
+C: 9. Same correction, sourced from S5E3 sc.43-44; says passages give no confirmation. Correct.
+D: 9. Correct: unconfirmed, Jan denies, sperm bank by the IHOP, "ideal specimen". Nothing false.
+E: 8. Correct core (no; never confirmed; anonymous donor; Kevin's theory a comedic coincidence). "Kevin regularly donates" is not in the transcripts (he only says "I donated sperm", S5E3 sc.43); donor "from a catalog" is supported by S4E14 sc.64 "I'm gonna bring you the catalogue". Episode numbers are split numbering, acceptable.

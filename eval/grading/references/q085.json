@@ -1,0 +1,103 @@
+{
+ "question_id": "q085",
+ "reference": "Andy and Erin go from mutual crush to couple to exes several times over. (1) Crush (Season 6): Andy tells the camera he likes Erin and hoped she would ask him out (Murder S6E9 sc.10); he gets her as Secret Santa (S6E12 sc.5); after his drum-line stunt (Sabre, S6E14 sc.25-26) each waits for the other to ask; in The Delivery (S6E16 sc.52, sc.65-67) Erin tells Michael she likes Andy, not Kevin, and Andy asks her out by fax. (2) First dates and dating: St. Patrick's Day (S6E17 sc.11, sc.16, sc.36) is their first date; Happy Hour (S6E19 sc.48) two dates; Secretary's Day (S6E20 sc.2, sc.22) their three-week anniversary. Erin throws cake and ends up hurt when she learns Andy was engaged to and slept with Angela (sc.22, sc.33: 'I can't trust Andy anymore'). (3) First breakup, off screen: by Nepotism (S7E1 sc.4-5) Erin is dating Gabe ('started dating Erin this summer'); the transcripts do not show the breakup itself. Andy plans to make her 'fall back in love with me' (Andy's Play S7E3 sc.5), friendly but awkward in PDA (S7E15 sc.10, sc.13, sc.33, Gabe is Erin's boyfriend and Andy has a new girlfriend); Gabe in S7E23 sc.8 asks if Andy is still in love with Erin; in Search Committee Erin asks Andy for a date with a sock puppet and he says he does not think they should (S7E24 sc.63). (4) Andy rejects, Erin pines (Season 8): Andy is dating Jessica (S8E5 sc.39, 31 dates), Erin tries to make him jealous (Pool Party S8E12 sc.12, sc.17, sc.26), says he 'rejected me' (Test the Store S8E17 sc.23, Special Project S8E14 sc.5). (5) Reunion: in Get the Girl (S8E19 sc.26, sc.36, sc.40) Andy drives to Florida to win her back while technically still dating Jessica, Erin says he has broken her heart and 'we're not meant to be', but then runs after him and they kiss; Welcome Party (S8E20 sc.11, sc.24) he dumps Jessica and declares love for Erin; Angry Andy S8E21 sc.8 they are a couple ('my girlfriend's back'); Fundraiser S8E22 sc.5 Erin says Andy is her date. (6) Together while Andy is away, then end: Erin is Andy's girlfriend through S9 (S9E3, S9E6 sc.14, sc.22, S9E12 sc.34). During Andy's three-month absence on his boat she grows close to Pete (S9E12 sc.30-34). On his return (Couples Discount S9E15 sc.3, sc.35) she breaks up with him ('We're breaking up'); in Moving On (S9E16 sc.1, sc.3, sc.5, sc.21, sc.47) she and Pete are seeing each other, Andy is bitter and stalks her phone and uses a meeting to embarrass them. Later Oscar says 'Erin just dumped you' (S9E20 sc.11). Final state: exes, Erin with Pete, Andy chasing acting.",
+ "evidence": [
+  {
+   "scene": "S6E9 sc.10",
+   "line": "Andy: I like Erin. There, I said it. I was kinda hoping she would ask me out"
+  },
+  {
+   "scene": "S6E16 sc.52",
+   "line": "Erin: I'm so sorry if I gave you the impression I'm into Kevin, but I'm not. I like Andy."
+  },
+  {
+   "scene": "S6E16 sc.67",
+   "line": "Andy: I'm... I'm asking you out. Erin: Oh, my God. That's amazing."
+  },
+  {
+   "scene": "S6E17 sc.11",
+   "line": "Andy: Erin and I have our first date tonight, and it has to be perfect."
+  },
+  {
+   "scene": "S6E20 sc.22",
+   "line": "Erin: [throws a piece of cake at Andy's face] I know about Angela! I know that you were engaged to her and that you were sleeping with her!"
+  },
+  {
+   "scene": "S7E1 sc.4",
+   "line": "Gabe: I started dating Erin this summer."
+  },
+  {
+   "scene": "S7E3 sc.5",
+   "line": "Andy: my plan is to make Erin fall back in love with me tonight."
+  },
+  {
+   "scene": "S7E24 sc.63",
+   "line": "Andy: Listen, I'm really flattered, but I don't think we should."
+  },
+  {
+   "scene": "S8E5 sc.39",
+   "line": "Andy: Erin I think you know I've been dating someone. ... Thirty-one [dates]."
+  },
+  {
+   "scene": "S8E17 sc.23",
+   "line": "Erin: My best friend was my boss, Andy. We dated for a while, but since then, he rejected me"
+  },
+  {
+   "scene": "S8E19 sc.36",
+   "line": "Erin: Andy, you broke my heart. ... I think at some point... we're not meant to be."
+  },
+  {
+   "scene": "S8E19 sc.40",
+   "line": "Erin: Andy I love you! Stop! Oh, this is the wrong Prius. [horns honking as they kiss in the street]"
+  },
+  {
+   "scene": "S8E20 sc.24",
+   "line": "Andy: I'm in love with a girl. Her name is Erin Hannon"
+  },
+  {
+   "scene": "S9E12 sc.34",
+   "line": "Erin: Andy is my boyfriend. Pete and I are just friends."
+  },
+  {
+   "scene": "S9E15 sc.35",
+   "line": "Erin: We're breaking up. ... I was worried that you were dead. You were gone for three months."
+  },
+  {
+   "scene": "S9E16 sc.5",
+   "line": "Erin: Pete and I have started seeing each other and Andy still doesn't know."
+  },
+  {
+   "scene": "S9E20 sc.11",
+   "line": "Oscar: Erin just dumped you."
+  }
+ ],
+ "sources": [
+  "S6E9 sc.10",
+  "S6E16 sc.67",
+  "S6E17 sc.11",
+  "S6E20 sc.22",
+  "S7E1 sc.4",
+  "S7E3 sc.5",
+  "S7E24 sc.63",
+  "S8E5 sc.39",
+  "S8E17 sc.23",
+  "S8E19 sc.36",
+  "S8E19 sc.40",
+  "S8E20 sc.24",
+  "S9E12 sc.34",
+  "S9E15 sc.35",
+  "S9E16 sc.5",
+  "S9E20 sc.11"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "accepted_alternatives": [],
+ "confidence": "medium",
+ "caveats": "Main arc (core): crush -> dating (S6) -> split and Erin with Gabe, Andy later with Jessica, Erin pines (S7-S8) -> Andy wins her back (S8E19-20) -> together through S9 -> Erin dumps him on his return from the boat (S9E15) and goes with Pete. Several transitions are off screen in the transcripts: the first breakup between S6E20 and S7E1, Andy's reasons for rejecting Erin in S7-S8, and the explicit moment Andy and Jessica end. Scene text for who is dating whom in Season 8 relies on talking heads. S9E15 sc.35 is the break-up line; I did not read the surrounding scene in full beyond the quoted line.",
+ "question": "How does the relationship between Andy and Erin change over the series?",
+ "category": "story_arc",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": true,
+ "owner_note": "accepted as is by the owner, 2026-10-11"
+}
