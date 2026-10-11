@@ -1,0 +1,4 @@
+Faithfulness q032
+A: 9. Claims backed: S2E18 sc.23 line to Ryan about "my child"; S5E13 sc.7 Stanley "in the past, I have been a little abrupt with people..." then sc.8 flashback with the line. "Only two instances in the dataset" matches the 2-row SQL. Minor: labelled transcripts+memory but no [memory] tags (nothing seems memory-only); "warns Ryan to stay away from his daughter Melissa" is supported by sc.21-23.
+B: 9. Same claims, correctly cited. "Across the entire series" slightly overstates; SQL only covers the dataset. Otherwise exact.
+C: 9. Memory answer, correct speaker, target and episode (S2E18 sc.23). Adds "Kelly tells him Ryan is hitting on his daughter": Kelly says "something a little fishy" (sc.22), so "hitting on" is a paraphrase; fine. Calibration ok (knows_answer True, correct).

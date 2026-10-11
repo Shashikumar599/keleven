@@ -1,0 +1,124 @@
+{
+ "question_id": "q082",
+ "reference": "Couples engaged in the series: Pam and Roy (long engagement, season 1, wedding called off in S3), Jim and Pam (Jim proposes at the rest stop, S5E1), Phyllis and Bob Vance (S3), Andy and Angela (Andy proposes, S4E14), Michael and Holly (Michael proposes in the office, S7E18), Angela and Robert Lipton, the Senator (S7E24), and Dwight and Angela (Dwight proposes with his grandmother's ring, she accepts, S9E22). Minor/offscreen: Kelly and Ravi (called her fiance, S9E1) and Kevin and Stacy (called his fiancee in passing, S2).",
+ "evidence": [
+  {
+   "scene": "S1E1 sc.34",
+   "line": "Pam: Roy's my fiance. We've been engaged about three years."
+  },
+  {
+   "scene": "S3E1 sc.24",
+   "line": "Pam: I didn't go through with the wedding. I got cold feet, a few days before."
+  },
+  {
+   "scene": "S3E1 sc.42",
+   "line": "Phyllis: I'm getting married to Bob Vance."
+  },
+  {
+   "scene": "S4E14 sc.74",
+   "line": "Andy: Tuna! [hugs Jim] I'm engaged!"
+  },
+  {
+   "scene": "S4E14 sc.77",
+   "line": "Holly: Andy proposed to one of your accountants."
+  },
+  {
+   "scene": "S5E1 sc.97",
+   "line": "Jim: Pam, will you marry me? Pam: Yes! [they embrace and kiss]"
+  },
+  {
+   "scene": "S5E2 sc.1",
+   "line": "Jim: Pam and I are engaged."
+  },
+  {
+   "scene": "S7E18 sc.39",
+   "line": "Michael: Holly Flax, marrying me will you be? Holly: Your wife becoming me will I. [everyone cheers]"
+  },
+  {
+   "scene": "S7E24 sc.30",
+   "line": "Pam [looking at an engagement ring on Angela's finger]: It's gorgeous, Angela. Angela: ... he got down on one knee, and he said, will you be a Senator's ..."
+  },
+  {
+   "scene": "S9E22 sc.69",
+   "line": "Dwight kneels with the ring; Angela: Okay, yes...yes, I will! [they kiss]"
+  },
+  {
+   "scene": "S9E1 sc.8",
+   "line": "Toby: Kelly Kapoor is gone. Her fiance Ravi was hired as a pediatrics professor at Miami university."
+  },
+  {
+   "scene": "S2E18 sc.7",
+   "line": "Kevin: Abby's my fiancee Stacy's daughter"
+  }
+ ],
+ "sources": [
+  "S1E1 sc.34",
+  "S3E1 sc.24",
+  "S3E1 sc.42",
+  "S4E14 sc.74",
+  "S5E1 sc.97",
+  "S5E2 sc.1",
+  "S7E18 sc.39",
+  "S7E24 sc.30",
+  "S9E22 sc.69",
+  "S9E1 sc.8",
+  "S2E18 sc.7"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": [
+  {
+   "item": "Pam and Roy (engaged three years, never married)",
+   "scene": "S1E1 sc.34",
+   "core": true
+  },
+  {
+   "item": "Jim and Pam",
+   "scene": "S5E1 sc.97",
+   "core": true
+  },
+  {
+   "item": "Andy and Angela",
+   "scene": "S4E14 sc.74",
+   "core": true
+  },
+  {
+   "item": "Michael and Holly",
+   "scene": "S7E18 sc.39",
+   "core": true
+  },
+  {
+   "item": "Dwight and Angela",
+   "scene": "S9E22 sc.69",
+   "core": true
+  },
+  {
+   "item": "Angela and Robert Lipton (the Senator)",
+   "scene": "S7E24 sc.30",
+   "core": true
+  },
+  {
+   "item": "Phyllis and Bob Vance",
+   "scene": "S3E1 sc.42",
+   "core": false
+  },
+  {
+   "item": "Kelly and Ravi",
+   "scene": "S9E1 sc.8",
+   "core": false
+  },
+  {
+   "item": "Kevin and Stacy",
+   "scene": "S2E18 sc.7",
+   "core": false
+  }
+ ],
+ "accepted_alternatives": [],
+ "confidence": "medium",
+ "caveats": "Core = engagements shown on screen or central to a storyline. Phyllis-Bob is made optional because the engagement itself is never shown, only 'I'm getting married' (S3E1) and the wedding (S3E15); I would accept it as correct too. Kelly-Ravi and Kevin-Stacy are only mentioned in passing (optional). NOT engagements: Michael-Carol (he proposes in public, Carol says no, S3E6 sc.41, 'you were never really engaged'); Michael 'I'm getting married' to his mother is a joke (S5E6 sc.3, 'Psych'); Dwight-Esther (considered, not done, S9E22 sc.61); Andy-Jessica (ring carried, no proposal, S8E12 sc.9); Ryan-Kelly married on impulse without an engagement shown. Kevin's S5E16 sc.25 'my fiance' (Lynn) is an unreliable aside. Fan transcripts miss visual proposals, and some off-camera engagements (e.g. Roy-Laura) are not covered.",
+ "question": "Which couples get engaged over the series?",
+ "category": "list",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": true,
+ "owner_note": "accepted as is by the owner, 2026-10-11"
+}

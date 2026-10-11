@@ -27,6 +27,7 @@ from common.db import connect
 from common.qalog import log_feedback, log_review, log_run
 from common.stored import comparable, stored_memory
 from generation.answer import answer, prompt_file, prompt_sha256
+from generation.answer_v3 import PROMPT_FILES_V3, answer_v3, prompt_sha256_v3
 from generation.llm import DEFAULT_MODEL as LLM_MODEL, get_llm
 from retrieval import CURRENT_VERSION, retrieve
 from retrieval.hybrid import EnhanceError
@@ -74,14 +75,15 @@ VERSIONS = [
     {"version": "v2", "label": "Hybrid", "ready": True,
      "description": "Rewrites the question for search, finds scenes by meaning and by exact words, and can "
                     "query the full transcripts with SQL for counts and lists."},
-    {"version": "v3", "label": "Graph", "ready": False,
-     "description": "Adds a character and relationship graph. Not built yet."},
+    {"version": "v3", "label": "Graph", "ready": True,
+     "description": "Hybrid plus a graph of relationships and events extracted from every episode, which the "
+                    "question can query for lists and histories (who dated whom, what happened to someone)."},
 ]
 
 
 class AskRequest(BaseModel):
     question: str = Field(min_length=3, max_length=500)
-    version: Literal["v1", "v2"] = CURRENT_VERSION
+    version: Literal["v1", "v2", "v3"] = CURRENT_VERSION
     k: int = Field(default=DEFAULT_K, ge=1, le=20)
     expand: int = Field(default=DEFAULT_EXPAND, ge=0, le=3)
     systems: list[str] = list(SYSTEMS)
@@ -104,16 +106,19 @@ def ask(req: AskRequest, x_admin_password: str | None = Header(default=None)):
     llm = get_llm()
     systems = [s for s in req.systems if s in SYSTEMS]
 
+    v3 = req.version == "v3"                         # v3 has its own answer code and prompt files; v1 and v2 are as before
+    file_of = (lambda system: PROMPT_FILES_V3[system]) if v3 else (lambda system: prompt_file(system, req.version))
+    sha_of = prompt_sha256_v3 if v3 else (lambda system: prompt_sha256(system, req.version))
+
     def run(system):
         try:
-            return answer(req.question, system, r, llm)
+            return answer_v3(req.question, system, r, llm) if v3 else answer(req.question, system, r, llm)
         except Exception as e:                       # one failing system shouldn't hide the others
-            return {"system": system, "prompt": prompt_file(system, req.version),
-                    "prompt_sha256": prompt_sha256(system, req.version),
+            return {"system": system, "prompt": file_of(system), "prompt_sha256": sha_of(system),
                     "error": f"{type(e).__name__}: {e}"}
 
     # The memory-only answer doesn't depend on the version: reuse a stored one instead of calling the LLM again.
-    reused = stored_memory(req.question, prompt_file("llm", req.version)) if "llm" in systems else None
+    reused = stored_memory(req.question, file_of("llm")) if "llm" in systems else None
     to_compute = [s for s in systems if not (s == "llm" and reused)]
     with ThreadPoolExecutor(max_workers=len(to_compute) or 1) as pool:   # the answers run in parallel
         answers = dict(zip(to_compute, pool.map(run, to_compute)))

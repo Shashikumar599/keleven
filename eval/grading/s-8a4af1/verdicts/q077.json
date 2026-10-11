@@ -1,0 +1,87 @@
+{
+ "question_id": "q077",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Corrects the premise: married Angela [memory], affair with Oscar (S9E6 sc.44, exact); 'press conference' for the S9E19 video is a small labelled slip.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 9,
+     "reader": 9
+    },
+    "premise_true": false,
+    "outcome": "corrected"
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "No; married Angela [memory], secret affair with Oscar (S9E6 sc.44), did not end up with Oscar.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 9,
+     "reader": 8
+    },
+    "premise_true": false,
+    "outcome": "corrected"
+   }
+  },
+  "C": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Corrects; Angela's partner plus the affair behind her back, never says 'married' (thin but not wrong).",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 9,
+     "reader": 6
+    },
+    "premise_true": false,
+    "outcome": "corrected"
+   }
+  },
+  "D": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "Corrects; true that he was married to Angela, but the cited scenes (S9E6 sc.44, S9E14 sc.32) do not state the marriage.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 5,
+     "reader": 8
+    },
+    "premise_true": false,
+    "outcome": "corrected"
+   }
+  },
+  "E": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Corrects and gets Angela and the affair, but calls Wesley Silver a 'campaign manager' (he is Chief of Staff, S9E19 sc.33) and a 'press conference'.",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 6,
+     "reader": 8
+    },
+    "premise_true": false,
+    "outcome": "corrected",
+    "calibration": "overconfident"
+   }
+  }
+ }
+}

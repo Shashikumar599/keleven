@@ -1,0 +1,59 @@
+{
+ "question_id": "q050",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Main cause right (her affair with Dwight), with the exact 'A little bit' confession and the cake cancellation; omits the duel revelation (supporting only).",
+   "details": {
+    "main_cause_ok": true,
+    "wrong_claims": [],
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 10,
+     "reader": 8
+    }
+   }
+  },
+  "B": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Main cause right with accurate supporting points: confession, duel, both men learn she lied (S5E11 sc.31), cake cancelled sc.32.",
+   "details": {
+    "main_cause_ok": true,
+    "wrong_claims": [],
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    }
+   }
+  },
+  "C": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Main cause right, but garbles the duel beat (says Dwight reveals the affair; in sc.31 Andy does) and adds unsupported 'entire engagement' and 'Dwight rejects her as well'.",
+   "details": {
+    "main_cause_ok": true,
+    "wrong_claims": [
+     "Dwight reveals the affair in the duel",
+     "throughout the entire engagement",
+     "Dwight rejects her as well"
+    ],
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 7,
+     "reader": 7
+    },
+    "calibration": "overconfident"
+   }
+  }
+ }
+}

@@ -1,0 +1,6 @@
+q082 READER lens (core: Pam/Roy, Jim/Pam, Andy/Angela, Michael/Holly, Dwight/Angela, Angela/Senator; optional Phyllis/Bob, Kelly/Ravi, Kevin/Stacy)
+A 9: all six core plus the three optional, each with a scene, hedged "may be incomplete". S4E14 sc70 (Andy: "will you do me the honor...", Angela: "Okay") and S9E22 sc69 (Dwight kneels, Angela "yes") verified. Cleanest answer.
+B 3: only Pam/Roy, Jim/Pam, Andy/Angela. Lists "Holly and AJ" as engaged, but the cited scenes are Michael's worry ("is engaged to another man", S7E12 sc4) and Holly said only "practically engaged"; misreads a panic as fact. Misses Michael/Holly, Dwight/Angela, Senator; reader gets a short, partly wrong list.
+C 8: memory, six core present plus Phyllis, Kelly/Ravi; Pam/Roy in a note. Adds Roy/Laura engagement (unverified here, optional). Clear and direct; episode titles given.
+D 8: has all core, but split in two blocks (transcripts then memory), so the reader must assemble it; states Pam/Roy and Jim/Pam well, labels the rest [memory]. Includes Michael's "engaged" joke correctly flagged (S5E6 sc3 "Psych"). Complete and honest.
+E 9: all core plus Kevin/Stacy, Phyllis, Kelly/Ravi with scenes; Roy/Laura as flagged memory. Detail "bullhorn" is real (S9E22 sc69 Dwight on bullhorn). Minor: "side of road" fine.

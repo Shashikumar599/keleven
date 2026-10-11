@@ -1,0 +1,127 @@
+{
+ "question_id": "q060",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Ryan (S9E23 sc.81-82), job not stated, Ravi a pediatrician (sc.66); earlier jobs labelled memory; 'husband/partner' for Ravi is hedged.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 8,
+     "reader": 9
+    },
+    "parts": [
+     {
+      "part": "who",
+      "ok": true
+     },
+     {
+      "part": "job",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "B": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "claim_beyond_evidence",
+   "notes": "Ryan, no stated job and Ravi pediatrician are right, but 'appears to be an unemployed single father' is not in the show.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 7,
+     "reader": 8
+    },
+    "parts": [
+     {
+      "part": "who",
+      "ok": true
+     },
+     {
+      "part": "job",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "C": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Ryan, job not stated in evidence, nanny exchange accurate, Ravi pediatrician; calls Ravi 'partner', hedged.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    },
+    "parts": [
+     {
+      "part": "who",
+      "ok": true
+     },
+     {
+      "part": "job",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "D": {
+   "score": 6,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Ryan and Ravi's job are right, but flatly asserts Ryan is an 'unemployed single father who abandons his baby', unsupported by the show.",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 6,
+     "reader": 6
+    },
+    "calibration": "overconfident",
+    "parts": [
+     {
+      "part": "who",
+      "ok": true
+     },
+     {
+      "part": "job",
+      "ok": false
+     }
+    ]
+   }
+  },
+  "E": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Ryan, job not stated, nanny exchange (sc.64) and Ravi pediatrician (sc.66) all exact.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    },
+    "parts": [
+     {
+      "part": "who",
+      "ok": true
+     },
+     {
+      "part": "job",
+      "ok": true
+     }
+    ]
+   }
+  }
+ }
+}

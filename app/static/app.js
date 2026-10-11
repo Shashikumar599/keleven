@@ -139,7 +139,7 @@ for (const t of document.querySelectorAll(".tab")) t.addEventListener("click", (
 let INFO = null;
 fetch("/api/info").then((r) => r.json()).then((d) => { INFO = d; renderExplain(); renderVersions(); }).catch(() => {});
 
-/* dev mode: pick the pipeline version (v1 vector, v2 hybrid, v3 later) to compare them on the same question */
+/* dev mode: pick the pipeline version (v1 vector, v2 hybrid, v3 graph) to compare them on the same question */
 function renderVersions() {
   const versions = INFO?.versions || [];
   if (!versions.some((v) => v.version === state.version && v.ready)) state.version = INFO?.version || null;
@@ -473,7 +473,21 @@ function planHTML(plan) {
     <p class="sub-line">Searched for: <strong>${esc(plan.search_text || "the question as asked")}</strong></p>
     ${plan.sql ? `<pre class="sql">${esc(plan.sql)}</pre>${plan.assumptions ? `<p class="sub-line">${esc(plan.assumptions)}</p>` : ""}${rows}`
                : `<p class="sub-line">No SQL for this question.</p>`}
+    ${"graph_sql" in plan ? graphHTML(plan) : ""}
   </details>`;
+}
+
+/* dev mode, v3: the enhancer's graph query and the rows it returned, each with the transcript lines shown to the model */
+function graphHTML(plan) {
+  const g = plan.graph_result;
+  if (!plan.graph_sql || !g) return `<p class="sub-line">No graph query for this question.</p>`;
+  if (g.error) return `<pre class="sql">${esc(plan.graph_sql)}</pre><p class="sub-line">The graph query failed${g.retried ? " (after one fix)" : ""}: ${esc(g.error)}</p>`;
+  const cols = g.columns.map((c, i) => [c, i]).filter(([c]) => c !== "line_ids");
+  const body = g.rows.map((row, n) => `<tr>${cols.map(([, i]) => `<td>${esc(String(row[i] ?? ""))}</td>`).join("")}</tr>${
+    (g.lines?.[n] || []).map((l) => `<tr><td colspan="${cols.length}" class="sub-line">S${l.season}E${l.episode} sc.${l.scene} · ${esc(l.speaker)}: ${esc(l.text.slice(0, 200))}</td></tr>`).join("")}`).join("");
+  return `<p class="sub-line"><strong>Graph query</strong></p><pre class="sql">${esc(plan.graph_sql)}</pre>
+    <div class="table-wrap"><table><thead><tr>${cols.map(([c]) => `<th>${esc(c)}</th>`).join("")}</tr></thead><tbody>${body}</tbody></table></div>
+    <p class="sub-line">${g.rows.length} graph rows${g.truncated ? " (cut at 50: more exist)" : ""}${g.retried ? ", after one fix" : ""}, ${g.ms} ms.</p>`;
 }
 function renderChunk(p, c, ctx, devLabels) {
   const scenes = c.content.split("\n\n").slice(1).map((block) => {   // drop the chunk header; the rest are scene blocks

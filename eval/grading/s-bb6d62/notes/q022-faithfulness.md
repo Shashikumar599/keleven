@@ -1,0 +1,3 @@
+A: 10. Jersey State Varsity Basketball team, Northeast Regional Champs, cited sc.29; quote exact (S4E11 sc.29 Tall Girl #1).
+B: 10. Same, plus "Amazons" (sc.29 Dwight: "Amazons.") and the bouncer reason (sc.29 Ryan: "some other loser who won't let us in without chicks"); all supported.
+C: 4. Memory answer, states "Season 4, Episode 15" with confidence; the episode is S4E11 in the data (episodes table: 4, 11, Night Out), and its uncertain list does not flag the episode number. Right gist (women's basketball team) but vague, drops the team name it admits is uncertain. Overconfident on the detail.

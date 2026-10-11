@@ -1,0 +1,4 @@
+Faithfulness q079
+A: 10. Says the quote is not in the transcripts (SQL 0 rows), quotes the setup exactly (S3E1 sc.3: "[sobbing] Jim is gone. He's gone. I miss him so much. Ooooh I cry myself to sleep, Jim! [serious]") and says "the remainder of the line is missing". Matches the DB: sc.3 ends at [serious].
+B: 9. Identifies Dwight and S3E1 sc.3 with the exact setup quote, labels "False. I do not miss him" as [memory] and explicitly records the conflict that the transcript cuts off at [serious]. Minor: stray "[P1]" cite, and it writes the punchline as something Dwight "declares", without saying it is unverified in the text.
+C: 7. Memory only, knows_answer True and the speaker/episode are right. Adds an unsupported framing: "when asked if he misses Jim" (the scene in S3E1 sc.3 has no question). No uncertainty flagged although the quoted words cannot be verified.

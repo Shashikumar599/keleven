@@ -1,0 +1,4 @@
+q050 faithfulness
+A: 10. S5E11 sc17 Andy "Are you sleeping with Dwight?" / Angela "A little bit." and sc32 Andy cancels the sailboat wedding cake are exact; the conference-room setting matches sc16-17. Nothing beyond the evidence.
+B: 10. All quotes exact: sc17, sc23 "The winner gets Angela", sc31 "only sleep with me twice" and Dwight "She's sleeping with you?", sc32 cake. The inference that Andy learned she deceived both men is directly supported by sc31 ("She said she was only sleeping with me").
+C: 7. Memory, core cause right, but confident (uncertain empty) with details that are not what the transcript shows: says "Dwight reveals" Angela slept with him regularly, while in S5E11 sc31 it is Andy who reveals "only sleep with me twice" and Dwight says "She said she was only sleeping with me"; "throughout their entire engagement" and "Dwight rejects her as well" are unsupported (sc32 only shows Dwight throwing a bobblehead in the trash).

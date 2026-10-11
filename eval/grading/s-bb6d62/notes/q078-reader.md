@@ -1,0 +1,5 @@
+READER lens, q078 (What happened to Karen after Jim?) Story arc.
+
+A: 6/10. Covers the breakup (S4E1 sc.4), a move to Utica (S4E6 sc.33 confrontation checked), pregnancy and marriage to Dan (S5E14). Opens "according to the graph, which may be incomplete", which is honest but weakens it. Gaps for a reader: never says she was Utica regional manager (S4E6 sc.2), that Jim went back to Pam, or that Dan is a dermatologist. Reads as a list of fragments.
+B: 8/10. Clear arc: breakup after the NY interview, leaves Scranton, becomes Utica manager, married to a dermatologist named Dan and pregnant, warm moment with Pam. Matches the reference. Episode numbers use split numbering (Branch Wars as S4E10, Lecture Circuit S5E16); no scene proof but accurate.
+C: 8/10. Full arc with scenes: breakup (S4E1 sc.4), empty desk, Utica manager, Stanley poaching (S4E6 sc.32-33 context), pregnant (S5E14 sc.14) and Dan the dermatologist (sc.22), reconciliation with Pam. Memory claims labelled. Slight clutter ("Is that Jim's?" is Michael's joke, handled without error).

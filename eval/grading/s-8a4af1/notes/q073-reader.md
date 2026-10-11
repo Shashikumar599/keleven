@@ -1,0 +1,6 @@
+q073 reader note. Reference: premise true, Kelly married Ryan (S7E14 sc.1: "Ryan Bailey Howard and I got divorced"; "like a week ago, we got really wasted"); only engaged to Ravi (S9E1 sc.8 "her fiance Ravi").
+A: 9. Direct (Ryan Howard), quotes the S7E14 sc.1 divorce line, hedges honestly on graph completeness. Does not mention the Ravi engagement or the brief length of the marriage; minor.
+B: 2. Says the transcripts do not say whom she married or whether she married at all, and offers two unrelated lines. Gives the reader nothing and implies the premise may be false; S7E14 was not in its passages, so the refusal is honest but useless.
+C: 8. Direct (Ryan, brief marriage, divorce), plus the Ravi engagement and finale, clearly labelled [memory]. Cites the S8E21 lines for context but not the key S7E14 scene; fine.
+D: 9. Direct, cites S7E14 sc.1, adds engagement to Ravi and finale run-off, correctly says she never married Ravi. Complete and well labelled.
+E: 3. Opens with Ryan (right) but states she later married Ravi "as shown in the finale", which is false (S9E1 sc.8 calls him her fiance; finale S9E23 sc.82 has her leave Ravi) and contradicts itself by saying she abandoned him. Wrong episode number for The Search too (S7E14 here). Confident and misleading.

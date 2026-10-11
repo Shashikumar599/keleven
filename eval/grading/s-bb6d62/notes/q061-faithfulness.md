@@ -1,0 +1,4 @@
+Faithfulness q061
+A: 9. Hood and lightsaber are in S2E5 sc.4 ("pulls his hood over his head and pops up his light saber"); Pam cat sc.1; three paper circles sc.4; sc.3/6/14 support the second head. Small slip: "on his shoulder" is not in any cited line.
+B: 7. Core claims cited correctly. "Emperor Palpatine [memory]" is labelled but unsupported: sc.4 only says "I am a Sith Lord". "Hooded cloak" and "black" cutouts are not in the lines (sc.4: "Three round pieces of paper taped to a shirt"); the black detail is in memory_claims but cloak is not labelled.
+C: 5. Memory answer, knows_answer True with no uncertainty, yet adds Palpatine and "cat ears and painted whiskers", which sc.1/sc.4 do not support (only "cat costume", "Sith Lord"). Core costumes right, so confidence is partly deserved, but the extras are overconfident.

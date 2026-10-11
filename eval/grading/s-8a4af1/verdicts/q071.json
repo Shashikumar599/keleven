@@ -1,0 +1,83 @@
+{
+ "question_id": "q071",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 3,
+   "verdict": "wrong",
+   "grounded": "partly",
+   "failure_type": "retrieval_miss",
+   "notes": "Names Dwight (manure, S4E4 sc.29, only an 'Ow!' implied) and says Mose hits no one else; misses Andy (S5E9 sc.20), which was not sent.",
+   "details": {
+    "lens_scores": {
+     "fact": 3,
+     "faithfulness": 5,
+     "reader": 3
+    },
+    "parts": [
+     {
+      "part": "whom Mose hit",
+      "ok": false
+     }
+    ]
+   }
+  },
+  "B": {
+   "score": 2,
+   "verdict": "refused",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Honestly says evidence does not confirm a hit; hedges toward Dwight manure; no answer. S5E9 sc.20 not sent.",
+   "details": {
+    "lens_scores": {
+     "fact": 2,
+     "faithfulness": 9,
+     "reader": 3
+    }
+   }
+  },
+  "C": {
+   "score": 1,
+   "verdict": "wrong",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Flatly says Mose hits no one; false (S5E9 sc.20 Andy). Unrelated extras.",
+   "details": {
+    "lens_scores": {
+     "fact": 1,
+     "faithfulness": 2,
+     "reader": 1
+    },
+    "calibration": "overconfident"
+   }
+  },
+  "D": {
+   "score": 2,
+   "verdict": "refused",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Evidence does not state a hit; hedged guess at Dwight; no answer. Andy scene not sent.",
+   "details": {
+    "lens_scores": {
+     "fact": 2,
+     "faithfulness": 9,
+     "reader": 3
+    }
+   }
+  },
+  "E": {
+   "score": 3,
+   "verdict": "wrong",
+   "grounded": "partly",
+   "failure_type": "retrieval_miss",
+   "notes": "Asserts Mose hit Dwight with manure (not shown) and nobody else; misses Andy (S5E9 sc.20).",
+   "details": {
+    "lens_scores": {
+     "fact": 3,
+     "faithfulness": 5,
+     "reader": 3
+    }
+   }
+  }
+ }
+}

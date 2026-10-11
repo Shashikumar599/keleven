@@ -1,0 +1,85 @@
+{
+ "question_id": "q046",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "evidence_misread",
+   "notes": "All seven core managers present plus Creed and Robert California, but says Michael resumed sole management citing S6E15 sc.21, where Jo makes Jim manager and Michael goes back to sales (Michael's sole-manager hope in sc.19 was reversed); muddled Dwight bullet.",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 7,
+     "reader": 8
+    },
+    "found": [
+     "Michael",
+     "Jim",
+     "DeAngelo",
+     "Dwight acting",
+     "Andy",
+     "Nellie",
+     "Dwight permanent"
+    ],
+    "missed": [],
+    "invented": []
+   }
+  },
+  "B": {
+   "score": 5,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Core managers all present, but claims the list is exact, and adds Charles Miner as interim supervisor (he was VP, David says 'You're still the branch manager', S5E18) and Dwight acting manager in The Job (S3E23 only says 'Once I'm officially Regional Manager'); Jim's sole stint is missing.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 4,
+     "reader": 7
+    },
+    "found": [
+     "Michael",
+     "Jim",
+     "DeAngelo",
+     "Dwight acting",
+     "Andy",
+     "Nellie",
+     "Dwight permanent"
+    ],
+    "missed": [],
+    "invented": [
+     "Dwight acting in The Job",
+     "Charles Miner as interim manager"
+    ],
+    "calibration": "overconfident"
+   }
+  },
+  "C": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "All seven core managers including Jim's sole stint in S6E15 sc.21; memory extras are labelled (Ed Truck, Jim in Survivor Man, Miner who oversaw operations as VP); opaque [P#] cites on some claims keep it from full marks.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 7,
+     "reader": 7
+    },
+    "found": [
+     "Michael",
+     "Jim",
+     "DeAngelo",
+     "Dwight acting",
+     "Andy",
+     "Nellie",
+     "Dwight permanent"
+    ],
+    "missed": [],
+    "invented": []
+   }
+  }
+ }
+}

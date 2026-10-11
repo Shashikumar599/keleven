@@ -1,0 +1,6 @@
+READER lens, q046 (list of managers, 7 core items in reference: Michael, Jim co/sole, DeAngelo, Dwight acting, Andy, Nellie, Dwight permanent).
+A: 7. Full, direct numbered list covering all core items except Jim's sole stint; adds Ed Truck, Miner (reference: Miner was not branch manager, S5E18) and a doubtful "Dwight acting in S3 The Job"; Andy's S8E24 reinstatement not shown. Says "exact", overstated.
+B: 3. Self-hedged but covers only Michael, Jim, Dwight; misses DeAngelo, Andy, Nellie, permanent Dwight. Confusing line that Michael "later serves as co-manager".
+C: 6. Reader gets nearly all core people with [memory] tags, but "exact and comprehensive" is overconfident; no Andy reinstatement, no Jim sole stint, Ed Truck/other padding; Nellie/Andy only from memory.
+D: 8. Most complete and well organised: Jim sole (S6E15 sc.21), DeAngelo, Dwight acting then permanent (S9E21 sc.34), Creed, Robert, Andy incl. reinstatement (S8E24), Nellie. Minor: Miner listed as overseeing branch (memory); hedging absent but little overreach.
+E: 7. Covers all core items incl. permanent Dwight and Nellie, hedged "may be incomplete". Flaw: says Michael "resumed sole management" after co-management (S6E15) which contradicts its own next line that Jim became sole manager (reference S6E15 sc.21: Jo says Jim is the new manager); Andy S8E24 reinstated mentioned.

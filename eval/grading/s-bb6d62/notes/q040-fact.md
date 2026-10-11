@@ -1,0 +1,3 @@
+A: 9. Michael 24 lines (in the accepted range 22-26 per reference), Dwight second with 3 (S2E12 sc.33, S3E12 sc.36, S5E17 sc.27). Pam's 3 in one line (S5E6 sc.27) ties; not mentioned, minor. Detail slip: S2E2 sc.34 is Michael's retort in the office after announcing retirement from comedy, not "harassment training"; S4E7 sc.56 Michael line "That's what I said. That's what she said." is correct.
+B: 9. Same numbers, 24 and Dwight 3. Descriptions of S2E2 sc.34 (after retirement from comedy) and S4E7 sc.56 (birthdays with Jim) are accurate. Pam tie not noted, minor.
+C: 3. Michael "34 to 35" is far off the dataset (24) and the owner count (30); "approximate" label does not rescue it. Dwight second with "3 to 4" is right.

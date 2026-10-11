@@ -1,0 +1,6 @@
+FACT lens, q060 (reference: Ryan Howard; job not stated; Ravi is a pediatrician).
+A: 9. Ryan right (S9E23 sc.81-82). Says no job is stated in the finale (matches ref), gives Ravi as pediatrician (sc.66, verified "Ravi is a pediatrician..."), earlier roles by memory. Ryan's earlier roles temp/VP/salesman/bowling alley are true (S5E20 sc.22 "Ryan is working at the bowling alley"). "Husband/partner" for Ravi hedged, fine. Nothing wrong found.
+B: 8. Ryan right, job not stated, Ravi pediatrician (sc.66). Extra "appears to be an unemployed single father" is a guess beyond the show (ref: job not stated; S9E1 sc.11 only says Ryan quit Dunder Mifflin and moved to Ohio); labelled memory/appears. Minor overreach.
+C: 10. Ryan (sc.81-82); says evidence does not state his job; Ravi pediatrician (sc.66). Matches ref exactly.
+D: 7. Ryan right and says no stated job, Ravi pediatrician. But asserts flatly that Ryan is "an unemployed single father" - not in the transcripts (ref: job not stated); a specific current-status claim not supported. Also episode "Season 9, Episodes 24/25" is split numbering (finale is S9E23 here), accepted.
+E: 10. Ryan; job not stated; Ravi pediatrician; all verified (sc.64 "No, this little guy is mine", sc.82 Kevin: "They left together").

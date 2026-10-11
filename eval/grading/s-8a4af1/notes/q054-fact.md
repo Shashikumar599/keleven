@@ -1,0 +1,6 @@
+FACT lens q054 (reference: Colorado with Holly (S7E21 sc.1); returns in finale as Dwight's surprise "bestish mensch" S9E23 sc.68; two phones for kids' pictures sc.76)
+A: 9. Memory. Boulder, Holly, married, kids, best man at finale, Pam's two-phones line (S9E23 sc.76 verified) all fine; "bestest mensch" is a spelling variant, "two separate family plans" slightly off ("two numbers, two bills"). Split numbering accepted.
+B: 5. Only the finale return (S9E23 sc.68 verified: Dwight whispers "Michael. I can't believe you came."); omits the Colorado move/Holly entirely and says other details are missing. Half the covered facts. "replace Jim as best man" fits sc.68.
+C: 8. Colorado/Holly, married, kids [memory], finale surprise best man arranged by Jim (sc.68 plus sc.69 "Best prank ever" supports), two phones (sc.76 verified, but labelled memory though it was in the show). Facts all correct.
+D: 4. Says evidence does not show what happened afterward; gives only the move to Colorado with Holly (S7E21 sc.1) and misses the finale return, which the reference says the transcripts cover. Correct but incomplete.
+E: 9. Colorado with Holly, marries, kids, returns as surprise best man, two phones; all true per sc.68/sc.76. Finale facts labelled memory but correct.

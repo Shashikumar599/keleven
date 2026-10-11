@@ -1,0 +1,4 @@
+READER lens, q040
+A: 8. Answers both parts: 24 lines (states it counts transcript lines containing the phrase) and Dwight second with 3. Examples check out: S2E2 sc.34 Jim baits ("Does that include 'That's What She Said'?" then Michael: "THAT'S WHAT SHE SAID!"), S4E7 sc.56 with Jim after Michael returns. Calling sc.34 "harassment training" is loose (it is the "retirement from comedy" announcement in the Sexual Harassment episode). Does not mention that Pam ties Dwight on uses, or that 24 may undercount (owner list is 30).
+B: 8. Same numbers and the same basis, clean wording; examples correct (S2E2 sc.34 retirement from comedy, S4E7 sc.56 birthdays chat). Same missing caveats as A.
+C: 5. Hedged approximate range (34 to 35) that is well above the dataset (24) and owner (30) counts, and lists its own uncertainties honestly; Dwight second with 3-4 is right. Useful as a ballpark but not on the transcripts the project uses and with no basis stated.

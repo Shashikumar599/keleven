@@ -1,0 +1,111 @@
+{
+ "question_id": "q092",
+ "reference": "Judgment question with no single answer; the loaded wording ('toxic') is not something the show states. What the show supports: Angela is a rigid, judgmental, snobbish and frequently cruel person to her coworkers, played for comedy, but she is also shown as vulnerable, loyal in her way and capable of apologies and warmth, so most defensible readings are 'mean and harsh, but not simply a villain'. STRONGEST EVIDENCE OF CRUELTY: (a) insults to coworkers: tells Kelly 'your job is pointless. And you're a slut and everyone thinks so' (S3E20 sc.60); calls Toby 'pathetic' after slapping him (S3E10 sc.76); on Oscar, 'It explains so much' about his being gay (S3E1 sc.8) and 'he looks like he just got off the boat... Gross!' about his sandals (S5E24 sc.8); calls Meredith 'disgusting. Those feet. They're like the paws of an orangutan' on the morning of her own wedding (S9E23 sc.8); tells Phyllis her parties are 'stupid, tacky' (S5E10 sc.46) and berates her over the Launch Party banner, 'Angry at you for doing something stupid' (S4E3 sc.17); sneers at Pam's baby name, 'Phillip is wasted on you' (S8E4 sc.54); (b) control and exclusion: she runs the Party Planning Committee as a women-only club ('Never' to Kevin, S3E13 sc.13) and boasts of squashing the Weight Loss Buddy Support Group and the Finer Things Club as 'renegade clubs' (S4E6 sc.41); (c) vindictiveness in S9: she is furious at Oscar, 'a friend', for the affair with her husband and Dwight understands she wanted 'a stranger's knees whacked' (S9E8 sc.25). Note that the affair is a betrayal by her, too (she cheated on Andy with Dwight in S5, and on her senator husband with Dwight). MOMENTS THAT SOFTEN HER: she genuinely grieves for her cat Sprinkles and sobs (S4E1 sc.23, sc.40) and Dwight explains that her barbs come from grief (S4E4 sc.88); she cries when she feels the party committee is slighted (S2E10 sc.25); she tears up while apologizing to Oscar and invites him onto the committee ('I'm sorry for the way those certain events transpired', S3E13 sc.13); she half-apologizes to Kelly (S3E20 sc.71, 'I wish I hadn't called you stupid'); she brings brownies to thank coworkers who covered for her (S8E14 sc.1) and makes a nut-free batch for Kevin; she is heartbroken and humiliated by Oscar and the senator and comforted by Dwight (S9E8 sc.33); she says she lost touch with her sister for 16 years over a forgotten disagreement (S3E10 sc.42), which reads as stubbornness with a sad cost. Her devotion to Dwight (S5E11, S9E23) and the marriage they eventually have also show real attachment. PLAUSIBLE POSITIONS: (1) Yes, mean: judgmental, controlling and often cruel to people who cannot hit back; (2) 'Mean but comic and human': harsh and prim, with insecurity and grief under it, and capable of remorse; (3) Yes, but 'toxic' is too clinical a label for a sitcom character whose cruelty is exaggerated for laughs and who is often cruel in turn to Dwight and Andy. Readings to avoid: taking the insults by or about her (Erin's 'evil witch', Oscar's 'cold and awkward and cruel') as a verdict instead of coworkers' jokes or complaints; treating the cat-grief scenes as proof she is warm; claiming a single scene settles it; claiming she is 'mean to everyone': she is rarely cruel to Dwight, Andy, or senior figures; and treating real-person comments about the actor as part of this.",
+ "evidence": [
+  {
+   "scene": "S3E20 sc.60",
+   "line": "Angela: Well what you say is stupid, and your job is pointless. And you're a slut and everyone thinks so."
+  },
+  {
+   "scene": "S3E20 sc.71",
+   "line": "Angela: Oh. Thank you, Kelly. And I wish I hadn't called you stupid."
+  },
+  {
+   "scene": "S3E10 sc.76",
+   "line": "Angela: [slaps Toby] ... Michael was so right about you. You are pathetic."
+  },
+  {
+   "scene": "S3E1 sc.8",
+   "line": "Angela: [in reference to Oscar being gay] It explains so much."
+  },
+  {
+   "scene": "S5E24 sc.8",
+   "line": "Angela: The man is wearing sandals... Gross! I mean he looks like he just got off the boat."
+  },
+  {
+   "scene": "S3E13 sc.13",
+   "line": "Angela: ...I'm sorry for the way those certain events transpired. [starts to cry] ... Kevin: Can I join too? Angela: Never."
+  },
+  {
+   "scene": "S5E10 sc.46",
+   "line": "Angela: ...you won't be able to plan your stupid, tacky parties anymore. So you move the tree."
+  },
+  {
+   "scene": "S4E3 sc.17",
+   "line": "Angela: I feel angry. Angry at you. Angry at you for doing something stupid."
+  },
+  {
+   "scene": "S4E6 sc.41",
+   "line": "Angela: Renegade clubs are dangerous. I squashed the Weight Loss Buddy Support Group."
+  },
+  {
+   "scene": "S8E4 sc.54",
+   "line": "Angela: Phillip is wasted on you."
+  },
+  {
+   "scene": "S9E8 sc.25",
+   "line": "Dwight: I could understand you wanting to get a stranger's knees whacked. But a co-worker... Angela: Exactly, a friend... seducing your husband."
+  },
+  {
+   "scene": "S9E23 sc.8",
+   "line": "Angela: Look at Meredith. She's disgusting. Those feet. They're like the paws of an orangutan."
+  },
+  {
+   "scene": "S4E1 sc.23",
+   "line": "Dwight: ...your cat is dead. Angela: [sobbing]"
+  },
+  {
+   "scene": "S4E4 sc.88",
+   "line": "Dwight: Angela is in a great deal of pain because of the death of her cat... it makes her say things. So... best to just lay off."
+  },
+  {
+   "scene": "S2E10 sc.25",
+   "line": "Angela: Michael should have asked the party planning committee first... [starts to cry]"
+  },
+  {
+   "scene": "S8E14 sc.1",
+   "line": "Angela: I wanted to thank you guys for covering for me so I made some treats... I made a batch with no nuts, special for you Kevin"
+  },
+  {
+   "scene": "S9E8 sc.33",
+   "line": "Angela: I feel so stupid. I sit next to him every day. Dwight: You're not stupid... You're gonna be okay, Monkey."
+  },
+  {
+   "scene": "S3E10 sc.42",
+   "line": "Angela: My sister and I used to be best friends, and we haven't talked in 16 years. Over some disagreement, I don't even remember."
+  },
+  {
+   "scene": "S9E8 sc.1",
+   "line": "Oscar: if she's cold and awkward and cruel to me, then great, it's business as usual."
+  }
+ ],
+ "sources": [
+  "S3E20 sc.60",
+  "S3E20 sc.71",
+  "S3E10 sc.76",
+  "S3E1 sc.8",
+  "S5E24 sc.8",
+  "S3E13 sc.13",
+  "S5E10 sc.46",
+  "S4E3 sc.17",
+  "S8E4 sc.54",
+  "S9E8 sc.25",
+  "S9E23 sc.8",
+  "S4E1 sc.23",
+  "S4E4 sc.88",
+  "S8E14 sc.1",
+  "S9E8 sc.33",
+  "S3E10 sc.42"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": null,
+ "accepted_alternatives": [],
+ "confidence": "medium",
+ "caveats": "Judgment question: the transcripts support many cruel moments and several softening ones, but no scene decides it. 'Toxic' is a loaded word the show never uses; the show uses 'witch' (Erin, S7E24 sc.61, a joke) and 'cruel' (Oscar, S9E8 sc.1, a complaint in his own confession). I did not read every Angela scene (about 9 seasons of material); S3E1 sc.8 is a single line whose surrounding scene was not read in full, so use it only as supporting. Any clear position with cited scenes, the strongest counterpoint and no reading of an insult or joke as a verdict is acceptable; a refusal to take a position is not.",
+ "question": "Was Angela toxic and mean?",
+ "category": "opinion",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": true,
+ "owner_note": "accepted as is by the owner, 2026-10-11"
+}

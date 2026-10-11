@@ -1,0 +1,13 @@
+{
+ "job": "batches/f0eq2j4mni5jus44cvfsib9bj88yd4bv26tb",
+ "label": "2026-10-11-v3-new",
+ "model": "gemini-3.8-flash",
+ "requests": 12,
+ "stage": "enhancer",
+ "submitted_at": "2026-10-11T04:12:31.529505+00:00",
+ "questions_sha256": "98449a0ead6ea0171f28cd87597c60e0f98a981347c4770f58da360102c4058d",
+ "prompt": {
+  "file": "enhance_v3.md",
+  "sha256": "b200846f5029d65073ccc4a118a45464dd57420bbb74d036a5937ff0ef8e0981"
+ }
+}

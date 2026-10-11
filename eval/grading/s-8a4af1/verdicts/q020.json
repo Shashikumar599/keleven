@@ -1,0 +1,77 @@
+{
+ "question_id": "q020",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Kelly and Lamar Odom, S8E11 sc.14, with the wrong guesses; 'Khloe' spelling and 'sports fans' are minor embellishments.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 9,
+     "reader": 9
+    }
+   }
+  },
+  "B": {
+   "score": 2,
+   "verdict": "wrong",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Lamar Odom right but names Kevin as the one who knows; Kevin guesses Ron Artest and Kelly corrects him (sc.14). Main who-part wrong.",
+   "details": {
+    "lens_scores": {
+     "fact": 3,
+     "faithfulness": 1,
+     "reader": 3
+    },
+    "calibration": "overconfident"
+   }
+  },
+  "C": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Kelly and Lamar Odom, S8E11 sc.14, wrong guessers listed correctly; 'Khloe' spelling minor.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 9,
+     "reader": 10
+    }
+   }
+  },
+  "D": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Kelly and Lamar Odom with the reality-show reason, S8E11 sc.14, exact.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    }
+   }
+  },
+  "E": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Kelly and Lamar Odom with the reality-show reason, S8E11 sc.14, exact.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    }
+   }
+  }
+ }
+}

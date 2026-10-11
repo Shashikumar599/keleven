@@ -1,0 +1,77 @@
+{
+ "question_id": "q003",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 2,
+   "verdict": "refused",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Honestly says the quote is not in the passages (true: no Gretzky line exists; the gag is visual) but gives no completion.",
+   "details": {
+    "lens_scores": {
+     "fact": 2,
+     "faithfulness": 10,
+     "reader": 3
+    }
+   }
+  },
+  "B": {
+   "score": 2,
+   "verdict": "refused",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Same honest refusal; correctly ignored unrelated '100%' rows.",
+   "details": {
+    "lens_scores": {
+     "fact": 2,
+     "faithfulness": 10,
+     "reader": 3
+    }
+   }
+  },
+  "C": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Gives '- Wayne Gretzky / - Michael Scott' labelled [memory] and says it is not in spoken dialogue (confirmed: no 'gretzky' line); episode (Michael Scott Paper Company, S5E21 here) is plausible, unverifiable.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 9,
+     "reader": 9
+    }
+   }
+  },
+  "D": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "Correct attribution, labelled [memory]; unhedged whiteboard/episode specifics and no note that transcripts lack it.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 8,
+     "reader": 8
+    }
+   }
+  },
+  "E": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Correct completion from memory with an unverifiable but plausible episode claim; no hedge.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 7,
+     "reader": 7
+    },
+    "calibration": "ok"
+   }
+  }
+ }
+}

@@ -1,0 +1,4 @@
+FACT lens, q050 (main cause: found out Angela cheated with Dwight during the engagement).
+A: 9. Main cause right; verified S5E11 sc.17 Andy "Are you sleeping with Dwight?" Angela "A little bit." and sc.32 cancelling the sailboat cake. Omits the duel revelation that she slept with Dwight far more than with him (sc.31), which is supporting only.
+B: 10. Main cause right plus correct supporting points: duel (sc.23), sc.31 Andy "only sleep with me twice" / Dwight "She's sleeping with you?" / "She said she was only sleeping with me", cake cancelled sc.32.
+C: 8. Main cause right (affair with Dwight, Michael tells Andy, duel, calls off wedding). Small errors: it is Andy who says she sleeps with Dwight "this whole time" (sc.31), not Dwight revealing it; "throughout their entire engagement" overreaches since Angela says in sc.17 they stopped after Sprinkles and started up again.

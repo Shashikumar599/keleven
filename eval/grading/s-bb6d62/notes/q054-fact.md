@@ -1,0 +1,4 @@
+FACT lens, q054
+A: 6. Finale fact is right: Michael returns as Dwight's surprise best man (S9E23 sc.68: Jim "I can't be there for you" ... Dwight "Michael. I can't believe you came."). But it omits the covered part that he moved to Colorado with Holly (S7E21 sc.1) and the kids (S9E23 sc.76), and says other details are missing. Incomplete, nothing false.
+B: 8. Colorado with Holly, married with kids [memory, well established], returns as Dwight's best man (S9E23 sc.68), Pam's two-phones line (sc.76; it is in the transcripts though labelled memory). "Arranged by Jim" is an inference the scene only hints at (Jim says "I really wish there was something I could do. [looks off]").
+C: 8. Boulder, Colorado with Holly, married, kids, returns as best man, Pam's two-phones joke (S9E23 sc.76). Small slips: "two separate family plans" (the line is two phones, two numbers, two bills, one "family plan"); "bestest mensch" vs "Bestish Mensch" (sc.68). Split episode numbers accepted.

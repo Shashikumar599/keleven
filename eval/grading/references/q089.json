@@ -1,0 +1,128 @@
+{
+ "question_id": "q089",
+ "reference": "Angela's partners on screen: (1) Dwight Schrute, her secret on-and-off partner. They had been dating roughly two years by S4E2 (Pam: 'for like two years, since before your barbeque'; Jim: 'six months'), ended when Dwight's handling of her cat Sprinkles ended it (S4E2: 'I can't be with you. Every time I look in your eyes I see Sprinkles' stiff lifeless body'). Dwight then resumes the affair while she is engaged to Andy (revealed S5E10-S5E11). Later a baby-making 'contract' arrangement with Dwight (S6E16 'Bare my child', S7E3, S7E8), and a final reunion and engagement to Dwight in S9E22 (marriage ceremony in S9E23 finale). (2) Andy Bernard: couple by S4E9 (Dinner Party), engaged S4E14 (proposal in the parking-lot party), wedding planning S5; Angela cheats with Dwight during the engagement; exposed in S5E11 The Duel; Andy cancels the wedding in S5E11 sc.32. (3) Senator Robert Lipton: boyfriend S7E11, engaged S7E24, husband by S8E1, son Phillip (S8E13); marriage a sham (he is gay, affair with Oscar S9E6-S9E8, S9E19), Angela cheated on him with Dwight (S9E18) and they separate/divorce (S9E20-S9E22).",
+ "evidence": [
+  {
+   "scene": "S4E2 sc.16",
+   "line": "Jim: Umm, Dwight and Angela dating. Have been for six months. / Pam: No, they have been dating for like two years. Since before your barbeque."
+  },
+  {
+   "scene": "S4E2 sc.37",
+   "line": "Angela: I can't do this. I can't be with you. Every time I look in your eyes I see Sprinkles' stiff lifeless body."
+  },
+  {
+   "scene": "S4E9 sc.7",
+   "line": "Michael: ... it will be me and Jan, and Pam and Jim, and Angela and Andy. (Andy and Angela arrive as a couple)"
+  },
+  {
+   "scene": "S4E14 sc.70",
+   "line": "Andy: Angela, will you do me the honor... of giving me your tiny hand in marriage? Angela: ...Okay."
+  },
+  {
+   "scene": "S5E10 sc.46",
+   "line": "Phyllis: Angela's having sex with Dwight. I caught them doing it after Toby's going away party."
+  },
+  {
+   "scene": "S5E11 sc.17",
+   "line": "Andy: That you're sleeping with Dwight. Angela: ... we were together, and then he killed sprinkles, and then we stopped, and... I don't know exactly when we started up again."
+  },
+  {
+   "scene": "S5E11 sc.32",
+   "line": "Andy: ... I would like to cancel a wedding cake that I had ordered."
+  },
+  {
+   "scene": "S6E16 sc.9",
+   "line": "Dwight: I want to have a child for business reasons and I want you to be the mother ... bang it out."
+  },
+  {
+   "scene": "S7E3 sc.11",
+   "line": "Dwight: Angela? Don't like her anymore ... Just contractually obligated to make a baby with her."
+  },
+  {
+   "scene": "S7E11 sc.58",
+   "line": "Angela: Hey everybody, this is my boyfriend, Senator Robert Lipton."
+  },
+  {
+   "scene": "S7E24 sc.30",
+   "line": "Angela: ... he got down on one knee, and he said, will you be a Senator's wife?"
+  },
+  {
+   "scene": "S8E1 sc.11",
+   "line": "Angela: I am having a child with my husband, the Senator."
+  },
+  {
+   "scene": "S9E6 sc.2",
+   "line": "Oscar: ... Senator Lipton and I are having an affair."
+  },
+  {
+   "scene": "S9E18 sc.33",
+   "line": "Angela: Yes and I cheated on you with Dwight, it looks like they got it on film."
+  },
+  {
+   "scene": "S9E19 sc.33",
+   "line": "Robert: It wasn't until my marriage to Angela that I realized how...charmless I find the female body."
+  },
+  {
+   "scene": "S9E21 sc.53",
+   "line": "Angela: No, not the senator. I love Dwight."
+  },
+  {
+   "scene": "S9E22 sc.69",
+   "line": "Dwight: ... I love you! (proposal) Angela: Okay, yes...yes, I will! ... Phillip's your son."
+  }
+ ],
+ "sources": [
+  "S4E2 sc.16",
+  "S4E2 sc.37",
+  "S4E9 sc.7",
+  "S4E14 sc.70",
+  "S5E11 sc.17",
+  "S5E11 sc.32",
+  "S7E11 sc.58",
+  "S7E24 sc.30",
+  "S8E1 sc.11",
+  "S9E18 sc.33",
+  "S9E22 sc.69"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": [
+  {
+   "item": "Dwight Schrute (secret relationship, ended S4E2 over Sprinkles; affair resumes during Andy engagement, S5; later baby contract S6-S7; final reunion/engagement S9E22, wedding S9E23)",
+   "scene": "S4E2 sc.16",
+   "core": true
+  },
+  {
+   "item": "Andy Bernard (dating S4, engaged S4E14, cancelled S5E11 after the Dwight affair is exposed)",
+   "scene": "S4E14 sc.70",
+   "core": true
+  },
+  {
+   "item": "Senator Robert Lipton (boyfriend S7E11, engaged S7E24, married by S8E1, divorce/separation S9)",
+   "scene": "S7E24 sc.30",
+   "core": true
+  },
+  {
+   "item": "Overlap: Dwight and Angela's affair runs while she is engaged to Andy (S5E10-S5E11)",
+   "scene": "S5E11 sc.17",
+   "core": true
+  },
+  {
+   "item": "Overlap: Angela cheats on the Senator with Dwight (S9E18); the Senator has an affair with Oscar (S9E6)",
+   "scene": "S9E18 sc.33",
+   "core": false
+  },
+  {
+   "item": "Pregnancy: Phillip born S8E13; Angela claims Senator is the only man (S8E24) but tells Dwight in S9E22 that Phillip is Dwight's son",
+   "scene": "S9E22 sc.69",
+   "core": false
+  }
+ ],
+ "confidence": "medium",
+ "caveats": "Start of the Dwight relationship is not shown on screen in the transcripts; only Pam's S4E2 line gives about two years before S4E2 (with Jim's six-month claim being wrong). The start of Andy and Angela is not shown directly: Andy asks her out and is refused in S4E4 sc.89, yet by S4E5 sc.10 he says he has been making out with her, and they arrive as a couple in S4E9. When the Dwight baby contract ended is unclear (S7E9 sc.36 Dwight finds her gone with a note). Wedding to the Senator happens off-screen between S7E24 and S8E1 (S8E13: pregnancy 'conceived out of wedlock' before the wedding). The finale wedding of Angela and Dwight is S9E23 (sc.41 bridal kidnapping, sc.72 minister: 'I now pronounce you man and wife'); the proposal is S9E22 sc.69.",
+ "question": "Whom does Angela date or marry over the series?",
+ "category": "list",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": true,
+ "owner_note": "accepted as is by the owner, 2026-10-11"
+}

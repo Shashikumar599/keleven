@@ -1,0 +1,77 @@
+{
+ "question_id": "q026",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Mom; Brandon, per Darryl's retelling in sc.33; correctly notes the sc.15 'Bob' label.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 8
+    }
+   }
+  },
+  "B": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Mom; Brandon, with Val's confirmation, sc.33 exact.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    }
+   }
+  },
+  "C": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Mom; Brandon, sc.33; Brandon as her boyfriend is supported by S8E16. Cluttered by the Bob-label aside.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 9,
+     "reader": 9
+    }
+   }
+  },
+  "D": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Mom and Brandon (boyfriend) right, but it overstates Darryl as knowing it is false and says directions rather than the warehouse address. Uncited, uncertain list empty.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 6,
+     "reader": 7
+    },
+    "calibration": "ok"
+   }
+  },
+  "E": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Mom; Brandon, Val's laughing confirmation read as a joke, sc.33.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    }
+   }
+  }
+ }
+}

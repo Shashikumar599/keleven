@@ -1,0 +1,77 @@
+{
+ "question_id": "q061",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "All four costumes right with S2E5 citations; 'on his shoulder' is a tiny unsupported detail.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 8,
+     "reader": 9
+    }
+   }
+  },
+  "B": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "All four right and supported (sc.1, 3, 4, 6); the NOT FOUND quote is a joined-line artifact.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 9,
+     "reader": 9
+    }
+   }
+  },
+  "C": {
+   "score": 5,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Four costumes right in substance but Dwight is 'Emperor Palpatine' (S2E5 has no such text; he says Sith Lord) plus black circles/whiskers stated as fact.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 4,
+     "reader": 6
+    },
+    "calibration": "overconfident"
+   }
+  },
+  "D": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "All four right; memory extras (black circles, shoulder) labelled and harmless.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 8,
+     "reader": 9
+    }
+   }
+  },
+  "E": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "memory_error",
+   "notes": "All four right, but adds 'specifically Emperor Palpatine [memory]' which is unsupported and not in S2E5; labelled, so mild.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 6,
+     "reader": 6
+    }
+   }
+  }
+ }
+}

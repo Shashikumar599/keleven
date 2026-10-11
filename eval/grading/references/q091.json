@@ -1,0 +1,83 @@
+{
+ "question_id": "q091",
+ "reference": "The premise is only partly supported. The show says Scranton was the top branch on sales and profit in specific stretches, mainly seasons 5-6: David Wallace tells Michael that Utica, Albany and all the other branches are struggling while Scranton reports strong numbers and beats last year (S5E11); Michael says Scranton has the best sales of any regional branch (S5E14, the lecture circuit); Dwight calls it the most profitable branch (S6E10 sc.23) and Alan credits Michael with steady profits (S6E10 sc.32). But 'always' is not supported: in S1E1 Scranton and Stamford are rivals for one branch to survive; in S2E22 Michael admits 'our numbers are down'; in S3E7 the board votes to close Scranton (it is saved only because Stamford is closed instead, and Jan says it is 'not all about numbers'); in S3E2 Michael concedes 'Stamford is better in sales'; and Buffalo's staff claim 'we're the best branch in the company' (S5E26). No branch comparison with figures is shown, and 'better' is only ever shown by sales or profit statements, not hard data. The show gives no single stated cause. What it gives or implies: (1) Michael's people-first, relationship-based style: he remembers clients' families (S4E2 sc.56), runs the branch as a 'people business' (S2E16 sc.29), and David Wallace says he is 'not our most traditional guy' but something he does is right (S5E11); Michael himself cannot explain it and offers nonsense as his 'secret recipe' (S5E11, S5E14), so the show plays the success as unexplained or accidental. (2) A strong, loyal sales staff: Dwight (top salesman, beats the website, S4E3 sc.38), Jim, Stanley ('most consistently high sales numbers', S8E1 sc.40), Phyllis. (3) Michael attributes it to staff following his lead and to Jan's fondness for the branch (S2E22 sc.57), i.e. his own boasting and favouritism rather than evidence. The honest answer: Scranton was shown outperforming in the middle seasons, plausibly because of Michael's client rapport and a good sales team, but the show never states a cause and it was not 'always'.",
+ "evidence": [
+  {
+   "scene": "S5E11 sc.18",
+   "line": "David: Utica, Albany, all the other branches are struggling, but your branch is reporting strong numbers. ... something you are doing... is right."
+  },
+  {
+   "scene": "S5E14 sc.4",
+   "line": "Michael: Apparently Scranton has the best sales of any regional branch. So David Wallace has asked me to go to all the branches... sharing my secret recipe for success."
+  },
+  {
+   "scene": "S6E10 sc.23",
+   "line": "Dwight: Michael Scott you run the most profitable branch of Dunder Mifflin. How do you do it?"
+  },
+  {
+   "scene": "S6E10 sc.32",
+   "line": "Alan: In these uncertain times, Michael has managed to maintain steady profits from his Scranton branch."
+  },
+  {
+   "scene": "S1E1 sc.10",
+   "line": "Jan: the board have decided we can't justify a Scranton branch and a Stamford branch."
+  },
+  {
+   "scene": "S2E22 sc.57",
+   "line": "Michael: Our numbers are down, yes, but we have a heck of a crew here in Scranton... They follow my lead. ... Jan loves this branch, and I think that's really more than half the battle."
+  },
+  {
+   "scene": "S3E2 sc.41",
+   "line": "Michael: He made a better paper airplane, Stamford is better in sales... I get it."
+  },
+  {
+   "scene": "S3E7 sc.4",
+   "line": "Jan: I am here to tell you that we are closing the Scranton branch. ... Michael: we're not doing that bad and our numbers are gonna come up. Jan: it's not all about numbers, Michael. It's about talent."
+  },
+  {
+   "scene": "S3E7 sc.36",
+   "line": "Jan: Your branch is not closing; Stamford is closing."
+  },
+  {
+   "scene": "S5E26 sc.31",
+   "line": "Man from Buffalo: We're the best branch in the company!"
+  },
+  {
+   "scene": "S4E2 sc.56",
+   "line": "Michael: ...your daughter Emily. How's she doing? (client relationship)"
+  },
+  {
+   "scene": "S2E16 sc.29",
+   "line": "Michael: at Dunder Mifflin Scranton, we're not just in the paper business, we're in the people business."
+  },
+  {
+   "scene": "S8E1 sc.40",
+   "line": "Andy: Stanley... has the most consistently high sales numbers of anyone in this office."
+  }
+ ],
+ "sources": [
+  "S5E11 sc.18",
+  "S5E14 sc.4",
+  "S6E10 sc.23",
+  "S6E10 sc.32",
+  "S1E1 sc.10",
+  "S2E22 sc.57",
+  "S3E2 sc.41",
+  "S3E7 sc.4",
+  "S3E7 sc.36",
+  "S5E26 sc.31",
+  "S4E2 sc.56",
+  "S2E16 sc.29"
+ ],
+ "premise_true": false,
+ "count": null,
+ "list_items": null,
+ "accepted_alternatives": [],
+ "confidence": "medium",
+ "caveats": "Transcripts only give statements (David, Alan, Michael, Dwight), no data, and other branches are mostly offscreen (Stamford is the only one shown in depth, S3E7-8; Utica/Nashua briefly in S5E14-15). Michael is an unreliable boaster, and Dwight's 'most profitable' line is a planted softball question. The premise 'always better' is not supported (S1E1, S2E22, S3E2, S3E7 show the opposite); it is true only for stretches of seasons 5-6. Stated causes are thin: the show mostly implies Michael's rapport and a competent sales staff, and treats his success as unexplained. A grader should accept a premise correction ('not always, but strong in S5-6') plus those implied causes; an answer that invents a single stated cause, or accepts 'always' flatly, should lose credit.",
+ "question": "Why did the Scranton branch always perform better than the rest?",
+ "category": "why",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": true,
+ "owner_note": "accepted as is by the owner, 2026-10-11"
+}

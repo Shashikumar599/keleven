@@ -1,0 +1,77 @@
+{
+ "question_id": "q058",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 5,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Oscar is right, but adds a press conference in S9E18 with a campaign manager 'Thomas'; the show has it in S9E19 sc.33 with Chief of Staff Wesley Silver, so episode, role and name are wrong.",
+   "details": {
+    "lens_scores": {
+     "fact": 6,
+     "faithfulness": 3,
+     "reader": 7
+    },
+    "calibration": "overconfident"
+   }
+  },
+  "B": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "memory_error",
+   "notes": "Oscar right with exact citations (S9E6 sc.2, S9E7 sc.18); the [memory] extra of a 'campaign manager' is wrong (Chief of Staff Wesley Silver, S9E19 sc.33).",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 7,
+     "reader": 8
+    }
+   }
+  },
+  "C": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "memory_error",
+   "notes": "Oscar right with exact quotes (S9E7 sc.18, S9E8 sc.25, S9E14 sc.9); the [memory] extra of a 'campaign manager' is wrong (Chief of Staff Wesley Silver).",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 7,
+     "reader": 8
+    }
+   }
+  },
+  "D": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Oscar, with S9E6 sc.2 confession and the Halloween kiss in S9E18 sc.29; 'woke up in bed with' loosely paraphrases a nightmare joke.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 8,
+     "reader": 10
+    }
+   }
+  },
+  "E": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Oscar, three exact relevant citations, nothing beyond the evidence.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    }
+   }
+  }
+ }
+}

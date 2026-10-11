@@ -1,0 +1,4 @@
+Faithfulness q074
+A: 9. Quotes "I paid for an ideal specimen" and "It's not Kevin's child. Can't possibly be" are exact (S5E3 sc.43/44). Careful framing ("According to Jan", "passages provide no confirmation"). No memory used. Minor: does not cite the sperm-bank scene S4E14 sc.64 though it was sent.
+B: 8. Same exact quotes. The S4E14 sc.64 IHOP quote flagged "not found" is real (S4E14 sc.64 Jan: "it's right next to that little breakfast place... Michael: IHop. Jan: IHop."), so the flag is a checker artifact. "Never confirms" is labelled [memory]. Fine.
+C: 6. Memory only, knows_answer True. Core is right and calibrated ("never confirmed"). But gives donor details as fact: "chose a specific, high-end donor from a catalog" (S4E14 sc.64 only has Jan promising Michael "I'm gonna bring you the catalogue", which is not her choosing a donor), "regularly donates", and uses episode numbers that are in split numbering. Mild embellishment.

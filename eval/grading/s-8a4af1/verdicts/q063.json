@@ -1,0 +1,77 @@
+{
+ "question_id": "q063",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 1,
+   "verdict": "wrong",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Invents a nursing explanation; the real cause (S7E6 sc.11-12) is that Jim refuses to wear the Popeye costume.",
+   "details": {
+    "lens_scores": {
+     "fact": 1,
+     "faithfulness": 1,
+     "reader": 1
+    },
+    "calibration": "overconfident"
+   }
+  },
+  "B": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Olive Oyl needs Popeye, Jim refuses, Dwight takes her for his mother; all in sc.11-12.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 9,
+     "reader": 9
+    }
+   }
+  },
+  "C": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Main cause right with Jim's reason; omits Dwight joke and the ending, which are only supporting.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 9,
+     "reader": 8
+    }
+   }
+  },
+  "D": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Main cause plus Dwight's mom and Jim as Popeye at the end (sc.49); Swee'Pea is labelled memory.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 8,
+     "reader": 9
+    }
+   }
+  },
+  "E": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Main cause correct and exactly quoted from sc.11, though thin.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 10,
+     "reader": 7
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,4 @@
+READER lens, q063
+A: 9. Gives the main cause directly: Olive Oyl needs Popeye and Jim refuses; quotes Pam and Jim. Slightly muddled "she gave him" but fine. Omits Dwight's-mom joke (supporting only). Proof: S7E6 sc.11 Pam "it makes more sense when I'm standing next to Popeye, but... Jim doesn't want to put his costume on"; sc.12 Jim "I've never really been a costume guy".
+B: 10. Main cause plus the Dwight's-mom detail, which is a real line: S7E6 sc.11 Dwight "Looks like someone decided to dress up as old Dwight Schrute's mom." Phrase "mistake her costume for his own mother" is correct in spirit.
+C: 1. Gives a made-up reason (she is still nursing Cece so her chest is bigger than Olive Oyl's). Nothing in S7E6 supports it (Jim and Popeye are the explanation in sc.11-12), and the answer is confident ("knows_answer: True"). A reader is misled with a vulgar invention.

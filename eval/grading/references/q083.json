@@ -1,0 +1,115 @@
+{
+ "question_id": "q083",
+ "reference": "Couples who get married: Phyllis and Bob Vance (S3E15), Jim and Pam (wedding weekend in Niagara Falls, S6E4), Angela and Senator Robert Lipton (engaged S7E24; referred to as husband and wife from S8E1, wedding offscreen), Roy and Laura (Roy's wedding, S9E2), and Dwight and Angela (S9E23). Short-lived or unverified: Ryan and Kelly (an impulsive chapel marriage that is annulled/divorced within a week, S7E14), Michael and Holly (engaged S7E18, but a wedding is not shown or stated in the transcripts).",
+ "evidence": [
+  {
+   "scene": "S3E15 sc.8",
+   "line": "Michael: Phyllis is getting married. And I am in the wedding party."
+  },
+  {
+   "scene": "S3E15 sc.16",
+   "line": "Michael: It's your wedding. And you're nervous..."
+  },
+  {
+   "scene": "S5E25 sc.40",
+   "line": "Bob Vance: Mind if I steal my wife?"
+  },
+  {
+   "scene": "S6E4 sc.76",
+   "line": "Penny: [music starts playing and people start dancing down the isle] I begged them not to. (the Jim/Pam wedding procession)"
+  },
+  {
+   "scene": "S6E4 sc.77",
+   "line": "Jim: I bought those boat tickets the day I saw that You Tube video... The boat was actually Plan C. The church was Plan B and Plan A was marrying her a long, long time ago."
+  },
+  {
+   "scene": "S7E24 sc.65",
+   "line": "Angela: Pam, you know how you and Jim did your ironic wedding? Pam: That was our dream wedding."
+  },
+  {
+   "scene": "S8E1 sc.11",
+   "line": "Angela: I am having a child with my husband, the Senator."
+  },
+  {
+   "scene": "S9E1 sc.45",
+   "line": "Angela: it's my husband's favorite cat... the only time I've seen him cry other than our wedding night."
+  },
+  {
+   "scene": "S9E2 sc.7",
+   "line": "Jim: We are going to Roy's wedding."
+  },
+  {
+   "scene": "S9E2 sc.17",
+   "line": "Roy: If it wasn't for you, I never would've met Laura."
+  },
+  {
+   "scene": "S9E23 sc.72",
+   "line": "Minister: I now pronounce you man and wife. [everyone cheers]"
+  },
+  {
+   "scene": "S7E14 sc.1",
+   "line": "Kelly: Over the weekend, Ryan Bailey Howard and I got divorced. ... Andy: Sorry, when did you get married? Kelly: Ummm, like a week ago, we got really wasted and it just felt right."
+  }
+ ],
+ "sources": [
+  "S3E15 sc.8",
+  "S3E15 sc.16",
+  "S5E25 sc.40",
+  "S6E4 sc.76",
+  "S6E4 sc.77",
+  "S7E24 sc.65",
+  "S8E1 sc.11",
+  "S9E1 sc.45",
+  "S9E2 sc.7",
+  "S9E2 sc.17",
+  "S9E23 sc.72",
+  "S7E14 sc.1"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": [
+  {
+   "item": "Phyllis and Bob Vance",
+   "scene": "S3E15 sc.16",
+   "core": true
+  },
+  {
+   "item": "Jim and Pam",
+   "scene": "S6E4 sc.77",
+   "core": true
+  },
+  {
+   "item": "Dwight and Angela",
+   "scene": "S9E23 sc.72",
+   "core": true
+  },
+  {
+   "item": "Angela and Robert Lipton (the Senator)",
+   "scene": "S8E1 sc.11",
+   "core": true
+  },
+  {
+   "item": "Roy and Laura",
+   "scene": "S9E2 sc.17",
+   "core": false
+  },
+  {
+   "item": "Ryan and Kelly (impulsive marriage, divorced within a week)",
+   "scene": "S7E14 sc.1",
+   "core": false
+  },
+  {
+   "item": "Michael and Holly (not shown or stated as married in the transcripts)",
+   "scene": "S7E18 sc.39",
+   "core": false
+  }
+ ],
+ "accepted_alternatives": [],
+ "confidence": "medium",
+ "caveats": "Core = weddings/marriages of main-cast couples that the transcripts support: Phyllis-Bob, Jim-Pam, Dwight-Angela, Angela-Robert (wedding itself offscreen, but husband/wife and 'wedding night' are stated). Optional: Roy-Laura (a minor, side-character wedding; only the wedding and name Laura are stated), Ryan-Kelly (legally a marriage by the characters' account, but a joke-like, week-long episode; I would credit it but not require it), Michael-Holly (the transcripts show only the engagement and the move to Colorado; any later wedding is not in the data, so an answer including it from memory cannot be checked, and an answer omitting it is fine). Not weddings: Dwight/Andy/Angela mock ceremony rehearsal at Schrute Farms (S5E9 sc.18), the cancelled Pam-Roy wedding (S3E1 sc.24), and Michael's 'I'm getting married' joke (S5E6 sc.3). The Jim-Pam secret Niagara boat ceremony is visual; the transcripts show the wedding weekend and S7E24 'ironic wedding'. Fan transcripts miss visual details.",
+ "question": "Which couples get married over the series?",
+ "category": "list",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": true,
+ "owner_note": "accepted as is by the owner, 2026-10-11"
+}

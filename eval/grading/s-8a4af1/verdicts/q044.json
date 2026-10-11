@@ -1,0 +1,97 @@
+{
+ "question_id": "q044",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Season 2 with 25 lines, states the count method (text matches dundies/dundy); number differs from the reference 30 but ranking is the same.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 10,
+     "reader": 7
+    },
+    "truth": 2,
+    "given": 2,
+    "exactness": "exact",
+    "states_what_counted": true
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Season 2, with S7 22, S4 5, S1 2 from the SQL and real quotes; states what was counted.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 10,
+     "reader": 8
+    },
+    "truth": 2,
+    "given": 2,
+    "exactness": "exact",
+    "states_what_counted": true
+   }
+  },
+  "C": {
+   "score": 2,
+   "verdict": "refused",
+   "grounded": "n/a",
+   "failure_type": "memory_unsure",
+   "notes": "Honestly says it does not know and offers S2 or S7 without picking; an answer existed. Also gives Michael's Last Dundies as S7E21 (S7E20 here).",
+   "details": {
+    "lens_scores": {
+     "fact": 3,
+     "faithfulness": 7,
+     "reader": 3
+    },
+    "calibration": "ok",
+    "truth": 2,
+    "given": null,
+    "exactness": "wrong",
+    "states_what_counted": false
+   }
+  },
+  "D": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Season 2, 25 lines vs S7 22 per its SQL (plural only, text column, called dialogue lines: slight imprecision); quotes real.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 9,
+     "reader": 8
+    },
+    "truth": 2,
+    "given": 2,
+    "exactness": "exact",
+    "states_what_counted": true
+   }
+  },
+  "E": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Season 2, 25 lines vs S7 22, matches its SQL and states the counted word.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 10,
+     "reader": 8
+    },
+    "truth": 2,
+    "given": 2,
+    "exactness": "exact",
+    "states_what_counted": true
+   }
+  }
+ }
+}

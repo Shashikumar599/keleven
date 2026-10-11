@@ -1,0 +1,77 @@
+{
+ "question_id": "q031",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Michael to Toby, S2E22 sc.11, with correct trigger.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    }
+   }
+  },
+  "B": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Michael to Toby, S2E22 sc.11, correct context.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    }
+   }
+  },
+  "C": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Michael to and about Toby, S2E22 sc.11, matches reference.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    }
+   }
+  },
+  "D": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Michael to Toby in Casino Night, right; trigger vague (youth organization) and no scene.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 8,
+     "reader": 7
+    },
+    "calibration": "ok"
+   }
+  },
+  "E": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Michael to Toby, S2E22 sc.11, follow-up quote exact.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,4 @@
+Faithfulness q076
+A: 10. Every quote is exact: S8E20 sc.20 "I am gay, and I prefer men", sc.24 "I'm not gay. In fact, I'm so not gay, I'm in love with a girl", S9E18 sc.26 "Guess what? I'm not gay! So you are an IDIOT." Michael's rumor S6E1 sc.19 correctly described as a rumor. No memory used.
+B: 9. Quotes exact (the "NOT FOUND" flags are checker artifacts: S8E20 sc.20 "You want honesty? Super-honesty time. I'm gay." and S9E18 sc.26 "Dear JasonJasonJason... I'm not gay!" are both in the DB). Brad Pitt scene accurately described (S6E1 sc.21). Memory claims (heterosexual, relationships with Angela, Erin, Jessica) tagged [memory] and true.
+C: 8. Memory only, calibrated and correct. Michael's false rumor in Gossip is right, as is the "temporarily questions, concludes straight" gist (S6E1 sc.21, Andy later "relieved" per the reference). Rumor "to obscure a true rumor about Stanley's affair" is accurate. No Jessica fake-coming-out mention, but nothing false.

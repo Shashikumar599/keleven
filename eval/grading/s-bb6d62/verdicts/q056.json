@@ -1,0 +1,79 @@
+{
+ "question_id": "q056",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Angela; engaged to Andy (Goodbye, Toby) and later Senator Lipton (Search Committee, S7E24), married and divorced; matches the reference.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 9,
+     "reader": 8
+    },
+    "calibration": "ok",
+    "parts": [
+     {
+      "part": "mother is Angela",
+      "ok": true
+     },
+     {
+      "part": "previous fiance",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "B": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Angela correct and Andy is an accepted answer, but the support is Andy's 'double wedding' remark (S5E6 sc.3), a weak engagement proof, and the Senator is missed.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 7,
+     "reader": 6
+    },
+    "parts": [
+     {
+      "part": "mother is Angela",
+      "ok": true
+     },
+     {
+      "part": "previous fiance",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "C": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Angela, Andy (S5E6 sc.3) and the Senator marked [memory]; all true.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 9,
+     "reader": 9
+    },
+    "parts": [
+     {
+      "part": "mother is Angela",
+      "ok": true
+     },
+     {
+      "part": "previous fiance",
+      "ok": true
+     }
+    ]
+   }
+  }
+ }
+}

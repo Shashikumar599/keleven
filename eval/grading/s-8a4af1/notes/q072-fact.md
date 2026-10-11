@@ -1,0 +1,6 @@
+q072 fact lens. Reference: Dwight claims seventy (S7E22 sc.16, "I have seventy"); named cousins Mose (core), Zeke, Amel, Esther. Verified S9E13 sc.24 Zeke: "Dwight's my cousin"; S9E5 sc.38 Dwight asks Nellie for pills "for my cousin Mose... Other cousin Mose" (a cover story).
+A: 9. Gives 70 (Dwight's claim) with Mose, Amel, Zeke, Esther, all correct. Omits only optional goat-fungus cousin. Presents 70 as his statement, fine.
+B: 10. 70 as Dwight's claim; Mose, Amel, Zeke, Esther; flags "other cousin Mose" as invented/mentioned and goat-fungus cousin as a sales pitch claim. Matches reference.
+C: 9. Same content, correct. Minor: says "Esther Bruegger"; the surname does not occur in the transcripts (search for "bruegger" returns nothing), a harmless extra. Other cousin Mose correctly called a fabrication (S9E5 sc.38).
+D: 9. 70 plus Mose, Zeke, Amel, Esther, other cousin Mose. Correct; same "Bruegger" surname unverified extra; omits optional goat-fungus cousin.
+E: 2. Says the total "is never stated in the series": false, S7E22 sc.16 "Congratulations on your one cousin. I have seventy." Mose and Zeke right, but "Cousin Heiss" appears nowhere in the transcripts (search "heiss" empty). Misses the 70 core item.

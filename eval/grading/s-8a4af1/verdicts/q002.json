@@ -1,0 +1,77 @@
+{
+ "question_id": "q002",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "'suffer every year!' cited S3E20 sc.3, in the SQL result.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    }
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Right ending, Dwight to Jim, Product Recall; episode 20/21 is a numbering variant; context extras plausible.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 9,
+     "reader": 8
+    },
+    "calibration": "ok"
+   }
+  },
+  "C": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Exact line, cited S3E20 sc.3.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    }
+   }
+  },
+  "D": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Exact line, cited S3E20 sc.3.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    }
+   }
+  },
+  "E": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Correct ending with cite; terse but complete for the question.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,4 @@
+q047 faithfulness
+A: 9. Memory, correct (before) and calibrated; Frame Toby is S5E9 in split numbering (S5E8 here) so not a fault; marriage at Niagara, S6E4 sc8 "Next time we're all in this room Jim and I will be married".
+B: 9. Quotes exact: S5E6 sc18 "in the process of buying my parents' house so that they can retire"; S5E8 sc8 "the house that I bought for us". The marriage-in-S6 claim is labelled [memory] but also given a S6E4 sc77 cite; sc77 (Jim on plans A/B/C) only implies the wedding. Small labelling blur.
+C: 8. Cites are real: S5E1 sc97 "Pam, will you marry me?", S5E25 sc13 Pam "We're getting married today" with Jim on the marriage license, S5E8 sc8. The statement that they were "still unmarried" in S5E25 is an inference (sc13 is about getting a license; S5E25 sc43 Pam "I think maybe I want a 'wedding' wedding" supports it). Marriage in S6 cites sc77, which does not itself show the wedding. Reasonable but slightly past the evidence.

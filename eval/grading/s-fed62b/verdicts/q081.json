@@ -1,0 +1,112 @@
+{
+ "question_id": "q081",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "All three core partners plus Melvina (valid extra), but calls Isabel Pam's cousin (S6E4 sc.56: Pam's best friend), gives Esther surname Bruegger (transcripts: Ruger) and wrong episode numbers; confident (knows_answer True).",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 7,
+     "reader": 7
+    },
+    "calibration": "overconfident",
+    "found": [
+     "Angela",
+     "Isabel",
+     "Esther"
+    ],
+    "missed": [],
+    "invented": []
+   }
+  },
+  "B": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "All three core with right scenes; Melvina real. Minor flaws: Angela support partly the mock ceremony S5E9 sc.18 (sc.20 treats it as real) and Melvina duplicated as an 'unnamed woman' (S4E9 sc.19).",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 9,
+     "reader": 6
+    },
+    "found": [
+     "Angela",
+     "Isabel",
+     "Esther"
+    ],
+    "missed": [],
+    "invented": []
+   }
+  },
+  "C": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "All core with full Angela arc, labelled memory for finale marriage; surname Splann unsupported, minor.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 8,
+     "reader": 8
+    },
+    "found": [
+     "Angela",
+     "Isabel",
+     "Esther"
+    ],
+    "missed": [],
+    "invented": []
+   }
+  },
+  "D": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Names all three core accurately and hedges; the Angela entry carries almost no relationship content (no engagement or marriage), so slightly thin.",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 9,
+     "reader": 5
+    },
+    "found": [
+     "Angela",
+     "Isabel",
+     "Esther"
+    ],
+    "missed": [],
+    "invented": []
+   }
+  },
+  "E": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "All three core, finale marriage and Melvina labelled memory, Isabel and Esther cited correctly; Angela proof thin but true.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 8,
+     "reader": 7
+    },
+    "found": [
+     "Angela",
+     "Isabel",
+     "Esther"
+    ],
+    "missed": [],
+    "invented": []
+   }
+  }
+ }
+}

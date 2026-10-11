@@ -1,0 +1,129 @@
+{
+ "question_id": "q086",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 4,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Has Teri and Cynthia (2 of 4 core) but says the marriage ends after Gossip (false: Teri still his wife in S6E4 and S9E22 sc.20, divorce only mentioned S9E23 sc.49), invents a first and subsequent marriage, and misses Lydia; overconfident.",
+   "details": {
+    "lens_scores": {
+     "fact": 4,
+     "faithfulness": 5,
+     "reader": 4
+    },
+    "calibration": "overconfident",
+    "found": [
+     "Teri",
+     "Cynthia"
+    ],
+    "missed": [
+     "Lydia",
+     "divorce papers"
+    ],
+    "invented": [
+     "marriage ends after Gossip",
+     "subsequent marriage"
+    ]
+   }
+  },
+  "B": {
+   "score": 5,
+   "verdict": "partial",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Teri and Cynthia (with 'Mr. and Mrs. Stanley Hudson', S6E4 sc.20) and the three-affairs line are all supported and hedged, but Lydia (S9E18 sc.22) and the divorce papers (S9E23 sc.49) are missing.",
+   "details": {
+    "lens_scores": {
+     "fact": 5,
+     "faithfulness": 9,
+     "reader": 5
+    },
+    "found": [
+     "Teri",
+     "Cynthia",
+     "three affairs"
+    ],
+    "missed": [
+     "Lydia",
+     "divorce papers"
+    ],
+    "invented": []
+   }
+  },
+  "C": {
+   "score": 5,
+   "verdict": "partial",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Teri, Cynthia, three affairs and the earlier-wife joke (S4E12 sc.13, a fair inference) are supported and hedged; Lydia and the divorce are missing.",
+   "details": {
+    "lens_scores": {
+     "fact": 5,
+     "faithfulness": 8,
+     "reader": 5
+    },
+    "found": [
+     "Teri",
+     "Cynthia",
+     "three affairs"
+    ],
+    "missed": [
+     "Lydia",
+     "divorce papers"
+    ],
+    "invented": []
+   }
+  },
+  "D": {
+   "score": 6,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "claim_beyond_evidence",
+   "notes": "Covers all four core (Teri, Cynthia, Lydia and divorce, the last two from memory), but puts Lydia in a 'shown' Season 8 Sabre Florida affair (her only mention is S9E18 sc.22), reads S4E12 sc.13 as an 'ex-wife' and gives the infidelity as the divorce cause without support.",
+   "details": {
+    "lens_scores": {
+     "fact": 6,
+     "faithfulness": 6,
+     "reader": 7
+    },
+    "found": [
+     "Teri",
+     "Cynthia",
+     "Lydia",
+     "divorce"
+    ],
+    "missed": [],
+    "invented": [
+     "Lydia shown in Season 8 Sabre Florida"
+    ]
+   }
+  },
+  "E": {
+   "score": 6,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "claim_beyond_evidence",
+   "notes": "All four core present (Lydia and Teri leaving from memory) and the earlier wife has real support (S2E18 sc.34 'step-mother'), but Lydia is placed in a 'shown' Season 8 Sabre Florida affair that is not in the transcripts and 'Third Affair' misstates S9E22 sc.20.",
+   "details": {
+    "lens_scores": {
+     "fact": 6,
+     "faithfulness": 6,
+     "reader": 7
+    },
+    "found": [
+     "Teri",
+     "Cynthia",
+     "Lydia",
+     "divorce"
+    ],
+    "missed": [],
+    "invented": [
+     "Lydia shown in Season 8 Sabre Florida"
+    ]
+   }
+  }
+ }
+}

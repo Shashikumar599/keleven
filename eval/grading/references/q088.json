@@ -1,0 +1,135 @@
+{
+ "question_id": "q088",
+ "reference": "Michael's direct bosses at Dunder Mifflin, in order: Ed Truck (his predecessor/old boss, Scranton manager before him), Jan Levinson (VP Northeast region, his boss S1-S3 until fired at the end of S3), David Wallace (corporate CFO and later CEO, above Michael throughout and his direct boss after Jan), Ryan Howard (briefly VP Northeast sales, S4 only, 'I'm your boss'), Charles Miner (new VP Northeast, S5E18, whom Michael quit over), and Jo Bennett (CEO of Sabre after it bought Dunder Mifflin, S6E14-on). Michael himself lists 'David, Charles, Jan, Ed Truck' as his bosses (S7E8). Optional/debatable: Gabe (Sabre corporate liaison, chain of command in S7 although Michael insists 'Gabe is not the boss'), Robert California (CEO who arrives only after Michael has left), Alan Brand (company CEO seen once at a shareholder meeting in S6E10), Mr. Figaro (joke 'other boss' at his second job).",
+ "evidence": [
+  {
+   "scene": "S7E8 sc.23",
+   "line": "Michael: Better men than Gabe have tried to be my boss. David got fired. Charles got fired. Jan went crazy. Ed Truck, who I liked, got decapitated."
+  },
+  {
+   "scene": "S3E4 sc.5",
+   "line": "Michael: ... My old boss Ed Truck has died."
+  },
+  {
+   "scene": "S4E2 sc.28",
+   "line": "Jan: ... Ed Truck, your old boss, threatened ..."
+  },
+  {
+   "scene": "S2E8 sc.5",
+   "line": "Michael: My boss is coming in today, the lovely Jan Levinson-Gould ..."
+  },
+  {
+   "scene": "S2E22 sc.4",
+   "line": "Jan: ... your branch is currently number four of the five branches that I oversee."
+  },
+  {
+   "scene": "S3E17 sc.6",
+   "line": "Michael: ... my boss's boss's boss, the CFO ... is having a little shindig for all the managers"
+  },
+  {
+   "scene": "S3E23 sc.81",
+   "line": "Michael: Jan got fired. And I realized that I could not work for a company that would fire my girlfriend."
+  },
+  {
+   "scene": "S4E2 sc.10",
+   "line": "Ryan: ... I know I used to be a temp here, but now everything is different. I'd like your respect. I am your boss now."
+  },
+  {
+   "scene": "S4E4 sc.45",
+   "line": "Ryan: I'm your boss. (replying to Michael's 'my boss can back you up')"
+  },
+  {
+   "scene": "S4E13 sc.46",
+   "line": "Michael: ... my old temp is now my boss, so, gives you an idea of how quickly you can move up"
+  },
+  {
+   "scene": "S5E18 sc.4",
+   "line": "Michael: ... Sir Charles Miner and he is the new VP for the Northeast region."
+  },
+  {
+   "scene": "S5E18 sc.34",
+   "line": "Michael: [gets up to shake David's hand] I quit."
+  },
+  {
+   "scene": "S6E15 sc.2",
+   "line": "Michael: Today, Jo Bennett, the CEO from Sabre, is coming to see us here for the first time."
+  },
+  {
+   "scene": "S6E15 sc.9",
+   "line": "Jo: ... I am CEO of Sabre International ..."
+  },
+  {
+   "scene": "S7E6 sc.29",
+   "line": "Michael: ... if you have something to say, it goes through me, and then I take it to Gabe. Chain of command."
+  },
+  {
+   "scene": "S7E8 sc.12",
+   "line": "Michael: What? No Gabe is... Gabe is not the boss."
+  }
+ ],
+ "sources": [
+  "S7E8 sc.23",
+  "S3E4 sc.5",
+  "S2E8 sc.5",
+  "S4E2 sc.10",
+  "S5E18 sc.4",
+  "S6E15 sc.2",
+  "S6E15 sc.9"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": [
+  {
+   "item": "Jan Levinson (VP Northeast, boss S1-S3, fired end of S3)",
+   "scene": "S2E8 sc.5",
+   "core": true
+  },
+  {
+   "item": "David Wallace (CFO/CEO, corporate boss; Michael quits to him in S5E18)",
+   "scene": "S3E17 sc.6",
+   "core": true
+  },
+  {
+   "item": "Charles Miner (VP Northeast, S5E18-S5)",
+   "scene": "S5E18 sc.4",
+   "core": true
+  },
+  {
+   "item": "Jo Bennett (CEO of Sabre, S6-S7)",
+   "scene": "S6E15 sc.2",
+   "core": true
+  },
+  {
+   "item": "Ed Truck (prior regional manager / Michael's old boss, only past tense; Ed appears S2E14)",
+   "scene": "S3E4 sc.5",
+   "core": true
+  },
+  {
+   "item": "Ryan Howard (brief VP, S4)",
+   "scene": "S4E2 sc.10",
+   "core": false
+  },
+  {
+   "item": "Gabe Lewis (Sabre corporate liaison; chain of command in S7, Michael denies he is the boss)",
+   "scene": "S7E6 sc.29",
+   "core": false
+  },
+  {
+   "item": "Robert California (CEO, arrives S7E24 after Michael has left, not his boss on screen)",
+   "scene": "S7E24 sc.9",
+   "core": false
+  },
+  {
+   "item": "Alan Brand (company CEO at shareholder meeting, S6E10)",
+   "scene": "S6E10 sc.25",
+   "core": false
+  }
+ ],
+ "confidence": "medium",
+ "caveats": "Core list follows Michael's own S7E8 roll call (David, Charles, Jan, Ed Truck) plus Jo Bennett. Ed Truck was Michael's old boss per S3E4/S4E2, but appears on screen only as a past figure (S2E14 meeting). Ryan is a legitimate boss in S4 but short-lived and comedic, so optional. Whether acting/corporate heads like Gabe, Alan Brand or Robert California count is a judgment call. Titles come from dialogue; the transcripts do not state a formal org chart.",
+ "question": "Who were Michael's bosses over the series?",
+ "category": "list",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": true,
+ "owner_note": "accepted as is by the owner, 2026-10-11"
+}

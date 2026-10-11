@@ -1,0 +1,73 @@
+{
+ "question_id": "q080",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "literal_reading",
+   "notes": "Takes a clear Toby position with a counterpoint, but its lead evidence is Michael's insult (S3E22 sc.9) read as proof, overstated as Toby being 'excluded', and the rest is [memory].",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 9,
+     "reader": 6
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 1,
+     "counterpoint": 2,
+     "scope": 1
+    },
+    "total": 7
+   }
+  },
+  "B": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Picks Toby, the show's best-supported candidate, with Stanley as alternative and a good counterpoint from his Costa Rica and Strangler quirks; cites no scenes and misnames the novel.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 7,
+     "reader": 5
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 2,
+     "counterpoint": 2,
+     "scope": 1
+    },
+    "total": 8,
+    "calibration": "ok"
+   }
+  },
+  "C": {
+   "score": 5,
+   "verdict": "partial",
+   "grounded": "yes",
+   "failure_type": "literal_reading",
+   "notes": "Picks Pam based on her own self-deprecating lines (S3E22 sc.13, S9E1 sc.44) and Michael's Toby insult, which the reference says not to take as a verdict; quotes are exact and the counterpoint is good.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 9,
+     "reader": 4
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 0,
+     "counterpoint": 2,
+     "scope": 0
+    },
+    "total": 5
+   }
+  }
+ }
+}

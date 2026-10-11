@@ -1,0 +1,49 @@
+{
+ "question_id": "q029",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Kevin, S3E22 sc.15, exact line from the SQL row.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 8
+    }
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Kevin Malone, Beach Games; 'Episode 23' is the split numbering (S3E22 here), accepted; no scene cited.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 7,
+     "reader": 8
+    },
+    "calibration": "ok"
+   }
+  },
+  "C": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "Kevin, S3E22 sc.15 correct; 'on the bus ride' is not stated in the cited talking-head line, a minor unsupported detail.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 9,
+     "reader": 8
+    }
+   }
+  }
+ }
+}

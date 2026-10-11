@@ -1,0 +1,5 @@
+READER lens, q049 (building bought before or after Michael left). Checked: S6E24 sc.39 Dwight "I'm about to buy this building"; S7E1 sc.16 Jim "Dwight bought the building ... this summer"; S7E2 sc.2 Dwight "Now that I own the building"; S7E21 sc.36 Michael "Dwight, I will be leaving tomorrow".
+
+A: 10. "Before", with a clear sequence: about to buy (end of S6), bought over the summer (S7E1), Michael leaves later in S7E21; the only memory piece (Colorado) is tagged. Short, direct, complete.
+B: 9. "Before", supported by S7E1 sc.16 and S7E21 sc.36. Correct and direct; omits the S6E24 "about to buy" line, so it shows the purchase happened but not the lead-up.
+C: 8. Memory answer: "Before", reasonable, and the Counseling (S7E2) reference is real (S7E2 sc.2 "Now that I own the building"). But it frames the purchase as "Scranton Business Park" (the building sits in the park; Dwight says he owns "the building") and places Goodbye, Michael at S7E22 (S7E21 here, split numbering), small blurring for a reader.

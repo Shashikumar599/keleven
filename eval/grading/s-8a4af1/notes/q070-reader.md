@@ -1,0 +1,7 @@
+q070 reader lens
+Reference candidates: Charles Miner (7 episodes S5, checked: S5E18-23, S5E26), Brian (5 episodes, S9E12-15, 18, checked), Mr Brown, DeAngelo.
+A: 1. Says the passages do not answer; no position, nothing useful. Its passages included Jo's scene (S6E15 sc.8-9) and the crew-guy line (S9E18 sc.22), so a candidate was available.
+B: 8. Takes a position (Charles Miner), explains the real impact (Michael quits, Michael Scott Paper Company, S5E19 per reference), gives a counterpoint (Jo Bennett). Matches the reference's best candidate. Flaws: "six-episode" (dataset has dialogue in 7 episodes), the Prince family padding, Brian described as "fired" then "appearing in scenes".
+C: 3. Reads like a confident answer but the key anecdote is wrong: the line "BFD. Engaged ain't married. Never, ever, ever give up." is spoken by Michael (S2E11 sc.37, checked in the transcript), not by a one-episode guest "Captain Jack", so the pick rests on a misattributed scene. Ed Truck as a second candidate is plausible. Counterpoint is sensible.
+D: 3. Picks Mose, then admits his impact on the show is "negligible"; "Pretzel Guy" and a Brian who "does not physically appear" make a thin list. Position taken but the pick does not fit "high impact" for a reader.
+E: 7. Picks Brian, a reference candidate, with the correct reasoning (breaking the documentary wall, S9E12 sc.50 "Let's turn the cameras off" per reference) and a fair counterpoint. Hunter is an odd extra, almost all claims are [memory]. Useful and direct.

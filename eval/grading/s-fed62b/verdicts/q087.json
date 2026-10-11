@@ -1,0 +1,90 @@
+{
+ "question_id": "q087",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Confession, Stamford/Karen, The Job date, Fun Run, proposal, Niagara, S9 strain all checked; omits S1 Roy and the children, and places Pam's call-off of the wedding loosely in S3.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 8,
+     "reader": 7
+    },
+    "main_cause_ok": true,
+    "wrong_claims": []
+   }
+  },
+  "B": {
+   "score": 6,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "memory_error",
+   "notes": "Fuller arc, but says Pam calls off the wedding after the branches merge (she did before S3E1 sc.24) and gives Phillip's birth in the wrong episodes (S8E7/S8E13).",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 7,
+     "reader": 8
+    },
+    "main_cause_ok": true,
+    "wrong_claims": [
+     "wedding called off after merge/Beach Games",
+     "Phillip birth episodes"
+    ]
+   }
+  },
+  "C": {
+   "score": 3,
+   "verdict": "wrong",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Accurate and honest but covers only S4 and S9 fragments; confession, engagement, marriage and kids missing, so the arc is not answered.",
+   "details": {
+    "lens_scores": {
+     "fact": 3,
+     "faithfulness": 9,
+     "reader": 3
+    },
+    "main_cause_ok": false,
+    "wrong_claims": []
+   }
+  },
+  "D": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "Full arc with key episodes, memory labelled; the 'rain' detail in S5E1 sc.97 is not in the transcript (the rest-stop is only implied by Pam's 'half-way' line) and finale is in split numbering.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 7,
+     "reader": 8
+    },
+    "main_cause_ok": true,
+    "wrong_claims": []
+   }
+  },
+  "E": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Memory arc is right end to end with key episodes, using split numbering; no scene support and a few loose details.",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 7,
+     "reader": 6
+    },
+    "calibration": "ok",
+    "main_cause_ok": true,
+    "wrong_claims": []
+   }
+  }
+ }
+}

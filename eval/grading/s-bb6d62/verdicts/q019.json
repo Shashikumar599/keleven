@@ -1,0 +1,49 @@
+{
+ "question_id": "q019",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Pink-slip coupons, 'Nate coupons. Or Nate-pons', S8E14 sc.33.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    }
+   }
+  },
+  "B": {
+   "score": 1,
+   "verdict": "wrong",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Says a thank-you card in S8E10; S8E14 sc.33 shows coupons called Nate-pons.",
+   "details": {
+    "lens_scores": {
+     "fact": 1,
+     "faithfulness": 1,
+     "reader": 1
+    },
+    "calibration": "overconfident"
+   }
+  },
+  "C": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Coupons and Nate-pons, S8E14 sc.33.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    }
+   }
+  }
+ }
+}

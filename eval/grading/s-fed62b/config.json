@@ -1,0 +1,1 @@
+{"label": "2026-10-11-v2-new", "labels": ["2026-10-11-v2-new", "2026-10-11-v3-new"], "rubric": "rubrics-v2", "references": "eval/grading/references (owner-verified)", "grader_model": "claude-sonnet-5-5 (all council members and the chair)", "note": "q081-q092; v2 and v3 answers (rag, hybrid) plus one shared memory answer, shuffled together under letters A-E"}

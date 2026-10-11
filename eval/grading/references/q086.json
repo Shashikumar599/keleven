@@ -1,0 +1,104 @@
+{
+ "question_id": "q086",
+ "reference": "Marriage: Stanley is married to Teri throughout (named at the Dundies S2E1 sc.25; seen at Night Out S4E11 sc.48; 'Teri, Stanley's wife' in Gossip S6E1 sc.9). Affair 1, shown: Cynthia, his former rehab nurse and also married (Gossip S6E1 sc.15, sc.30: Teri had already caught them once; Michael tells the office and it is true); Stanley brings Cynthia to Niagara (S6E4 sc.20, a shared hotel room) and Dwight/Gabe call her his mistress at the Garden Party (S8E4 sc.19, sc.34). In Promos (S9E18 sc.22) Phyllis says 'I thought Terry knew about Cynthia?' and Stanley answers 'She does. But neither of them know about Lydia', so Teri knows of Cynthia. Affair 2, only mentioned: Lydia (S9E18 sc.22, no scene with her). Stanley says in A.A.R.M. that during the documentary he has 'had three affairs' (S9E22 sc.20); only Cynthia and Lydia are named. The marriage ends only by mention: in the Finale he lives alone in Florida and says 'The man who delivered my divorce papers came by fan boat' (S9E23 sc.49); the transcripts do not name who filed or show the divorce. Hints of earlier marriages are a joke only: 'I used to tell my wife... I say the same thing to my current wife, and I'll say it to my next one too' (S4E12 sc.13), which implies an earlier wife but does not show one.",
+ "evidence": [
+  {
+   "scene": "S2E1 sc.25",
+   "line": "Stanley: I did, my wife's name is Terri."
+  },
+  {
+   "scene": "S6E1 sc.9",
+   "line": "Phyllis: Teri, Stanley's wife. She's at an interior decorating expo in Philly."
+  },
+  {
+   "scene": "S6E1 sc.15",
+   "line": "Stanley: Cynthia's been keeping me company. She was my nurse, when I was in rehabilitation. ... Yeah, but Michael, I'm going to go break it off."
+  },
+  {
+   "scene": "S6E1 sc.30",
+   "line": "Michael: Teri was already suspicious, because she had caught Stanley and Cynthia a few months ago... Cynthia, also married."
+  },
+  {
+   "scene": "S6E4 sc.20",
+   "line": "Stanley: Are you crazy? I brought Cynthia with me."
+  },
+  {
+   "scene": "S8E4 sc.19",
+   "line": "Dwight: STANLEY HUDSON AND HIS MISTRESS CYNTHIA!"
+  },
+  {
+   "scene": "S9E18 sc.22",
+   "line": "Phyllis: I thought Terry knew about Cynthia? Stanley: She does. But neither of them know about Lydia."
+  },
+  {
+   "scene": "S9E22 sc.20",
+   "line": "Stanley: Over the course of this documentary I've had three affairs."
+  },
+  {
+   "scene": "S9E23 sc.49",
+   "line": "Stanley: I'm living in Florida now... The man who delivered my divorce papers came by fan boat"
+  },
+  {
+   "scene": "S4E12 sc.13",
+   "line": "Stanley: I say the same thing to my current wife, and I'll say it to my next one too."
+  }
+ ],
+ "sources": [
+  "S2E1 sc.25",
+  "S6E1 sc.9",
+  "S6E1 sc.15",
+  "S6E1 sc.30",
+  "S6E4 sc.20",
+  "S8E4 sc.19",
+  "S9E18 sc.22",
+  "S9E22 sc.20",
+  "S9E23 sc.49"
+ ],
+ "premise_true": null,
+ "count": null,
+ "list_items": [
+  {
+   "item": "Marriage to Teri (on screen/named: wife present or referred to throughout; Teri appears S4E11)",
+   "scene": "S2E1 sc.25",
+   "core": true
+  },
+  {
+   "item": "Affair with Cynthia (shown/discussed on screen; she is a former nurse, also married; Teri caught them)",
+   "scene": "S6E1 sc.15",
+   "core": true
+  },
+  {
+   "item": "Cynthia with Stanley at Niagara and the Garden Party (continuing affair, mistress by name)",
+   "scene": "S6E4 sc.20",
+   "core": false
+  },
+  {
+   "item": "Affair with Lydia (only mentioned, never shown; Teri does not know)",
+   "scene": "S9E18 sc.22",
+   "core": true
+  },
+  {
+   "item": "Claim of three affairs in total (only mentioned; third unnamed)",
+   "scene": "S9E22 sc.20",
+   "core": false
+  },
+  {
+   "item": "End of the marriage: divorce papers (only mentioned, Stanley in Florida; filer not named)",
+   "scene": "S9E23 sc.49",
+   "core": true
+  },
+  {
+   "item": "Earlier wife implied by joke 'current wife... next one'",
+   "scene": "S4E12 sc.13",
+   "core": false
+  }
+ ],
+ "accepted_alternatives": [],
+ "confidence": "medium",
+ "caveats": "Only one marriage (Teri) and two named affairs (Cynthia, Lydia) are supported. Cynthia is the only affair with scenes (S6E1, S6E4, S8E4 mention); Lydia, the third affair and the divorce are mentions only. The transcripts do not say the divorce papers came from Teri (inferred only); S9E22 sc.20 does not say the number includes Lydia. Teri's presence in scenes is mostly visual (stage directions only); lines often mislabel 'Terri' spelling. Not checked: any further Stanley relationship scenes not matching the keyword searches (cynthia, lydia, teri, wife, affair, mistress, divorce).",
+ "question": "Which marriages and affairs of Stanley are shown over the series?",
+ "category": "list",
+ "made_by": "claude:claude-opus-5-5",
+ "verified_by_owner": true,
+ "owner_note": "accepted as is by the owner, 2026-10-11"
+}

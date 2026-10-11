@@ -1,0 +1,89 @@
+{
+ "question_id": "q050",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Main cause right (affair with Dwight during the engagement), S5E11 sc.17 admission and sc.32 cake cancellation exact; omits the duel revelation that she lied to both.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 9,
+     "reader": 8
+    },
+    "main_cause_ok": true,
+    "wrong_claims": []
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "Main cause right with the duel and 'lied to both' correct but labelled [memory] though the facts are true (S5E11 sc.23, sc.31, sc.32).",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 9,
+     "reader": 8
+    },
+    "main_cause_ok": true,
+    "wrong_claims": []
+   }
+  },
+  "C": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "States she was cheating with Dwight during the engagement (quotes real) but hedges that the break-up scene was not sent and omits the duel and cake cancellation, so the causal link is only implied.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 8,
+     "reader": 5
+    },
+    "main_cause_ok": true,
+    "wrong_claims": []
+   }
+  },
+  "D": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Main cause right with a full account; loose detail that Dwight reveals the regular affair in the duel (sc.31 it is Andy who reveals 'only sleep with me twice'); S5E12 is split numbering.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 7,
+     "reader": 8
+    },
+    "main_cause_ok": true,
+    "wrong_claims": [
+     "Dwight reveals the regular affair (it is Andy)"
+    ],
+    "calibration": "ok"
+   }
+  },
+  "E": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Main cause and the full chain traced to scenes: confession sc.17, duel sc.23, both-lied sc.31, cake cancelled sc.32.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    },
+    "main_cause_ok": true,
+    "wrong_claims": []
+   }
+  }
+ }
+}

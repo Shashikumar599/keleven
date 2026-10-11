@@ -1,0 +1,6 @@
+FACT lens, q075 (judgment; no single answer, so I check only whether claims are true)
+A 8: Claims accurate: Phyllis's blackmail of Angela (S5E10 sc.8, reference), Creed a thief/criminal. "Possible murderer" is hedged and joke-based, no error of substance.
+B 7: Every cited claim checks out: Phyllis as Santa, S6E12 sc.6 "Congrats Phil!"; fudge, S9E23 sc.10 (Phyllis gives it to new hire Malcolm); police/LSD, S9E23 sc.9; Creed's windshield decoration, S5E25 sc.35. Leaves out Phyllis's real petty side (blackmail), so Phyllis comes out as nicer than the reference supports.
+C 9: All checked claims true: S4E14 sc.22 Creed "Quabity assuance!" (does not know his job); S3E20 sc.53 faked death. Memory claims (Debbie Brown framing, blackmailing Angela) match the reference. Covers both Phyllis's flaws and Creed's crimes.
+D 7: Citations true: S5E12 sc.5 Phyllis "She's not hot."; S9E23 sc.9 Dwight says Creed "faked his own death in the baler" and the police show up. Omits the blackmail; calling her only "blunt" is soft.
+E 8: Citations true (S9E23 sc.107 Creed "I still have my medal from that."; sc.10 fudge). Memory claims (blackmail, petty streak) are right per the reference. "Creed rarely involves himself in office drama" is plausible and unverified.

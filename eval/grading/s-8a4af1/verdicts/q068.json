@@ -1,0 +1,117 @@
+{
+ "question_id": "q068",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 6,
+   "verdict": "partial",
+   "grounded": "yes",
+   "failure_type": "literal_reading",
+   "notes": "Clear position and a counterpoint (Meredith), quotes exact, but picks Creed on Nellie's age jibe (S8E21 sc.37), a Kama Sutra quip, and reads Meredith's in-game 'threesome' (S6E9 sc.30) and Michael's ex-lovers bit (S7E4 sc.36) literally; Meredith's S5E2 admission was never sent.",
+   "details": {
+    "lens_scores": {
+     "fact": 5,
+     "faithfulness": 6,
+     "reader": 4
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 0,
+     "counterpoint": 1,
+     "scope": 2
+    },
+    "total": 6
+   }
+  },
+  "B": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "other",
+   "notes": "Picks Creed on his own S3E1 sc.40 claim of 1960s conquests (real, checked), flags him as unreliable and names Meredith's supplier sex (S5E2 sc.6) as the verified rival; the pick is weaker than Meredith and Robert California is asserted without proof.",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 8,
+     "reader": 5
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 1,
+     "counterpoint": 2,
+     "scope": 1
+    },
+    "total": 7,
+    "calibration": "ok"
+   }
+  },
+  "C": {
+   "score": 6,
+   "verdict": "partial",
+   "grounded": "partly",
+   "failure_type": "literal_reading",
+   "notes": "Creed pick rests on the age jibe (S8E21 sc.37) and the in-game threesome line; the Phyllis claim cited to sc.37-38 is a stretch (no Bob, no 'year'), though memory labels are mostly honest and Meredith is named as counterpoint.",
+   "details": {
+    "lens_scores": {
+     "fact": 6,
+     "faithfulness": 7,
+     "reader": 4
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 0,
+     "counterpoint": 1,
+     "scope": 2
+    },
+    "total": 6
+   }
+  },
+  "D": {
+   "score": 6,
+   "verdict": "partial",
+   "grounded": "yes",
+   "failure_type": "literal_reading",
+   "notes": "Accurate quotes and a Meredith counterpoint, but treats Nellie's 'a thousand years old' as literal lifetime evidence and the murder-game threesome as real; Meredith's S5E2 admission was not sent.",
+   "details": {
+    "lens_scores": {
+     "fact": 5,
+     "faithfulness": 7,
+     "reader": 4
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 0,
+     "counterpoint": 1,
+     "scope": 2
+    },
+    "total": 6
+   }
+  },
+  "E": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "yes",
+   "failure_type": "retrieval_miss",
+   "notes": "Creed pick leans on the age jibe, but memory labels are honest and correct (Creed's 1960s, Meredith sleeping with suppliers per S5E2 sc.6) and Meredith is named as the documented rival; her S5E2 scene was never sent.",
+   "details": {
+    "lens_scores": {
+     "fact": 6,
+     "faithfulness": 8,
+     "reader": 4
+    },
+    "scores": {
+     "position": 2,
+     "support": 1,
+     "reading": 1,
+     "counterpoint": 1,
+     "scope": 2
+    },
+    "total": 7
+   }
+  }
+ }
+}

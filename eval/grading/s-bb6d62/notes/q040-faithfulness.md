@@ -1,0 +1,4 @@
+Faithfulness q040
+A: 9. 24 and Dwight 3 come straight from the sent SQL (Michael 24, Dwight 3, Jim 2, Pam 1...), and it says "in transcript lines". Examples are real: S4E8 sc.23 deposition ("That's what she said."), S2E2 sc.34 (Jim: "Does that include 'That's What She Said'?" then Michael "THAT'S WHAT SHE SAID!"), S4E7 sc.56 ("That's what I said. That's what she said."). Does not mention Pam's 3 uses in one line (S5E6), a gap not a falsehood.
+B: 9. Same numbers and basis; examples accurate: S2E2 sc.34 follows Michael's "retirement from comedy" speech, S4E7 sc.56 is a birthdays conversation with Jim. Counts are from SQL, not a sample.
+C: 4. Memory answer: "approximately 34 to 35 times" has no basis and is far from the transcript count (24, or the owner count 30). It hedges ("approximately", uncertain list) but still sets knows_answer True, so calibration is mixed. Dwight second with 3-4 (S2E12) is consistent with the data.

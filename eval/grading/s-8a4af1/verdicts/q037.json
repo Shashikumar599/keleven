@@ -1,0 +1,119 @@
+{
+ "question_id": "q037",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Night Out (S4E11), thrown by Pam, cited to sc.30 and the SQL row; checked in sc.30.",
+   "details": {
+    "parts": [
+     {
+      "part": "episode",
+      "ok": true
+     },
+     {
+      "part": "thrower",
+      "ok": true
+     }
+    ],
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    }
+   }
+  },
+  "B": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Night Out (S4E11), Pam, cited to sc.30; quote exact.",
+   "details": {
+    "parts": [
+     {
+      "part": "episode",
+      "ok": true
+     },
+     {
+      "part": "thrower",
+      "ok": true
+     }
+    ],
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    }
+   }
+  },
+  "C": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Night Out (S4E11), Pam, cited to SQL and sc.30.",
+   "details": {
+    "parts": [
+     {
+      "part": "episode",
+      "ok": true
+     },
+     {
+      "part": "thrower",
+      "ok": true
+     }
+    ],
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    }
+   }
+  },
+  "D": {
+   "score": 1,
+   "verdict": "wrong",
+   "grounded": "n/a",
+   "failure_type": "premise_over_rejected",
+   "notes": "Rejects a true premise (S4E11 sc.30: Pam throws the football, hits Meredith's face) and substitutes a Phyllis soccer-ball hit that is in S5E20 sc.35, not S5E22 Dream Team; overconfident.",
+   "details": {
+    "premise_true": true,
+    "outcome": "over_rejected",
+    "calibration": "overconfident",
+    "lens_scores": {
+     "fact": 1,
+     "faithfulness": 2,
+     "reader": 1
+    }
+   }
+  },
+  "E": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Night Out (S4E11), Pam, cited to sc.30.",
+   "details": {
+    "parts": [
+     {
+      "part": "episode",
+      "ok": true
+     },
+     {
+      "part": "thrower",
+      "ok": true
+     }
+    ],
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    }
+   }
+  }
+ }
+}

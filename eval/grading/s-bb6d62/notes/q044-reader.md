@@ -1,0 +1,5 @@
+READER lens, q044 (season with most Dundies mentions). Checked: SELECT season,count(*) FROM lines WHERE dialogue ~* 'dund(ie|y)' GROUP BY 1: S2 30, S7 27, S4 6, S1 2, S6 1 (matches reference).
+
+A: 3. Memory answer says it does not know, then names Season 2 and Season 7 as the two likely candidates. That is honest and the right shortlist, but the reader leaves without an answer, although the question has one (Season 2). It also puts Michael's Last Dundies at S7E21; here it is S7E20 (S7E21 is Goodbye, Michael, per the episodes table), a small slip.
+B: 8. Picks Season 2 outright, gives the comparison (S7 22, S4 5, S1 2) and a pointer into S2E1. States what was counted (lines containing "Dundies"). The numbers are a little low (25/22 vs 30/27 because the plural-only pattern misses "Dundie"), and it does not warn that S2 vs S7 is a close race. Direction right.
+C: 8. Same pick and same counts as B, with the sources tagged; the closing citation is tacked on awkwardly. No warning that the race is close or that the pattern was plural-only.

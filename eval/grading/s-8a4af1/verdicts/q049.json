@@ -1,0 +1,107 @@
+{
+ "question_id": "q049",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Before; S7E1 sc.16 and Michael's departure S7E21 sc.36 both exact.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    },
+    "parts": [
+     {
+      "part": "before/after",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "B": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Before; S7E1 sc.16 exact; Michael's later departure labelled [memory]; the S7E1 sc.14 cite is a weak anchor.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 9,
+     "reader": 8
+    },
+    "parts": [
+     {
+      "part": "before/after",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "C": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Before, with full chronology: S6E24 sc.39 'about to buy', S7E1 sc.16, S7E21 sc.36; Colorado labelled memory.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    },
+    "parts": [
+     {
+      "part": "before/after",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "D": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "Before; S7E1 sc.16 exact and S7E10 sc.8 'new building owner' real, but it never cites when Michael left and the S7E10 sc.9 cite is not about the owner.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 7,
+     "reader": 8
+    },
+    "parts": [
+     {
+      "part": "before/after",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "E": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Before, correct; loose details (reveal placed in S7E2 Counseling rather than S7E1, Goodbye Michael as S7E22 in split numbering).",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 8,
+     "reader": 7
+    },
+    "calibration": "ok",
+    "parts": [
+     {
+      "part": "before/after",
+      "ok": true
+     }
+    ]
+   }
+  }
+ }
+}

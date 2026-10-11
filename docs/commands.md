@@ -60,6 +60,11 @@ One run = one label. Retrieval first, then one Gemini batch job.
 
 ```bash
 python -m eval.run prepare --label <label> --version v2     # retrieval for all questions (v2 also calls the enhancer)  [LLM: Voyage + Gemini]
+# v3 (graph): the enhancer is its own batch job, then the answers are a second one
+python -m eval.run enhance-submit  --label <label> --version v3   # ONE batch job for all enhancer calls                [LLM]
+python -m eval.run enhance-status  --label <label>                # job state
+python -m eval.run enhance-collect --label <label>                # plans -> eval/runs/<label>/enhancer_plans.jsonl (a question without a plan runs online in prepare)
+python -m eval.run prepare --label <label> --version v3           # uses those plans: Voyage + queries, no enhancer calls   [Voyage]
 python -m eval.run plan    --label <label>                  # what would be submitted: counts, size, token estimate
 python -m eval.run submit  --label <label>                  # build prompts, submit ONE batch job                      [LLM]
 python -m eval.run status  --label <label>                  # job state

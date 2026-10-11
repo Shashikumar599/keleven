@@ -1,0 +1,55 @@
+{
+ "question_id": "q051",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 7,
+   "verdict": "partial",
+   "grounded": "yes",
+   "failure_type": "incomplete",
+   "notes": "Right and cited (Colorado, new life with Holly, S7E21 sc.1/sc.50) but omits why: Holly must return because her father is unwell and Michael chooses to go (S7E18 sc.26, sc.39).",
+   "details": {
+    "lens_scores": {
+     "fact": 7,
+     "faithfulness": 8,
+     "reader": 6
+    },
+    "main_cause_ok": true,
+    "wrong_claims": []
+   }
+  },
+  "B": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "partly",
+   "failure_type": null,
+   "notes": "Colorado with Holly, her parents as the reason [memory] and the engagement; true. 'Fiancee' is an unlabelled memory claim next to a scene citation, and the sc.50 quote is real (checker flag is a bracket artifact).",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 7,
+     "reader": 6
+    },
+    "main_cause_ok": true,
+    "wrong_claims": []
+   }
+  },
+  "C": {
+   "score": 8,
+   "verdict": "correct",
+   "grounded": "n/a",
+   "failure_type": null,
+   "notes": "Memory answer matches the reference: moves to Colorado with fiancee Holly to help with her aging parents, proposal in Garage Sale; split episode numbering accepted.",
+   "details": {
+    "lens_scores": {
+     "fact": 8,
+     "faithfulness": 8,
+     "reader": 8
+    },
+    "calibration": "ok",
+    "main_cause_ok": true,
+    "wrong_claims": []
+   }
+  }
+ }
+}

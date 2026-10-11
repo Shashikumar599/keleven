@@ -1,0 +1,4 @@
+READER lens, q061
+A: 9. Direct four-bullet answer, all four costumes right and cited. Michael's "papier-mache second head" is slightly less clear than "two-headed man" but the meaning is plain. Proof: S2E5 sc.4 Dwight "I am a Sith Lord", hood and light saber; Jim's "Three round pieces of paper taped to a shirt".
+B: 7. Same clear list, but adds "specifically Emperor Palpatine [memory]" and "black" cutouts: neither is in the transcript (S2E5 sc.4 has no Palpatine and no colour). Dwight says only "Sith Lord". An unverified detail is offered as fact, though labelled memory for Palpatine; "black" is not labelled.
+C: 6. Clear and complete, but adds unchecked details: Dwight "Emperor Palpatine", Pam "black cat with cat ears and painted whiskers", Jim "black" circles; transcript (S2E5 sc.1) only says "cat costume". Core four are right, extras are embellishment a reader cannot trust.

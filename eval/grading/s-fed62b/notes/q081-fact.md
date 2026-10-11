@@ -1,0 +1,6 @@
+FACT lens, q081 (core: Angela, Isabel, Esther; Nellie/Kelly optional)
+A: 7. Names all three core plus Melvina. Wrong claims: Isabel is "Pam's cousin" (S6E4 sc.56 Michael: "She's Pam's best friend", a dental hygienist from Carbondale); Esther's surname given as Bruegger (S9E18 sc.5: "Esther Ruger"). Melvina is real: S9E13 sc.24 "we dated for a while", S4E9 sc.19 the babysitter date at the dinner party ("Purely carnal").
+B: 9. All three core with right scenes (Angela engaged S9E22 sc.69; Esther dating S9E18 sc.5-6, proposal considered sc.61; Isabel S6E4 sc.55-56, kiss S6E19 sc.50). Melvina S9E13 sc.24 and the S4E9 sc.19 woman are true extras. No wrong claim; does not mention the finale wedding (fine).
+C: 9. All three core; Angela breakup after Sprinkles confirmed S4E2 sc.37, liaison S4E14 sc.82. Esther courtship S9E17 sc.27 / S9E20 sc.17 fine. Memory labels (finale marriage, Melvina) are consistent with S9E13 sc.24 and S4E9 sc.19.
+D: 7. Names the three core, correct, but the Angela entry gives no relationship content (only "no longer dating" S5E17 sc.21 and Jim saying he loves her S9E22 sc.63): no break-up, engagement or wedding. Esther and Isabel parts accurate.
+E: 9. Three core right; Isabel's later kiss (S6E19 sc.50) correctly given as season 6; Esther proposal idea S9E22 sc.61-63 correct. Melvina's surname unverifiable but the date is real (S4E9 sc.19).

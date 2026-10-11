@@ -1,0 +1,77 @@
+{
+ "question_id": "q065",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Photo smashed on the ground, hole punched in the wall, S8E21 sc.41.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    }
+   }
+  },
+  "B": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Both parts right, cited sc.41.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    }
+   }
+  },
+  "C": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Both parts right, cited sc.41.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    }
+   }
+  },
+  "D": {
+   "score": 3,
+   "verdict": "wrong",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Merges the two acts: says Andy punched through the photo, but sc.41 has the photo smashed on the ground and a separate punch into the wall.",
+   "details": {
+    "lens_scores": {
+     "fact": 3,
+     "faithfulness": 1,
+     "reader": 3
+    },
+    "calibration": "overconfident"
+   }
+  },
+  "E": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Both parts right, cited sc.41.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 10
+    }
+   }
+  }
+ }
+}

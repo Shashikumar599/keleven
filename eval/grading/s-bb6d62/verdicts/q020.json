@@ -1,0 +1,49 @@
+{
+ "question_id": "q020",
+ "method": "council",
+ "answers": {
+  "A": {
+   "score": 9,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Kelly, Lamar Odom, S8E11 sc.14; 'Khloe' vs 'Chloe' spelling trivial.",
+   "details": {
+    "lens_scores": {
+     "fact": 9,
+     "faithfulness": 8,
+     "reader": 9
+    }
+   }
+  },
+  "B": {
+   "score": 10,
+   "verdict": "correct",
+   "grounded": "yes",
+   "failure_type": null,
+   "notes": "Kelly, Lamar Odom, cited sc.14.",
+   "details": {
+    "lens_scores": {
+     "fact": 10,
+     "faithfulness": 10,
+     "reader": 9
+    }
+   }
+  },
+  "C": {
+   "score": 4,
+   "verdict": "partial",
+   "grounded": "n/a",
+   "failure_type": "memory_error",
+   "notes": "Lamar Odom right but names Kevin; in S8E11 sc.14 Kevin says Ron Artest and Kelly gives Lamar Odom.",
+   "details": {
+    "lens_scores": {
+     "fact": 1,
+     "faithfulness": 2,
+     "reader": 2
+    },
+    "calibration": "overconfident"
+   }
+  }
+ }
+}
