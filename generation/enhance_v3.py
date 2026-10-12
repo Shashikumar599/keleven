@@ -1,11 +1,14 @@
 """
 The enhancer for pipeline v3: the v2 enhancer plus `graph_sql`. v2's generation/enhance.py is not touched and stays the v2 enhancer.
 
-    question --enhance_v3.md, low thinking--> {search_text, sql, assumptions, graph_sql}
+    question --enhance_v3.md, low thinking--> {search_text, sql, assumptions, graph_sql, context}
 
 graph_sql is one SELECT over the graph views (migrations 014 to 016). The prompt gets no table schema for the graph beyond those
-views and forbids adding anything from memory, as in v2. A failed call returns None; a failed query gets one fix attempt.
+views and forbids adding anything from memory, as in v2. `context` says whether the scenes the queries point at are sent to the answering
+step ("scene", also when null) or not ("none": counts, rankings). A failed call returns None; a failed query gets one fix attempt.
 """
+from typing import Literal
+
 from pydantic import BaseModel, Field
 
 from generation.answer import PROMPTS
@@ -20,6 +23,8 @@ class Plan3(BaseModel):
     sql: str | None = Field(description="One PostgreSQL SELECT over the transcript tables, or null")
     assumptions: str | None = Field(description="What the SQL and the graph SQL count or match, or null")
     graph_sql: str | None = Field(description="One PostgreSQL SELECT over the graph views, or null")
+    context: Literal["scene", "none"] | None = Field(
+        description='"scene" when the answer needs the text of the scenes the queries point at, "none" when the query result alone is the answer, or null')
 
 
 def enhance3(question, llm=None):

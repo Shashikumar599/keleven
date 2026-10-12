@@ -3,7 +3,7 @@ Pipeline v3 retrieval: v2 (hybrid search + optional SQL scenes) plus the graph q
 
     question --enhance_v3.md--> {search_text, sql, graph_sql, assumptions}
              hybrid search on search_text  ||  sql  ||  graph_sql (rows with their transcript lines)
-             --> passages (incl. SQL scenes) + SQL result + graph result
+             --> passages (incl. the scenes the SQL and graph rows point at, unless context is "none") + SQL result + graph result
 
 v2's retrieval/hybrid.py is only imported (search, SQL helpers, constants), never changed.
 """
@@ -14,9 +14,50 @@ from concurrent.futures import ThreadPoolExecutor
 from common.db import connect
 from retrieval import graph as graphrun
 from retrieval import sql as sqlrun
-from retrieval.hybrid import DEPTH, EnhanceError, _sql_chunks, search
+from retrieval.hybrid import DEPTH, EnhanceError, search
 from retrieval.keyword import get_index
 from retrieval.vector import DEFAULT_CHUNK_SET, DEFAULT_MODEL, Hit, Retrieval, _chunks, expand_hits
+
+
+SCENE_CHUNKS = 6      # at most this many chunks are added from the scenes the SQL and graph rows point at (v2: 4, SQL only)
+
+
+def scene_targets(context, sql_result, graph_result):
+    """[((season, episode, scene), source)] the scenes the queries point at, best first: scenes both queries point at, then SQL
+    rows in result order, then the transcript lines shown with the graph rows. Empty when the enhancer said context "none"."""
+    if context == "none":
+        return []
+    sql_refs = sqlrun.scene_refs(sql_result) if sql_result and not sql_result["error"] else []
+    graph_refs = []
+    if graph_result and not graph_result["error"]:
+        for lines in graph_result.get("lines") or []:
+            for l in lines:
+                ref = (l["season"], l["episode"], l["scene"])
+                if ref not in graph_refs:
+                    graph_refs.append(ref)
+    both = [r for r in sql_refs if r in graph_refs]
+    ordered = [(r, "sql" if r in sql_refs else "graph") for r in both + sql_refs + graph_refs]
+    seen, out = set(), []
+    for ref, source in ordered:
+        if ref not in seen:
+            seen.add(ref)
+            out.append((ref, source))
+    return out
+
+
+def scene_chunks(conn, targets, chunk_set, exclude, cap=SCENE_CHUNKS):
+    """[(chunk_id, source)]: the chunks that contain the target scenes, skipping chunks already hit, at most `cap`."""
+    out = []
+    for (season, episode, scene), source in targets:
+        row = conn.execute("""
+            SELECT chunk_id FROM chunks_full
+            WHERE chunk_set = %s AND season = %s AND episode = %s AND %s BETWEEN scene_start AND scene_end
+        """, (chunk_set, season, episode, scene)).fetchone()
+        if row and row[0] not in exclude and all(row[0] != c for c, _ in out):
+            out.append((row[0], source))
+        if len(out) == cap:
+            break
+    return out
 
 
 def _run_query(question, field, query, llm, runner):
@@ -65,10 +106,10 @@ def retrieve_graph(question, k=8, expand=1, chunk_set=DEFAULT_CHUNK_SET, model=D
             graphrun.attach_lines(graph_result)
         t3 = time.perf_counter()
 
-        if sql_result and not sql_result["error"]:
-            extra = _sql_chunks(conn, sqlrun.scene_refs(sql_result), chunk_set, {h.chunk.chunk_id for h in hits})
-            chunks = _chunks(conn, "chunk_id = ANY(%s)", (extra,)) if extra else {}
-            hits += [Hit(len(hits) + i, None, chunks[c], {"sql": True}) for i, c in enumerate(extra, start=1)]
+        context = plan.get("context") or "scene"
+        extra = scene_chunks(conn, scene_targets(context, sql_result, graph_result), chunk_set, {h.chunk.chunk_id for h in hits})
+        chunks = _chunks(conn, "chunk_id = ANY(%s)", ([c for c, _ in extra],)) if extra else {}
+        hits += [Hit(len(hits) + i, None, chunks[c], {source: True}) for i, (c, source) in enumerate(extra, start=1)]
         passages = expand_hits(conn, hits, chunk_set, expand)
         t4 = time.perf_counter()
 
@@ -76,7 +117,7 @@ def retrieve_graph(question, k=8, expand=1, chunk_set=DEFAULT_CHUNK_SET, model=D
         question=question, chunk_set=chunk_set, model=model, k=k, expand=expand,
         hits=hits, passages=passages, query_tokens=query_tokens, method="graph",
         plan={"search_text": plan.get("search_text"), "sql": sql_ran or plan.get("sql"),
-              "assumptions": plan.get("assumptions"), "sql_result": sql_result,
+              "assumptions": plan.get("assumptions"), "context": context, "sql_result": sql_result,
               "graph_sql": graph_ran or plan.get("graph_sql"), "graph_result": graph_result,
               "enhancer": {"model_version": res.model_version, "usage": res.usage, "latency_ms": res.latency_ms}},
         timings_ms={"enhance": round(1000 * (t1 - t0)), "search": round(1000 * (t2 - t1)),

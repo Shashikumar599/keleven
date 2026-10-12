@@ -91,6 +91,8 @@ together so the same graders judge both versions blind.
 | Answer prompts | `rag_v1`, `hybrid_v1` | `rag_v2`, `hybrid_v2` | `rag_v3`, `hybrid_v3` | `generation/prompts/`, `answer.py`, `answer_v3.py` |
 | Dispatch | `retrieval/__init__.py: retrieve(version=...)` | | | |
 
+In v3 the enhancer also says whether the scenes its queries point at are needed (`context`: scene or none). For "scene" the scenes of the SQL rows and of the graph rows' transcript lines (at most 6 chunks, plus one neighbour each side) join the passages, so a matched line brings its conversation. Counts and rankings (`none`) add nothing.
+
 Safety of generated SQL (transcript and graph): the query runs as the read-only database role `office_app`, must be a single
 SELECT, is wrapped with a row limit, and has a 5 s timeout. A failing query gets one correction attempt from the model.
 

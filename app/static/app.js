@@ -486,11 +486,11 @@ function renderSources() {
   const hybrid = ["hybrid", "enhanced", "graph"].includes(r.method), dash = (v) => (v == null ? "–" : v);
   const hits = dev ? `<details class="sub"><summary>Search hits (top ${r.k} ${hybrid
       ? "by vector + keyword search, merged by rank" : "by cosine distance"}${
-      r.hits.some((h) => h.scores?.sql) ? ", plus scenes found by SQL" : ""})</summary>
+      r.hits.some((h) => h.scores?.sql || h.scores?.graph) ? ", plus scenes found by SQL or the graph" : ""})</summary>
     <div class="table-wrap"><table><thead><tr><th>#</th>${hybrid
       ? "<th>Vector rank</th><th>Keyword rank</th><th>Fused score</th>" : "<th>Distance</th>"}<th>Episode</th><th>Scenes</th></tr></thead><tbody>${
     r.hits.map((h) => `<tr><td>${h.rank}</td>${!hybrid ? `<td>${h.distance.toFixed(3)}</td>`
-      : h.scores.sql ? `<td colspan="3">found by SQL</td>`
+      : h.scores.sql || h.scores.graph ? `<td colspan="3">found by ${h.scores.sql ? "SQL" : "the graph"}</td>`
       : `<td>${dash(h.scores.vector_rank)}</td><td>${dash(h.scores.bm25_rank)}</td><td>${h.scores.rrf.toFixed(4)}</td>`}
       <td>S${h.season}E${h.episode} ${esc(h.title)}</td><td>${h.scene_start}-${h.scene_end}</td></tr>`).join("")}</tbody></table></div></details>` : "";
   const found = { vector: "meaning only", hybrid: "meaning + exact words",
