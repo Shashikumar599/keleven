@@ -19,7 +19,7 @@ of them changes questions the step does not touch.
 
 | You want | Read |
 |---|---|
-| How it all fits together | `docs/architecture.md` |
+| How it all fits together | `docs/architecture.md`, with the picture `docs/architecture.png` |
 | What was found, with numbers | `findings/phase-3.md`, `findings/v1-v2-grading-analysis.md` |
 | Why each choice was made | `findings/decisions.md`, `findings/experiment-log.md` |
 | The graph design and tables | `docs/graph-design.md`, `docs/graph-schema.md` |
