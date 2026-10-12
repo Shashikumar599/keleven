@@ -26,3 +26,4 @@ graph/out/
 # Hosting: generated data dump
 deploy/*.dump
 deploy/deploy.sh
+brag-output/

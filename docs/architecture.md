@@ -4,6 +4,10 @@ How the whole system fits together: the offline pipelines that prepare the data,
 the evaluation machinery, and how it is meant to be hosted. For the reasoning behind each choice see
 `findings/decisions.md`; for results see `findings/phase-3.md`.
 
+![How the v3 system fits together](architecture.png)
+
+The picture is `architecture.png` (vector version: `architecture.svg`). Redraw it with `python3 docs/architecture-poster/make_poster.py`.
+
 ## 1. What it is
 
 A question-answering system over the complete transcripts of *The Office (US)* (186 episodes, 57,973 lines). It answers
