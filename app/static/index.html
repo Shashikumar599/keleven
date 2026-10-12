@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Keleven: The Office</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%238aa5ff%27/%3E%3Cpath d=%27M20 14v36M20 33l22-19M26 31l18 19%27 fill=%27none%27 stroke=%27%230f1630%27 stroke-width=%277%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -58,6 +59,18 @@
   .brand p { margin: 6px 0 0; color: var(--ink-2); font-size: 14px; }
   .top-right { display: flex; align-items: end; gap: 12px; align-self: end; }
   .tabs { display: flex; gap: 4px; margin-bottom: -1px; position: relative; }
+  dialog#info { max-width: min(520px, calc(100vw - 32px)); padding: 22px 24px; border: 1px solid var(--rule);
+                border-radius: var(--r-panel); background: var(--sheet); color: var(--ink); }
+  dialog#info::backdrop { background: rgba(0, 0, 0, .55); }
+  dialog#info h2 { font: 700 20px var(--display); margin: 0 0 8px; }
+  dialog#info .lead { color: var(--ink-2); margin: 8px 0; font-size: 14px; }
+  dialog#info dl { margin: 12px 0; display: grid; gap: 10px; }
+  dialog#info dt { font: 600 14px var(--mono); color: var(--ink); }
+  dialog#info dd { margin: 2px 0 0; color: var(--ink-2); font-size: 14px; }
+  .try { margin-top: 18px; padding: 16px 18px; }
+  .try h2 { font: 700 16px var(--display); margin: 0 0 4px; }
+  .try .row-actions { margin-top: 10px; padding-top: 0; border-top: 0; }
+  .try .cards { margin-top: 14px; }
   .icon-btn { width: 34px; height: 34px; margin-bottom: 6px; border-radius: var(--r-pill); border: 1px solid var(--rule);
               background: var(--sheet); color: var(--ink-2); display: grid; place-items: center; font-size: 16px; }
   .tab { border: 1px solid var(--rule); border-bottom: 0; border-radius: var(--r-control) var(--r-control) 0 0;
@@ -226,6 +239,20 @@
 <audio id="theme" src="/static/audio/office-theme.mp3" preload="auto"></audio>
 <button id="sound" class="sound" type="button" hidden aria-label="Mute music" title="Mute music"><i class="ph ph-speaker-high"></i></button>
 
+<dialog id="info" aria-labelledby="info-title">
+  <h2 id="info-title">Three ways to answer</h2>
+  <p class="lead">Each version adds one idea on top of the last. The answers on this page come from <strong>v3</strong>
+    with the transcripts as the source.</p>
+  <dl>
+    <dt>LLM alone</dt><dd>The model's memory only. No transcripts.</dd>
+    <dt>v1 · Vector search</dt><dd>Finds the 8 scenes closest in meaning to your question.</dd>
+    <dt>v2 · + Keywords and SQL</dt><dd>Rewrites the question, also matches exact words, and can count with SQL.</dd>
+    <dt>v3 · + Relationship graph</dt><dd>Adds facts extracted from every episode (who dated whom, what happened, when).</dd>
+  </dl>
+  <p class="lead">Dev mode lets you pick the version and which answers to compute (RAG, LLM, LLM + RAG) and compare them.</p>
+  <form method="dialog"><button class="primary" autofocus>Got it</button></form>
+</dialog>
+
 <main>
   <div class="folder">
   <header class="top">
@@ -236,6 +263,7 @@
     <div class="top-right">
     <button class="head-btn" id="history-btn" type="button" aria-pressed="false"><i class="ph ph-clock-counter-clockwise"></i> History</button>
     <button class="head-btn" id="admin-btn" type="button" aria-pressed="false"><i class="ph ph-lock"></i> Admin</button>
+    <button class="icon-btn" id="info-btn" type="button" aria-label="What are v1, v2 and v3?" title="What are v1, v2 and v3?"><i class="ph ph-info"></i></button>
     <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch to light mode"><i class="ph ph-sun"></i></button>
     <div class="tabs" role="tablist" aria-label="View">
       <button class="tab" role="tab" id="tab-user" data-mode="user" aria-selected="true">User</button>
@@ -250,7 +278,10 @@
       <button id="go" class="primary" type="submit">Ask</button>
     </div>
     <div class="examples" id="examples"></div>
+    <p id="public-note" hidden style="color: var(--ink-3); font: 12px var(--mono); margin: 4px 0 0;">
+      Public demo: questions and answers are logged to improve it, and sources show short excerpts only.</p>
     <div class="settings" id="settings" hidden>
+      <span class="versions" id="systems" role="group" aria-label="Answers to compute"></span>
       <span class="versions" id="versions" role="group" aria-label="Pipeline version"></span>
       <label for="k">Chunks <input id="k" type="number" min="1" max="20" value="8" disabled></label>
       <label for="expand">Neighbours <input id="expand" type="number" min="0" max="3" value="1" disabled></label>

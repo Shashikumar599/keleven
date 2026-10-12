@@ -99,7 +99,7 @@ python -m eval.grade status --set <set>                                  # which
 
 Council members and chairs are Claude agents (subscription, not API): one agent per lens per batch of about 10
 questions, then a chair per batch. One simple save command per file (no shell loops or functions). Pin one model per
-role and record it. Current rubrics: `.claude/skills/evaluate-answers/rubrics.md` (rubrics-v2).
+role and record it. Current rubrics: `eval/skills/evaluate-answers/rubrics.md` (rubrics-v2).
 
 Compare versions:
 
@@ -107,12 +107,12 @@ Compare versions:
 python -m eval.grade summary --sets s-d99104,s-bcc971       # v1 (s-d99104) and v2 (s-bcc971): mean /10 per version x type x category
 ```
 
-## 7. Graph extraction (v3, in progress)
+## 7. Graph (v3)
 
 ```bash
 python -m graph.validate --file out.json --season 7 --episode 14 [--out clean.json]   # check one episode's extraction, no LLM
 ```
-Prompts: `generation/prompts/extract_v1.md` and `review_v1.md` (drafts). Schemas: `graph/stage1_schema.json`, `graph/review_schema.json`.
+Prompts: `generation/prompts/extract_v1.md` and `review_v1.md` (used for the final extraction). Schemas: `graph/stage1_schema.json`, `graph/review_schema.json`.
 
 ```bash
 python -m graph.extract_one --season 9 --episode 22 [--run]        # stage 1 for one episode, files in graph/out/ (--run = LLM call)
@@ -126,7 +126,28 @@ python -m graph.run_extraction --label <label> --all --limit 20 [--run]
 python -m graph.run_extraction --label <label> --report            # funnel of a run, no calls
 ```
 
-## 8. Git
+After the extraction (no LLM calls): link characters and load the graph tables (migrations 013-017 must be applied):
+
+```bash
+python -m graph.link_certain --label v3-extract-001          # certain entities  -> graph/out/certain_entities.json
+python -m graph.link_tiers --label v3-extract-001            # probable / possible -> graph/out/tiered_entities.json
+python -m graph.build_graph --label v3-extract-001 --build v3-graph-001 [--run]   # dry run unless --run; replaces that build
+python ask_v3.py "Whom did Michael date?" --answer [--out file.json]               # one v3 question from the command line
+```
+
+## 8. Web app and hosting
+
+```bash
+set -a; source .env; set +a
+.venv/bin/uvicorn app.server:app --port 8000            # local app: user and dev modes, v3 by default
+PUBLIC_MODE=1 .venv/bin/uvicorn app.server:app --port 8000   # as hosted: rate limits, excerpts, no History / Dev for visitors
+
+bash deploy/export_data.sh                               # dump the runtime data to deploy/office_rag_data.dump (git-ignored)
+TARGET_URL='postgresql://office_admin:PW@host.docker.internal:PORT/office_rag' bash deploy/import_data.sh   # restore it elsewhere
+docker build -t keleven-app .                            # the hosted image (see docs/hosting.md for the cloud steps)
+```
+
+## 9. Git
 
 ```bash
 git status
@@ -138,10 +159,12 @@ git push -u origin main                                     # remote: git@github
 
 | What | Where |
 |---|---|
-| Question set | `eval/questions.jsonl` (80 questions) |
+| Question set | `eval/questions.jsonl` (92 questions) |
 | Run outputs | `eval/runs/<label>.jsonl`, `eval/runs/<label>/` |
 | References | `eval/grading/references/qNNN.json`, `REVIEW.md` |
 | Grading sets | `eval/grading/<set>/` (key.json, notes/, verdicts/) |
 | Findings | `findings/` (decisions.md, experiment-log.md, v1-v2-grading-analysis.md) |
 | Prompts (frozen per version) | `generation/prompts/` |
-| v3 draft design | `docs/graph-design.md` |
+| Graph design and tables | `docs/graph-design.md`, `docs/graph-schema.md` |
+| Architecture, hosting | `docs/architecture.md`, `docs/hosting.md` |
+| Final results | `findings/phase-3.md` |

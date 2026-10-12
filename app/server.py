@@ -18,26 +18,30 @@ from dataclasses import asdict
 from pathlib import Path
 from typing import Literal
 
-from fastapi import FastAPI, Header, HTTPException
+from fastapi import FastAPI, Header, HTTPException, Request
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
+from app import gate
+from app import public as publicmode
 from common.db import connect
 from common.qalog import log_feedback, log_review, log_run
 from common.stored import comparable, stored_memory
 from generation.answer import answer, prompt_file, prompt_sha256
 from generation.answer_v3 import PROMPT_FILES_V3, answer_v3, prompt_sha256_v3
 from generation.llm import DEFAULT_MODEL as LLM_MODEL, get_llm
-from retrieval import CURRENT_VERSION, retrieve
+from retrieval import retrieve
 from retrieval.hybrid import EnhanceError
 from retrieval.vector import DEFAULT_CHUNK_SET, DEFAULT_MODEL as EMBEDDING_MODEL
 
 STATIC = Path(__file__).parent / "static"
 SYSTEMS = ("rag", "llm", "hybrid")
 DEFAULT_K, DEFAULT_EXPAND = 8, 1
+APP_DEFAULT_VERSION = "v3"       # what the page asks with unless dev mode picks another; retrieval.CURRENT_VERSION (v2) stays the default of the research tools
 
 app = FastAPI(title="Keleven")
+app.middleware("http")(gate.middleware)          # optional site password (SITE_PASSWORD); off when unset
 app.mount("/static", StaticFiles(directory=STATIC), name="static")   # audio, images, quotes
 
 
@@ -83,11 +87,11 @@ VERSIONS = [
 
 class AskRequest(BaseModel):
     question: str = Field(min_length=3, max_length=500)
-    version: Literal["v1", "v2", "v3"] = CURRENT_VERSION
+    version: Literal["v1", "v2", "v3"] = APP_DEFAULT_VERSION
     k: int = Field(default=DEFAULT_K, ge=1, le=20)
     expand: int = Field(default=DEFAULT_EXPAND, ge=0, le=3)
     systems: list[str] = list(SYSTEMS)
-    mode: Literal["user", "dev"] = "user"     # display only: all three answers are always computed and logged
+    mode: Literal["user", "dev"] = "user"     # display only; `systems` decides which answers are computed (the page asks user mode for two)
 
 
 @app.get("/")
@@ -95,9 +99,51 @@ def index():
     return FileResponse(STATIC / "index.html")
 
 
+@app.on_event("startup")
+def warm_up():
+    """Build the keyword index now (about a second) instead of on the first question."""
+    try:
+        from retrieval.keyword import get_index
+        get_index(DEFAULT_CHUNK_SET)
+    except Exception as e:                         # the page still starts; the first question builds it
+        print(f"  keyword index warm-up skipped: {type(e).__name__}: {e}")
+
+
+class LoginRequest(BaseModel):
+    password: str = Field(max_length=200)
+
+
+@app.post("/api/login")
+def login(req: LoginRequest, request: Request):
+    from fastapi.responses import JSONResponse
+    if not gate.enabled():
+        return {"ok": True}
+    gate.throttle(request)
+    if not gate.check_password(req.password):
+        raise HTTPException(401, "Wrong password.")
+    value, max_age = gate.make_cookie()
+    response = JSONResponse({"ok": True})
+    proto = request.headers.get("cloudfront-forwarded-proto") or request.headers.get("x-forwarded-proto") or request.url.scheme
+    secure = proto == "https"
+    response.set_cookie(gate.COOKIE, value, max_age=max_age, httponly=True, samesite="lax", secure=secure)
+    return response
+
+
+@app.get("/healthz")
+def healthz():
+    return {"ok": True}
+
+
 @app.post("/api/ask")
-def ask(req: AskRequest, x_admin_password: str | None = Header(default=None)):
+def ask(req: AskRequest, request: Request, x_admin_password: str | None = Header(default=None)):
     unlocked = is_admin(x_admin_password)
+    visitor = publicmode.enabled() and not unlocked        # public deployment: limits, defaults, excerpts only
+    if visitor:
+        allowed, wait = publicmode.check_rate(publicmode.client_ip(request))
+        if not allowed:
+            raise HTTPException(429, f"Too many questions. Please try again in {wait} seconds.")
+        if publicmode.daily_cap_reached():
+            raise HTTPException(429, "The demo has reached today's question limit. Please come back tomorrow.")
     k, expand = (req.k, req.expand) if unlocked else (DEFAULT_K, DEFAULT_EXPAND)   # locked: ignore what was sent
     try:
         r = retrieve(req.question, version=req.version, k=k, expand=expand)
@@ -127,7 +173,7 @@ def ask(req: AskRequest, x_admin_password: str | None = Header(default=None)):
 
     run_id = log_run(r, answers, source="web", mode=req.mode)     # None if logging failed; answers still returned
 
-    return {
+    response = {
         "run_id": run_id,
         "settings_locked": not unlocked,
         "question": r.question,
@@ -146,6 +192,7 @@ def ask(req: AskRequest, x_admin_password: str | None = Header(default=None)):
         },
         "answers": answers,
     }
+    return publicmode.trim(response) if visitor else response
 
 
 # ---------- feedback (anyone) and reviews (admin) ----------
@@ -200,6 +247,8 @@ def _passages(chunks):
 @app.get("/api/history")
 def history(before: int | None = None, x_admin_password: str | None = Header(default=None)):
     """One logged question at a time, newest first: the run before `before` (or the latest)."""
+    if publicmode.enabled():                       # other visitors' questions and full passages: admin only
+        require_admin(x_admin_password)
     admin = is_admin(x_admin_password)
     with connect("app") as conn:
         run = conn.execute("""
@@ -247,8 +296,10 @@ def history(before: int | None = None, x_admin_password: str | None = Header(def
 
 
 @app.get("/api/compare")
-def compare(question: str):
+def compare(question: str, x_admin_password: str | None = Header(default=None)):
     """Dev mode: the latest stored answer of each kind (memory, v1 rag, v1 hybrid, v2 ...) for this exact question."""
+    if publicmode.enabled():
+        require_admin(x_admin_password)
     return {"question": question, "answers": comparable(question)}
 
 
@@ -260,6 +311,6 @@ def info():
             "SELECT count(*) FROM chunks c JOIN chunk_sets s USING (chunk_set_id) WHERE s.name = %s",
             (DEFAULT_CHUNK_SET,)).fetchone()[0]
     return {"llm": LLM_MODEL, "embedding_model": EMBEDDING_MODEL, "chunk_set": DEFAULT_CHUNK_SET,
-            "version": CURRENT_VERSION, "versions": VERSIONS,
+            "version": APP_DEFAULT_VERSION, "versions": VERSIONS,
             "passages": passages, "default_k": DEFAULT_K, "default_expand": DEFAULT_EXPAND,
-            "admin_password_set": bool(os.environ.get("ADMIN_PASSWORD"))}
+            "admin_password_set": bool(os.environ.get("ADMIN_PASSWORD")), "public_mode": publicmode.enabled()}

@@ -1,0 +1,13 @@
+# What `gcloud run deploy --source .` uploads for the build: only what the Dockerfile copies (see .dockerignore)
+#!include:.gitignore
+.git
+data
+docs
+findings
+eval
+graph
+ingest
+db
+scripts
+deploy
+*.md

@@ -112,6 +112,13 @@ view stale_embeddings                                  -- vectors whose chunk co
   partial HNSW index per experiment, `embedding::vector(N) ... WHERE model_id = X AND chunk_set_id = Y`.
 - Question embeddings are computed per question and not stored.
 
+## Later layers (migrations 006-017)
+
+Beyond the transcript, chunk and embedding tables above: the question log (`qa_runs`, `qa_answers`, `qa_feedback`,
+`qa_reviews`, migrations 006-011), the pipeline registry (`pipeline_versions`), the raw graph extraction
+(`extraction_runs`, `episode_extractions`, 012), and the graph itself with its views (013-016). The graph is described in
+`docs/graph-schema.md`; the whole picture is in `docs/architecture.md` section 5.
+
 ## Settled
 - Speaker is plain text (no speakers table until Phase 3 needs one).
 - `directions` is derived in the `lines_full` view.

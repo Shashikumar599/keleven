@@ -948,7 +948,10 @@ _Caveats: Opinion question with no fact core. Readings to avoid: taking Michael'
 - S2E10 sc.59: Kelly: Hey. [Kelly leans up and kisses him] Dwight: You shouldn't do things like that. The man is supposed to do that.
 
 _Caveats: Core = relationships presented as ongoing (several scenes or an explicit girlfriend/dating label): Angela, Isabel, Esther. Optional = one-scene kisses (Nellie, a negotiating ploy; Kelly, her initiative, Dwight not interested). Dwight's unnamed ex-girlfriends and the 'I have a girlfriend' claims of S2E21 are Angela or unverifiable; S3E20 'Karen' line is a parody. Offscreen/visual details (e.g. the Esther relationship's end, Jan, Pam) are not covered; Esther is dated only in S9E17-20 and never engaged (his 'Engaged... Check' in S9E22 sc.10 is a planned goal). Fan transcripts miss lines, so a fourth minor partner could exist; none found by searching dating/girlfriend/kiss/sleep terms near Dwight._
-
+  
+  
+  
+This is right
 ## q082 [list] (verified)
 **Q:** Which couples get engaged over the series?
 
@@ -987,7 +990,9 @@ _Caveats: Core = engagements shown on screen or central to a storyline. Phyllis-
 - S9E23 sc.72: Minister: I now pronounce you man and wife. [everyone cheers]
 - S7E14 sc.1: Kelly: Over the weekend, Ryan Bailey Howard and I got divorced. ... Andy: Sorry, when did you get married? Kelly: Ummm, like a week ago, we got really wasted and it just felt right.
 
-_Caveats: Core = weddings/marriages of main-cast couples that the transcripts support: Phyllis-Bob, Jim-Pam, Dwight-Angela, Angela-Robert (wedding itself offscreen, but husband/wife and 'wedding night' are stated). Optional: Roy-Laura (a minor, side-character wedding; only the wedding and name Laura are stated), Ryan-Kelly (legally a marriage by the characters' account, but a joke-like, week-long episode; I would credit it but not require it), Michael-Holly (the transcripts show only the engagement and the move to Colorado; any later wedding is not in the data, so an answer including it from memory cannot be checked, and an answer omitting it is fine). Not weddings: Dwight/Andy/Angela mock ceremony rehearsal at Schrute Farms (S5E9 sc.18), the cancelled Pam-Roy wedding (S3E1 sc.24), and Michael's 'I'm getting married' joke (S5E6 sc.3). The Jim-Pam secret Niagara boat ceremony is visual; the transcripts show the wedding weekend and S7E24 'ironic wedding'. Fan transcripts miss visual details._
+_Caveats: Core = weddings/marriages of main-cast couples that the transcripts support: Phyllis-Bob, Jim-Pam, Dwight-Angela, Angela-Robert (wedding itself offscreen, but husband/wife and 'wedding night' are stated). Optional: Roy-Laura (a minor, side-character wedding; only the wedding and name Laura are stated), Ryan-Kelly (legally a marriage by the characters' account, but a joke-like, week-long episode; I would credit it but not require it), Michael-Holly (the transcripts show only the engagement and the move to Colorado; any later wedding is not in the data, so an answer including it from memory cannot be checked, and an answer omitting it is fine). Not weddings: Dwight/Andy/Angela mock ceremony rehearsal at Schrute Farms (S5E9 sc.18), the cancelled Pam-Roy wedding (S3E1 sc.24), and Michael's 'I'm getting married' joke (S5E6 sc.3). The Jim-Pam secret Niagara boat ceremony is visual; the transcripts show the wedding weekend and S7E24 'ironic wedding'. Fan transcripts miss visual details.  
+  
+will take your answer as base _
 
 ## q084 [story_arc] (verified)
 **Q:** What is the history between Jan and Michael across the series?
@@ -1057,7 +1062,9 @@ _Caveats: Main arc (core): crush -> dating (S6) -> split and Erin with Gabe, And
 - S9E23 sc.49: Stanley: I'm living in Florida now... The man who delivered my divorce papers came by fan boat
 - S4E12 sc.13: Stanley: I say the same thing to my current wife, and I'll say it to my next one too.
 
-_Caveats: Only one marriage (Teri) and two named affairs (Cynthia, Lydia) are supported. Cynthia is the only affair with scenes (S6E1, S6E4, S8E4 mention); Lydia, the third affair and the divorce are mentions only. The transcripts do not say the divorce papers came from Teri (inferred only); S9E22 sc.20 does not say the number includes Lydia. Teri's presence in scenes is mostly visual (stage directions only); lines often mislabel 'Terri' spelling. Not checked: any further Stanley relationship scenes not matching the keyword searches (cynthia, lydia, teri, wife, affair, mistress, divorce)._
+_Caveats: Only one marriage (Teri) and two named affairs (Cynthia, Lydia) are supported. Cynthia is the only affair with scenes (S6E1, S6E4, S8E4 mention); Lydia, the third affair and the divorce are mentions only. The transcripts do not say the divorce papers came from Teri (inferred only); S9E22 sc.20 does not say the number includes Lydia. Teri's presence in scenes is mostly visual (stage directions only); lines often mislabel 'Terri' spelling. Not checked: any further Stanley relationship scenes not matching the keyword searches (cynthia, lydia, teri, wife, affair, mistress, divorce).
+
+Cool i will go by this 
 
 ## q087 [story_arc] (verified)
 **Q:** How does Jim and Pam's relationship progress from the first season to the end? Give the key episodes.

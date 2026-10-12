@@ -40,6 +40,7 @@ $PY ingest/load.py
 echo "== 5/5 chunks (pack_300t_3s_80min: 300 tokens, 3 scenes, min 80)"
 $PY ingest/chunk.py --max-tokens 300 --max-scenes 3 --min-tokens 80
 
+mkdir -p .claude/skills && ln -sfn ../../eval/skills/evaluate-answers .claude/skills/evaluate-answers   # local link for Claude Code
 "${PSQL[@]}" -tAc "select 'lines: '||count(*) from lines" 
 "${PSQL[@]}" -tAc "select 'chunks: '||count(*) from chunks"
 echo "expected on the original machine: lines 57973, chunks 4658"
