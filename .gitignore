@@ -25,6 +25,6 @@ graph/out/
 .claude/
 # Hosting: generated data dump
 deploy/*.dump
-deploy/deploy.sh
+deploy/aws/deploy.sh
 brag-output/
 docs/architecture-poster/
