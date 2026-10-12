@@ -1,6 +1,7 @@
 # Secrets: passwords and API keys. Never commit.
 .env
 .env.*
+!.env.example
 
 # Python environment and generated files
 .venv/
@@ -22,3 +23,6 @@ data/processed/
 graph/out/
 
 .claude/
+# Hosting: generated data dump
+deploy/*.dump
+deploy/deploy.sh

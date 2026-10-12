@@ -1,0 +1,14 @@
+.git
+.venv
+.env
+.env.*
+**/__pycache__
+data
+docs
+findings
+eval
+graph
+ingest
+db
+scripts
+*.md

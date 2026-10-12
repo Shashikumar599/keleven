@@ -48,18 +48,21 @@ def comparable(question):
             SELECT DISTINCT ON (kind) kind, r.version, r.run_id, r.asked_at, r.source, {_COLS},
                    (SELECT array_agg(DISTINCT c.season || '-' || c.episode || '-' || s)
                     FROM chunks_full c, generate_series(c.scene_start, c.scene_end) s
-                    WHERE c.chunk_id = ANY(r.sent_chunk_ids)) AS sent_scenes
+                    WHERE c.chunk_id = ANY(r.sent_chunk_ids)) AS sent_scenes,
+                   (SELECT array_agg(DISTINCT (g->>'season') || '-' || (g->>'episode') || '-' || (g->>'scene'))
+                    FROM jsonb_array_elements(COALESCE(r.plan->'graph_result'->'lines', '[]'::jsonb)) row_lines,
+                         jsonb_array_elements(row_lines) g) AS graph_scenes
             FROM qa_runs r JOIN qa_answers a USING (run_id),
                  LATERAL (SELECT CASE WHEN a.system = 'llm' THEN 'llm' ELSE r.version || ':' || a.system END) k(kind)
             WHERE {NORM.format('r.question')} = {NORM.format('%s')} AND a.error IS NULL AND a.output IS NOT NULL
             ORDER BY kind, r.run_id DESC
         """, (question,)).fetchall()
     out = []
-    for kind, version, run_id, asked_at, source, *ans, sent in rows:
+    for kind, version, run_id, asked_at, source, *ans, sent, graph_scenes in rows:
         a = _answer(ans)
         system = a["system"]
         label = "Memory only" if system == "llm" else f"{version} · {SYSTEM_LABELS[system]}"
         out.append({"key": kind, "version": version, "system": system, "label": label, "run_id": run_id,
-                    "asked_at": asked_at.isoformat(), "source": source, "answer": a, "sent_scenes": sent or []})
+                    "asked_at": asked_at.isoformat(), "source": source, "answer": a, "sent_scenes": (sent or []) + (graph_scenes or [])})
     order = {"llm": 0}
     return sorted(out, key=lambda x: (order.get(x["key"], 1), x["key"]))

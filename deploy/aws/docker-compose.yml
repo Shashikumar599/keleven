@@ -1,0 +1,39 @@
+# One EC2 instance: the app (port 80, behind CloudFront) and Postgres 17 + pgvector (no published port).
+# Run from the folder that holds this file, .env and the db/ folder:  docker compose up -d
+services:
+  db:
+    image: pgvector/pgvector:0.8.7-pg17
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: office_admin          # the migrations expect this role and database name
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: office_rag
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U office_admin -d office_rag"]
+      interval: 5s
+      retries: 20
+
+  app:
+    image: keleven:latest                   # loaded from the file built on the laptop (deploy/aws/README steps)
+    restart: unless-stopped
+    depends_on:
+      db: { condition: service_healthy }
+    ports:
+      - "80:80"
+    environment:
+      PORT: "80"
+      PUBLIC_MODE: "1"
+      PUBLIC_DAILY_CAP: ${PUBLIC_DAILY_CAP:-150}
+      DB_HOST: db
+      DB_PORT: "5432"
+      POSTGRES_DB: office_rag
+      APP_DB_PASSWORD: ${APP_DB_PASSWORD}
+      GEMINI_API_KEY: ${GEMINI_API_KEY}
+      VOYAGE_API_KEY: ${VOYAGE_API_KEY}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD}
+      SITE_PASSWORD: ${SITE_PASSWORD:-}          # empty = no site password
+
+volumes:
+  pgdata:

@@ -1036,3 +1036,34 @@ documented limitation; retrieval for them relies on event text and the v2 search
 - Same-session blind regrade gives rag +0.22 and hybrid -0.03 on the 80, +1.40 / +0.33 on the 15 graph-query questions; see experiment-log. The earlier separate-session numbers (rag +0.12, hybrid -0.23) agree: no overall change.
 - Open: write findings/v3-analysis.md (the 92 together, what the graph fixes and misses, v4 candidates: enhancer for questions that name nobody, more graph rows per query, fix q070-style refusals, hybrid unsupported claims);
   owner decisions on reference gaps (q081 Melvina, q083 Karen and Dan, q086 "three affairs", q040 count inconsistency); commit and push (not done).
+
+## 2026-10-11: study ends at v3; app, repository and hosting preparation
+- **Study:** the owner ended the study at v3 (no v4); q040's reference is left as is (30 against 24, inconsistent); the owner answered the reference questions. Final results: findings/phase-3.md.
+- **App:** v3 is the app's default version (APP_DEFAULT_VERSION in app/server.py; retrieval.CURRENT_VERSION stays v2 for the research tools). Fixed in the UI: the Sources panel treated the v3 method "graph" like plain
+  vector search (it would have crashed on hits without a vector distance); citations to scenes that came from graph rows were shown as "not among the sources sent" and could not be opened; they are now counted as sent and the lines are
+  shown under "Lines from the graph" (also in History and in stored comparisons, common/stored.py).
+- **Repository:** the evaluation skill moved from .claude/skills/ to eval/skills/evaluate-answers/ (git rename, history kept); .claude/ is untracked and git-ignored, and a local symlink keeps the skill working (created by scripts/bootstrap.sh
+  and documented in docs/setup.md). The old files remain in git history (rubrics only, no secrets). Added README.md, docs/architecture.md, docs/hosting.md, findings/phase-3.md; updated docs/setup.md, commands.md, schema.md, open-questions.md.
+- **Hosting plan (not deployed):** Google Cloud Run + Cloud SQL (pgvector), default URL without a domain; AWS App Runner + RDS documented as the alternative. Chosen because of the larger credit and the least to operate; costs are estimates.
+  Database is 65 MB. Built and tested locally: app/public.py (PUBLIC_MODE: per-IP and global daily limits, excerpt-only sources, no History/Dev/hits/queries for visitors, 403 on /api/history and /api/compare without the admin password),
+  /healthz, a start-up warm-up of the keyword index, Dockerfile (+ .dockerignore, .gcloudignore, requirements-app.txt), deploy/export_data.sh and import_data.sh; verified on a throwaway pgvector Postgres 17 (migrations, restore, row counts,
+  the container answering without model calls). Not tested: Cloud SQL, Cloud Run, a real question through the container.
+- **Media:** the show's theme music is left out of the public image by default (--build-arg INCLUDE_THEME_AUDIO=1 keeps it); images and avatars are included unless the owner removes them. Owner decision pending.
+- **Privacy / copyright:** the repository stays private (it contains data/raw); the public page logs questions (stated on the page) and shows excerpts only.
+
+## 2026-10-11: hosting on AWS; user mode compares v3 with the model alone; all media kept
+- **Hosting target: AWS** (owner's choice, about $100 credit; replaces the Google Cloud recommendation in docs/hosting.md, which stays as the alternative). The AWS runbook is still to be written and run (ECR, RDS PostgreSQL 17 with pgvector, App Runner or similar, Secrets Manager).
+- **User mode (revised the same day):** v3 LLM + RAG only, one answer per question; visitors cannot choose a version or other answers. Comparisons move to dev mode: the settings row has a version picker and checkboxes for
+  which answers to compute (RAG, LLM, LLM + RAG; default RAG + LLM), and the stored-answer compare panel covers other versions.
+- **Info button** in the header (dialog): one line on what LLM alone, v1, v2 and v3 add; it points to dev mode for comparing.
+- **Media:** everything is kept in the public image, including the theme music (INCLUDE_THEME_AUDIO now defaults to 1; 0 leaves it out). Supersedes the "Media" bullet above.
+- Documentation walk-through is deferred to after hosting, at the owner's request.
+- **Visitors are not limited in what they can do (owner, same day):** everyone gets both User and Dev views, any version, any combination of answers, and the enhancer/SQL/graph/search-hit details. User mode itself is v3 LLM + RAG only; dev
+  mode defaults to RAG + LLM with checkboxes. What stays limited: rate limits and the daily cap (cost protection), k and neighbours (admin), History and stored comparisons (other people's questions), and transcript text everywhere is cut to
+  excerpts (trim in app/public.py now also cuts search hits and SQL/graph rows). Supersedes the "visitors cannot choose a version" line above.
+- **AWS must stay inside the free tier (owner).** App Runner and RDS are not free-tier services, so the plan changes to one EC2 instance running the app and Postgres in Docker; see the hosting discussion.
+- **AWS design (owner, 2026-10-11):** region ap-south-1; one EC2 t3.small (free-tier eligible, Amazon Linux 2023 x86_64), 20 GB gp3, Elastic IP; Docker Compose with two containers, the app (port 80) and Postgres 17 + pgvector (no published
+  port); **CloudFront in front** for free HTTPS on a `*.cloudfront.net` name (no domain, no Caddy, no sslip.io), caching disabled, origin response timeout raised to 60 s; secrets in a chmod 600 `.env` on the server (Secrets Manager is
+  not free); no AWS-side backup (the local database is the source). Files: deploy/aws/docker-compose.yml, .env.example, load_data.sh. Tested locally with the real dump (migrations, restore counts, app answering /healthz and /api/info through compose).
+- **Site password (owner, 2026-10-11):** optional shared password for the whole site (app/gate.py, env SITE_PASSWORD; off when unset). Login page + signed cookie (expiry.HMAC, 7 days, HttpOnly, nothing stored on the server; changing
+  the password signs everyone out), login attempts limited to 10 per 10 minutes per IP. /healthz stays open. The admin password stays separate (History, retrieval settings). Rate limits and the daily cap still apply. CloudFront must forward cookies.

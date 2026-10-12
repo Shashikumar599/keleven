@@ -1,7 +1,8 @@
 # Open questions and deferred work
 
-Things we decided to postpone, with where they belong. Decisions themselves are in `findings/decisions.md`;
-this list is what's still open. Move an item to the decision log when it's settled, and delete it here.
+**The study ended with v3 (decision of 2026-10-11): nothing below will be built as part of it.** The list is kept as a record of
+ideas for anyone continuing; the final results and the ideas that came out of v3 are in `findings/phase-3.md`. Decisions
+themselves are in `findings/decisions.md`.
 
 **Versions:** **v1** = the pipeline working end to end with vector search only (store → chunk → embed → retrieve →
 generate). **v2** = hybrid search (vector + keyword) and retrieval improvements.
@@ -112,7 +113,7 @@ generate). **v2** = hybrid search (vector + keyword) and retrieval improvements.
   percent-encoded or replaced by separate parameters.
 - **LLM-written SQL (Phase 2):** allow a single SELECT only and set `statement_timeout` from the app with
   `SET LOCAL`; the app role can raise its own timeout.
-- **Hosting the demo:** where the app and a managed Postgres would run.
+- **Hosting the demo:** planned in `docs/hosting.md` (Cloud Run + Cloud SQL, public mode); not deployed yet.
 
 ## Typo-tolerant keyword search (later)
 BM25 matches exact words only: "Beyonse" does not match "beyonce". Standard fix: correct each query word to the

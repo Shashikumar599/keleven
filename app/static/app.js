@@ -38,15 +38,19 @@ const state = {
   showSources: false,
   sentScenes: new Set(),
   version: store.get("office-rag-version"),   // dev mode: pipeline version to ask with (null = server default)
+  systems: (store.get("office-rag-systems") || "rag,llm").split(",").filter((x) => ["rag", "llm", "hybrid"].includes(x)),   // dev mode: which answers to compute
   compare: null,                // dev mode: stored answers for this question { answers, picked: [keys] }
 };
 
 /* A rendering context: which scenes were sent (for chip colours) and a prefix that keeps scene ids unique when
    several questions are on screen (history). */
 const MAIN = { prefix: "cur", get sent() { return state.sentScenes; } };
-const sentSet = (passages) => {
+/* graph rows (v3) come with the transcript lines they were extracted from; those scenes were sent to the model too */
+const graphLines = (plan) => (plan?.graph_result?.lines || []).flat();
+const sentSet = (passages, plan) => {
   const set = new Set();
   for (const p of passages) for (let s = p.scene_start; s <= p.scene_end; s++) set.add(`${p.season}-${p.episode}-${s}`);
+  for (const l of graphLines(plan)) set.add(`${l.season}-${l.episode}-${l.scene}`);
   return set;
 };
 
@@ -89,7 +93,15 @@ async function tryAdmin() {
     adminChanged();
   } catch { renderAdmin("Couldn't reach the server.", true); }
 }
+/* public deployment: visitors get both views but not History (other people's questions); retrieval settings and History need the admin password */
+function applyPublic() {
+  const locked = !!INFO?.public_mode && !adminKey;
+  $("history-btn").hidden = locked;
+  $("public-note").hidden = !INFO?.public_mode || !!adminKey;
+  if (locked && state.view === "history") setView("ask");
+}
 function adminChanged() {
+  applyPublic();
   renderAdmin();
   renderLock();
   renderExplain();
@@ -137,9 +149,18 @@ for (const t of document.querySelectorAll(".tab")) t.addEventListener("click", (
 
 /* dev-mode explainer: what this is, which model and why (filled from /api/info) */
 let INFO = null;
-fetch("/api/info").then((r) => r.json()).then((d) => { INFO = d; renderExplain(); renderVersions(); }).catch(() => {});
+fetch("/api/info").then((r) => r.json()).then((d) => { INFO = d; renderExplain(); renderVersions(); applyPublic(); }).catch(() => {});
 
 /* dev mode: pick the pipeline version (v1 vector, v2 hybrid, v3 graph) to compare them on the same question */
+function renderSystems() {
+  const el = $("systems");
+  el.innerHTML = Object.entries(SYSTEMS).map(([k, v]) => `<label title="${esc(v.desc)}"><input type="checkbox" data-sys="${k}"
+    ${state.systems.includes(k) ? "checked" : ""}> ${esc(v.title)}</label>`).join("");
+}
+$("systems").addEventListener("change", () => {
+  state.systems = [...document.querySelectorAll("#systems input:checked")].map((i) => i.dataset.sys);
+  store.set("office-rag-systems", state.systems.join(","));
+});
 function renderVersions() {
   const versions = INFO?.versions || [];
   if (!versions.some((v) => v.version === state.version && v.ready)) state.version = INFO?.version || null;
@@ -249,15 +270,18 @@ $("ask").addEventListener("submit", async (e) => {
     const res = await fetch("/api/ask", {
       method: "POST", headers: { "Content-Type": "application/json", ...adminHeaders() },
       body: JSON.stringify({ question, k: +$("k").value, expand: +$("expand").value, mode: state.mode,
+                             systems: state.mode === "dev" ? (state.systems.length ? state.systems : ["rag", "llm"]) : ["hybrid"],   // user mode: v3 LLM + RAG only
                              ...(state.mode === "dev" && state.version ? { version: state.version } : {}) }),
     });
+    if (res.status === 401) { location.reload(); return; }       // the site password cookie expired: the login page comes back
+    if (res.status === 429) throw new Error((await res.json()).detail);
     if (!res.ok) throw new Error(`The server answered ${res.status}. ${await res.text()}`);
     state.data = await res.json();
     state.order = Math.random() < 0.5 ? ["rag", "llm"] : ["llm", "rag"];
     state.feedback = { satisfied: null, preferred: null };
     state.status = { satisfied: "", preferred: "" };
     state.showSources = false;
-    state.sentScenes = sentSet(state.data.retrieval.passages);
+    state.sentScenes = sentSet(state.data.retrieval.passages, state.data.retrieval.plan);
     hist.started = false;             // the history now has a newer question
     state.compare = null;
     render();
@@ -379,12 +403,14 @@ function renderUser() {
   </article>`;
 }
 
+$("info-btn").addEventListener("click", () => $("info").showModal());
+
 function renderDev() {
-  const order = ["hybrid", ...state.order];
-  $("result").innerHTML = `<div class="cards">${order.map((sys) => renderCard(sys, state.data.answers[sys], MAIN, voteHTML(sys))).join("")}</div>`;
+  const got = state.data.answers, order = [...state.order.filter((s) => got[s]), ...(got.hybrid ? ["hybrid"] : [])];
+  $("result").innerHTML = `<div class="cards">${order.map((sys) => renderCard(sys, got[sys], MAIN, voteHTML(sys))).join("")}</div>`;
 }
 function voteHTML(system) {
-  if (system === "hybrid" || state.data.run_id == null) return "";
+  if (system === "hybrid" || !(state.data.answers.rag && state.data.answers.llm) || state.data.run_id == null) return "";
   const voted = state.feedback.preferred === system;
   return `<div class="vote">
       <button class="pill" data-fb="preference" data-val="${system}" aria-pressed="${voted}">
@@ -429,6 +455,23 @@ function renderCard(system, res, ctx, footer = "", title = null) {
   </article>`;
 }
 
+/* v3: the scenes the graph rows point at, shown like passages so a citation chip can jump to them; scenes already
+   shown as passages are skipped (their ids exist) */
+function graphScenesHTML(plan, passages, ctx) {
+  const have = sentSet(passages), scenes = new Map();
+  for (const l of graphLines(plan)) {
+    const key = `${l.season}-${l.episode}-${l.scene}`;
+    if (have.has(key)) continue;
+    if (!scenes.has(key)) scenes.set(key, { l, lines: [] });
+    scenes.get(key).lines.push(l);
+  }
+  if (!scenes.size) return "";
+  const body = [...scenes.entries()].sort(([, a], [, b]) => a.l.season - b.l.season || a.l.episode - b.l.episode || a.l.scene - b.l.scene)
+    .map(([key, { l, lines }]) => `<div class="scene" id="scene-${ctx.prefix}-${key}"><div class="scene-no">S${l.season}E${l.episode} SCENE ${l.scene}</div>${
+      lines.map((x) => `<div class="line"><span class="who">${esc(x.speaker)}</span><span>${esc(x.text).replace(/\[([^\]]*)\]/g, `<span class="dir">($1)</span>`)}</span></div>`).join("")}</div>`).join("");
+  return `<details class="passage"><summary>Lines from the graph<small>${scenes.size} more scene${scenes.size === 1 ? "" : "s"}</small></summary>
+    <div class="chunk">${body}</div></details>`;
+}
 function passagesHTML(passages, ctx, devLabels, openFirst) {
   return passages.map((p, i) => `
     <details class="passage" ${openFirst && i === 0 ? "open" : ""}>
@@ -440,7 +483,7 @@ function renderSources() {
   const show = state.mode === "dev" || state.showSources;
   if (!show) { $("sources-wrap").innerHTML = ""; return; }
   const r = state.data.retrieval, t = r.timings_ms, dev = state.mode === "dev";
-  const hybrid = r.method === "hybrid" || r.method === "enhanced", dash = (v) => (v == null ? "–" : v);
+  const hybrid = ["hybrid", "enhanced", "graph"].includes(r.method), dash = (v) => (v == null ? "–" : v);
   const hits = dev ? `<details class="sub"><summary>Search hits (top ${r.k} ${hybrid
       ? "by vector + keyword search, merged by rank" : "by cosine distance"}${
       r.hits.some((h) => h.scores?.sql) ? ", plus scenes found by SQL" : ""})</summary>
@@ -451,12 +494,13 @@ function renderSources() {
       : `<td>${dash(h.scores.vector_rank)}</td><td>${dash(h.scores.bm25_rank)}</td><td>${h.scores.rrf.toFixed(4)}</td>`}
       <td>S${h.season}E${h.episode} ${esc(h.title)}</td><td>${h.scene_start}-${h.scene_end}</td></tr>`).join("")}</tbody></table></div></details>` : "";
   const found = { vector: "meaning only", hybrid: "meaning + exact words",
-                  enhanced: "question rewritten, meaning + exact words, SQL" }[r.method] || r.method;
+                  enhanced: "question rewritten, meaning + exact words, SQL",
+                  graph: "question rewritten, meaning + exact words, SQL and graph" }[r.method] || r.method;
   $("sources-wrap").innerHTML = `<section class="sheet sources">
     <h2>Sources</h2>
     <div class="sub-line">${r.passages.length} passages sent to the model. ${dev && r.version
       ? `Found with ${esc(r.version)} (${found}). ` : ""}Retrieval took ${t.total} ms.</div>
-    ${dev ? planHTML(r.plan) : ""}${hits}${passagesHTML(r.passages, MAIN, dev, true)}
+    ${dev ? planHTML(r.plan) : ""}${hits}${passagesHTML(r.passages, MAIN, dev, true)}${graphScenesHTML(r.plan, r.passages, MAIN)}
   </section>`;
 }
 
@@ -506,12 +550,12 @@ function renderChunk(p, c, ctx, devLabels) {
 }
 
 /* ---------- history: one question at a time, loaded as you scroll ---------- */
-const hist = { started: false, next: null, hasMore: true, loading: false, items: {} };
+const hist = { started: false, next: null, hasMore: true, loading: false, failed: false, items: {} };
 let histObserver = null;
 
 function resetHistory() {
   hist.started = true;
-  hist.next = null; hist.hasMore = true; hist.items = {};
+  hist.next = null; hist.hasMore = true; hist.failed = false; hist.items = {};
   $("history-list").innerHTML = "";
   $("history-sentinel").textContent = "Loading…";
   if (!histObserver) {
@@ -524,11 +568,13 @@ function resetHistory() {
 }
 
 async function loadNextHistory() {
-  if (hist.loading || !hist.hasMore || state.view !== "history") return;
+  if (hist.loading || hist.failed || !hist.hasMore || state.view !== "history") return;
   hist.loading = true;
   try {
     const url = "/api/history" + (hist.next != null ? `?before=${hist.next}` : "");
     const res = await fetch(url, { headers: adminHeaders() });
+    if (res.status === 401) { location.reload(); return; }      // the site password cookie expired
+    if (res.status === 403) throw new Error("History is for the admin: open Admin, enter the admin password (not the site password), then try again.");
     if (!res.ok) throw new Error(`The server answered ${res.status}.`);
     const data = await res.json();
     if (data.run) {
@@ -540,17 +586,19 @@ async function loadNextHistory() {
     $("history-sentinel").textContent = hist.hasMore ? "Loading…"
       : Object.keys(hist.items).length ? "That's every question so far." : "No questions yet. Ask one!";
   } catch (err) {
-    $("history-sentinel").textContent = `Couldn't load more. ${err.message}`;
+    hist.failed = true;                          // stop here: retrying on its own would hammer the server
+    $("history-sentinel").innerHTML = `Couldn't load more. ${esc(err.message)} <button type="button" class="pill" id="history-retry">Try again</button>`;
   } finally {
     hist.loading = false;
   }
+  if (hist.failed) return;
   // keep filling while the sentinel is still on screen (tall screens, short items)
   const r = $("history-sentinel").getBoundingClientRect();
   if (hist.hasMore && r.top < innerHeight + 600) loadNextHistory();
 }
 
 function historyItemHTML(run) {
-  const ctx = { prefix: `h${run.run_id}`, sent: sentSet(run.passages) };
+  const ctx = { prefix: `h${run.run_id}`, sent: sentSet(run.passages, run.plan) };
   const when = new Date(run.asked_at).toLocaleString(undefined, { day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" });
   const reviews = run.reviews || [];
   const cards = ["hybrid", "rag", "llm"].map((sys) =>
@@ -565,7 +613,7 @@ function historyItemHTML(run) {
       <span>${esc(run.version)}, ${run.k} chunks, neighbours ${run.expand}</span><span>run ${run.run_id}</span></div>
     ${fb}
     <div class="cards">${cards}</div>
-    <details class="sub"><summary>Sources (${run.passages.length} passages)</summary>${passagesHTML(run.passages, ctx, true, false)}</details>
+    <details class="sub"><summary>Sources (${run.passages.length} passages)</summary>${passagesHTML(run.passages, ctx, true, false)}${graphScenesHTML(run.plan, run.passages, ctx)}</details>
   </article>`;
 }
 
@@ -605,6 +653,7 @@ document.addEventListener("click", async (e) => {
     el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash");
     return;
   }
+  if (e.target.closest("#history-retry")) { hist.failed = false; $("history-sentinel").textContent = "Loading…"; loadNextHistory(); return; }
   if (e.target.closest("#toggle-sources")) { state.showSources = !state.showSources; render(); return; }
 
   const verdictBtn = e.target.closest(".review [data-verdict]");
@@ -662,6 +711,7 @@ document.addEventListener("click", async (e) => {
 /* ---------- start ---------- */
 renderAdmin();
 renderLock();
+renderSystems();
 setMode(state.mode);
 renderEmpty();
 setView(state.view);
