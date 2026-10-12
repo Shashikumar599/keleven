@@ -27,3 +27,4 @@ graph/out/
 deploy/*.dump
 deploy/deploy.sh
 brag-output/
+docs/architecture-poster
